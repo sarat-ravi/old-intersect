@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/python/test
+END
+precornerdetect.py
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/opencv/!svn/ver/5989/trunk/opencv/modules/python/test/precornerdetect.py
+END
+ticket_6.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/7210/trunk/opencv/modules/python/test/ticket_6.py
+END
+transformations.py
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/opencv/!svn/ver/5013/trunk/opencv/modules/python/test/transformations.py
+END
+calchist.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/5989/trunk/opencv/modules/python/test/calchist.py
+END
+findstereocorrespondence.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/opencv/!svn/ver/5989/trunk/opencv/modules/python/test/findstereocorrespondence.py
+END
+leak1.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/opencv/!svn/ver/5989/trunk/opencv/modules/python/test/leak1.py
+END
+leak2.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/opencv/!svn/ver/5989/trunk/opencv/modules/python/test/leak2.py
+END
+camera_calibration.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/opencv/!svn/ver/5989/trunk/opencv/modules/python/test/camera_calibration.py
+END
+leak3.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/opencv/!svn/ver/5989/trunk/opencv/modules/python/test/leak3.py
+END
+test.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/python/test/test.py
+END
+leak4.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/opencv/!svn/ver/5989/trunk/opencv/modules/python/test/leak4.py
+END
+tickets.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/opencv/!svn/ver/5989/trunk/opencv/modules/python/test/tickets.py
+END
+goodfeatures.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/python/test/goodfeatures.py
+END

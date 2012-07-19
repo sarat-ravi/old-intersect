@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/core/doc/pics
+END
+ellipse.png
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/4787/trunk/opencv/modules/core/doc/pics/ellipse.png
+END
+rotatedrect.png
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/core/doc/pics/rotatedrect.png
+END
+memstorage1.png
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/5762/trunk/opencv/modules/core/doc/pics/memstorage1.png
+END
+memstorage2.png
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/5762/trunk/opencv/modules/core/doc/pics/memstorage2.png
+END

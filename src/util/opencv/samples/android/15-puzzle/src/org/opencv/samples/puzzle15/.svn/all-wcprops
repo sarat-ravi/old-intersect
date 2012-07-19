@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/opencv/!svn/ver/8367/trunk/opencv/samples/android/15-puzzle/src/org/opencv/samples/puzzle15
+END
+puzzle15View.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/opencv/!svn/ver/8367/trunk/opencv/samples/android/15-puzzle/src/org/opencv/samples/puzzle15/puzzle15View.java
+END
+puzzle15Activity.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/opencv/!svn/ver/8367/trunk/opencv/samples/android/15-puzzle/src/org/opencv/samples/puzzle15/puzzle15Activity.java
+END
+SampleCvViewBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/opencv/!svn/ver/8367/trunk/opencv/samples/android/15-puzzle/src/org/opencv/samples/puzzle15/SampleCvViewBase.java
+END

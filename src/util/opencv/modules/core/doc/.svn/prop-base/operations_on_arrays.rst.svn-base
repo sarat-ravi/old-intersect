@@ -1,0 +1,11 @@
+K 13
+svn:eol-style
+V 6
+native
+K 13
+svn:mergeinfo
+V 244
+/branches/2.4/opencv/modules/core/doc/operations_on_arrays.rst:7793-8266,8301
+/branches/opencv_pthread_framework/opencv/modules/core/doc/operations_on_arrays.rst:4873-4972
+/branches/perf_tests/modules/core/doc/operations_on_arrays.rst:6430-6673
+END

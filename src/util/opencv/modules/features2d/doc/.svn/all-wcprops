@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/opencv/!svn/ver/8506/trunk/opencv/modules/features2d/doc
+END
+common_interfaces_of_descriptor_matchers.rst
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/opencv/!svn/ver/8506/trunk/opencv/modules/features2d/doc/common_interfaces_of_descriptor_matchers.rst
+END
+features2d.rst
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/4900/trunk/opencv/modules/features2d/doc/features2d.rst
+END
+common_interfaces_of_feature_detectors.rst
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/opencv/!svn/ver/8506/trunk/opencv/modules/features2d/doc/common_interfaces_of_feature_detectors.rst
+END
+object_categorization.rst
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/opencv/!svn/ver/8468/trunk/opencv/modules/features2d/doc/object_categorization.rst
+END
+common_interfaces_of_descriptor_extractors.rst
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/opencv/!svn/ver/8482/trunk/opencv/modules/features2d/doc/common_interfaces_of_descriptor_extractors.rst
+END
+feature_detection_and_description.rst
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/opencv/!svn/ver/8468/trunk/opencv/modules/features2d/doc/feature_detection_and_description.rst
+END
+common_interfaces_of_generic_descriptor_matchers.rst
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/opencv/!svn/ver/8468/trunk/opencv/modules/features2d/doc/common_interfaces_of_generic_descriptor_matchers.rst
+END
+drawing_function_of_keypoints_and_matches.rst
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/opencv/!svn/ver/8492/trunk/opencv/modules/features2d/doc/drawing_function_of_keypoints_and_matches.rst
+END

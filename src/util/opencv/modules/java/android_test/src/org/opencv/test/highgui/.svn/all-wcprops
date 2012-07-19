@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/java/android_test/src/org/opencv/test/highgui
+END
+HighguiTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/java/android_test/src/org/opencv/test/highgui/HighguiTest.java
+END
+VideoCaptureTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/opencv/!svn/ver/6339/trunk/opencv/modules/java/android_test/src/org/opencv/test/highgui/VideoCaptureTest.java
+END

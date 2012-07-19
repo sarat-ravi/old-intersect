@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/opencv/!svn/ver/8407/trunk/opencv/modules/nonfree/src
+END
+nonfree_init.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/8407/trunk/opencv/modules/nonfree/src/nonfree_init.cpp
+END
+surf.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/nonfree/src/surf.cpp
+END
+precomp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/nonfree/src/precomp.cpp
+END
+sift.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/nonfree/src/sift.cpp
+END
+precomp.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/7504/trunk/opencv/modules/nonfree/src/precomp.hpp
+END

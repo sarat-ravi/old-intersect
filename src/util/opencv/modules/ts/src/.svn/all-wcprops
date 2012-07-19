@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/opencv/!svn/ver/8451/trunk/opencv/modules/ts/src
+END
+precomp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/opencv/!svn/ver/6674/trunk/opencv/modules/ts/src/precomp.cpp
+END
+ts.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/ts/src/ts.cpp
+END
+precomp.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/opencv/!svn/ver/6674/trunk/opencv/modules/ts/src/precomp.hpp
+END
+ts_arrtest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/opencv/!svn/ver/6114/trunk/opencv/modules/ts/src/ts_arrtest.cpp
+END
+ts_gtest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/opencv/!svn/ver/6674/trunk/opencv/modules/ts/src/ts_gtest.cpp
+END
+ts_func.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/ts/src/ts_func.cpp
+END
+ts_perf.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/opencv/!svn/ver/8451/trunk/opencv/modules/ts/src/ts_perf.cpp
+END

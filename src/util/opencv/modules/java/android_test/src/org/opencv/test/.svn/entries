@@ -1,0 +1,129 @@
+10
+
+dir
+8583
+http://code.opencv.org/svn/opencv/trunk/opencv/modules/java/android_test/src/org/opencv/test
+http://code.opencv.org/svn/opencv
+
+
+
+2012-05-29T11:04:04.161566Z
+8494
+apavlenko
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+c5418bc3-7546-4aae-8bad-fa6f2f3e53e6
+
+objdetect
+dir
+
+features2d
+dir
+
+highgui
+dir
+
+OpenCVTestRunner.java
+file
+
+
+
+
+2012-06-06T19:53:19.563142Z
+f758f610e0ef6a382dd0ca1903b6170f
+2012-04-13T21:50:59.489896Z
+8045
+vp153
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2892
+
+video
+dir
+
+OpenCVTestCase.java
+file
+
+
+
+
+2012-06-06T19:53:19.563142Z
+140e4497934a36a70fcd7ce18ea8c27c
+2012-04-13T21:50:59.489896Z
+8045
+vp153
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+17090
+
+core
+dir
+
+ml
+dir
+
+photo
+dir
+
+android
+dir
+
+imgproc
+dir
+
+utils
+dir
+
+calib3d
+dir
+

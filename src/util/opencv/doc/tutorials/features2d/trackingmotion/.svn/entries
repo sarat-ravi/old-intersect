@@ -1,0 +1,40 @@
+10
+
+dir
+8583
+http://code.opencv.org/svn/opencv/trunk/opencv/doc/tutorials/features2d/trackingmotion
+http://code.opencv.org/svn/opencv
+
+
+
+2012-03-11T14:35:46.006583Z
+7468
+alexander.shishkov
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+c5418bc3-7546-4aae-8bad-fa6f2f3e53e6
+
+corner_subpixeles
+dir
+
+good_features_to_track
+dir
+
+generic_corner_detector
+dir
+
+harris_detector
+dir
+

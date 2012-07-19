@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/opencv/!svn/ver/8404/trunk/opencv/modules/video/perf
+END
+perf_precomp.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/video/perf/perf_precomp.hpp
+END
+perf_optflowpyrlk.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/opencv/!svn/ver/8404/trunk/opencv/modules/video/perf/perf_optflowpyrlk.cpp
+END
+perf_main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/video/perf/perf_main.cpp
+END
+perf_precomp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/video/perf/perf_precomp.cpp
+END

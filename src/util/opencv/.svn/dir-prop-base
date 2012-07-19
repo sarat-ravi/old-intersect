@@ -1,0 +1,25 @@
+K 10
+svn:ignore
+V 103
+*.pc
+*.spec
+*.user
+.*
+Makefile
+_build-x64
+_temp
+autom4te.cache
+bin
+config.*
+cvconfig.h
+lib
+libs
+stamp*
+
+K 13
+svn:mergeinfo
+V 118
+/branches/2.4/opencv:8047-8266,8536
+/branches/opencv_pthread_framework/opencv:4873-4972
+/branches/perf_tests:6430-6673
+END

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/5626/trunk/opencv/samples/cpp/tutorial_code/ImgProc
+END
+Smoothing.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/opencv/!svn/ver/5610/trunk/opencv/samples/cpp/tutorial_code/ImgProc/Smoothing.cpp
+END
+Pyramids.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/opencv/!svn/ver/5623/trunk/opencv/samples/cpp/tutorial_code/ImgProc/Pyramids.cpp
+END
+BasicLinearTransforms.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/opencv/!svn/ver/5610/trunk/opencv/samples/cpp/tutorial_code/ImgProc/BasicLinearTransforms.cpp
+END
+AddingImages.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/opencv/!svn/ver/5610/trunk/opencv/samples/cpp/tutorial_code/ImgProc/AddingImages.cpp
+END
+Threshold.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/opencv/!svn/ver/5626/trunk/opencv/samples/cpp/tutorial_code/ImgProc/Threshold.cpp
+END
+Morphology_1.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/opencv/!svn/ver/5610/trunk/opencv/samples/cpp/tutorial_code/ImgProc/Morphology_1.cpp
+END
+Morphology_2.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/opencv/!svn/ver/5610/trunk/opencv/samples/cpp/tutorial_code/ImgProc/Morphology_2.cpp
+END

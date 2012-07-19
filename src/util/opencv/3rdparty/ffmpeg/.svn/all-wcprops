@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/opencv/!svn/ver/8566/trunk/opencv/3rdparty/ffmpeg
+END
+opencv_ffmpeg_64.dll
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/8566/trunk/opencv/3rdparty/ffmpeg/opencv_ffmpeg_64.dll
+END
+make.bat
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/opencv/!svn/ver/6519/trunk/opencv/3rdparty/ffmpeg/make.bat
+END
+ffopencv.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/opencv/!svn/ver/8291/trunk/opencv/3rdparty/ffmpeg/ffopencv.c
+END
+ffmpeg_version.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/8045/trunk/opencv/3rdparty/ffmpeg/ffmpeg_version.cmake
+END
+opencv_ffmpeg.dll
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/8566/trunk/opencv/3rdparty/ffmpeg/opencv_ffmpeg.dll
+END
+readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/opencv/!svn/ver/6519/trunk/opencv/3rdparty/ffmpeg/readme.txt
+END

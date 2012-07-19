@@ -1,0 +1,155 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/opencv/!svn/ver/8522/trunk/opencv/modules/core/src
+END
+precomp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/opencv/!svn/ver/3060/trunk/opencv/modules/core/src/precomp.cpp
+END
+out.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/opencv/!svn/ver/6152/trunk/opencv/modules/core/src/out.cpp
+END
+copy.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/opencv/!svn/ver/7283/trunk/opencv/modules/core/src/copy.cpp
+END
+precomp.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/core/src/precomp.hpp
+END
+tables.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/opencv/!svn/ver/3060/trunk/opencv/modules/core/src/tables.cpp
+END
+stat.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/core/src/stat.cpp
+END
+array.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/opencv/!svn/ver/4885/trunk/opencv/modules/core/src/array.cpp
+END
+matop.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/opencv/!svn/ver/5400/trunk/opencv/modules/core/src/matop.cpp
+END
+convert.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/opencv/!svn/ver/8322/trunk/opencv/modules/core/src/convert.cpp
+END
+cmdparser.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/opencv/!svn/ver/7546/trunk/opencv/modules/core/src/cmdparser.cpp
+END
+arithm.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/opencv/!svn/ver/8213/trunk/opencv/modules/core/src/arithm.cpp
+END
+opengl_interop.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/opencv/!svn/ver/8145/trunk/opencv/modules/core/src/opengl_interop.cpp
+END
+persistence.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/opencv/!svn/ver/8522/trunk/opencv/modules/core/src/persistence.cpp
+END
+rand.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/core/src/rand.cpp
+END
+system.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/core/src/system.cpp
+END
+algorithm.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/opencv/!svn/ver/8464/trunk/opencv/modules/core/src/algorithm.cpp
+END
+mathfuncs.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/core/src/mathfuncs.cpp
+END
+alloc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/opencv/!svn/ver/7673/trunk/opencv/modules/core/src/alloc.cpp
+END
+lapack.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/opencv/!svn/ver/8435/trunk/opencv/modules/core/src/lapack.cpp
+END
+drawing.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/opencv/!svn/ver/8482/trunk/opencv/modules/core/src/drawing.cpp
+END
+gpumat.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/opencv/!svn/ver/8484/trunk/opencv/modules/core/src/gpumat.cpp
+END
+matmul.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/opencv/!svn/ver/8328/trunk/opencv/modules/core/src/matmul.cpp
+END
+dxt.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/core/src/dxt.cpp
+END
+datastructs.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/opencv/!svn/ver/7649/trunk/opencv/modules/core/src/datastructs.cpp
+END
+matrix.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/opencv/!svn/ver/8357/trunk/opencv/modules/core/src/matrix.cpp
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/flann/src
+END
+miniflann.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/flann/src/miniflann.cpp
+END
+flann.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/opencv/!svn/ver/7526/trunk/opencv/modules/flann/src/flann.cpp
+END
+precomp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/opencv/!svn/ver/3749/trunk/opencv/modules/flann/src/precomp.cpp
+END
+precomp.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/opencv/!svn/ver/7526/trunk/opencv/modules/flann/src/precomp.hpp
+END

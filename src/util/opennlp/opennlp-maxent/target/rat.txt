@@ -1,0 +1,136 @@
+
+*****************************************************
+Summary
+-------
+Notes: 1
+Binaries: 3
+Archives: 0
+Standards: 96
+
+Apache Licensed: 96
+Generated Documents: 0
+
+JavaDocs are generated and so license header is optional
+Generated files do not required license headers
+
+0 Unknown Licenses
+
+*******************************
+
+Unapproved licenses:
+
+
+*******************************
+
+Archives:
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require AL headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc will be marked N
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/pom.xml
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/samples/sports/CreateModel.java
+  B     /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/samples/sports/football.dat
+  B     /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/samples/sports/gameLocation.dat
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/samples/sports/Predict.java
+  N     /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/samples/sports/README
+  B     /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/samples/sports/realTeam.dat
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/assembly/src.xml
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/maxent/BasicContextGenerator.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/maxent/BasicEventStream.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/maxent/BinToAscii.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/maxent/ContextGenerator.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/maxent/Counter.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/maxent/DataStream.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/maxent/DomainToModelMap.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/maxent/DoubleStringPair.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/maxent/Evalable.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/maxent/GIS.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/maxent/GISFormat
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/maxent/GISModel.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/maxent/GISTrainer.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/maxent/IntegerPool.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/maxent/io/BinaryGISModelReader.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/maxent/io/BinaryGISModelWriter.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/maxent/io/BinToAscii.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/maxent/io/GISModelReader.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/maxent/io/GISModelWriter.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/maxent/io/ObjectGISModelReader.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/maxent/io/ObjectGISModelWriter.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/maxent/io/OldFormatGISModelReader.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/maxent/io/package.html
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/maxent/io/PlainTextGISModelReader.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/maxent/io/PlainTextGISModelWriter.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/maxent/io/PooledGISModelReader.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/maxent/io/SuffixSensitiveGISModelReader.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/maxent/io/SuffixSensitiveGISModelWriter.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/maxent/Main.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/maxent/ModelApplier.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/maxent/ModelDomain.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/maxent/ModelReplacementManager.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/maxent/ModelSetter.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/maxent/ModelTrainer.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/maxent/package.html
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/maxent/PlainTextByLineDataStream.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/maxent/RealBasicEventStream.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/maxent/TrainEval.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/model/AbstractDataIndexer.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/model/AbstractEventStream.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/model/AbstractModel.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/model/AbstractModelReader.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/model/AbstractModelWriter.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/model/BinaryFileDataReader.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/model/ComparableEvent.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/model/ComparablePredicate.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/model/Context.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/model/DataIndexer.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/model/DataReader.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/model/DynamicEvalParameters.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/model/EvalParameters.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/model/Event.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/model/EventCollector.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/model/EventCollectorAsStream.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/model/EventStream.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/model/FileEventStream.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/model/GenericModelReader.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/model/GenericModelWriter.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/model/HashSumEventStream.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/model/IndexHashTable.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/model/ListEventStream.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/model/MaxentModel.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/model/MutableContext.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/model/ObjectDataReader.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/model/OnePassDataIndexer.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/model/OnePassRealValueDataIndexer.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/model/PlainTextFileDataReader.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/model/Prior.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/model/RealValueFileEventStream.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/model/Sequence.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/model/SequenceStream.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/model/SequenceStreamEventStream.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/model/TrainUtil.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/model/TwoPassDataIndexer.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/model/UniformPrior.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/perceptron/BinaryPerceptronModelReader.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/perceptron/BinaryPerceptronModelWriter.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/perceptron/PerceptronModel.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/perceptron/PerceptronModelReader.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/perceptron/PerceptronModelWriter.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/perceptron/PerceptronTrainer.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/perceptron/PlainTextPerceptronModelReader.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/perceptron/PlainTextPerceptronModelWriter.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/perceptron/SimplePerceptronSequenceTrainer.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/main/java/opennlp/perceptron/SuffixSensitivePerceptronModelWriter.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/test/java/opennlp/maxent/io/RealValueFileEventStreamTest.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/test/java/opennlp/maxent/MaxentPrepAttachTest.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/test/java/opennlp/maxent/RealValueModelTest.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/test/java/opennlp/maxent/ScaleDoesntMatterTest.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/test/java/opennlp/model/IndexHashTableTest.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/test/java/opennlp/perceptron/PerceptronPrepAttachTest.java
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-maxent/src/test/java/opennlp/PrepAttachDataUtil.java
+ 
+ *****************************************************
+ Printing headers for files without AL header...
+ 
+ 

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/opencv/!svn/ver/6975/trunk/opencv/samples/android/hello-android
+END
+cmake_android.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/opencv/!svn/ver/6975/trunk/opencv/samples/android/hello-android/cmake_android.cmd
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/opencv/!svn/ver/6316/trunk/opencv/samples/android/hello-android/main.cpp
+END
+run.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/5822/trunk/opencv/samples/android/hello-android/run.cmd
+END
+cmake_android.sh
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/opencv/!svn/ver/6316/trunk/opencv/samples/android/hello-android/cmake_android.sh
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/opencv/!svn/ver/5822/trunk/opencv/samples/android/hello-android/CMakeLists.txt
+END
+run.sh
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/5822/trunk/opencv/samples/android/hello-android/run.sh
+END

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/opencv/!svn/ver/7751/trunk/opencv/modules/video/test
+END
+test_accum.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/6114/trunk/opencv/modules/video/test/test_accum.cpp
+END
+test_estimaterigid.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/opencv/!svn/ver/5337/trunk/opencv/modules/video/test/test_estimaterigid.cpp
+END
+test_precomp.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/opencv/!svn/ver/4683/trunk/opencv/modules/video/test/test_precomp.hpp
+END
+test_optflowpyrlk.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/opencv/!svn/ver/7527/trunk/opencv/modules/video/test/test_optflowpyrlk.cpp
+END
+test_camshift.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/4683/trunk/opencv/modules/video/test/test_camshift.cpp
+END
+test_kalman.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/4683/trunk/opencv/modules/video/test/test_kalman.cpp
+END
+test_main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/opencv/!svn/ver/6021/trunk/opencv/modules/video/test/test_main.cpp
+END
+test_motiontemplates.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/opencv/!svn/ver/5046/trunk/opencv/modules/video/test/test_motiontemplates.cpp
+END
+test_precomp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/opencv/!svn/ver/4683/trunk/opencv/modules/video/test/test_precomp.cpp
+END

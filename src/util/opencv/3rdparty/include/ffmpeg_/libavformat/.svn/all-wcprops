@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/8045/trunk/opencv/3rdparty/include/ffmpeg_/libavformat
+END
+avio.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/opencv/!svn/ver/8045/trunk/opencv/3rdparty/include/ffmpeg_/libavformat/avio.h
+END
+avformat.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/opencv/!svn/ver/8045/trunk/opencv/3rdparty/include/ffmpeg_/libavformat/avformat.h
+END
+version.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/opencv/!svn/ver/8045/trunk/opencv/3rdparty/include/ffmpeg_/libavformat/version.h
+END

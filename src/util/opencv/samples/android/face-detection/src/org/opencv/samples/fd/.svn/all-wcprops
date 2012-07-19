@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/opencv/!svn/ver/8533/trunk/opencv/samples/android/face-detection/src/org/opencv/samples/fd
+END
+DetectionBasedTracker.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/opencv/!svn/ver/8533/trunk/opencv/samples/android/face-detection/src/org/opencv/samples/fd/DetectionBasedTracker.java
+END
+SampleCvViewBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/opencv/!svn/ver/8367/trunk/opencv/samples/android/face-detection/src/org/opencv/samples/fd/SampleCvViewBase.java
+END
+FdView.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/opencv/!svn/ver/8533/trunk/opencv/samples/android/face-detection/src/org/opencv/samples/fd/FdView.java
+END
+FpsMeter.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/opencv/!svn/ver/6122/trunk/opencv/samples/android/face-detection/src/org/opencv/samples/fd/FpsMeter.java
+END
+FdActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/opencv/!svn/ver/8533/trunk/opencv/samples/android/face-detection/src/org/opencv/samples/fd/FdActivity.java
+END

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/opencv/!svn/ver/8523/trunk/opencv/modules/features2d/test
+END
+test_features2d.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/opencv/!svn/ver/8523/trunk/opencv/modules/features2d/test/test_features2d.cpp
+END
+test_main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/4683/trunk/opencv/modules/features2d/test/test_main.cpp
+END
+test_precomp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/opencv/!svn/ver/4683/trunk/opencv/modules/features2d/test/test_precomp.cpp
+END
+test_mser.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/features2d/test/test_mser.cpp
+END
+test_precomp.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/opencv/!svn/ver/4683/trunk/opencv/modules/features2d/test/test_precomp.hpp
+END
+test_fast.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/4683/trunk/opencv/modules/features2d/test/test_fast.cpp
+END
+test_nearestneighbors.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/opencv/!svn/ver/7751/trunk/opencv/modules/features2d/test/test_nearestneighbors.cpp
+END

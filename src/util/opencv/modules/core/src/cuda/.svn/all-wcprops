@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/opencv/!svn/ver/8145/trunk/opencv/modules/core/src/cuda
+END
+matrix_operations.cu
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/opencv/!svn/ver/8145/trunk/opencv/modules/core/src/cuda/matrix_operations.cu
+END

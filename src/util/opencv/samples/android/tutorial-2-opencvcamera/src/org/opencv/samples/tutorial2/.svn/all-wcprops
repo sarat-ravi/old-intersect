@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/opencv/!svn/ver/8371/trunk/opencv/samples/android/tutorial-2-opencvcamera/src/org/opencv/samples/tutorial2
+END
+Sample2View.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/opencv/!svn/ver/8367/trunk/opencv/samples/android/tutorial-2-opencvcamera/src/org/opencv/samples/tutorial2/Sample2View.java
+END
+SampleCvViewBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/opencv/!svn/ver/8371/trunk/opencv/samples/android/tutorial-2-opencvcamera/src/org/opencv/samples/tutorial2/SampleCvViewBase.java
+END
+Sample2NativeCamera.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/opencv/!svn/ver/8367/trunk/opencv/samples/android/tutorial-2-opencvcamera/src/org/opencv/samples/tutorial2/Sample2NativeCamera.java
+END

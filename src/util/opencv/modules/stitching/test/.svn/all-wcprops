@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/stitching/test
+END
+test_main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/7235/trunk/opencv/modules/stitching/test/test_main.cpp
+END
+test_precomp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/opencv/!svn/ver/6778/trunk/opencv/modules/stitching/test/test_precomp.cpp
+END
+test_matchers.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/stitching/test/test_matchers.cpp
+END
+test_precomp.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/opencv/!svn/ver/7235/trunk/opencv/modules/stitching/test/test_precomp.hpp
+END
+test_blenders.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/opencv/!svn/ver/7242/trunk/opencv/modules/stitching/test/test_blenders.cpp
+END

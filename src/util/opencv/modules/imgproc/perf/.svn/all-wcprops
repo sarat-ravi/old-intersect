@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/opencv/!svn/ver/8457/trunk/opencv/modules/imgproc/perf
+END
+perf_resize.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/7110/trunk/opencv/modules/imgproc/perf/perf_resize.cpp
+END
+perf_cornerHarris.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/opencv/!svn/ver/8449/trunk/opencv/modules/imgproc/perf/perf_cornerHarris.cpp
+END
+perf_blur.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/8457/trunk/opencv/modules/imgproc/perf/perf_blur.cpp
+END
+perf_precomp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/6674/trunk/opencv/modules/imgproc/perf/perf_precomp.cpp
+END
+perf_integral.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/imgproc/perf/perf_integral.cpp
+END
+perf_houghLines.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/opencv/!svn/ver/7158/trunk/opencv/modules/imgproc/perf/perf_houghLines.cpp
+END
+perf_canny.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/opencv/!svn/ver/7110/trunk/opencv/modules/imgproc/perf/perf_canny.cpp
+END
+perf_warp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/7149/trunk/opencv/modules/imgproc/perf/perf_warp.cpp
+END
+perf_precomp.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/6938/trunk/opencv/modules/imgproc/perf/perf_precomp.hpp
+END
+perf_filter2d.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/opencv/!svn/ver/7526/trunk/opencv/modules/imgproc/perf/perf_filter2d.cpp
+END
+perf_goodFeaturesToTrack.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/opencv/!svn/ver/8449/trunk/opencv/modules/imgproc/perf/perf_goodFeaturesToTrack.cpp
+END
+perf_sepfilters.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/opencv/!svn/ver/7110/trunk/opencv/modules/imgproc/perf/perf_sepfilters.cpp
+END
+perf_main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/6674/trunk/opencv/modules/imgproc/perf/perf_main.cpp
+END
+perf_morph.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/opencv/!svn/ver/7110/trunk/opencv/modules/imgproc/perf/perf_morph.cpp
+END
+perf_pyramids.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/opencv/!svn/ver/7110/trunk/opencv/modules/imgproc/perf/perf_pyramids.cpp
+END
+perf_cvt_color.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/opencv/!svn/ver/7787/trunk/opencv/modules/imgproc/perf/perf_cvt_color.cpp
+END
+perf_cornerEigenValsAndVecs.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/opencv/!svn/ver/8449/trunk/opencv/modules/imgproc/perf/perf_cornerEigenValsAndVecs.cpp
+END
+perf_threshold.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/opencv/!svn/ver/7173/trunk/opencv/modules/imgproc/perf/perf_threshold.cpp
+END

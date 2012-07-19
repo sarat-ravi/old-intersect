@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/opencv/!svn/ver/8371/trunk/opencv/samples/android/image-manipulations
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/opencv/!svn/ver/7299/trunk/opencv/samples/android/image-manipulations/.classpath
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/opencv/!svn/ver/7299/trunk/opencv/samples/android/image-manipulations/.project
+END
+AndroidManifest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/opencv/!svn/ver/6100/trunk/opencv/samples/android/image-manipulations/AndroidManifest.xml
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/opencv/!svn/ver/7667/trunk/opencv/samples/android/image-manipulations/CMakeLists.txt
+END

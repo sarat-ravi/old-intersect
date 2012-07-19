@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/opencv/!svn/ver/6568/trunk/opencv/samples/cpp/tutorial_code/calib3d/camera_calibration
+END
+camera_calibration.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/opencv/!svn/ver/6568/trunk/opencv/samples/cpp/tutorial_code/calib3d/camera_calibration/camera_calibration.cpp
+END
+VID5.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/opencv/!svn/ver/6568/trunk/opencv/samples/cpp/tutorial_code/calib3d/camera_calibration/VID5.xml
+END
+out_camera_data.yml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/opencv/!svn/ver/6568/trunk/opencv/samples/cpp/tutorial_code/calib3d/camera_calibration/out_camera_data.yml
+END
+in_VID5.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/opencv/!svn/ver/6568/trunk/opencv/samples/cpp/tutorial_code/calib3d/camera_calibration/in_VID5.xml
+END

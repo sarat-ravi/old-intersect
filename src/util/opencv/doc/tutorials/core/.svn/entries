@@ -1,0 +1,61 @@
+10
+
+dir
+8583
+http://code.opencv.org/svn/opencv/trunk/opencv/doc/tutorials/core
+http://code.opencv.org/svn/opencv
+
+
+
+2012-03-21T09:48:34.559051Z
+7585
+alexander.shishkov
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+c5418bc3-7546-4aae-8bad-fa6f2f3e53e6
+
+table_of_content_core
+dir
+
+basic_linear_transform
+dir
+
+mat_the_basic_image_container
+dir
+
+discrete_fourier_transform
+dir
+
+how_to_scan_images
+dir
+
+basic_geometric_drawing
+dir
+
+file_input_output_with_xml_yml
+dir
+
+interoperability_with_OpenCV_1
+dir
+
+adding_images
+dir
+
+mat-mask-operations
+dir
+
+random_generator_and_text
+dir
+

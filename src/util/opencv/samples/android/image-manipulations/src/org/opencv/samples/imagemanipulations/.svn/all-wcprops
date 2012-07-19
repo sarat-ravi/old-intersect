@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/opencv/!svn/ver/8371/trunk/opencv/samples/android/image-manipulations/src/org/opencv/samples/imagemanipulations
+END
+SampleCvViewBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/opencv/!svn/ver/8371/trunk/opencv/samples/android/image-manipulations/src/org/opencv/samples/imagemanipulations/SampleCvViewBase.java
+END
+ImageManipulationsView.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/opencv/!svn/ver/8367/trunk/opencv/samples/android/image-manipulations/src/org/opencv/samples/imagemanipulations/ImageManipulationsView.java
+END
+ImageManipulationsActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/opencv/!svn/ver/8367/trunk/opencv/samples/android/image-manipulations/src/org/opencv/samples/imagemanipulations/ImageManipulationsActivity.java
+END
+FpsMeter.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/opencv/!svn/ver/6122/trunk/opencv/samples/android/image-manipulations/src/org/opencv/samples/imagemanipulations/FpsMeter.java
+END

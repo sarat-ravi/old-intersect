@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/highgui/include/opencv2/highgui
+END
+highgui.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/highgui/include/opencv2/highgui/highgui.hpp
+END
+highgui_c.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/highgui/include/opencv2/highgui/highgui_c.h
+END

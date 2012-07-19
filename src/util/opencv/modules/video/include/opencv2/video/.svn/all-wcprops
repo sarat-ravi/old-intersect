@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/opencv/!svn/ver/8384/trunk/opencv/modules/video/include/opencv2/video
+END
+tracking.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/opencv/!svn/ver/8384/trunk/opencv/modules/video/include/opencv2/video/tracking.hpp
+END
+video.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/opencv/!svn/ver/8331/trunk/opencv/modules/video/include/opencv2/video/video.hpp
+END
+background_segm.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/video/include/opencv2/video/background_segm.hpp
+END

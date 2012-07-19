@@ -1,0 +1,77 @@
+10
+
+dir
+8583
+http://code.opencv.org/svn/opencv/trunk/opencv/modules/stitching
+http://code.opencv.org/svn/opencv
+
+
+
+2012-05-29T14:51:59.096607Z
+8504
+andrey.kamaev
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+c5418bc3-7546-4aae-8bad-fa6f2f3e53e6
+
+include
+dir
+
+doc
+dir
+
+src
+dir
+
+perf
+dir
+
+CMakeLists.txt
+file
+
+
+
+
+2012-06-06T19:53:31.995141Z
+0255327ff1c7454e06058cfcd79ce1bd
+2012-03-31T17:25:19.636200Z
+7782
+vp153
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+170
+
+test
+dir
+

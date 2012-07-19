@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/objdetect/test
+END
+test_precomp.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/opencv/!svn/ver/4732/trunk/opencv/modules/objdetect/test/test_precomp.hpp
+END
+test_cascadeandhog.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/opencv/!svn/ver/4683/trunk/opencv/modules/objdetect/test/test_cascadeandhog.cpp
+END
+test_main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/4683/trunk/opencv/modules/objdetect/test/test_main.cpp
+END
+test_precomp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/opencv/!svn/ver/4683/trunk/opencv/modules/objdetect/test/test_precomp.cpp
+END
+test_latentsvmdetector.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/objdetect/test/test_latentsvmdetector.cpp
+END

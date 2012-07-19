@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/opencv/!svn/ver/8291/trunk/opencv/modules/legacy/test
+END
+test_stereomatching.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/legacy/test/test_stereomatching.cpp
+END
+test_em.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/8291/trunk/opencv/modules/legacy/test/test_em.cpp
+END
+test_subdivisions.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/legacy/test/test_subdivisions.cpp
+END
+test_nearestneighbors.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/legacy/test/test_nearestneighbors.cpp
+END
+test_bruteforcematcher.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/legacy/test/test_bruteforcematcher.cpp
+END
+test_main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/7504/trunk/opencv/modules/legacy/test/test_main.cpp
+END
+test_precomp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/7504/trunk/opencv/modules/legacy/test/test_precomp.cpp
+END
+test_pyrsegmentation.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/legacy/test/test_pyrsegmentation.cpp
+END
+test_optflow.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/legacy/test/test_optflow.cpp
+END
+test_precomp.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/7751/trunk/opencv/modules/legacy/test/test_precomp.hpp
+END

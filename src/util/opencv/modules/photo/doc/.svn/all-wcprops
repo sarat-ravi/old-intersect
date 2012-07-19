@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/opencv/!svn/ver/8468/trunk/opencv/modules/photo/doc
+END
+photo.rst
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/opencv/!svn/ver/7504/trunk/opencv/modules/photo/doc/photo.rst
+END
+inpainting.rst
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/opencv/!svn/ver/8468/trunk/opencv/modules/photo/doc/inpainting.rst
+END

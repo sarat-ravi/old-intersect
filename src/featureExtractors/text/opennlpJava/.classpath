@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry excluding="opennlp/tools/coref/mention/DictionaryFactory.java|opennlp/tools/coref/mention/JWNLDictionary.java" kind="src" path="opennlpJava"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="opennlpJava/opennlp/tools/coref/mention/DictionaryFactory.java"/>
+	<classpathentry kind="lib" path="opennlpJava/opennlp/tools/coref/mention/JWNLDictionary.java"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

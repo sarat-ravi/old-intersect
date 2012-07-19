@@ -1,0 +1,185 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/opencv/!svn/ver/8291/trunk/opencv/modules/java/src/java
+END
+core+MatOfFloat6.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/java/src/java/core+MatOfFloat6.java
+END
+core+MatOfRect.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/opencv/!svn/ver/8291/trunk/opencv/modules/java/src/java/core+MatOfRect.java
+END
+highgui+VideoCapture.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/opencv/!svn/ver/6347/trunk/opencv/modules/java/src/java/highgui+VideoCapture.java
+END
+core+MatOfDMatch.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/opencv/!svn/ver/8291/trunk/opencv/modules/java/src/java/core+MatOfDMatch.java
+END
+core+CvException.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/opencv/!svn/ver/6347/trunk/opencv/modules/java/src/java/core+CvException.java
+END
+android+Utils.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/java/src/java/android+Utils.java
+END
+core+MatOfKeyPoint.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/opencv/!svn/ver/8291/trunk/opencv/modules/java/src/java/core+MatOfKeyPoint.java
+END
+core+Point.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/6347/trunk/opencv/modules/java/src/java/core+Point.java
+END
+core+MatOfByte.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/opencv/!svn/ver/8291/trunk/opencv/modules/java/src/java/core+MatOfByte.java
+END
+core+TermCriteria.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/opencv/!svn/ver/6347/trunk/opencv/modules/java/src/java/core+TermCriteria.java
+END
+core+MatOfFloat.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/opencv/!svn/ver/8291/trunk/opencv/modules/java/src/java/core+MatOfFloat.java
+END
+core+Range.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/6347/trunk/opencv/modules/java/src/java/core+Range.java
+END
+core+Rect.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/6347/trunk/opencv/modules/java/src/java/core+Rect.java
+END
+core+MatOfDouble.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/opencv/!svn/ver/8291/trunk/opencv/modules/java/src/java/core+MatOfDouble.java
+END
+utils+Converters.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/java/src/java/utils+Converters.java
+END
+core+MatOfPoint3.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/opencv/!svn/ver/8291/trunk/opencv/modules/java/src/java/core+MatOfPoint3.java
+END
+core+MatOfInt4.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/java/src/java/core+MatOfInt4.java
+END
+core+Scalar.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/opencv/!svn/ver/6347/trunk/opencv/modules/java/src/java/core+Scalar.java
+END
+core+MatOfPoint2f.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/opencv/!svn/ver/8291/trunk/opencv/modules/java/src/java/core+MatOfPoint2f.java
+END
+core+MatOfPoint3f.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/opencv/!svn/ver/8291/trunk/opencv/modules/java/src/java/core+MatOfPoint3f.java
+END
+core+CvType.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/opencv/!svn/ver/6347/trunk/opencv/modules/java/src/java/core+CvType.java
+END
+core+Size.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/6347/trunk/opencv/modules/java/src/java/core+Size.java
+END
+core+Point3.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/opencv/!svn/ver/6347/trunk/opencv/modules/java/src/java/core+Point3.java
+END
+features2d+DMatch.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/opencv/!svn/ver/6386/trunk/opencv/modules/java/src/java/features2d+DMatch.java
+END
+features2d+KeyPoint.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/opencv/!svn/ver/6347/trunk/opencv/modules/java/src/java/features2d+KeyPoint.java
+END
+core+MatOfPoint.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/opencv/!svn/ver/8291/trunk/opencv/modules/java/src/java/core+MatOfPoint.java
+END
+core+MatOfFloat4.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/java/src/java/core+MatOfFloat4.java
+END
+core+RotatedRect.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/opencv/!svn/ver/6347/trunk/opencv/modules/java/src/java/core+RotatedRect.java
+END
+core+MatOfInt.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/opencv/!svn/ver/8291/trunk/opencv/modules/java/src/java/core+MatOfInt.java
+END
+core+Mat.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/java/src/java/core+Mat.java
+END

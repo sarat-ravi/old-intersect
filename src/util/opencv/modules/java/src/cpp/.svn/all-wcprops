@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/opencv/!svn/ver/8291/trunk/opencv/modules/java/src/cpp
+END
+features2d_manual.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/opencv/!svn/ver/7337/trunk/opencv/modules/java/src/cpp/features2d_manual.hpp
+END
+jni_part.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/java/src/cpp/jni_part.cpp
+END
+VideoCapture.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/7337/trunk/opencv/modules/java/src/cpp/VideoCapture.cpp
+END
+converters.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/opencv/!svn/ver/8291/trunk/opencv/modules/java/src/cpp/converters.cpp
+END
+core_manual.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/java/src/cpp/core_manual.hpp
+END
+converters.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/8291/trunk/opencv/modules/java/src/cpp/converters.h
+END
+utils.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/java/src/cpp/utils.cpp
+END
+Mat.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/java/src/cpp/Mat.cpp
+END

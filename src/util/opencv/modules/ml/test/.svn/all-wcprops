@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/ml/test
+END
+test_precomp.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/ml/test/test_precomp.hpp
+END
+test_mltests.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/opencv/!svn/ver/4683/trunk/opencv/modules/ml/test/test_mltests.cpp
+END
+test_gbttest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/opencv/!svn/ver/5082/trunk/opencv/modules/ml/test/test_gbttest.cpp
+END
+test_emknearestkmeans.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/ml/test/test_emknearestkmeans.cpp
+END
+test_mltests2.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/ml/test/test_mltests2.cpp
+END
+test_save_load.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/4872/trunk/opencv/modules/ml/test/test_save_load.cpp
+END
+test_main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/opencv/!svn/ver/4683/trunk/opencv/modules/ml/test/test_main.cpp
+END
+test_precomp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/opencv/!svn/ver/4683/trunk/opencv/modules/ml/test/test_precomp.cpp
+END

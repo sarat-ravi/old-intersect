@@ -1,0 +1,227 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/opencv/!svn/ver/8541/trunk/opencv/modules/contrib/src
+END
+retinacolor.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/opencv/!svn/ver/6557/trunk/opencv/modules/contrib/src/retinacolor.hpp
+END
+detection_based_tracker.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/opencv/!svn/ver/8425/trunk/opencv/modules/contrib/src/detection_based_tracker.cpp
+END
+gencolors.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/7526/trunk/opencv/modules/contrib/src/gencolors.cpp
+END
+hybridtracker.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/contrib/src/hybridtracker.cpp
+END
+spinimages.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/contrib/src/spinimages.cpp
+END
+selfsimilarity.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/opencv/!svn/ver/3343/trunk/opencv/modules/contrib/src/selfsimilarity.cpp
+END
+fuzzymeanshifttracker.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/opencv/!svn/ver/3060/trunk/opencv/modules/contrib/src/fuzzymeanshifttracker.cpp
+END
+magnoretinafilter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/opencv/!svn/ver/6889/trunk/opencv/modules/contrib/src/magnoretinafilter.cpp
+END
+stereovar.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/6058/trunk/opencv/modules/contrib/src/stereovar.cpp
+END
+templatebuffer.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/opencv/!svn/ver/7293/trunk/opencv/modules/contrib/src/templatebuffer.hpp
+END
+adaptiveskindetector.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/opencv/!svn/ver/3343/trunk/opencv/modules/contrib/src/adaptiveskindetector.cpp
+END
+colormap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/contrib/src/colormap.cpp
+END
+magnoretinafilter.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/opencv/!svn/ver/6557/trunk/opencv/modules/contrib/src/magnoretinafilter.hpp
+END
+logpolar_bsm.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/7642/trunk/opencv/modules/contrib/src/logpolar_bsm.cpp
+END
+contrib_init.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/contrib/src/contrib_init.cpp
+END
+polyfit.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/5489/trunk/opencv/modules/contrib/src/polyfit.cpp
+END
+retinafilter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/6889/trunk/opencv/modules/contrib/src/retinafilter.cpp
+END
+facerec.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/8408/trunk/opencv/modules/contrib/src/facerec.cpp
+END
+basicretinafilter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/opencv/!svn/ver/8201/trunk/opencv/modules/contrib/src/basicretinafilter.cpp
+END
+colortracker.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/6821/trunk/opencv/modules/contrib/src/colortracker.cpp
+END
+imagelogpolprojection.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/opencv/!svn/ver/6821/trunk/opencv/modules/contrib/src/imagelogpolprojection.cpp
+END
+retinafilter.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/7308/trunk/opencv/modules/contrib/src/retinafilter.hpp
+END
+basicretinafilter.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/opencv/!svn/ver/6889/trunk/opencv/modules/contrib/src/basicretinafilter.hpp
+END
+parvoretinafilter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/opencv/!svn/ver/6889/trunk/opencv/modules/contrib/src/parvoretinafilter.cpp
+END
+lda.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/opencv/!svn/ver/8541/trunk/opencv/modules/contrib/src/lda.cpp
+END
+imagelogpolprojection.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/opencv/!svn/ver/7293/trunk/opencv/modules/contrib/src/imagelogpolprojection.hpp
+END
+rgbdodometry.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/7575/trunk/opencv/modules/contrib/src/rgbdodometry.cpp
+END
+precomp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/4453/trunk/opencv/modules/contrib/src/precomp.cpp
+END
+parvoretinafilter.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/opencv/!svn/ver/6557/trunk/opencv/modules/contrib/src/parvoretinafilter.hpp
+END
+featuretracker.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/opencv/!svn/ver/7504/trunk/opencv/modules/contrib/src/featuretracker.cpp
+END
+precomp.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/6453/trunk/opencv/modules/contrib/src/precomp.hpp
+END
+inputoutput.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/opencv/!svn/ver/6842/trunk/opencv/modules/contrib/src/inputoutput.cpp
+END
+chamfermatching.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/opencv/!svn/ver/7624/trunk/opencv/modules/contrib/src/chamfermatching.cpp
+END
+retinacolor.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/opencv/!svn/ver/6821/trunk/opencv/modules/contrib/src/retinacolor.cpp
+END
+octree.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/opencv/!svn/ver/3060/trunk/opencv/modules/contrib/src/octree.cpp
+END
+retina.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/opencv/!svn/ver/7285/trunk/opencv/modules/contrib/src/retina.cpp
+END
+ba.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/opencv/!svn/ver/6114/trunk/opencv/modules/contrib/src/ba.cpp
+END

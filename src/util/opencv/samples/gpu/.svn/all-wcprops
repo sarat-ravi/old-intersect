@@ -1,0 +1,173 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/opencv/!svn/ver/8325/trunk/opencv/samples/gpu
+END
+rubberwhale1.png
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/opencv/!svn/ver/6798/trunk/opencv/samples/gpu/rubberwhale1.png
+END
+rubberwhale2.png
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/opencv/!svn/ver/6798/trunk/opencv/samples/gpu/rubberwhale2.png
+END
+basketball1.png
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/opencv/!svn/ver/7311/trunk/opencv/samples/gpu/basketball1.png
+END
+road.png
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/opencv/!svn/ver/3948/trunk/opencv/samples/gpu/road.png
+END
+cascadeclassifier.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/8187/trunk/opencv/samples/gpu/cascadeclassifier.cpp
+END
+basketball2.png
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/opencv/!svn/ver/7311/trunk/opencv/samples/gpu/basketball2.png
+END
+video_reader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/opencv/!svn/ver/8094/trunk/opencv/samples/gpu/video_reader.cpp
+END
+multi.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/opencv/!svn/ver/7232/trunk/opencv/samples/gpu/multi.cpp
+END
+aloeL.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/opencv/!svn/ver/4613/trunk/opencv/samples/gpu/aloeL.jpg
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/opencv/!svn/ver/8045/trunk/opencv/samples/gpu/CMakeLists.txt
+END
+driver_api_multi.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/opencv/!svn/ver/7232/trunk/opencv/samples/gpu/driver_api_multi.cpp
+END
+highgui_gpu.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/opencv/!svn/ver/7022/trunk/opencv/samples/gpu/highgui_gpu.cpp
+END
+aloeR.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/opencv/!svn/ver/4613/trunk/opencv/samples/gpu/aloeR.jpg
+END
+video_writer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/opencv/!svn/ver/8076/trunk/opencv/samples/gpu/video_writer.cpp
+END
+alpha_comp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/opencv/!svn/ver/7526/trunk/opencv/samples/gpu/alpha_comp.cpp
+END
+pyrlk_optical_flow.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/8188/trunk/opencv/samples/gpu/pyrlk_optical_flow.cpp
+END
+surf_keypoint_matcher.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/8168/trunk/opencv/samples/gpu/surf_keypoint_matcher.cpp
+END
+tsucuba_right.png
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/opencv/!svn/ver/4384/trunk/opencv/samples/gpu/tsucuba_right.png
+END
+opticalflow_nvidia_api.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/opencv/!svn/ver/8145/trunk/opencv/samples/gpu/opticalflow_nvidia_api.cpp
+END
+cascadeclassifier_nvidia_api.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/opencv/!svn/ver/7249/trunk/opencv/samples/gpu/cascadeclassifier_nvidia_api.cpp
+END
+stereo_multi.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/opencv/!svn/ver/7232/trunk/opencv/samples/gpu/stereo_multi.cpp
+END
+brox_optical_flow.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/8289/trunk/opencv/samples/gpu/brox_optical_flow.cpp
+END
+morfology.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/opencv/!svn/ver/7232/trunk/opencv/samples/gpu/morfology.cpp
+END
+hog.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/opencv/!svn/ver/7232/trunk/opencv/samples/gpu/hog.cpp
+END
+stereo_match.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/opencv/!svn/ver/7232/trunk/opencv/samples/gpu/stereo_match.cpp
+END
+farneback_optical_flow.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/opencv/!svn/ver/7349/trunk/opencv/samples/gpu/farneback_optical_flow.cpp
+END
+driver_api_stereo_multi.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/opencv/!svn/ver/7232/trunk/opencv/samples/gpu/driver_api_stereo_multi.cpp
+END
+tsucuba_left.png
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/opencv/!svn/ver/4384/trunk/opencv/samples/gpu/tsucuba_left.png
+END

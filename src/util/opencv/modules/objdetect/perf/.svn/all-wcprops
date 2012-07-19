@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/opencv/!svn/ver/7110/trunk/opencv/modules/objdetect/perf
+END
+perf_precomp.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/opencv/!svn/ver/6692/trunk/opencv/modules/objdetect/perf/perf_precomp.hpp
+END
+perf_main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/6692/trunk/opencv/modules/objdetect/perf/perf_main.cpp
+END
+perf_precomp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/opencv/!svn/ver/6692/trunk/opencv/modules/objdetect/perf/perf_precomp.cpp
+END
+perf_cascadeclassifier.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/opencv/!svn/ver/7110/trunk/opencv/modules/objdetect/perf/perf_cascadeclassifier.cpp
+END

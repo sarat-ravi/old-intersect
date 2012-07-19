@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/opencv/!svn/ver/8573/trunk/opencv/samples/cpp/tutorial_code/Histograms_Matching
+END
+EqualizeHist_Demo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/opencv/!svn/ver/5843/trunk/opencv/samples/cpp/tutorial_code/Histograms_Matching/EqualizeHist_Demo.cpp
+END
+MatchTemplate_Demo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/opencv/!svn/ver/5869/trunk/opencv/samples/cpp/tutorial_code/Histograms_Matching/MatchTemplate_Demo.cpp
+END
+calcHist_Demo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/opencv/!svn/ver/7443/trunk/opencv/samples/cpp/tutorial_code/Histograms_Matching/calcHist_Demo.cpp
+END
+calcBackProject_Demo1.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/opencv/!svn/ver/5871/trunk/opencv/samples/cpp/tutorial_code/Histograms_Matching/calcBackProject_Demo1.cpp
+END
+calcBackProject_Demo2.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/opencv/!svn/ver/5890/trunk/opencv/samples/cpp/tutorial_code/Histograms_Matching/calcBackProject_Demo2.cpp
+END
+compareHist_Demo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/opencv/!svn/ver/8573/trunk/opencv/samples/cpp/tutorial_code/Histograms_Matching/compareHist_Demo.cpp
+END

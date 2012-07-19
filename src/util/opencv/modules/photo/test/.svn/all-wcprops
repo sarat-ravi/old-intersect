@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/opencv/!svn/ver/7504/trunk/opencv/modules/photo/test
+END
+test_precomp.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/opencv/!svn/ver/7504/trunk/opencv/modules/photo/test/test_precomp.hpp
+END
+test_inpaint.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/opencv/!svn/ver/7504/trunk/opencv/modules/photo/test/test_inpaint.cpp
+END
+test_main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/opencv/!svn/ver/7504/trunk/opencv/modules/photo/test/test_main.cpp
+END
+test_precomp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/opencv/!svn/ver/7504/trunk/opencv/modules/photo/test/test_precomp.cpp
+END

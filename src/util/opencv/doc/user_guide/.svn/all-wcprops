@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/opencv/!svn/ver/8280/trunk/opencv/doc/user_guide
+END
+user_guide.rst
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/opencv/!svn/ver/6863/trunk/opencv/doc/user_guide/user_guide.rst
+END
+ug_mat.rst
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/opencv/!svn/ver/8280/trunk/opencv/doc/user_guide/ug_mat.rst
+END
+ug_traincascade.rst
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/7435/trunk/opencv/doc/user_guide/ug_traincascade.rst
+END
+ug_features2d.rst
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/opencv/!svn/ver/5769/trunk/opencv/doc/user_guide/ug_features2d.rst
+END
+ug_highgui.rst
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/opencv/!svn/ver/7654/trunk/opencv/doc/user_guide/ug_highgui.rst
+END

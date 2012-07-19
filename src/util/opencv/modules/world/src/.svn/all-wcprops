@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/opencv/!svn/ver/8331/trunk/opencv/modules/world/src
+END
+precomp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/opencv/!svn/ver/8331/trunk/opencv/modules/world/src/precomp.cpp
+END
+precomp.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/opencv/!svn/ver/8331/trunk/opencv/modules/world/src/precomp.hpp
+END
+world_init.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/opencv/!svn/ver/8331/trunk/opencv/modules/world/src/world_init.cpp
+END

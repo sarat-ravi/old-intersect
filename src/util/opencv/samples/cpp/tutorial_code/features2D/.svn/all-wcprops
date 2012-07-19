@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/6465/trunk/opencv/samples/cpp/tutorial_code/features2D
+END
+SURF_FlannMatcher.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/opencv/!svn/ver/6465/trunk/opencv/samples/cpp/tutorial_code/features2D/SURF_FlannMatcher.cpp
+END
+SURF_detector.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/opencv/!svn/ver/6437/trunk/opencv/samples/cpp/tutorial_code/features2D/SURF_detector.cpp
+END
+SURF_Homography.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/opencv/!svn/ver/6465/trunk/opencv/samples/cpp/tutorial_code/features2D/SURF_Homography.cpp
+END
+SURF_descriptor.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/opencv/!svn/ver/6437/trunk/opencv/samples/cpp/tutorial_code/features2D/SURF_descriptor.cpp
+END

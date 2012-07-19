@@ -1,0 +1,340 @@
+The system is: Darwin - 11.4.2 - i386
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is Clang, found in "/Users/saratt/Documents/openML/src/util/opencv/release/CMakeFiles/CompilerIdCXX/a.out"
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/gcc 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/Users/saratt/Documents/openML/src/util/opencv/release/CMakeFiles/CompilerIdC/a.out"
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /Users/saratt/Documents/openML/src/util/opencv/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec148659306/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec148659306.dir/build.make CMakeFiles/cmTryCompileExec148659306.dir/build
+"/Applications/CMake 2.8-8.app/Contents/bin/cmake" -E cmake_progress_report /Users/saratt/Documents/openML/src/util/opencv/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec148659306.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec148659306.dir/testCXXCompiler.cxx.o -c /Users/saratt/Documents/openML/src/util/opencv/release/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTryCompileExec148659306
+"/Applications/CMake 2.8-8.app/Contents/bin/cmake" -E cmake_link_script CMakeFiles/cmTryCompileExec148659306.dir/link.txt --verbose=1
+/usr/bin/c++       -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec148659306.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec148659306  
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /Users/saratt/Documents/openML/src/util/opencv/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3801365044/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3801365044.dir/build.make CMakeFiles/cmTryCompileExec3801365044.dir/build
+"/Applications/CMake 2.8-8.app/Contents/bin/cmake" -E cmake_progress_report /Users/saratt/Documents/openML/src/util/opencv/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3801365044.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec3801365044.dir/CMakeCXXCompilerABI.cpp.o -c "/Applications/CMake 2.8-8.app/Contents/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp"
+Linking CXX executable cmTryCompileExec3801365044
+"/Applications/CMake 2.8-8.app/Contents/bin/cmake" -E cmake_link_script CMakeFiles/cmTryCompileExec3801365044.dir/link.txt --verbose=1
+/usr/bin/c++       -Wl,-search_paths_first -Wl,-headerpad_max_install_names -v CMakeFiles/cmTryCompileExec3801365044.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec3801365044   
+Apple clang version 3.1 (tags/Apple/clang-318.0.61) (based on LLVM 3.1svn)
+Target: x86_64-apple-darwin11.4.2
+Thread model: posix
+ "/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.7.4 -o cmTryCompileExec3801365044 -lcrt1.10.6.o -search_paths_first -headerpad_max_install_names CMakeFiles/cmTryCompileExec3801365044.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lSystem /usr/bin/../lib/clang/3.1/lib/darwin/libclang_rt.osx.a
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/saratt/Documents/openML/src/util/opencv/release/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec3801365044/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec3801365044.dir/build.make CMakeFiles/cmTryCompileExec3801365044.dir/build]
+  ignore line: ["/Applications/CMake 2.8-8.app/Contents/bin/cmake" -E cmake_progress_report /Users/saratt/Documents/openML/src/util/opencv/release/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec3801365044.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTryCompileExec3801365044.dir/CMakeCXXCompilerABI.cpp.o -c "/Applications/CMake 2.8-8.app/Contents/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp"]
+  ignore line: [Linking CXX executable cmTryCompileExec3801365044]
+  ignore line: ["/Applications/CMake 2.8-8.app/Contents/bin/cmake" -E cmake_link_script CMakeFiles/cmTryCompileExec3801365044.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++       -Wl,-search_paths_first -Wl,-headerpad_max_install_names -v CMakeFiles/cmTryCompileExec3801365044.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec3801365044   ]
+  ignore line: [Apple clang version 3.1 (tags/Apple/clang-318.0.61) (based on LLVM 3.1svn)]
+  ignore line: [Target: x86_64-apple-darwin11.4.2]
+  ignore line: [Thread model: posix]
+  link line: [ "/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.7.4 -o cmTryCompileExec3801365044 -lcrt1.10.6.o -search_paths_first -headerpad_max_install_names CMakeFiles/cmTryCompileExec3801365044.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lSystem /usr/bin/../lib/clang/3.1/lib/darwin/libclang_rt.osx.a]
+    arg [/usr/bin/ld] ==> ignore
+    arg [-demangle] ==> ignore
+    arg [-dynamic] ==> ignore
+    arg [-arch] ==> ignore
+    arg [x86_64] ==> ignore
+    arg [-macosx_version_min] ==> ignore
+    arg [10.7.4] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec3801365044] ==> ignore
+    arg [-lcrt1.10.6.o] ==> lib [crt1.10.6.o]
+    arg [-search_paths_first] ==> ignore
+    arg [-headerpad_max_install_names] ==> ignore
+    arg [CMakeFiles/cmTryCompileExec3801365044.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lSystem] ==> lib [System]
+    arg [/usr/bin/../lib/clang/3.1/lib/darwin/libclang_rt.osx.a] ==> lib [/usr/bin/../lib/clang/3.1/lib/darwin/libclang_rt.osx.a]
+  remove lib [crt1.10.6.o]
+  remove lib [System]
+  implicit libs: [stdc++;/usr/bin/../lib/clang/3.1/lib/darwin/libclang_rt.osx.a]
+  implicit dirs: []
+
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /Users/saratt/Documents/openML/src/util/opencv/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2045063503/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2045063503.dir/build.make CMakeFiles/cmTryCompileExec2045063503.dir/build
+"/Applications/CMake 2.8-8.app/Contents/bin/cmake" -E cmake_progress_report /Users/saratt/Documents/openML/src/util/opencv/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2045063503.dir/testCCompiler.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec2045063503.dir/testCCompiler.c.o   -c /Users/saratt/Documents/openML/src/util/opencv/release/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTryCompileExec2045063503
+"/Applications/CMake 2.8-8.app/Contents/bin/cmake" -E cmake_link_script CMakeFiles/cmTryCompileExec2045063503.dir/link.txt --verbose=1
+/usr/bin/gcc      -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec2045063503.dir/testCCompiler.c.o  -o cmTryCompileExec2045063503  
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /Users/saratt/Documents/openML/src/util/opencv/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec307225874/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec307225874.dir/build.make CMakeFiles/cmTryCompileExec307225874.dir/build
+"/Applications/CMake 2.8-8.app/Contents/bin/cmake" -E cmake_progress_report /Users/saratt/Documents/openML/src/util/opencv/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec307225874.dir/CMakeCCompilerABI.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec307225874.dir/CMakeCCompilerABI.c.o   -c "/Applications/CMake 2.8-8.app/Contents/share/cmake-2.8/Modules/CMakeCCompilerABI.c"
+Linking C executable cmTryCompileExec307225874
+"/Applications/CMake 2.8-8.app/Contents/bin/cmake" -E cmake_link_script CMakeFiles/cmTryCompileExec307225874.dir/link.txt --verbose=1
+/usr/bin/gcc      -Wl,-search_paths_first -Wl,-headerpad_max_install_names -v CMakeFiles/cmTryCompileExec307225874.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec307225874   
+Using built-in specs.
+Target: i686-apple-darwin11
+Configured with: /private/var/tmp/llvmgcc42/llvmgcc42-2336.9~22/src/configure --disable-checking --enable-werror --prefix=/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2 --mandir=/share/man --enable-languages=c,objc,c++,obj-c++ --program-prefix=llvm- --program-transform-name=/^[cg][^.-]*$/s/$/-4.2/ --with-slibdir=/usr/lib --build=i686-apple-darwin11 --enable-llvm=/private/var/tmp/llvmgcc42/llvmgcc42-2336.9~22/dst-llvmCore/Developer/usr/local --program-prefix=i686-apple-darwin11- --host=x86_64-apple-darwin11 --target=i686-apple-darwin11 --with-gxx-include-dir=/usr/include/c++/4.2.1
+Thread model: posix
+gcc version 4.2.1 (Based on Apple Inc. build 5658) (LLVM build 2336.9.00)
+ /usr/llvm-gcc-4.2/bin/../libexec/gcc/i686-apple-darwin11/4.2.1/collect2 -dynamic -arch x86_64 -macosx_version_min 10.7.4 -weak_reference_mismatches non-weak -o cmTryCompileExec307225874 -lcrt1.10.6.o -L/usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/x86_64 -L/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/x86_64 -L/usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1 -L/usr/llvm-gcc-4.2/bin/../lib/gcc -L/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1 -L/usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/../../.. -L/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/../../.. -search_paths_first -headerpad_max_install_names CMakeFiles/cmTryCompileExec307225874.dir/CMakeCCompilerABI.c.o -lSystem -lgcc -lSystem
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/saratt/Documents/openML/src/util/opencv/release/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec307225874/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec307225874.dir/build.make CMakeFiles/cmTryCompileExec307225874.dir/build]
+  ignore line: ["/Applications/CMake 2.8-8.app/Contents/bin/cmake" -E cmake_progress_report /Users/saratt/Documents/openML/src/util/opencv/release/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec307225874.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec307225874.dir/CMakeCCompilerABI.c.o   -c "/Applications/CMake 2.8-8.app/Contents/share/cmake-2.8/Modules/CMakeCCompilerABI.c"]
+  ignore line: [Linking C executable cmTryCompileExec307225874]
+  ignore line: ["/Applications/CMake 2.8-8.app/Contents/bin/cmake" -E cmake_link_script CMakeFiles/cmTryCompileExec307225874.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/gcc      -Wl,-search_paths_first -Wl,-headerpad_max_install_names -v CMakeFiles/cmTryCompileExec307225874.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec307225874   ]
+  ignore line: [Using built-in specs.]
+  ignore line: [Target: i686-apple-darwin11]
+  ignore line: [Configured with: /private/var/tmp/llvmgcc42/llvmgcc42-2336.9~22/src/configure --disable-checking --enable-werror --prefix=/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2 --mandir=/share/man --enable-languages=c,objc,c++,obj-c++ --program-prefix=llvm- --program-transform-name=/^[cg][^.-]*$/s/$/-4.2/ --with-slibdir=/usr/lib --build=i686-apple-darwin11 --enable-llvm=/private/var/tmp/llvmgcc42/llvmgcc42-2336.9~22/dst-llvmCore/Developer/usr/local --program-prefix=i686-apple-darwin11- --host=x86_64-apple-darwin11 --target=i686-apple-darwin11 --with-gxx-include-dir=/usr/include/c++/4.2.1]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.2.1 (Based on Apple Inc. build 5658) (LLVM build 2336.9.00)]
+  link line: [ /usr/llvm-gcc-4.2/bin/../libexec/gcc/i686-apple-darwin11/4.2.1/collect2 -dynamic -arch x86_64 -macosx_version_min 10.7.4 -weak_reference_mismatches non-weak -o cmTryCompileExec307225874 -lcrt1.10.6.o -L/usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/x86_64 -L/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/x86_64 -L/usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1 -L/usr/llvm-gcc-4.2/bin/../lib/gcc -L/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1 -L/usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/../../.. -L/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/../../.. -search_paths_first -headerpad_max_install_names CMakeFiles/cmTryCompileExec307225874.dir/CMakeCCompilerABI.c.o -lSystem -lgcc -lSystem]
+    arg [/usr/llvm-gcc-4.2/bin/../libexec/gcc/i686-apple-darwin11/4.2.1/collect2] ==> ignore
+    arg [-dynamic] ==> ignore
+    arg [-arch] ==> ignore
+    arg [x86_64] ==> ignore
+    arg [-macosx_version_min] ==> ignore
+    arg [10.7.4] ==> ignore
+    arg [-weak_reference_mismatches] ==> ignore
+    arg [non-weak] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec307225874] ==> ignore
+    arg [-lcrt1.10.6.o] ==> lib [crt1.10.6.o]
+    arg [-L/usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/x86_64] ==> dir [/usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/x86_64]
+    arg [-L/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/x86_64] ==> dir [/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/x86_64]
+    arg [-L/usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1] ==> dir [/usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1]
+    arg [-L/usr/llvm-gcc-4.2/bin/../lib/gcc] ==> dir [/usr/llvm-gcc-4.2/bin/../lib/gcc]
+    arg [-L/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1] ==> dir [/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1]
+    arg [-L/usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/../../..] ==> dir [/usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/../../..]
+    arg [-L/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/../../..] ==> dir [/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/../../..]
+    arg [-search_paths_first] ==> ignore
+    arg [-headerpad_max_install_names] ==> ignore
+    arg [CMakeFiles/cmTryCompileExec307225874.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lSystem] ==> lib [System]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lSystem] ==> lib [System]
+  remove lib [crt1.10.6.o]
+  remove lib [System]
+  remove lib [gcc]
+  remove lib [System]
+  collapse dir [/usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/x86_64] ==> [/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/x86_64]
+  collapse dir [/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/x86_64] ==> [/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/x86_64]
+  collapse dir [/usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1] ==> [/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1]
+  collapse dir [/usr/llvm-gcc-4.2/bin/../lib/gcc] ==> [/usr/llvm-gcc-4.2/lib/gcc]
+  collapse dir [/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1] ==> [/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1]
+  collapse dir [/usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/../../..] ==> [/usr/llvm-gcc-4.2/lib]
+  collapse dir [/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/../../..] ==> [/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib]
+  implicit libs: []
+  implicit dirs: [/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/x86_64;/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/x86_64;/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1;/usr/llvm-gcc-4.2/lib/gcc;/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1;/usr/llvm-gcc-4.2/lib;/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib]
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /Users/saratt/Documents/openML/src/util/opencv/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4142313709/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4142313709.dir/build.make CMakeFiles/cmTryCompileExec4142313709.dir/build
+"/Applications/CMake 2.8-8.app/Contents/bin/cmake" -E cmake_progress_report /Users/saratt/Documents/openML/src/util/opencv/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4142313709.dir/CheckIncludeFile.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec4142313709.dir/CheckIncludeFile.c.o   -c /Users/saratt/Documents/openML/src/util/opencv/release/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec4142313709
+"/Applications/CMake 2.8-8.app/Contents/bin/cmake" -E cmake_link_script CMakeFiles/cmTryCompileExec4142313709.dir/link.txt --verbose=1
+/usr/bin/gcc       -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec4142313709.dir/CheckIncludeFile.c.o  -o cmTryCompileExec4142313709  
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /Users/saratt/Documents/openML/src/util/opencv/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3479633972/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3479633972.dir/build.make CMakeFiles/cmTryCompileExec3479633972.dir/build
+"/Applications/CMake 2.8-8.app/Contents/bin/cmake" -E cmake_progress_report /Users/saratt/Documents/openML/src/util/opencv/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3479633972.dir/CheckIncludeFile.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec3479633972.dir/CheckIncludeFile.c.o   -c /Users/saratt/Documents/openML/src/util/opencv/release/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec3479633972
+"/Applications/CMake 2.8-8.app/Contents/bin/cmake" -E cmake_link_script CMakeFiles/cmTryCompileExec3479633972.dir/link.txt --verbose=1
+/usr/bin/gcc       -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec3479633972.dir/CheckIncludeFile.c.o  -o cmTryCompileExec3479633972  
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /Users/saratt/Documents/openML/src/util/opencv/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4090278594/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4090278594.dir/build.make CMakeFiles/cmTryCompileExec4090278594.dir/build
+"/Applications/CMake 2.8-8.app/Contents/bin/cmake" -E cmake_progress_report /Users/saratt/Documents/openML/src/util/opencv/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4090278594.dir/CheckIncludeFile.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec4090278594.dir/CheckIncludeFile.c.o   -c /Users/saratt/Documents/openML/src/util/opencv/release/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec4090278594
+"/Applications/CMake 2.8-8.app/Contents/bin/cmake" -E cmake_link_script CMakeFiles/cmTryCompileExec4090278594.dir/link.txt --verbose=1
+/usr/bin/gcc       -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec4090278594.dir/CheckIncludeFile.c.o  -o cmTryCompileExec4090278594  
+
+
+Determining if the function fseeko exists passed with the following output:
+Change Dir: /Users/saratt/Documents/openML/src/util/opencv/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec894145582/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec894145582.dir/build.make CMakeFiles/cmTryCompileExec894145582.dir/build
+"/Applications/CMake 2.8-8.app/Contents/bin/cmake" -E cmake_progress_report /Users/saratt/Documents/openML/src/util/opencv/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec894145582.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -DCHECK_FUNCTION_EXISTS=fseeko   -o CMakeFiles/cmTryCompileExec894145582.dir/CheckFunctionExists.c.o   -c "/Applications/CMake 2.8-8.app/Contents/share/cmake-2.8/Modules/CheckFunctionExists.c"
+Linking C executable cmTryCompileExec894145582
+"/Applications/CMake 2.8-8.app/Contents/bin/cmake" -E cmake_link_script CMakeFiles/cmTryCompileExec894145582.dir/link.txt --verbose=1
+/usr/bin/gcc      -DCHECK_FUNCTION_EXISTS=fseeko -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec894145582.dir/CheckFunctionExists.c.o  -o cmTryCompileExec894145582  
+
+
+Determining if the include file unistd.h exists passed with the following output:
+Change Dir: /Users/saratt/Documents/openML/src/util/opencv/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2801656591/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2801656591.dir/build.make CMakeFiles/cmTryCompileExec2801656591.dir/build
+"/Applications/CMake 2.8-8.app/Contents/bin/cmake" -E cmake_progress_report /Users/saratt/Documents/openML/src/util/opencv/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2801656591.dir/CheckIncludeFile.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec2801656591.dir/CheckIncludeFile.c.o   -c /Users/saratt/Documents/openML/src/util/opencv/release/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec2801656591
+"/Applications/CMake 2.8-8.app/Contents/bin/cmake" -E cmake_link_script CMakeFiles/cmTryCompileExec2801656591.dir/link.txt --verbose=1
+/usr/bin/gcc       -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec2801656591.dir/CheckIncludeFile.c.o  -o cmTryCompileExec2801656591  
+
+
+Determining if the include file assert.h exists passed with the following output:
+Change Dir: /Users/saratt/Documents/openML/src/util/opencv/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3371511457/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3371511457.dir/build.make CMakeFiles/cmTryCompileExec3371511457.dir/build
+"/Applications/CMake 2.8-8.app/Contents/bin/cmake" -E cmake_progress_report /Users/saratt/Documents/openML/src/util/opencv/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3371511457.dir/CheckIncludeFile.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec3371511457.dir/CheckIncludeFile.c.o   -c /Users/saratt/Documents/openML/src/util/opencv/release/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec3371511457
+"/Applications/CMake 2.8-8.app/Contents/bin/cmake" -E cmake_link_script CMakeFiles/cmTryCompileExec3371511457.dir/link.txt --verbose=1
+/usr/bin/gcc       -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec3371511457.dir/CheckIncludeFile.c.o  -o cmTryCompileExec3371511457  
+
+
+Determining if the include file fcntl.h exists passed with the following output:
+Change Dir: /Users/saratt/Documents/openML/src/util/opencv/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec837208177/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec837208177.dir/build.make CMakeFiles/cmTryCompileExec837208177.dir/build
+"/Applications/CMake 2.8-8.app/Contents/bin/cmake" -E cmake_progress_report /Users/saratt/Documents/openML/src/util/opencv/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec837208177.dir/CheckIncludeFile.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec837208177.dir/CheckIncludeFile.c.o   -c /Users/saratt/Documents/openML/src/util/opencv/release/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec837208177
+"/Applications/CMake 2.8-8.app/Contents/bin/cmake" -E cmake_link_script CMakeFiles/cmTryCompileExec837208177.dir/link.txt --verbose=1
+/usr/bin/gcc       -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec837208177.dir/CheckIncludeFile.c.o  -o cmTryCompileExec837208177  
+
+
+Determining if the function mmap exists passed with the following output:
+Change Dir: /Users/saratt/Documents/openML/src/util/opencv/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec257134197/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec257134197.dir/build.make CMakeFiles/cmTryCompileExec257134197.dir/build
+"/Applications/CMake 2.8-8.app/Contents/bin/cmake" -E cmake_progress_report /Users/saratt/Documents/openML/src/util/opencv/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec257134197.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -DCHECK_FUNCTION_EXISTS=mmap   -o CMakeFiles/cmTryCompileExec257134197.dir/CheckFunctionExists.c.o   -c "/Applications/CMake 2.8-8.app/Contents/share/cmake-2.8/Modules/CheckFunctionExists.c"
+Linking C executable cmTryCompileExec257134197
+"/Applications/CMake 2.8-8.app/Contents/bin/cmake" -E cmake_link_script CMakeFiles/cmTryCompileExec257134197.dir/link.txt --verbose=1
+/usr/bin/gcc      -DCHECK_FUNCTION_EXISTS=mmap -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec257134197.dir/CheckFunctionExists.c.o  -o cmTryCompileExec257134197  
+
+
+Determining if the include file search.h exists passed with the following output:
+Change Dir: /Users/saratt/Documents/openML/src/util/opencv/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec326088037/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec326088037.dir/build.make CMakeFiles/cmTryCompileExec326088037.dir/build
+"/Applications/CMake 2.8-8.app/Contents/bin/cmake" -E cmake_progress_report /Users/saratt/Documents/openML/src/util/opencv/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec326088037.dir/CheckIncludeFile.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec326088037.dir/CheckIncludeFile.c.o   -c /Users/saratt/Documents/openML/src/util/opencv/release/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec326088037
+"/Applications/CMake 2.8-8.app/Contents/bin/cmake" -E cmake_link_script CMakeFiles/cmTryCompileExec326088037.dir/link.txt --verbose=1
+/usr/bin/gcc       -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec326088037.dir/CheckIncludeFile.c.o  -o cmTryCompileExec326088037  
+
+
+Determining if the include file string.h exists passed with the following output:
+Change Dir: /Users/saratt/Documents/openML/src/util/opencv/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2369603098/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2369603098.dir/build.make CMakeFiles/cmTryCompileExec2369603098.dir/build
+"/Applications/CMake 2.8-8.app/Contents/bin/cmake" -E cmake_progress_report /Users/saratt/Documents/openML/src/util/opencv/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2369603098.dir/CheckIncludeFile.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec2369603098.dir/CheckIncludeFile.c.o   -c /Users/saratt/Documents/openML/src/util/opencv/release/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec2369603098
+"/Applications/CMake 2.8-8.app/Contents/bin/cmake" -E cmake_link_script CMakeFiles/cmTryCompileExec2369603098.dir/link.txt --verbose=1
+/usr/bin/gcc       -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec2369603098.dir/CheckIncludeFile.c.o  -o cmTryCompileExec2369603098  
+
+
+Determining if the include file unistd.h exists passed with the following output:
+Change Dir: /Users/saratt/Documents/openML/src/util/opencv/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4284847829/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4284847829.dir/build.make CMakeFiles/cmTryCompileExec4284847829.dir/build
+"/Applications/CMake 2.8-8.app/Contents/bin/cmake" -E cmake_progress_report /Users/saratt/Documents/openML/src/util/opencv/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4284847829.dir/CheckIncludeFile.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec4284847829.dir/CheckIncludeFile.c.o   -c /Users/saratt/Documents/openML/src/util/opencv/release/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec4284847829
+"/Applications/CMake 2.8-8.app/Contents/bin/cmake" -E cmake_link_script CMakeFiles/cmTryCompileExec4284847829.dir/link.txt --verbose=1
+/usr/bin/gcc       -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec4284847829.dir/CheckIncludeFile.c.o  -o cmTryCompileExec4284847829  
+
+
+Determining if the include file libavformat/avformat.h exists passed with the following output:
+Change Dir: /Users/saratt/Documents/openML/src/util/opencv/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3848127022/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3848127022.dir/build.make CMakeFiles/cmTryCompileExec3848127022.dir/build
+"/Applications/CMake 2.8-8.app/Contents/bin/cmake" -E cmake_progress_report /Users/saratt/Documents/openML/src/util/opencv/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3848127022.dir/CheckIncludeFile.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec3848127022.dir/CheckIncludeFile.c.o   -c /Users/saratt/Documents/openML/src/util/opencv/release/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec3848127022
+"/Applications/CMake 2.8-8.app/Contents/bin/cmake" -E cmake_link_script CMakeFiles/cmTryCompileExec3848127022.dir/link.txt --verbose=1
+/usr/bin/gcc       -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec3848127022.dir/CheckIncludeFile.c.o  -o cmTryCompileExec3848127022  
+
+

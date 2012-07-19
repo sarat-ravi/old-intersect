@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/opencv/!svn/ver/8483/trunk/opencv/modules/ts/include/opencv2/ts
+END
+ts_gtest.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/opencv/!svn/ver/6674/trunk/opencv/modules/ts/include/opencv2/ts/ts_gtest.h
+END
+ts_perf.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/opencv/!svn/ver/8483/trunk/opencv/modules/ts/include/opencv2/ts/ts_perf.hpp
+END
+ts.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/6975/trunk/opencv/modules/ts/include/opencv2/ts/ts.hpp
+END

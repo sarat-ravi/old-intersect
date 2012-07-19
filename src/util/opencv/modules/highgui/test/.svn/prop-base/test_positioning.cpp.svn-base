@@ -1,0 +1,7 @@
+K 13
+svn:mergeinfo
+V 223
+/branches/2.4/opencv/modules/highgui/test/test_positioning.cpp:7793-8279
+/branches/opencv_pthread_framework/opencv/modules/highgui/test/test_pos.cpp:4873-4972
+/branches/perf_tests/modules/highgui/test/test_pos.cpp:6430-6673
+END

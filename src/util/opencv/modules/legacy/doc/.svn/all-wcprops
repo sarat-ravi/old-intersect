@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/opencv/!svn/ver/8537/trunk/opencv/modules/legacy/doc
+END
+histograms.rst
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/8482/trunk/opencv/modules/legacy/doc/histograms.rst
+END
+legacy.rst
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/opencv/!svn/ver/8483/trunk/opencv/modules/legacy/doc/legacy.rst
+END
+motion_analysis.rst
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/opencv/!svn/ver/8537/trunk/opencv/modules/legacy/doc/motion_analysis.rst
+END
+common_interfaces_of_descriptor_extractors.rst
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/opencv/!svn/ver/8478/trunk/opencv/modules/legacy/doc/common_interfaces_of_descriptor_extractors.rst
+END
+expectation_maximization.rst
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/opencv/!svn/ver/8492/trunk/opencv/modules/legacy/doc/expectation_maximization.rst
+END
+feature_detection_and_description.rst
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/opencv/!svn/ver/8492/trunk/opencv/modules/legacy/doc/feature_detection_and_description.rst
+END
+planar_subdivisions.rst
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/opencv/!svn/ver/8482/trunk/opencv/modules/legacy/doc/planar_subdivisions.rst
+END
+common_interfaces_of_generic_descriptor_matchers.rst
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/opencv/!svn/ver/8468/trunk/opencv/modules/legacy/doc/common_interfaces_of_generic_descriptor_matchers.rst
+END

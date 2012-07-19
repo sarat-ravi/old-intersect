@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/opencv/!svn/ver/8408/trunk/opencv/modules/contrib/include/opencv2/contrib
+END
+detection_based_tracker.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/opencv/!svn/ver/6978/trunk/opencv/modules/contrib/include/opencv2/contrib/detection_based_tracker.hpp
+END
+hybridtracker.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/contrib/include/opencv2/contrib/hybridtracker.hpp
+END
+contrib.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/opencv/!svn/ver/8408/trunk/opencv/modules/contrib/include/opencv2/contrib/contrib.hpp
+END
+retina.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/opencv/!svn/ver/7285/trunk/opencv/modules/contrib/include/opencv2/contrib/retina.hpp
+END

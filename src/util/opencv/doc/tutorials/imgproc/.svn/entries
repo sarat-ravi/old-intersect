@@ -1,0 +1,55 @@
+10
+
+dir
+8583
+http://code.opencv.org/svn/opencv/trunk/opencv/doc/tutorials/imgproc
+http://code.opencv.org/svn/opencv
+
+
+
+2012-03-26T09:07:02.338255Z
+7626
+vp153
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+c5418bc3-7546-4aae-8bad-fa6f2f3e53e6
+
+histograms
+dir
+
+shapedescriptors
+dir
+
+imgtrans
+dir
+
+table_of_content_imgproc
+dir
+
+erosion_dilatation
+dir
+
+pyramids
+dir
+
+gausian_median_blur_bilateral_filter
+dir
+
+opening_closing_hats
+dir
+
+threshold
+dir
+

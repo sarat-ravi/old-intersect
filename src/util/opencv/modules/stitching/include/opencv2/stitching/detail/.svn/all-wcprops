@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/opencv/!svn/ver/8478/trunk/opencv/modules/stitching/include/opencv2/stitching/detail
+END
+warpers_inl.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/opencv/!svn/ver/7526/trunk/opencv/modules/stitching/include/opencv2/stitching/detail/warpers_inl.hpp
+END
+matchers.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/opencv/!svn/ver/7548/trunk/opencv/modules/stitching/include/opencv2/stitching/detail/matchers.hpp
+END
+camera.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/opencv/!svn/ver/6736/trunk/opencv/modules/stitching/include/opencv2/stitching/detail/camera.hpp
+END
+exposure_compensate.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/opencv/!svn/ver/6682/trunk/opencv/modules/stitching/include/opencv2/stitching/detail/exposure_compensate.hpp
+END
+util.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/opencv/!svn/ver/7293/trunk/opencv/modules/stitching/include/opencv2/stitching/detail/util.hpp
+END
+blenders.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/opencv/!svn/ver/7454/trunk/opencv/modules/stitching/include/opencv2/stitching/detail/blenders.hpp
+END
+motion_estimators.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/opencv/!svn/ver/7218/trunk/opencv/modules/stitching/include/opencv2/stitching/detail/motion_estimators.hpp
+END
+seam_finders.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/stitching/include/opencv2/stitching/detail/seam_finders.hpp
+END
+util_inl.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/opencv/!svn/ver/6682/trunk/opencv/modules/stitching/include/opencv2/stitching/detail/util_inl.hpp
+END
+autocalib.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/opencv/!svn/ver/6682/trunk/opencv/modules/stitching/include/opencv2/stitching/detail/autocalib.hpp
+END
+warpers.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/opencv/!svn/ver/8478/trunk/opencv/modules/stitching/include/opencv2/stitching/detail/warpers.hpp
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/opencv/!svn/ver/8583/trunk/opencv
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/opencv/!svn/ver/8552/trunk/opencv/CMakeLists.txt
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/opencv/!svn/ver/4447/trunk/opencv/README
+END
+index.rst
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/opencv/!svn/ver/8045/trunk/opencv/index.rst
+END

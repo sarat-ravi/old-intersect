@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/opencv/!svn/ver/6426/trunk/opencv/samples/cpp/tutorial_code/HighGUI/video-input-psnr-ssim/video
+END
+Megamind.avi
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/opencv/!svn/ver/6426/trunk/opencv/samples/cpp/tutorial_code/HighGUI/video-input-psnr-ssim/video/Megamind.avi
+END
+Megamind_bugy.avi
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/opencv/!svn/ver/6426/trunk/opencv/samples/cpp/tutorial_code/HighGUI/video-input-psnr-ssim/video/Megamind_bugy.avi
+END

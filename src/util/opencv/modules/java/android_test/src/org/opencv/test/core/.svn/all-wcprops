@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/java/android_test/src/org/opencv/test/core
+END
+RectTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/opencv/!svn/ver/6339/trunk/opencv/modules/java/android_test/src/org/opencv/test/core/RectTest.java
+END
+RotatedRectTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/opencv/!svn/ver/6420/trunk/opencv/modules/java/android_test/src/org/opencv/test/core/RotatedRectTest.java
+END
+MatTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/java/android_test/src/org/opencv/test/core/MatTest.java
+END
+ScalarTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/opencv/!svn/ver/6347/trunk/opencv/modules/java/android_test/src/org/opencv/test/core/ScalarTest.java
+END
+CoreTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/java/android_test/src/org/opencv/test/core/CoreTest.java
+END
+PointTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/opencv/!svn/ver/6339/trunk/opencv/modules/java/android_test/src/org/opencv/test/core/PointTest.java
+END
+CvTypeTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/opencv/!svn/ver/6339/trunk/opencv/modules/java/android_test/src/org/opencv/test/core/CvTypeTest.java
+END
+SizeTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/opencv/!svn/ver/6347/trunk/opencv/modules/java/android_test/src/org/opencv/test/core/SizeTest.java
+END
+TermCriteriaTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/opencv/!svn/ver/6339/trunk/opencv/modules/java/android_test/src/org/opencv/test/core/TermCriteriaTest.java
+END
+Point3Test.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/opencv/!svn/ver/6347/trunk/opencv/modules/java/android_test/src/org/opencv/test/core/Point3Test.java
+END
+RangeTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/opencv/!svn/ver/6339/trunk/opencv/modules/java/android_test/src/org/opencv/test/core/RangeTest.java
+END

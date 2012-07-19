@@ -1,0 +1,77 @@
+10
+
+dir
+8583
+http://code.opencv.org/svn/opencv/trunk/opencv/modules/highgui
+http://code.opencv.org/svn/opencv
+
+
+
+2012-06-01T08:55:16.916705Z
+8542
+vp153
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+c5418bc3-7546-4aae-8bad-fa6f2f3e53e6
+
+include
+dir
+
+doc
+dir
+
+src
+dir
+
+perf
+dir
+
+CMakeLists.txt
+file
+
+
+
+
+2012-06-06T19:53:25.031141Z
+f867766b8330fc66b6b1aa4eefe2512c
+2012-05-24T20:10:13.477069Z
+8452
+andrey.kamaev
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8541
+
+test
+dir
+

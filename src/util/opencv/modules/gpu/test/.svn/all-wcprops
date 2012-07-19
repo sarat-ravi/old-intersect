@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/opencv/!svn/ver/8580/trunk/opencv/modules/gpu/test
+END
+test_features2d.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/8172/trunk/opencv/modules/gpu/test/test_features2d.cpp
+END
+test_copy_make_border.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/opencv/!svn/ver/7590/trunk/opencv/modules/gpu/test/test_copy_make_border.cpp
+END
+test_remap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/8495/trunk/opencv/modules/gpu/test/test_remap.cpp
+END
+utility.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/gpu/test/utility.cpp
+END
+precomp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/opencv/!svn/ver/7491/trunk/opencv/modules/gpu/test/precomp.cpp
+END
+test_video.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/8565/trunk/opencv/modules/gpu/test/test_video.cpp
+END
+test_filters.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/8484/trunk/opencv/modules/gpu/test/test_filters.cpp
+END
+utility.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/opencv/!svn/ver/8575/trunk/opencv/modules/gpu/test/utility.hpp
+END
+test_nvidia.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/opencv/!svn/ver/8174/trunk/opencv/modules/gpu/test/test_nvidia.cpp
+END
+precomp.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/opencv/!svn/ver/8565/trunk/opencv/modules/gpu/test/precomp.hpp
+END
+test_color.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/7687/trunk/opencv/modules/gpu/test/test_color.cpp
+END
+test_warp_affine.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/7590/trunk/opencv/modules/gpu/test/test_warp_affine.cpp
+END
+test_warp_perspective.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/opencv/!svn/ver/7590/trunk/opencv/modules/gpu/test/test_warp_perspective.cpp
+END
+test_global_motion.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/opencv/!svn/ver/8100/trunk/opencv/modules/gpu/test/test_global_motion.cpp
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/opencv/!svn/ver/7697/trunk/opencv/modules/gpu/test/main.cpp
+END
+test_core.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/opencv/!svn/ver/8565/trunk/opencv/modules/gpu/test/test_core.cpp
+END
+test_pyramids.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/7544/trunk/opencv/modules/gpu/test/test_pyramids.cpp
+END
+test_threshold.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/opencv/!svn/ver/7590/trunk/opencv/modules/gpu/test/test_threshold.cpp
+END
+test_gpumat.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/opencv/!svn/ver/8474/trunk/opencv/modules/gpu/test/test_gpumat.cpp
+END
+interpolation.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/8495/trunk/opencv/modules/gpu/test/interpolation.hpp
+END
+test_imgproc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/8430/trunk/opencv/modules/gpu/test/test_imgproc.cpp
+END
+test_calib3d.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/gpu/test/test_calib3d.cpp
+END
+test_resize.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/opencv/!svn/ver/8580/trunk/opencv/modules/gpu/test/test_resize.cpp
+END
+test_objdetect.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/opencv/!svn/ver/7657/trunk/opencv/modules/gpu/test/test_objdetect.cpp
+END

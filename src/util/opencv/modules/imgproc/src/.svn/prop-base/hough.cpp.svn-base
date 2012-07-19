@@ -1,0 +1,12 @@
+K 13
+svn:eol-style
+V 6
+native
+K 13
+svn:mergeinfo
+V 264
+/branches/2.3/opencv/modules/imgproc/src/hough.cpp:6456-6528
+/branches/2.4/opencv/modules/imgproc/src/hough.cpp:7793-8279
+/branches/opencv_pthread_framework/opencv/modules/imgproc/src/hough.cpp:4873-4972
+/branches/perf_tests/modules/imgproc/src/hough.cpp:6430-6673
+END

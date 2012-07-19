@@ -1,0 +1,115 @@
+
+*****************************************************
+Summary
+-------
+Notes: 0
+Binaries: 0
+Archives: 0
+Standards: 79
+
+Apache Licensed: 79
+Generated Documents: 0
+
+JavaDocs are generated and so license header is optional
+Generated files do not required license headers
+
+0 Unknown Licenses
+
+*******************************
+
+Unapproved licenses:
+
+
+*******************************
+
+Archives:
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require AL headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc will be marked N
+  AL    createPear.xml
+  AL    descriptors/Chunker.xml
+  AL    descriptors/ChunkerTrainer.xml
+  AL    descriptors/DateNameFinder.xml
+  AL    descriptors/LocationNameFinder.xml
+  AL    descriptors/MoneyNameFinder.xml
+  AL    descriptors/OpenNlpTextAnalyzer.xml
+  AL    descriptors/OrganizationNameFinder.xml
+  AL    descriptors/PercentageNameFinder.xml
+  AL    descriptors/PersonNameFinder.xml
+  AL    descriptors/PersonNameFinderTrainer.xml
+  AL    descriptors/PosTagger.xml
+  AL    descriptors/PosTaggerTrainer.xml
+  AL    descriptors/SentenceDetector.xml
+  AL    descriptors/SentenceDetectorTrainer.xml
+  AL    descriptors/SimpleTokenizer.xml
+  AL    descriptors/TimeNameFinder.xml
+  AL    descriptors/Tokenizer.xml
+  AL    descriptors/TokenizerTrainer.xml
+  AL    descriptors/TypeSystem.xml
+  AL    metadata/install.xml
+  AL    pom.xml
+  AL    src/main/assembly/bin.xml
+  AL    src/main/assembly/src.xml
+  AL    src/main/java/opennlp/uima/chunker/Chunker.java
+  AL    src/main/java/opennlp/uima/chunker/ChunkerModelResource.java
+  AL    src/main/java/opennlp/uima/chunker/ChunkerModelResourceImpl.java
+  AL    src/main/java/opennlp/uima/chunker/ChunkerTrainer.java
+  AL    src/main/java/opennlp/uima/chunker/package.html
+  AL    src/main/java/opennlp/uima/doccat/AbstractDocumentCategorizer.java
+  AL    src/main/java/opennlp/uima/doccat/DoccatModelResource.java
+  AL    src/main/java/opennlp/uima/doccat/DoccatModelResourceImpl.java
+  AL    src/main/java/opennlp/uima/doccat/DocumentCategorizer.java
+  AL    src/main/java/opennlp/uima/doccat/DocumentCategorizerTrainer.java
+  AL    src/main/java/opennlp/uima/doccat/LanguageDetector.java
+  AL    src/main/java/opennlp/uima/namefind/AbstractNameFinder.java
+  AL    src/main/java/opennlp/uima/namefind/DictionaryNameFinder.java
+  AL    src/main/java/opennlp/uima/namefind/NameFinder.java
+  AL    src/main/java/opennlp/uima/namefind/NameFinderTrainer.java
+  AL    src/main/java/opennlp/uima/namefind/package.html
+  AL    src/main/java/opennlp/uima/namefind/TokenNameFinderModelResource.java
+  AL    src/main/java/opennlp/uima/namefind/TokenNameFinderModelResourceImpl.java
+  AL    src/main/java/opennlp/uima/normalizer/Normalizer.java
+  AL    src/main/java/opennlp/uima/normalizer/NumberUtil.java
+  AL    src/main/java/opennlp/uima/normalizer/StringDictionary.java
+  AL    src/main/java/opennlp/uima/parser/Parser.java
+  AL    src/main/java/opennlp/uima/parser/ParserModelResource.java
+  AL    src/main/java/opennlp/uima/parser/ParserModelResourceImpl.java
+  AL    src/main/java/opennlp/uima/postag/package.html
+  AL    src/main/java/opennlp/uima/postag/POSModelResource.java
+  AL    src/main/java/opennlp/uima/postag/POSModelResourceImpl.java
+  AL    src/main/java/opennlp/uima/postag/POSTagger.java
+  AL    src/main/java/opennlp/uima/postag/POSTaggerTrainer.java
+  AL    src/main/java/opennlp/uima/sentdetect/AbstractSentenceDetector.java
+  AL    src/main/java/opennlp/uima/sentdetect/package.html
+  AL    src/main/java/opennlp/uima/sentdetect/SentenceDetector.java
+  AL    src/main/java/opennlp/uima/sentdetect/SentenceDetectorTrainer.java
+  AL    src/main/java/opennlp/uima/sentdetect/SentenceModelResource.java
+  AL    src/main/java/opennlp/uima/sentdetect/SentenceModelResourceImpl.java
+  AL    src/main/java/opennlp/uima/tokenize/AbstractTokenizer.java
+  AL    src/main/java/opennlp/uima/tokenize/package.html
+  AL    src/main/java/opennlp/uima/tokenize/SimpleTokenizer.java
+  AL    src/main/java/opennlp/uima/tokenize/Tokenizer.java
+  AL    src/main/java/opennlp/uima/tokenize/TokenizerModelResource.java
+  AL    src/main/java/opennlp/uima/tokenize/TokenizerModelResourceImpl.java
+  AL    src/main/java/opennlp/uima/tokenize/TokenizerTrainer.java
+  AL    src/main/java/opennlp/uima/tokenize/WhitespaceTokenizer.java
+  AL    src/main/java/opennlp/uima/util/AbstractModelResource.java
+  AL    src/main/java/opennlp/uima/util/AnnotationComboIterator.java
+  AL    src/main/java/opennlp/uima/util/AnnotationComparator.java
+  AL    src/main/java/opennlp/uima/util/AnnotationIteratorPair.java
+  AL    src/main/java/opennlp/uima/util/AnnotatorUtil.java
+  AL    src/main/java/opennlp/uima/util/CasConsumerUtil.java
+  AL    src/main/java/opennlp/uima/util/ContainingConstraint.java
+  AL    src/main/java/opennlp/uima/util/ExceptionMessages.java
+  AL    src/main/java/opennlp/uima/util/OpenNlpAnnotatorProcessException.java
+  AL    src/main/java/opennlp/uima/util/OpennlpUtil.java
+  AL    src/main/java/opennlp/uima/util/UimaUtil.java
+  AL    src/main/resources/opennlp/uima/util/ExceptionMessages_en.properties
+ 
+ *****************************************************
+ Printing headers for files without AL header...
+ 
+ 

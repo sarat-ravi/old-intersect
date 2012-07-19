@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/java/android_test/src/org/opencv/test/video
+END
+VideoTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/java/android_test/src/org/opencv/test/video/VideoTest.java
+END
+KalmanFilterTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/opencv/!svn/ver/6339/trunk/opencv/modules/java/android_test/src/org/opencv/test/video/KalmanFilterTest.java
+END
+BackgroundSubtractorMOGTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/java/android_test/src/org/opencv/test/video/BackgroundSubtractorMOGTest.java
+END

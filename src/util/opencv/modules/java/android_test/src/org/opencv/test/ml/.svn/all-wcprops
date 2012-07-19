@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/java/android_test/src/org/opencv/test/ml
+END
+CvKNearestTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/java/android_test/src/org/opencv/test/ml/CvKNearestTest.java
+END
+CvNormalBayesClassifierTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/java/android_test/src/org/opencv/test/ml/CvNormalBayesClassifierTest.java
+END
+CvANN_MLPTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/java/android_test/src/org/opencv/test/ml/CvANN_MLPTest.java
+END
+CvANN_MLP_TrainParamsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/java/android_test/src/org/opencv/test/ml/CvANN_MLP_TrainParamsTest.java
+END
+CvBoostTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/java/android_test/src/org/opencv/test/ml/CvBoostTest.java
+END
+CvRTParamsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/java/android_test/src/org/opencv/test/ml/CvRTParamsTest.java
+END
+CvBoostParamsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/java/android_test/src/org/opencv/test/ml/CvBoostParamsTest.java
+END
+CvGBTreesTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/java/android_test/src/org/opencv/test/ml/CvGBTreesTest.java
+END
+CvGBTreesParamsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/java/android_test/src/org/opencv/test/ml/CvGBTreesParamsTest.java
+END
+CvDTreeTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/java/android_test/src/org/opencv/test/ml/CvDTreeTest.java
+END
+CvRTreesTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/java/android_test/src/org/opencv/test/ml/CvRTreesTest.java
+END
+CvSVMTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/java/android_test/src/org/opencv/test/ml/CvSVMTest.java
+END
+CvParamGridTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/java/android_test/src/org/opencv/test/ml/CvParamGridTest.java
+END
+CvDTreeParamsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/java/android_test/src/org/opencv/test/ml/CvDTreeParamsTest.java
+END
+CvSVMParamsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/java/android_test/src/org/opencv/test/ml/CvSVMParamsTest.java
+END
+CvERTreesTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/java/android_test/src/org/opencv/test/ml/CvERTreesTest.java
+END

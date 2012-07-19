@@ -1,0 +1,52 @@
+
+*****************************************************
+Summary
+-------
+Notes: 0
+Binaries: 0
+Archives: 0
+Standards: 16
+
+Apache Licensed: 16
+Generated Documents: 0
+
+JavaDocs are generated and so license header is optional
+Generated files do not required license headers
+
+0 Unknown Licenses
+
+*******************************
+
+Unapproved licenses:
+
+
+*******************************
+
+Archives:
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require AL headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc will be marked N
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-docs/pom.xml
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-docs/src/docbkx/chunker.xml
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-docs/src/docbkx/coref.xml
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-docs/src/docbkx/corpora.xml
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-docs/src/docbkx/css/opennlp-docs.css
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-docs/src/docbkx/doccat.xml
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-docs/src/docbkx/introduction.xml
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-docs/src/docbkx/machine-learning.xml
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-docs/src/docbkx/namefinder.xml
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-docs/src/docbkx/opennlp.xml
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-docs/src/docbkx/parser.xml
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-docs/src/docbkx/postagger.xml
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-docs/src/docbkx/sentdetect.xml
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-docs/src/docbkx/tokenizer.xml
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-docs/src/docbkx/uima-integration.xml
+  AL    /Users/saratt/Documents/openML/src/util/opennlp_src/opennlp-docs/src/main/resources/xsl/html.xsl
+ 
+ *****************************************************
+ Printing headers for files without AL header...
+ 
+ 

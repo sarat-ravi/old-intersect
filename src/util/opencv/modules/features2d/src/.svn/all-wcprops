@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/opencv/!svn/ver/8544/trunk/opencv/modules/features2d/src
+END
+detectors.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/features2d/src/detectors.cpp
+END
+fast.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/8523/trunk/opencv/modules/features2d/src/fast.cpp
+END
+draw.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/6954/trunk/opencv/modules/features2d/src/draw.cpp
+END
+bagofwords.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/4885/trunk/opencv/modules/features2d/src/bagofwords.cpp
+END
+descriptors.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/features2d/src/descriptors.cpp
+END
+keypoint.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/opencv/!svn/ver/7504/trunk/opencv/modules/features2d/src/keypoint.cpp
+END
+stardetector.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/features2d/src/stardetector.cpp
+END
+precomp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/3060/trunk/opencv/modules/features2d/src/precomp.cpp
+END
+mser.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/features2d/src/mser.cpp
+END
+matchers.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/features2d/src/matchers.cpp
+END
+evaluation.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/6954/trunk/opencv/modules/features2d/src/evaluation.cpp
+END
+generated_32.i
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/6114/trunk/opencv/modules/features2d/src/generated_32.i
+END
+blobdetector.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/opencv/!svn/ver/7485/trunk/opencv/modules/features2d/src/blobdetector.cpp
+END
+generated_16.i
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/6114/trunk/opencv/modules/features2d/src/generated_16.i
+END
+precomp.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/5445/trunk/opencv/modules/features2d/src/precomp.hpp
+END
+generated_64.i
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/6114/trunk/opencv/modules/features2d/src/generated_64.i
+END
+orb.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/opencv/!svn/ver/8523/trunk/opencv/modules/features2d/src/orb.cpp
+END
+dynamic.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/7504/trunk/opencv/modules/features2d/src/dynamic.cpp
+END
+features2d_init.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/opencv/!svn/ver/8544/trunk/opencv/modules/features2d/src/features2d_init.cpp
+END
+brief.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/features2d/src/brief.cpp
+END

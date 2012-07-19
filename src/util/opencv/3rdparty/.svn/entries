@@ -1,0 +1,92 @@
+10
+
+dir
+8583
+http://code.opencv.org/svn/opencv/trunk/opencv/3rdparty
+http://code.opencv.org/svn/opencv
+
+
+
+2012-06-05T14:00:47.795886Z
+8566
+alexander.shishkov
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+c5418bc3-7546-4aae-8bad-fa6f2f3e53e6
+
+include
+dir
+
+ffmpeg
+dir
+
+lib
+dir
+
+tbb
+dir
+
+libjasper
+dir
+
+libpng
+dir
+
+readme.txt
+file
+
+
+
+
+2012-06-06T19:53:18.935142Z
+3acd217b91226efd332f3c71d1373384
+2012-03-05T09:20:52.344420Z
+7441
+alexander.shishkov
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5237
+
+libjpeg
+dir
+
+ilmimf
+dir
+
+libtiff
+dir
+
+zlib
+dir
+

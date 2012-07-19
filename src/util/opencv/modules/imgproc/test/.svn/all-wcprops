@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/opencv/!svn/ver/8580/trunk/opencv/modules/imgproc/test
+END
+test_moments.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/imgproc/test/test_moments.cpp
+END
+test_boundingrect.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/opencv/!svn/ver/7714/trunk/opencv/modules/imgproc/test/test_boundingrect.cpp
+END
+test_main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/5349/trunk/opencv/modules/imgproc/test/test_main.cpp
+END
+test_filter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/imgproc/test/test_filter.cpp
+END
+test_distancetransform.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/opencv/!svn/ver/4683/trunk/opencv/modules/imgproc/test/test_distancetransform.cpp
+END
+test_watershed.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/opencv/!svn/ver/4683/trunk/opencv/modules/imgproc/test/test_watershed.cpp
+END
+test_grabcut.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/7752/trunk/opencv/modules/imgproc/test/test_grabcut.cpp
+END
+test_convhull.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/opencv/!svn/ver/7726/trunk/opencv/modules/imgproc/test/test_convhull.cpp
+END
+test_thresh.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/7423/trunk/opencv/modules/imgproc/test/test_thresh.cpp
+END
+test_templmatch.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/opencv/!svn/ver/4683/trunk/opencv/modules/imgproc/test/test_templmatch.cpp
+END
+test_cvtyuv.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/imgproc/test/test_cvtyuv.cpp
+END
+test_pc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/opencv/!svn/ver/8376/trunk/opencv/modules/imgproc/test/test_pc.cpp
+END
+test_emd.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/4683/trunk/opencv/modules/imgproc/test/test_emd.cpp
+END
+test_precomp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/4683/trunk/opencv/modules/imgproc/test/test_precomp.cpp
+END
+test_imgwarp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/8580/trunk/opencv/modules/imgproc/test/test_imgwarp.cpp
+END
+test_canny.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/opencv/!svn/ver/4690/trunk/opencv/modules/imgproc/test/test_canny.cpp
+END
+test_floodfill.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/opencv/!svn/ver/7740/trunk/opencv/modules/imgproc/test/test_floodfill.cpp
+END
+test_precomp.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/4683/trunk/opencv/modules/imgproc/test/test_precomp.hpp
+END
+test_contours.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/opencv/!svn/ver/4683/trunk/opencv/modules/imgproc/test/test_contours.cpp
+END
+test_approxpoly.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/opencv/!svn/ver/4683/trunk/opencv/modules/imgproc/test/test_approxpoly.cpp
+END
+test_color.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/imgproc/test/test_color.cpp
+END
+test_histograms.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/opencv/!svn/ver/7626/trunk/opencv/modules/imgproc/test/test_histograms.cpp
+END

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/opencv/!svn/ver/8294/trunk/opencv/modules/ts/misc
+END
+report.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/opencv/!svn/ver/6701/trunk/opencv/modules/ts/misc/report.py
+END
+concatlogs.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/opencv/!svn/ver/6966/trunk/opencv/modules/ts/misc/concatlogs.py
+END
+summary.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/opencv/!svn/ver/7150/trunk/opencv/modules/ts/misc/summary.py
+END
+testlog_parser.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/7435/trunk/opencv/modules/ts/misc/testlog_parser.py
+END
+color.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/opencv/!svn/ver/6674/trunk/opencv/modules/ts/misc/color.py
+END
+chart.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/opencv/!svn/ver/7021/trunk/opencv/modules/ts/misc/chart.py
+END
+run.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/opencv/!svn/ver/8294/trunk/opencv/modules/ts/misc/run.py
+END
+table_formatter.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/7124/trunk/opencv/modules/ts/misc/table_formatter.py
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/8533/trunk/opencv/samples/android/face-detection/jni
+END
+DetectionBasedTracker_jni.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/opencv/!svn/ver/8533/trunk/opencv/samples/android/face-detection/jni/DetectionBasedTracker_jni.h
+END
+Android.mk
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/opencv/!svn/ver/8533/trunk/opencv/samples/android/face-detection/jni/Android.mk
+END
+Application.mk
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/opencv/!svn/ver/8423/trunk/opencv/samples/android/face-detection/jni/Application.mk
+END
+DetectionBasedTracker_jni.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/opencv/!svn/ver/8533/trunk/opencv/samples/android/face-detection/jni/DetectionBasedTracker_jni.cpp
+END

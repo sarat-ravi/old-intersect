@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/opencv/!svn/ver/8333/trunk/opencv/modules/core/perf
+END
+perf_math.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/7526/trunk/opencv/modules/core/perf/perf_math.cpp
+END
+perf_split.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/core/perf/perf_split.cpp
+END
+perf_merge.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/core/perf/perf_merge.cpp
+END
+perf_precomp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/6674/trunk/opencv/modules/core/perf/perf_precomp.cpp
+END
+perf_abs.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/opencv/!svn/ver/7110/trunk/opencv/modules/core/perf/perf_abs.cpp
+END
+perf_bitwise.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/7110/trunk/opencv/modules/core/perf/perf_bitwise.cpp
+END
+perf_reduce.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/7110/trunk/opencv/modules/core/perf/perf_reduce.cpp
+END
+perf_addWeighted.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/opencv/!svn/ver/8210/trunk/opencv/modules/core/perf/perf_addWeighted.cpp
+END
+perf_precomp.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/6674/trunk/opencv/modules/core/perf/perf_precomp.hpp
+END
+perf_norm.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/7110/trunk/opencv/modules/core/perf/perf_norm.cpp
+END
+perf_stat.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/7150/trunk/opencv/modules/core/perf/perf_stat.cpp
+END
+perf_dft.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/opencv/!svn/ver/7110/trunk/opencv/modules/core/perf/perf_dft.cpp
+END
+perf_inRange.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/8138/trunk/opencv/modules/core/perf/perf_inRange.cpp
+END
+perf_convertTo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/8333/trunk/opencv/modules/core/perf/perf_convertTo.cpp
+END
+perf_main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/6674/trunk/opencv/modules/core/perf/perf_main.cpp
+END
+perf_arithm.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/7303/trunk/opencv/modules/core/perf/perf_arithm.cpp
+END
+perf_dot.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/opencv/!svn/ver/7111/trunk/opencv/modules/core/perf/perf_dot.cpp
+END
+perf_compare.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/7110/trunk/opencv/modules/core/perf/perf_compare.cpp
+END
+perf_minmaxloc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/7110/trunk/opencv/modules/core/perf/perf_minmaxloc.cpp
+END

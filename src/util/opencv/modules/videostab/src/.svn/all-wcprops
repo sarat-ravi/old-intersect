@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/opencv/!svn/ver/8460/trunk/opencv/modules/videostab/src
+END
+inpainting.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/8103/trunk/opencv/modules/videostab/src/inpainting.cpp
+END
+log.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/opencv/!svn/ver/7555/trunk/opencv/modules/videostab/src/log.cpp
+END
+optical_flow.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/opencv/!svn/ver/8100/trunk/opencv/modules/videostab/src/optical_flow.cpp
+END
+clp.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/opencv/!svn/ver/8460/trunk/opencv/modules/videostab/src/clp.hpp
+END
+motion_stabilizing.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/opencv/!svn/ver/8230/trunk/opencv/modules/videostab/src/motion_stabilizing.cpp
+END
+wobble_suppression.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/opencv/!svn/ver/8214/trunk/opencv/modules/videostab/src/wobble_suppression.cpp
+END
+fast_marching.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/videostab/src/fast_marching.cpp
+END
+global_motion.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/opencv/!svn/ver/8230/trunk/opencv/modules/videostab/src/global_motion.cpp
+END
+outlier_rejection.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/opencv/!svn/ver/8173/trunk/opencv/modules/videostab/src/outlier_rejection.cpp
+END
+precomp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/7555/trunk/opencv/modules/videostab/src/precomp.cpp
+END
+stabilizer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/8214/trunk/opencv/modules/videostab/src/stabilizer.cpp
+END
+frame_source.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/opencv/!svn/ver/7822/trunk/opencv/modules/videostab/src/frame_source.cpp
+END
+precomp.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/8100/trunk/opencv/modules/videostab/src/precomp.hpp
+END
+deblurring.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/7822/trunk/opencv/modules/videostab/src/deblurring.cpp
+END

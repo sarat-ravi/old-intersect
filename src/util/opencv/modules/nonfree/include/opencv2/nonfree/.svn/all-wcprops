@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/opencv/!svn/ver/8468/trunk/opencv/modules/nonfree/include/opencv2/nonfree
+END
+nonfree.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/opencv/!svn/ver/8331/trunk/opencv/modules/nonfree/include/opencv2/nonfree/nonfree.hpp
+END
+features2d.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/opencv/!svn/ver/8468/trunk/opencv/modules/nonfree/include/opencv2/nonfree/features2d.hpp
+END

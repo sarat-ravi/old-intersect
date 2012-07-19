@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/opencv/!svn/ver/8527/trunk/opencv/samples/android/color-blob-detection/src/org/opencv/samples/colorblobdetect
+END
+ColorBlobDetectionView.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/opencv/!svn/ver/8527/trunk/opencv/samples/android/color-blob-detection/src/org/opencv/samples/colorblobdetect/ColorBlobDetectionView.java
+END
+ColorBlobDetector.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/opencv/!svn/ver/8527/trunk/opencv/samples/android/color-blob-detection/src/org/opencv/samples/colorblobdetect/ColorBlobDetector.java
+END
+ColorBlobDetectionActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/opencv/!svn/ver/8527/trunk/opencv/samples/android/color-blob-detection/src/org/opencv/samples/colorblobdetect/ColorBlobDetectionActivity.java
+END
+SampleCvViewBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/opencv/!svn/ver/8371/trunk/opencv/samples/android/color-blob-detection/src/org/opencv/samples/colorblobdetect/SampleCvViewBase.java
+END

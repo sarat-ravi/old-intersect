@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/opencv/!svn/ver/8478/trunk/opencv/modules/stitching/include/opencv2/stitching
+END
+warpers.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/opencv/!svn/ver/7490/trunk/opencv/modules/stitching/include/opencv2/stitching/warpers.hpp
+END
+stitcher.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/opencv/!svn/ver/6908/trunk/opencv/modules/stitching/include/opencv2/stitching/stitcher.hpp
+END

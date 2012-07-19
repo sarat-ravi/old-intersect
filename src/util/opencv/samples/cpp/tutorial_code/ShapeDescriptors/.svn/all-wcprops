@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/opencv/!svn/ver/6015/trunk/opencv/samples/cpp/tutorial_code/ShapeDescriptors
+END
+hull_demo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/opencv/!svn/ver/6011/trunk/opencv/samples/cpp/tutorial_code/ShapeDescriptors/hull_demo.cpp
+END
+generalContours_demo1.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/opencv/!svn/ver/6005/trunk/opencv/samples/cpp/tutorial_code/ShapeDescriptors/generalContours_demo1.cpp
+END
+generalContours_demo2.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/opencv/!svn/ver/6012/trunk/opencv/samples/cpp/tutorial_code/ShapeDescriptors/generalContours_demo2.cpp
+END
+findContours_demo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/opencv/!svn/ver/6001/trunk/opencv/samples/cpp/tutorial_code/ShapeDescriptors/findContours_demo.cpp
+END
+pointPolygonTest_demo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/opencv/!svn/ver/6014/trunk/opencv/samples/cpp/tutorial_code/ShapeDescriptors/pointPolygonTest_demo.cpp
+END
+moments_demo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/opencv/!svn/ver/6015/trunk/opencv/samples/cpp/tutorial_code/ShapeDescriptors/moments_demo.cpp
+END

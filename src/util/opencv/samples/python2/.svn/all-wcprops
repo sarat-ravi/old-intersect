@@ -1,0 +1,227 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/opencv/!svn/ver/8568/trunk/opencv/samples/python2
+END
+digits.png
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/opencv/!svn/ver/8547/trunk/opencv/samples/python2/digits.png
+END
+digits.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/opencv/!svn/ver/8568/trunk/opencv/samples/python2/digits.py
+END
+demo.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/opencv/!svn/ver/7494/trunk/opencv/samples/python2/demo.py
+END
+mouse_and_match.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/7577/trunk/opencv/samples/python2/mouse_and_match.py
+END
+calibrate.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/opencv/!svn/ver/7494/trunk/opencv/samples/python2/calibrate.py
+END
+feature_homography.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/7494/trunk/opencv/samples/python2/feature_homography.py
+END
+opt_flow.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/opencv/!svn/ver/7494/trunk/opencv/samples/python2/opt_flow.py
+END
+_coverage.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/opencv/!svn/ver/6600/trunk/opencv/samples/python2/_coverage.py
+END
+lk_track.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/opencv/!svn/ver/8413/trunk/opencv/samples/python2/lk_track.py
+END
+color_histogram.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/7494/trunk/opencv/samples/python2/color_histogram.py
+END
+camshift.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/opencv/!svn/ver/7494/trunk/opencv/samples/python2/camshift.py
+END
+video_dmtx.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/opencv/!svn/ver/8414/trunk/opencv/samples/python2/video_dmtx.py
+END
+edge.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/opencv/!svn/ver/7494/trunk/opencv/samples/python2/edge.py
+END
+video_threaded.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/8472/trunk/opencv/samples/python2/video_threaded.py
+END
+turing.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/opencv/!svn/ver/7494/trunk/opencv/samples/python2/turing.py
+END
+find_obj.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/opencv/!svn/ver/7494/trunk/opencv/samples/python2/find_obj.py
+END
+stereo_match.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/7494/trunk/opencv/samples/python2/stereo_match.py
+END
+peopledetect.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/7741/trunk/opencv/samples/python2/peopledetect.py
+END
+squares.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/opencv/!svn/ver/7494/trunk/opencv/samples/python2/squares.py
+END
+watershed.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/opencv/!svn/ver/7494/trunk/opencv/samples/python2/watershed.py
+END
+gaussian_mix.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/8417/trunk/opencv/samples/python2/gaussian_mix.py
+END
+distrans.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/opencv/!svn/ver/7494/trunk/opencv/samples/python2/distrans.py
+END
+facedetect.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/opencv/!svn/ver/7494/trunk/opencv/samples/python2/facedetect.py
+END
+common.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/opencv/!svn/ver/8568/trunk/opencv/samples/python2/common.py
+END
+coherence.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/opencv/!svn/ver/7494/trunk/opencv/samples/python2/coherence.py
+END
+morphology.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/opencv/!svn/ver/7494/trunk/opencv/samples/python2/morphology.py
+END
+browse.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/opencv/!svn/ver/7494/trunk/opencv/samples/python2/browse.py
+END
+inpaint.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/opencv/!svn/ver/7494/trunk/opencv/samples/python2/inpaint.py
+END
+lk_homography.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/opencv/!svn/ver/8413/trunk/opencv/samples/python2/lk_homography.py
+END
+gabor_threads.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/opencv/!svn/ver/7494/trunk/opencv/samples/python2/gabor_threads.py
+END
+mser.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/opencv/!svn/ver/7494/trunk/opencv/samples/python2/mser.py
+END
+video.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/opencv/!svn/ver/7494/trunk/opencv/samples/python2/video.py
+END
+hist.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/opencv/!svn/ver/7495/trunk/opencv/samples/python2/hist.py
+END
+floodfill.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/opencv/!svn/ver/7494/trunk/opencv/samples/python2/floodfill.py
+END
+contours.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/opencv/!svn/ver/7494/trunk/opencv/samples/python2/contours.py
+END
+motempl.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/opencv/!svn/ver/7494/trunk/opencv/samples/python2/motempl.py
+END
+letter_recog.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/7494/trunk/opencv/samples/python2/letter_recog.py
+END

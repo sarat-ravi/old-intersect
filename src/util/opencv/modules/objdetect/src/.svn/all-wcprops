@@ -1,0 +1,185 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/objdetect/src
+END
+featurepyramid.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/opencv/!svn/ver/7631/trunk/opencv/modules/objdetect/src/featurepyramid.cpp
+END
+cascadedetect.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/opencv/!svn/ver/6755/trunk/opencv/modules/objdetect/src/cascadedetect.hpp
+END
+_latentsvm.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/6002/trunk/opencv/modules/objdetect/src/_latentsvm.h
+END
+_lsvm_tbbversion.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/opencv/!svn/ver/5447/trunk/opencv/modules/objdetect/src/_lsvm_tbbversion.h
+END
+normal_lut.i
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/7392/trunk/opencv/modules/objdetect/src/normal_lut.i
+END
+_lsvm_fft.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/3804/trunk/opencv/modules/objdetect/src/_lsvm_fft.h
+END
+routine.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/6002/trunk/opencv/modules/objdetect/src/routine.cpp
+END
+distancetransform.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/opencv/!svn/ver/6785/trunk/opencv/modules/objdetect/src/distancetransform.cpp
+END
+objdetect_init.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/objdetect/src/objdetect_init.cpp
+END
+linemod.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/8225/trunk/opencv/modules/objdetect/src/linemod.cpp
+END
+_lsvm_routine.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/6002/trunk/opencv/modules/objdetect/src/_lsvm_routine.h
+END
+matching.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/7534/trunk/opencv/modules/objdetect/src/matching.cpp
+END
+_lsvm_distancetransform.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/opencv/!svn/ver/3804/trunk/opencv/modules/objdetect/src/_lsvm_distancetransform.h
+END
+datamatrix.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/objdetect/src/datamatrix.cpp
+END
+_lsvm_error.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/opencv/!svn/ver/6002/trunk/opencv/modules/objdetect/src/_lsvm_error.h
+END
+lsvmparser.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/objdetect/src/lsvmparser.cpp
+END
+resizeimg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/opencv/!svn/ver/4897/trunk/opencv/modules/objdetect/src/resizeimg.cpp
+END
+_lsvm_matching.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/opencv/!svn/ver/6047/trunk/opencv/modules/objdetect/src/_lsvm_matching.h
+END
+_lsvmparser.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/opencv/!svn/ver/3756/trunk/opencv/modules/objdetect/src/_lsvmparser.h
+END
+_lsvm_resizeimg.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/opencv/!svn/ver/3804/trunk/opencv/modules/objdetect/src/_lsvm_resizeimg.h
+END
+precomp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/3060/trunk/opencv/modules/objdetect/src/precomp.cpp
+END
+latentsvmdetector.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/opencv/!svn/ver/7670/trunk/opencv/modules/objdetect/src/latentsvmdetector.cpp
+END
+_lsvm_types.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/opencv/!svn/ver/6002/trunk/opencv/modules/objdetect/src/_lsvm_types.h
+END
+precomp.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/objdetect/src/precomp.hpp
+END
+haar.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/objdetect/src/haar.cpp
+END
+cascadedetect.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/opencv/!svn/ver/7308/trunk/opencv/modules/objdetect/src/cascadedetect.cpp
+END
+hog.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/opencv/!svn/ver/7698/trunk/opencv/modules/objdetect/src/hog.cpp
+END
+latentsvm.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/opencv/!svn/ver/7670/trunk/opencv/modules/objdetect/src/latentsvm.cpp
+END
+fft.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/opencv/!svn/ver/3732/trunk/opencv/modules/objdetect/src/fft.cpp
+END
+lsvmtbbversion.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/opencv/!svn/ver/7346/trunk/opencv/modules/objdetect/src/lsvmtbbversion.cpp
+END

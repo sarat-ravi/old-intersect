@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/nonfree/test
+END
+test_precomp.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/7504/trunk/opencv/modules/nonfree/test/test_precomp.hpp
+END
+test_detectors.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/opencv/!svn/ver/7688/trunk/opencv/modules/nonfree/test/test_detectors.cpp
+END
+test_features2d.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/nonfree/test/test_features2d.cpp
+END
+test_main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/7504/trunk/opencv/modules/nonfree/test/test_main.cpp
+END
+test_precomp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/7504/trunk/opencv/modules/nonfree/test/test_precomp.cpp
+END

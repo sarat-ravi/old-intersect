@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/opencv/!svn/ver/8494/trunk/opencv/modules/java/android_test/src/org/opencv/test/imgproc
+END
+ImgprocTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/opencv/!svn/ver/8494/trunk/opencv/modules/java/android_test/src/org/opencv/test/imgproc/ImgprocTest.java
+END
+MomentsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/opencv/!svn/ver/6339/trunk/opencv/modules/java/android_test/src/org/opencv/test/imgproc/MomentsTest.java
+END
+Subdiv2DTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/java/android_test/src/org/opencv/test/imgproc/Subdiv2DTest.java
+END

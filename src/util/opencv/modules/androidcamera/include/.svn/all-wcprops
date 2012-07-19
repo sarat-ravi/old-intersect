@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/androidcamera/include
+END
+camera_activity.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/opencv/!svn/ver/5519/trunk/opencv/modules/androidcamera/include/camera_activity.hpp
+END
+camera_properties.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/androidcamera/include/camera_properties.h
+END

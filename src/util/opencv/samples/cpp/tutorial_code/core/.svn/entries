@@ -1,0 +1,49 @@
+10
+
+dir
+8583
+http://code.opencv.org/svn/opencv/trunk/opencv/samples/cpp/tutorial_code/core
+http://code.opencv.org/svn/opencv
+
+
+
+2012-03-20T09:44:40.955608Z
+7568
+marina.kolpakova
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+c5418bc3-7546-4aae-8bad-fa6f2f3e53e6
+
+Matrix
+dir
+
+mat_the_basic_image_container
+dir
+
+discrete_fourier_transform
+dir
+
+how_to_scan_images
+dir
+
+interoperability_with_OpenCV_1
+dir
+
+file_input_output
+dir
+
+mat_mask_operations
+dir
+

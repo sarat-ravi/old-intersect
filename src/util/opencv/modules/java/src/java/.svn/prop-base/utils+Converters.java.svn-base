@@ -1,0 +1,7 @@
+K 13
+svn:mergeinfo
+V 234
+/branches/2.4/opencv/modules/java/src/java/utils+Converters.java:7793-8279
+/branches/opencv_pthread_framework/opencv/modules/java/src/java/utils.java:4873-4972
+/branches/perf_tests/modules/java/src/java/utils+Converters.java:6430-6673
+END

@@ -1,0 +1,377 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/opencv/!svn/ver/8542/trunk/opencv/modules/highgui/src
+END
+grfmt_jpeg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/7526/trunk/opencv/modules/highgui/src/grfmt_jpeg.cpp
+END
+cap_vfw.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/7526/trunk/opencv/modules/highgui/src/cap_vfw.cpp
+END
+cap_ffmpeg_api.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/opencv/!svn/ver/8091/trunk/opencv/modules/highgui/src/cap_ffmpeg_api.hpp
+END
+cap_xine.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/opencv/!svn/ver/3061/trunk/opencv/modules/highgui/src/cap_xine.cpp
+END
+cap_ximea.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/6434/trunk/opencv/modules/highgui/src/cap_ximea.cpp
+END
+grfmt_jpeg2000.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/opencv/!svn/ver/3343/trunk/opencv/modules/highgui/src/grfmt_jpeg2000.cpp
+END
+cap_ffmpeg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/8291/trunk/opencv/modules/highgui/src/cap_ffmpeg.cpp
+END
+cap_v4l.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/7706/trunk/opencv/modules/highgui/src/cap_v4l.cpp
+END
+ffmpeg_codecs.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/7646/trunk/opencv/modules/highgui/src/ffmpeg_codecs.hpp
+END
+grfmt_jpeg.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/3060/trunk/opencv/modules/highgui/src/grfmt_jpeg.hpp
+END
+grfmt_jpeg2000.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/opencv/!svn/ver/3060/trunk/opencv/modules/highgui/src/grfmt_jpeg2000.hpp
+END
+window_carbon.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/3213/trunk/opencv/modules/highgui/src/window_carbon.cpp
+END
+utils.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/opencv/!svn/ver/4933/trunk/opencv/modules/highgui/src/utils.cpp
+END
+cap_dc1394_v2.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/7739/trunk/opencv/modules/highgui/src/cap_dc1394_v2.cpp
+END
+cap_pvapi.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/8452/trunk/opencv/modules/highgui/src/cap_pvapi.cpp
+END
+cap_mil.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/3355/trunk/opencv/modules/highgui/src/cap_mil.cpp
+END
+precomp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/3060/trunk/opencv/modules/highgui/src/precomp.cpp
+END
+utils.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/opencv/!svn/ver/4933/trunk/opencv/modules/highgui/src/utils.hpp
+END
+cap_qt.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/opencv/!svn/ver/4273/trunk/opencv/modules/highgui/src/cap_qt.cpp
+END
+cap_avfoundation.mm
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/opencv/!svn/ver/8352/trunk/opencv/modules/highgui/src/cap_avfoundation.mm
+END
+cap_cmu.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/3060/trunk/opencv/modules/highgui/src/cap_cmu.cpp
+END
+cap_dshow.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/8483/trunk/opencv/modules/highgui/src/cap_dshow.cpp
+END
+grfmts.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/opencv/!svn/ver/3060/trunk/opencv/modules/highgui/src/grfmts.hpp
+END
+grfmt_imageio.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/6573/trunk/opencv/modules/highgui/src/grfmt_imageio.cpp
+END
+grfmt_sunras.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/3343/trunk/opencv/modules/highgui/src/grfmt_sunras.cpp
+END
+precomp.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/7674/trunk/opencv/modules/highgui/src/precomp.hpp
+END
+cap_openni.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/highgui/src/cap_openni.cpp
+END
+window_QT.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/highgui/src/window_QT.cpp
+END
+cap_gstreamer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/5043/trunk/opencv/modules/highgui/src/cap_gstreamer.cpp
+END
+grfmt_imageio.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/6573/trunk/opencv/modules/highgui/src/grfmt_imageio.hpp
+END
+window_QT.qrc
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/3340/trunk/opencv/modules/highgui/src/window_QT.qrc
+END
+cap_libv4l.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/7244/trunk/opencv/modules/highgui/src/cap_libv4l.cpp
+END
+grfmt_sunras.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/3060/trunk/opencv/modules/highgui/src/grfmt_sunras.hpp
+END
+grfmt_png.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/highgui/src/grfmt_png.cpp
+END
+bitstrm.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/3060/trunk/opencv/modules/highgui/src/bitstrm.cpp
+END
+grfmt_tiff.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/6114/trunk/opencv/modules/highgui/src/grfmt_tiff.cpp
+END
+cap_images.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/3060/trunk/opencv/modules/highgui/src/cap_images.cpp
+END
+grfmt_png.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/3060/trunk/opencv/modules/highgui/src/grfmt_png.hpp
+END
+bitstrm.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/3060/trunk/opencv/modules/highgui/src/bitstrm.hpp
+END
+cap_dc1394.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/3060/trunk/opencv/modules/highgui/src/cap_dc1394.cpp
+END
+grfmt_tiff.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/5318/trunk/opencv/modules/highgui/src/grfmt_tiff.hpp
+END
+grfmt_exr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/6782/trunk/opencv/modules/highgui/src/grfmt_exr.cpp
+END
+loadsave.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/opencv/!svn/ver/7527/trunk/opencv/modules/highgui/src/loadsave.cpp
+END
+makeswig.sh
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/3060/trunk/opencv/modules/highgui/src/makeswig.sh
+END
+cap_tyzx.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/opencv/!svn/ver/3060/trunk/opencv/modules/highgui/src/cap_tyzx.cpp
+END
+cap_unicap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/7731/trunk/opencv/modules/highgui/src/cap_unicap.cpp
+END
+grfmt_exr.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/6549/trunk/opencv/modules/highgui/src/grfmt_exr.hpp
+END
+window_cocoa.mm
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/opencv/!svn/ver/7308/trunk/opencv/modules/highgui/src/window_cocoa.mm
+END
+window_w32.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/8393/trunk/opencv/modules/highgui/src/window_w32.cpp
+END
+cap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/opencv/!svn/ver/8542/trunk/opencv/modules/highgui/src/cap.cpp
+END
+cap_android.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/highgui/src/cap_android.cpp
+END
+grfmt_pxm.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/3975/trunk/opencv/modules/highgui/src/grfmt_pxm.cpp
+END
+cap_qtkit.mm
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/opencv/!svn/ver/8542/trunk/opencv/modules/highgui/src/cap_qtkit.mm
+END
+window.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/opencv/!svn/ver/7349/trunk/opencv/modules/highgui/src/window.cpp
+END
+grfmt_pxm.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/3060/trunk/opencv/modules/highgui/src/grfmt_pxm.hpp
+END
+grfmt_base.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/3060/trunk/opencv/modules/highgui/src/grfmt_base.cpp
+END
+window_gtk.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/7636/trunk/opencv/modules/highgui/src/window_gtk.cpp
+END
+grfmt_bmp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/7736/trunk/opencv/modules/highgui/src/grfmt_bmp.cpp
+END
+cap_ffmpeg_impl.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/opencv/!svn/ver/8542/trunk/opencv/modules/highgui/src/cap_ffmpeg_impl.hpp
+END
+grfmt_base.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/6289/trunk/opencv/modules/highgui/src/grfmt_base.hpp
+END
+window_QT.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/7048/trunk/opencv/modules/highgui/src/window_QT.h
+END
+grfmt_bmp.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/3147/trunk/opencv/modules/highgui/src/grfmt_bmp.hpp
+END

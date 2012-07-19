@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/opencv/!svn/ver/7578/trunk/opencv/modules/androidcamera/camera_wrapper/android.3.0.1
+END
+ICamera.patch
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/opencv/!svn/ver/7166/trunk/opencv/modules/androidcamera/camera_wrapper/android.3.0.1/ICamera.patch
+END
+Camera.patch
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/opencv/!svn/ver/7166/trunk/opencv/modules/androidcamera/camera_wrapper/android.3.0.1/Camera.patch
+END
+SurfaceTexture.patch
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/opencv/!svn/ver/7166/trunk/opencv/modules/androidcamera/camera_wrapper/android.3.0.1/SurfaceTexture.patch
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/opencv/!svn/ver/7578/trunk/opencv/modules/androidcamera/camera_wrapper/android.3.0.1/README
+END

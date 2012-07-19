@@ -1,0 +1,77 @@
+10
+
+dir
+8583
+http://code.opencv.org/svn/opencv/trunk/opencv/modules/photo
+http://code.opencv.org/svn/opencv
+
+
+
+2012-05-28T07:36:14.565989Z
+8468
+andrey.kamaev
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+c5418bc3-7546-4aae-8bad-fa6f2f3e53e6
+
+include
+dir
+
+doc
+dir
+
+src
+dir
+
+perf
+dir
+
+CMakeLists.txt
+file
+
+
+
+
+2012-06-06T19:53:27.675141Z
+3426c7a166bd7ae9b0e56c82d332a26a
+2012-03-15T14:36:01.304972Z
+7504
+vp153
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+89
+
+test
+dir
+

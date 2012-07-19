@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/opencv/!svn/ver/5470/trunk/opencv/modules/imgproc/doc/pics
+END
+building.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/4793/trunk/opencv/modules/imgproc/doc/pics/building.jpg
+END
+houghp.png
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/opencv/!svn/ver/4793/trunk/opencv/modules/imgproc/doc/pics/houghp.png
+END
+threshold.png
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/opencv/!svn/ver/4793/trunk/opencv/modules/imgproc/doc/pics/threshold.png
+END
+subdiv.png
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/opencv/!svn/ver/4793/trunk/opencv/modules/imgproc/doc/pics/subdiv.png
+END
+pointpolygon.png
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/opencv/!svn/ver/4793/trunk/opencv/modules/imgproc/doc/pics/pointpolygon.png
+END
+bayer.png
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/5470/trunk/opencv/modules/imgproc/doc/pics/bayer.png
+END
+integral.png
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/4793/trunk/opencv/modules/imgproc/doc/pics/integral.png
+END
+backprojectpatch.png
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/opencv/!svn/ver/4793/trunk/opencv/modules/imgproc/doc/pics/backprojectpatch.png
+END
+logpolar.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/4793/trunk/opencv/modules/imgproc/doc/pics/logpolar.jpg
+END
+defects.png
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/4793/trunk/opencv/modules/imgproc/doc/pics/defects.png
+END
+contoursecarea.png
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/opencv/!svn/ver/4793/trunk/opencv/modules/imgproc/doc/pics/contoursecarea.png
+END
+quadedge.png
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/4793/trunk/opencv/modules/imgproc/doc/pics/quadedge.png
+END
+cornersubpix.png
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/opencv/!svn/ver/4793/trunk/opencv/modules/imgproc/doc/pics/cornersubpix.png
+END
+boundingrect.png
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/opencv/!svn/ver/4793/trunk/opencv/modules/imgproc/doc/pics/boundingrect.png
+END
+minareabox.png
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/opencv/!svn/ver/4793/trunk/opencv/modules/imgproc/doc/pics/minareabox.png
+END
+inv_logpolar.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/opencv/!svn/ver/4793/trunk/opencv/modules/imgproc/doc/pics/inv_logpolar.jpg
+END

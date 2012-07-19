@@ -1,0 +1,83 @@
+10
+
+dir
+8583
+http://code.opencv.org/svn/opencv/trunk/opencv/modules/gpu
+http://code.opencv.org/svn/opencv
+
+
+
+2012-06-06T16:05:31.136858Z
+8583
+marina.kolpakova
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+c5418bc3-7546-4aae-8bad-fa6f2f3e53e6
+
+test
+dir
+
+include
+dir
+
+perf_cpu
+dir
+
+doc
+dir
+
+src
+dir
+
+misc
+dir
+
+perf
+dir
+
+CMakeLists.txt
+file
+
+
+
+
+2012-06-06T19:53:30.971141Z
+16c16332b6304fb208f7a850d9db0737
+2012-06-05T13:32:04.974454Z
+8565
+vlad_vinogradov
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5663
+

@@ -1,0 +1,49 @@
+10
+
+dir
+8583
+http://code.opencv.org/svn/opencv/trunk/opencv/doc/tutorials/features2d
+http://code.opencv.org/svn/opencv
+
+
+
+2012-03-11T14:35:46.006583Z
+7468
+alexander.shishkov
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+c5418bc3-7546-4aae-8bad-fa6f2f3e53e6
+
+detection_of_planar_objects
+dir
+
+feature_homography
+dir
+
+trackingmotion
+dir
+
+feature_detection
+dir
+
+table_of_content_features2d
+dir
+
+feature_flann_matcher
+dir
+
+feature_description
+dir
+

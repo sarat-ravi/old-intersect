@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/opencv/!svn/ver/8529/trunk/opencv/modules/python/src2
+END
+gen2.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/opencv/!svn/ver/8529/trunk/opencv/modules/python/src2/gen2.py
+END
+cv2.cv.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/opencv/!svn/ver/8468/trunk/opencv/modules/python/src2/cv2.cv.hpp
+END
+api
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/opencv/!svn/ver/8468/trunk/opencv/modules/python/src2/api
+END
+cv2.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/opencv/!svn/ver/8421/trunk/opencv/modules/python/src2/cv2.cpp
+END
+cv.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/opencv/!svn/ver/6463/trunk/opencv/modules/python/src2/cv.py
+END
+gen.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/opencv/!svn/ver/5989/trunk/opencv/modules/python/src2/gen.py
+END
+hdr_parser.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/8504/trunk/opencv/modules/python/src2/hdr_parser.py
+END
+defs
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/opencv/!svn/ver/5989/trunk/opencv/modules/python/src2/defs
+END

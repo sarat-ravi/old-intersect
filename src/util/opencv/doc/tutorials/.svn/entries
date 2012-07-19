@@ -1,0 +1,101 @@
+10
+
+dir
+8583
+http://code.opencv.org/svn/opencv/trunk/opencv/doc/tutorials
+http://code.opencv.org/svn/opencv
+
+
+
+2012-04-30T14:33:52.424773Z
+8280
+vp153
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+c5418bc3-7546-4aae-8bad-fa6f2f3e53e6
+
+definitions
+dir
+
+gpu
+dir
+
+general
+dir
+
+tutorials.rst
+file
+
+
+
+
+2012-06-06T19:52:19.439143Z
+b3642e0c0423fe29c99585b73cc6102c
+2011-07-19T22:08:54.906332Z
+6125
+gabor_bernat
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+7114
+
+imgproc
+dir
+
+calib3d
+dir
+
+introduction
+dir
+
+objdetect
+dir
+
+features2d
+dir
+
+highgui
+dir
+
+images
+dir
+
+video
+dir
+
+core
+dir
+
+ml
+dir
+

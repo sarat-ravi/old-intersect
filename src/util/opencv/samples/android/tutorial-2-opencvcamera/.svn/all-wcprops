@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/opencv/!svn/ver/8371/trunk/opencv/samples/android/tutorial-2-opencvcamera
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/opencv/!svn/ver/8045/trunk/opencv/samples/android/tutorial-2-opencvcamera/.project
+END
+AndroidManifest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/opencv/!svn/ver/6074/trunk/opencv/samples/android/tutorial-2-opencvcamera/AndroidManifest.xml
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/opencv/!svn/ver/7667/trunk/opencv/samples/android/tutorial-2-opencvcamera/CMakeLists.txt
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/opencv/!svn/ver/7299/trunk/opencv/samples/android/tutorial-2-opencvcamera/.classpath
+END

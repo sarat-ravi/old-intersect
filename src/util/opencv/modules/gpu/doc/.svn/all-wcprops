@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/opencv/!svn/ver/8565/trunk/opencv/modules/gpu/doc
+END
+object_detection.rst
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/8482/trunk/opencv/modules/gpu/doc/object_detection.rst
+END
+image_filtering.rst
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/opencv/!svn/ver/8492/trunk/opencv/modules/gpu/doc/image_filtering.rst
+END
+initalization_and_information.rst
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/opencv/!svn/ver/8492/trunk/opencv/modules/gpu/doc/initalization_and_information.rst
+END
+operations_on_matrices.rst
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/opencv/!svn/ver/8492/trunk/opencv/modules/gpu/doc/operations_on_matrices.rst
+END
+video.rst
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/opencv/!svn/ver/8565/trunk/opencv/modules/gpu/doc/video.rst
+END
+camera_calibration_and_3d_reconstruction.rst
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/opencv/!svn/ver/8482/trunk/opencv/modules/gpu/doc/camera_calibration_and_3d_reconstruction.rst
+END
+gpu.rst
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/opencv/!svn/ver/7092/trunk/opencv/modules/gpu/doc/gpu.rst
+END
+data_structures.rst
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/opencv/!svn/ver/8468/trunk/opencv/modules/gpu/doc/data_structures.rst
+END
+feature_detection_and_description.rst
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/opencv/!svn/ver/8482/trunk/opencv/modules/gpu/doc/feature_detection_and_description.rst
+END
+image_processing.rst
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/8506/trunk/opencv/modules/gpu/doc/image_processing.rst
+END
+introduction.rst
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/opencv/!svn/ver/8493/trunk/opencv/modules/gpu/doc/introduction.rst
+END
+per_element_operations.rst
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/opencv/!svn/ver/8492/trunk/opencv/modules/gpu/doc/per_element_operations.rst
+END
+matrix_reductions.rst
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/7720/trunk/opencv/modules/gpu/doc/matrix_reductions.rst
+END

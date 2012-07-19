@@ -1,0 +1,161 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/opencv/!svn/ver/7436/trunk/opencv/3rdparty/libpng
+END
+pnglibconf.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/opencv/!svn/ver/7425/trunk/opencv/3rdparty/libpng/pnglibconf.h
+END
+pngtest.png
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/opencv/!svn/ver/7425/trunk/opencv/3rdparty/libpng/pngtest.png
+END
+png.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/opencv/!svn/ver/7425/trunk/opencv/3rdparty/libpng/png.h
+END
+pngpriv.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/opencv/!svn/ver/7425/trunk/opencv/3rdparty/libpng/pngpriv.h
+END
+pngrtran.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/opencv/!svn/ver/7425/trunk/opencv/3rdparty/libpng/pngrtran.c
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/opencv/!svn/ver/7436/trunk/opencv/3rdparty/libpng/CMakeLists.txt
+END
+pngtrans.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/opencv/!svn/ver/7425/trunk/opencv/3rdparty/libpng/pngtrans.c
+END
+pngrio.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/opencv/!svn/ver/7425/trunk/opencv/3rdparty/libpng/pngrio.c
+END
+pngerror.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/opencv/!svn/ver/7425/trunk/opencv/3rdparty/libpng/pngerror.c
+END
+pngstruct.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/opencv/!svn/ver/7425/trunk/opencv/3rdparty/libpng/pngstruct.h
+END
+pngconf.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/opencv/!svn/ver/7425/trunk/opencv/3rdparty/libpng/pngconf.h
+END
+pngwrite.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/opencv/!svn/ver/7425/trunk/opencv/3rdparty/libpng/pngwrite.c
+END
+pngpread.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/opencv/!svn/ver/7425/trunk/opencv/3rdparty/libpng/pngpread.c
+END
+pngdebug.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/opencv/!svn/ver/7425/trunk/opencv/3rdparty/libpng/pngdebug.h
+END
+pngset.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/opencv/!svn/ver/7425/trunk/opencv/3rdparty/libpng/pngset.c
+END
+pngwtran.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/opencv/!svn/ver/7425/trunk/opencv/3rdparty/libpng/pngwtran.c
+END
+pngwio.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/opencv/!svn/ver/7425/trunk/opencv/3rdparty/libpng/pngwio.c
+END
+pngrutil.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/opencv/!svn/ver/7425/trunk/opencv/3rdparty/libpng/pngrutil.c
+END
+pnginfo.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/opencv/!svn/ver/7425/trunk/opencv/3rdparty/libpng/pnginfo.h
+END
+pngwutil.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/opencv/!svn/ver/7425/trunk/opencv/3rdparty/libpng/pngwutil.c
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/opencv/!svn/ver/7425/trunk/opencv/3rdparty/libpng/README
+END
+pngread.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/opencv/!svn/ver/7425/trunk/opencv/3rdparty/libpng/pngread.c
+END
+pngmem.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/opencv/!svn/ver/7425/trunk/opencv/3rdparty/libpng/pngmem.c
+END
+pngget.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/opencv/!svn/ver/7425/trunk/opencv/3rdparty/libpng/pngget.c
+END
+png.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/opencv/!svn/ver/7425/trunk/opencv/3rdparty/libpng/png.c
+END
+pngtest.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/opencv/!svn/ver/7425/trunk/opencv/3rdparty/libpng/pngtest.c
+END

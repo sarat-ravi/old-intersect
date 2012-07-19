@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/opencv/!svn/ver/8214/trunk/opencv/modules/videostab/include/opencv2/videostab
+END
+motion_core.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/opencv/!svn/ver/8173/trunk/opencv/modules/videostab/include/opencv2/videostab/motion_core.hpp
+END
+videostab.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/opencv/!svn/ver/8173/trunk/opencv/modules/videostab/include/opencv2/videostab/videostab.hpp
+END
+log.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/opencv/!svn/ver/7579/trunk/opencv/modules/videostab/include/opencv2/videostab/log.hpp
+END
+optical_flow.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/opencv/!svn/ver/8173/trunk/opencv/modules/videostab/include/opencv2/videostab/optical_flow.hpp
+END
+wobble_suppression.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/opencv/!svn/ver/8214/trunk/opencv/modules/videostab/include/opencv2/videostab/wobble_suppression.hpp
+END
+outlier_rejection.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/opencv/!svn/ver/8173/trunk/opencv/modules/videostab/include/opencv2/videostab/outlier_rejection.hpp
+END
+global_motion.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/opencv/!svn/ver/8214/trunk/opencv/modules/videostab/include/opencv2/videostab/global_motion.hpp
+END
+ring_buffer.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/opencv/!svn/ver/7822/trunk/opencv/modules/videostab/include/opencv2/videostab/ring_buffer.hpp
+END
+deblurring.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/opencv/!svn/ver/7852/trunk/opencv/modules/videostab/include/opencv2/videostab/deblurring.hpp
+END
+inpainting.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/opencv/!svn/ver/8048/trunk/opencv/modules/videostab/include/opencv2/videostab/inpainting.hpp
+END
+motion_stabilizing.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/opencv/!svn/ver/8103/trunk/opencv/modules/videostab/include/opencv2/videostab/motion_stabilizing.hpp
+END
+fast_marching.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/opencv/!svn/ver/7580/trunk/opencv/modules/videostab/include/opencv2/videostab/fast_marching.hpp
+END
+fast_marching_inl.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/opencv/!svn/ver/7580/trunk/opencv/modules/videostab/include/opencv2/videostab/fast_marching_inl.hpp
+END
+stabilizer.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/opencv/!svn/ver/8214/trunk/opencv/modules/videostab/include/opencv2/videostab/stabilizer.hpp
+END
+frame_source.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/opencv/!svn/ver/7801/trunk/opencv/modules/videostab/include/opencv2/videostab/frame_source.hpp
+END

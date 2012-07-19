@@ -1,0 +1,173 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/opencv/!svn/ver/8459/trunk/opencv/cmake
+END
+OpenCVFindLibsGUI.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/opencv/!svn/ver/8459/trunk/opencv/cmake/OpenCVFindLibsGUI.cmake
+END
+OpenCVGenConfig.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/opencv/!svn/ver/8292/trunk/opencv/cmake/OpenCVGenConfig.cmake
+END
+OpenCVDetectTBB.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/opencv/!svn/ver/8045/trunk/opencv/cmake/OpenCVDetectTBB.cmake
+END
+OpenCVUtils.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/opencv/!svn/ver/8393/trunk/opencv/cmake/OpenCVUtils.cmake
+END
+OpenCVGenPkgconfig.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/opencv/!svn/ver/7244/trunk/opencv/cmake/OpenCVGenPkgconfig.cmake
+END
+OpenCVGenAndroidMK.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/opencv/!svn/ver/7616/trunk/opencv/cmake/OpenCVGenAndroidMK.cmake
+END
+OpenCVFindXimea.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/opencv/!svn/ver/7113/trunk/opencv/cmake/OpenCVFindXimea.cmake
+END
+OpenCVGenHeaders.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/opencv/!svn/ver/7244/trunk/opencv/cmake/OpenCVGenHeaders.cmake
+END
+OpenCVDetectCUDA.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/opencv/!svn/ver/8313/trunk/opencv/cmake/OpenCVDetectCUDA.cmake
+END
+OpenCVFindLibsPerf.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/opencv/!svn/ver/8459/trunk/opencv/cmake/OpenCVFindLibsPerf.cmake
+END
+OpenCVPCHSupport.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/opencv/!svn/ver/7113/trunk/opencv/cmake/OpenCVPCHSupport.cmake
+END
+OpenCVFindPkgConfig.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/7113/trunk/opencv/cmake/OpenCVFindPkgConfig.cmake
+END
+OpenCVDetectPython.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/opencv/!svn/ver/8393/trunk/opencv/cmake/OpenCVDetectPython.cmake
+END
+OpenCVDetectAndroidSDK.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/8392/trunk/opencv/cmake/OpenCVDetectAndroidSDK.cmake
+END
+OpenCVExtraTargets.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/opencv/!svn/ver/7436/trunk/opencv/cmake/OpenCVExtraTargets.cmake
+END
+OpenCVDetectApacheAnt.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/8280/trunk/opencv/cmake/OpenCVDetectApacheAnt.cmake
+END
+OpenCVFindLATEX.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/opencv/!svn/ver/7113/trunk/opencv/cmake/OpenCVFindLATEX.cmake
+END
+OpenCVLegacyOptions.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/7387/trunk/opencv/cmake/OpenCVLegacyOptions.cmake
+END
+OpenCVFindOpenEXR.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/opencv/!svn/ver/8045/trunk/opencv/cmake/OpenCVFindOpenEXR.cmake
+END
+OpenCVFindLibsVideo.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/8459/trunk/opencv/cmake/OpenCVFindLibsVideo.cmake
+END
+OpenCVCRTLinkage.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/opencv/!svn/ver/7428/trunk/opencv/cmake/OpenCVCRTLinkage.cmake
+END
+OpenCVModule.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/opencv/!svn/ver/8420/trunk/opencv/cmake/OpenCVModule.cmake
+END
+OpenCVVersion.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/opencv/!svn/ver/7321/trunk/opencv/cmake/OpenCVVersion.cmake
+END
+OpenCVDetectCXXCompiler.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/opencv/!svn/ver/8444/trunk/opencv/cmake/OpenCVDetectCXXCompiler.cmake
+END
+OpenCVCompilerOptions.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/8444/trunk/opencv/cmake/OpenCVCompilerOptions.cmake
+END
+OpenCVFindIPP.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/opencv/!svn/ver/8348/trunk/opencv/cmake/OpenCVFindIPP.cmake
+END
+OpenCVFindOpenNI.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/opencv/!svn/ver/8045/trunk/opencv/cmake/OpenCVFindOpenNI.cmake
+END
+OpenCVFindLibsGrfmt.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/8459/trunk/opencv/cmake/OpenCVFindLibsGrfmt.cmake
+END

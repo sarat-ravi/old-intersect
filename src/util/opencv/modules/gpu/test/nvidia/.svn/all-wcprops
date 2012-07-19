@@ -1,0 +1,161 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/opencv/!svn/ver/8174/trunk/opencv/modules/gpu/test/nvidia
+END
+TestHaarCascadeLoader.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/opencv/!svn/ver/4740/trunk/opencv/modules/gpu/test/nvidia/TestHaarCascadeLoader.h
+END
+TestRectStdDev.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/gpu/test/nvidia/TestRectStdDev.h
+END
+TestIntegralImage.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/opencv/!svn/ver/4740/trunk/opencv/modules/gpu/test/nvidia/TestIntegralImage.h
+END
+TestTranspose.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/opencv/!svn/ver/4740/trunk/opencv/modules/gpu/test/nvidia/TestTranspose.cpp
+END
+main_nvidia.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/opencv/!svn/ver/8174/trunk/opencv/modules/gpu/test/nvidia/main_nvidia.cpp
+END
+TestTranspose.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/opencv/!svn/ver/4740/trunk/opencv/modules/gpu/test/nvidia/TestTranspose.h
+END
+TestCompact.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/opencv/!svn/ver/4740/trunk/opencv/modules/gpu/test/nvidia/TestCompact.cpp
+END
+NCVTestSourceProvider.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/opencv/!svn/ver/6372/trunk/opencv/modules/gpu/test/nvidia/NCVTestSourceProvider.hpp
+END
+TestHypothesesGrow.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/opencv/!svn/ver/4740/trunk/opencv/modules/gpu/test/nvidia/TestHypothesesGrow.cpp
+END
+TestCompact.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/4740/trunk/opencv/modules/gpu/test/nvidia/TestCompact.h
+END
+NCVTest.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/opencv/!svn/ver/6372/trunk/opencv/modules/gpu/test/nvidia/NCVTest.hpp
+END
+TestIntegralImageSquared.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/opencv/!svn/ver/4740/trunk/opencv/modules/gpu/test/nvidia/TestIntegralImageSquared.cpp
+END
+TestDrawRects.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/opencv/!svn/ver/4740/trunk/opencv/modules/gpu/test/nvidia/TestDrawRects.cpp
+END
+TestHypothesesGrow.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/opencv/!svn/ver/4740/trunk/opencv/modules/gpu/test/nvidia/TestHypothesesGrow.h
+END
+TestHypothesesFilter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/opencv/!svn/ver/6372/trunk/opencv/modules/gpu/test/nvidia/TestHypothesesFilter.cpp
+END
+TestResize.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/opencv/!svn/ver/4930/trunk/opencv/modules/gpu/test/nvidia/TestResize.cpp
+END
+TestIntegralImageSquared.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/opencv/!svn/ver/4740/trunk/opencv/modules/gpu/test/nvidia/TestIntegralImageSquared.h
+END
+TestHaarCascadeApplication.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/opencv/!svn/ver/7788/trunk/opencv/modules/gpu/test/nvidia/TestHaarCascadeApplication.cpp
+END
+TestDrawRects.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/opencv/!svn/ver/4740/trunk/opencv/modules/gpu/test/nvidia/TestDrawRects.h
+END
+TestHypothesesFilter.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/opencv/!svn/ver/4740/trunk/opencv/modules/gpu/test/nvidia/TestHypothesesFilter.h
+END
+TestHaarCascadeLoader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/opencv/!svn/ver/4740/trunk/opencv/modules/gpu/test/nvidia/TestHaarCascadeLoader.cpp
+END
+TestResize.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/4740/trunk/opencv/modules/gpu/test/nvidia/TestResize.h
+END
+NCVAutoTestLister.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/opencv/!svn/ver/5731/trunk/opencv/modules/gpu/test/nvidia/NCVAutoTestLister.hpp
+END
+TestRectStdDev.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/opencv/!svn/ver/4740/trunk/opencv/modules/gpu/test/nvidia/TestRectStdDev.cpp
+END
+TestIntegralImage.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/opencv/!svn/ver/4740/trunk/opencv/modules/gpu/test/nvidia/TestIntegralImage.cpp
+END
+TestHaarCascadeApplication.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/opencv/!svn/ver/4740/trunk/opencv/modules/gpu/test/nvidia/TestHaarCascadeApplication.h
+END

@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/opencv/!svn/ver/5639/trunk/opencv/3rdparty/include/dshow
+END
+dsound.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/5503/trunk/opencv/3rdparty/include/dshow/dsound.h
+END
+ddraw.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/opencv/!svn/ver/5503/trunk/opencv/3rdparty/include/dshow/ddraw.h
+END
+strmif.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/5507/trunk/opencv/3rdparty/include/dshow/strmif.h
+END
+evcode.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/5506/trunk/opencv/3rdparty/include/dshow/evcode.h
+END
+bdatypes.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/5639/trunk/opencv/3rdparty/include/dshow/bdatypes.h
+END
+_mingw_dxhelper.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/opencv/!svn/ver/5503/trunk/opencv/3rdparty/include/dshow/_mingw_dxhelper.h
+END
+errors.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/5514/trunk/opencv/3rdparty/include/dshow/errors.h
+END
+dvdmedia.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/5503/trunk/opencv/3rdparty/include/dshow/dvdmedia.h
+END
+control.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/opencv/!svn/ver/5503/trunk/opencv/3rdparty/include/dshow/control.h
+END
+dshow.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/opencv/!svn/ver/5515/trunk/opencv/3rdparty/include/dshow/dshow.h
+END
+amvideo.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/opencv/!svn/ver/5503/trunk/opencv/3rdparty/include/dshow/amvideo.h
+END
+_mingw_unicode.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/opencv/!svn/ver/5503/trunk/opencv/3rdparty/include/dshow/_mingw_unicode.h
+END
+ksuuids.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/opencv/!svn/ver/5503/trunk/opencv/3rdparty/include/dshow/ksuuids.h
+END
+uuids.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/opencv/!svn/ver/5503/trunk/opencv/3rdparty/include/dshow/uuids.h
+END
+audevcod.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/5515/trunk/opencv/3rdparty/include/dshow/audevcod.h
+END

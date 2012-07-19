@@ -1,0 +1,329 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/opencv/!svn/ver/8583/trunk/opencv/modules/gpu/src
+END
+ffmpeg_video_source.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/opencv/!svn/ver/8319/trunk/opencv/modules/gpu/src/ffmpeg_video_source.cpp
+END
+precomp.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/opencv/!svn/ver/8565/trunk/opencv/modules/gpu/src/precomp.hpp
+END
+optical_flow_farneback.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/gpu/src/optical_flow_farneback.cpp
+END
+stereobm.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/opencv/!svn/ver/7636/trunk/opencv/modules/gpu/src/stereobm.cpp
+END
+orb.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/opencv/!svn/ver/8550/trunk/opencv/modules/gpu/src/orb.cpp
+END
+video_parser.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/opencv/!svn/ver/8319/trunk/opencv/modules/gpu/src/video_parser.cpp
+END
+stereobp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/opencv/!svn/ver/6969/trunk/opencv/modules/gpu/src/stereobp.cpp
+END
+arithm.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/opencv/!svn/ver/8474/trunk/opencv/modules/gpu/src/arithm.cpp
+END
+blend.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/opencv/!svn/ver/6969/trunk/opencv/modules/gpu/src/blend.cpp
+END
+cuvid_video_source.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/8091/trunk/opencv/modules/gpu/src/cuvid_video_source.h
+END
+match_template.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/7678/trunk/opencv/modules/gpu/src/match_template.cpp
+END
+cudastream.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/opencv/!svn/ver/7311/trunk/opencv/modules/gpu/src/cudastream.cpp
+END
+pyramids.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/opencv/!svn/ver/7544/trunk/opencv/modules/gpu/src/pyramids.cpp
+END
+video_reader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/opencv/!svn/ver/8319/trunk/opencv/modules/gpu/src/video_reader.cpp
+END
+error.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/opencv/!svn/ver/6970/trunk/opencv/modules/gpu/src/error.cpp
+END
+video_decoder.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/8319/trunk/opencv/modules/gpu/src/video_decoder.cpp
+END
+mssegmentation.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/6957/trunk/opencv/modules/gpu/src/mssegmentation.cpp
+END
+fast.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/opencv/!svn/ver/7653/trunk/opencv/modules/gpu/src/fast.cpp
+END
+frame_queue.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/8319/trunk/opencv/modules/gpu/src/frame_queue.cpp
+END
+thread_wrappers.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/8319/trunk/opencv/modules/gpu/src/thread_wrappers.h
+END
+pyrlk.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/opencv/!svn/ver/8291/trunk/opencv/modules/gpu/src/pyrlk.cpp
+END
+video_writer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/opencv/!svn/ver/8319/trunk/opencv/modules/gpu/src/video_writer.cpp
+END
+matrix_reductions.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/8455/trunk/opencv/modules/gpu/src/matrix_reductions.cpp
+END
+gftt.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/opencv/!svn/ver/8145/trunk/opencv/modules/gpu/src/gftt.cpp
+END
+remap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/opencv/!svn/ver/7491/trunk/opencv/modules/gpu/src/remap.cpp
+END
+cu_safe_call.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/opencv/!svn/ver/8091/trunk/opencv/modules/gpu/src/cu_safe_call.h
+END
+matrix_operations.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/6957/trunk/opencv/modules/gpu/src/matrix_operations.cpp
+END
+warp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/opencv/!svn/ver/7491/trunk/opencv/modules/gpu/src/warp.cpp
+END
+split_merge.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/7657/trunk/opencv/modules/gpu/src/split_merge.cpp
+END
+hog.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/opencv/!svn/ver/6969/trunk/opencv/modules/gpu/src/hog.cpp
+END
+color.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/opencv/!svn/ver/7491/trunk/opencv/modules/gpu/src/color.cpp
+END
+ffmpeg_video_source.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/8319/trunk/opencv/modules/gpu/src/ffmpeg_video_source.h
+END
+surf.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/opencv/!svn/ver/7653/trunk/opencv/modules/gpu/src/surf.cpp
+END
+cuvid_video_source.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/opencv/!svn/ver/8091/trunk/opencv/modules/gpu/src/cuvid_video_source.cpp
+END
+optical_flow.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/opencv/!svn/ver/8145/trunk/opencv/modules/gpu/src/optical_flow.cpp
+END
+filtering.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/opencv/!svn/ver/7795/trunk/opencv/modules/gpu/src/filtering.cpp
+END
+global_motion.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/8140/trunk/opencv/modules/gpu/src/global_motion.cpp
+END
+fgd_bgfg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/opencv/!svn/ver/8565/trunk/opencv/modules/gpu/src/fgd_bgfg.cpp
+END
+video_parser.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/opencv/!svn/ver/8319/trunk/opencv/modules/gpu/src/video_parser.h
+END
+cascadeclassifier.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/6957/trunk/opencv/modules/gpu/src/cascadeclassifier.cpp
+END
+speckle_filtering.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/7675/trunk/opencv/modules/gpu/src/speckle_filtering.cpp
+END
+thread_wrappers.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/opencv/!svn/ver/8319/trunk/opencv/modules/gpu/src/thread_wrappers.cpp
+END
+element_operations.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/opencv/!svn/ver/8474/trunk/opencv/modules/gpu/src/element_operations.cpp
+END
+imgproc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/opencv/!svn/ver/8368/trunk/opencv/modules/gpu/src/imgproc.cpp
+END
+graphcuts.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/opencv/!svn/ver/7349/trunk/opencv/modules/gpu/src/graphcuts.cpp
+END
+cu_safe_call.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/opencv/!svn/ver/8091/trunk/opencv/modules/gpu/src/cu_safe_call.cpp
+END
+video_decoder.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/8319/trunk/opencv/modules/gpu/src/video_decoder.h
+END
+calib3d.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/opencv/!svn/ver/6969/trunk/opencv/modules/gpu/src/calib3d.cpp
+END
+resize.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/opencv/!svn/ver/8582/trunk/opencv/modules/gpu/src/resize.cpp
+END
+brute_force_matcher.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/opencv/!svn/ver/8168/trunk/opencv/modules/gpu/src/brute_force_matcher.cpp
+END
+frame_queue.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/opencv/!svn/ver/8319/trunk/opencv/modules/gpu/src/frame_queue.h
+END
+bilateral_filter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/6969/trunk/opencv/modules/gpu/src/bilateral_filter.cpp
+END
+precomp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/opencv/!svn/ver/3674/trunk/opencv/modules/gpu/src/precomp.cpp
+END
+stereocsbp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/opencv/!svn/ver/8145/trunk/opencv/modules/gpu/src/stereocsbp.cpp
+END

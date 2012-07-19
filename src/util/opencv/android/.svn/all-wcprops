@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/opencv/!svn/ver/8570/trunk/opencv/android
+END
+README.android
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/opencv/!svn/ver/8570/trunk/opencv/android/README.android
+END
+android.toolchain.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/8375/trunk/opencv/android/android.toolchain.cmake
+END

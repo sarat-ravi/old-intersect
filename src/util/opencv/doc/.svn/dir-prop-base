@@ -1,0 +1,16 @@
+K 10
+svn:ignore
+V 117
+1
+checkModule.sh
+getFuncs.sh
+opencv.aux
+opencv.bbl
+opencv.blg
+opencv.idx
+opencv.ilg
+opencv.ind
+opencv.out
+opencv.toc
+
+END

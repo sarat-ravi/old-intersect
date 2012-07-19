@@ -1,0 +1,8 @@
+K 13
+svn:mergeinfo
+V 204
+/branches/2.3/opencv/CMakeLists.txt:6456-6541
+/branches/2.4/opencv/CMakeLists.txt:7793-8279
+/branches/opencv_pthread_framework/opencv/CMakeLists.txt:4873-4972
+/branches/perf_tests/CMakeLists.txt:6430-6673
+END

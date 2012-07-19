@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/opencv/!svn/ver/8498/trunk/opencv/modules/highgui/test
+END
+test_positioning.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/highgui/test/test_positioning.cpp
+END
+test_framecount.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/highgui/test/test_framecount.cpp
+END
+test_ffmpeg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/highgui/test/test_ffmpeg.cpp
+END
+test_gui.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/7064/trunk/opencv/modules/highgui/test/test_gui.cpp
+END
+test_main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/5317/trunk/opencv/modules/highgui/test/test_main.cpp
+END
+test_precomp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/4683/trunk/opencv/modules/highgui/test/test_precomp.cpp
+END
+test_video_pos.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/highgui/test/test_video_pos.cpp
+END
+test_precomp.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/highgui/test/test_precomp.hpp
+END
+test_drawing.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/highgui/test/test_drawing.cpp
+END
+test_video_io.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/opencv/!svn/ver/8498/trunk/opencv/modules/highgui/test/test_video_io.cpp
+END
+test_grfmt.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/highgui/test/test_grfmt.cpp
+END

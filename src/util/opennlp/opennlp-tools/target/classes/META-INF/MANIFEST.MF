@@ -1,0 +1,94 @@
+Manifest-Version: 1.0
+Export-Package: opennlp.tools.lang.english;uses:="opennlp.tools.parser
+ ,opennlp.tools.util",opennlp.tools.tokenize.lang.en;uses:="opennlp.to
+ ols.tokenize,opennlp.tools.util",opennlp.tools.dictionary.serializer;
+ uses:="opennlp.tools.util,org.xml.sax,opennlp.tools.util.model,javax.
+ xml.transform,javax.xml.transform.stream,javax.xml.transform.sax,org.
+ xml.sax.helpers",opennlp.tools.sentdetect.lang.th;uses:="opennlp.tool
+ s.sentdetect",opennlp.tools.util.featuregen;uses:="opennlp.tools.util
+ ,opennlp.tools.ngram,opennlp.tools.dictionary,opennlp.tools.namefind,
+ org.w3c.dom,javax.xml.parsers,org.xml.sax,opennlp.tools.tokenize",ope
+ nnlp.tools.parser.treeinsert;uses:="opennlp.tools.parser,opennlp.tool
+ s.postag,opennlp.tools.chunker,opennlp.model,opennlp.tools.parser.lan
+ g.en,opennlp.maxent,opennlp.tools.parser.chunking,opennlp.tools.dicti
+ onary,opennlp.tools.util,opennlp.maxent.io",opennlp.tools.sentdetect;
+ uses:="opennlp.maxent,opennlp.tools.util,opennlp.tools.util.model,ope
+ nnlp.tools.dictionary,opennlp.tools.util.eval,opennlp.model,opennlp.t
+ ools.sentdetect.lang,opennlp.tools.tokenize",opennlp.tools.parser;use
+ s:="opennlp.tools.postag,opennlp.tools.chunker,opennlp.tools.parser.c
+ hunking,opennlp.tools.dictionary,opennlp.tools.ngram,opennlp.tools.ut
+ il,opennlp.model,opennlp.tools.parser.lang.en,opennlp.tools.parser.tr
+ eeinsert,opennlp.tools.util.model",opennlp.tools.dictionary;uses:="op
+ ennlp.tools.util,opennlp.tools.dictionary.serializer",opennlp.tools.n
+ gram;uses:="opennlp.tools.util,opennlp.tools.dictionary.serializer,op
+ ennlp.tools.dictionary",opennlp.tools.util.eval;uses:="opennlp.tools.
+ util",opennlp.tools.chunker;uses:="opennlp.tools.util,opennlp.tools.u
+ til.model,opennlp.tools.util.eval,opennlp.model",opennlp.tools.postag
+ ;uses:="opennlp.tools.dictionary,opennlp.tools.util,opennlp.tools.dic
+ tionary.serializer,opennlp.tools.util.eval,opennlp.tools.util.model,o
+ pennlp.model,opennlp.tools.tokenize,opennlp.tools.ngram,opennlp.perce
+ ptron,opennlp.maxent.io,opennlp.maxent",opennlp.tools.util.model;uses
+ :="opennlp.tools.util,opennlp.tools.dictionary,opennlp.tools.util.fea
+ turegen,opennlp.model",opennlp.tools.tokenize;uses:="opennlp.tools.ut
+ il,opennlp.tools.dictionary.serializer,opennlp.model,opennlp.tools.to
+ kenize.lang,opennlp.tools.util.model,opennlp.tools.dictionary,opennlp
+ .tools.util.eval,opennlp.maxent.io",opennlp.tools.tokenize.lang;uses:
+ ="opennlp.tools.tokenize",opennlp.tools.lang.spanish;uses:="opennlp.m
+ odel,opennlp.tools.namefind,opennlp.tools.util,opennlp.maxent.io",ope
+ nnlp.tools.parser.lang.en;uses:="opennlp.tools.parser",opennlp.tools.
+ formats;uses:="opennlp.tools.sentdetect,opennlp.tools.tokenize,opennl
+ p.tools.util,opennlp.tools.namefind,opennlp.tools.postag,opennlp.tool
+ s.doccat",opennlp.tools.sentdetect.lang;uses:="opennlp.tools.sentdete
+ ct,opennlp.tools.sentdetect.lang.th",opennlp.tools.formats.ad;uses:="
+ opennlp.tools.chunker,opennlp.tools.util,opennlp.tools.namefind",open
+ nlp.tools.parser.chunking;uses:="opennlp.tools.parser,opennlp.tools.d
+ ictionary,opennlp.tools.util,opennlp.tools.postag,opennlp.tools.chunk
+ er,opennlp.model,opennlp.tools.parser.lang.en,opennlp.maxent",opennlp
+ .tools.namefind;uses:="opennlp.tools.util.featuregen,opennlp.tools.di
+ ctionary,opennlp.tools.util,opennlp.model,opennlp.tools.util.model,op
+ ennlp.maxent,opennlp.tools.tokenize,opennlp.tools.util.eval",opennlp.
+ tools.doccat;uses:="opennlp.tools.util.featuregen,opennlp.model,openn
+ lp.tools.util.model,opennlp.tools.util,opennlp.tools.util.eval,opennl
+ p.tools.tokenize,opennlp.maxent",opennlp.tools.util;uses:="opennlp.mo
+ del"
+Ignore-Package: net.didion.jwnl.dictionary.file_manager,net.didion.jwn
+ l.princeton.data,net.didion.jwnl.princeton.file,net.didion.jwnl,net.d
+ idion.jwnl.dictionary,net.didion.jwnl.data,net.didion.jwnl.dictionary
+ .morph
+Implementation-Title: Apache OpenNLP Tools
+Built-By: saratt
+Tool: Bnd-1.15.0
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache.opennlp
+Specification-Title: Apache OpenNLP Tools
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-SymbolicName: org.apache.opennlp.tools
+Implementation-Version: 1.5.2-incubating
+Class-Path: opennlp-maxent-3.0.2-incubating.jar jwnl-1.3.3.jar
+Specification-Vendor: The Apache Software Foundation
+Bundle-Name: Apache OpenNLP Tools
+Created-By: Apache Maven Bundle Plugin
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 1.5.2.incubating
+Build-Jdk: 1.6.0_33
+Bnd-LastModified: 1341181752038
+Bundle-ManifestVersion: 2
+Bundle-Description: The Apache Software Foundation provides support fo
+ r the Apache community of open-source software projects.    The Apach
+ e projects are characterized by a collaborative, consensus based deve
+ lopment process, an open and    pragmatic software license, and a des
+ ire to create high quality software that leads the way in its field. 
+    We consider ourselves not simply a group of projects sharing a ser
+ ver, but rather a community of developers    and users.
+Bundle-DocURL: http://www.apache.org/
+Import-Package: javax.xml.parsers,javax.xml.transform,javax.xml.transf
+ orm.sax,javax.xml.transform.stream,opennlp.maxent,opennlp.maxent.io,o
+ pennlp.model,opennlp.perceptron,opennlp.tools.chunker,opennlp.tools.d
+ ictionary,opennlp.tools.doccat,opennlp.tools.parser,opennlp.tools.par
+ ser.chunking,opennlp.tools.parser.lang.en,opennlp.tools.parser.treein
+ sert,opennlp.tools.tokenize,opennlp.tools.util,opennlp.tools.util.eva
+ l,opennlp.tools.util.model,org.w3c.dom,org.xml.sax,org.xml.sax.helper
+ s
+Specification-Version: 1.5.2-incubating
+Main-Class: opennlp.tools.cmdline.CLI
+

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/opencv/!svn/ver/8572/trunk/opencv/samples/android
+END
+includeOpenCV.mk
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/opencv/!svn/ver/6042/trunk/opencv/samples/android/includeOpenCV.mk
+END
+fix_properties.bat
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/8475/trunk/opencv/samples/android/fix_properties.bat
+END
+fix_properties.sh
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/8475/trunk/opencv/samples/android/fix_properties.sh
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/opencv/!svn/ver/8280/trunk/opencv/samples/android/CMakeLists.txt
+END

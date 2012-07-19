@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/opencv/!svn/ver/8045/trunk/opencv/3rdparty/include/ffmpeg_/libavcodec
+END
+xvmc.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/opencv/!svn/ver/6517/trunk/opencv/3rdparty/include/ffmpeg_/libavcodec/xvmc.h
+END
+vdpau.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/opencv/!svn/ver/8045/trunk/opencv/3rdparty/include/ffmpeg_/libavcodec/vdpau.h
+END
+vaapi.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/opencv/!svn/ver/8045/trunk/opencv/3rdparty/include/ffmpeg_/libavcodec/vaapi.h
+END
+opt.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/opencv/!svn/ver/6517/trunk/opencv/3rdparty/include/ffmpeg_/libavcodec/opt.h
+END
+avcodec.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/opencv/!svn/ver/8045/trunk/opencv/3rdparty/include/ffmpeg_/libavcodec/avcodec.h
+END
+dxva2.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/opencv/!svn/ver/8045/trunk/opencv/3rdparty/include/ffmpeg_/libavcodec/dxva2.h
+END
+version.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/opencv/!svn/ver/8045/trunk/opencv/3rdparty/include/ffmpeg_/libavcodec/version.h
+END
+avfft.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/opencv/!svn/ver/6517/trunk/opencv/3rdparty/include/ffmpeg_/libavcodec/avfft.h
+END
+vda.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/opencv/!svn/ver/8045/trunk/opencv/3rdparty/include/ffmpeg_/libavcodec/vda.h
+END

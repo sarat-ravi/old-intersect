@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/opencv/!svn/ver/8506/trunk/opencv/modules/objdetect/doc
+END
+objdetect.rst
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/opencv/!svn/ver/6801/trunk/opencv/modules/objdetect/doc/objdetect.rst
+END
+latent_svm.rst
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/8506/trunk/opencv/modules/objdetect/doc/latent_svm.rst
+END
+cascade_classification.rst
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/opencv/!svn/ver/8482/trunk/opencv/modules/objdetect/doc/cascade_classification.rst
+END

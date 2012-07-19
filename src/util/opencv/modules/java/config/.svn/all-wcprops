@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/java/config
+END
+nonfree.filelist
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/java/config/nonfree.filelist
+END
+features2d.filelist
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/opencv/!svn/ver/6681/trunk/opencv/modules/java/config/features2d.filelist
+END
+core.filelist
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/java/config/core.filelist
+END

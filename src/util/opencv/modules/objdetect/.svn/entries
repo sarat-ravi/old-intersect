@@ -1,0 +1,77 @@
+10
+
+dir
+8583
+http://code.opencv.org/svn/opencv/trunk/opencv/modules/objdetect
+http://code.opencv.org/svn/opencv
+
+
+
+2012-05-29T16:55:46.491607Z
+8506
+andrey.kamaev
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+c5418bc3-7546-4aae-8bad-fa6f2f3e53e6
+
+src
+dir
+
+perf
+dir
+
+CMakeLists.txt
+file
+
+
+
+
+2012-06-06T19:53:52.431141Z
+3253f4a911bf85770d6e35e3fca8d1b2
+2012-04-13T21:50:59.489896Z
+8045
+vp153
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+93
+
+test
+dir
+
+include
+dir
+
+doc
+dir
+

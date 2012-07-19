@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/opencv/!svn/ver/8543/trunk/opencv/modules/video/src
+END
+video_init.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/opencv/!svn/ver/8543/trunk/opencv/modules/video/src/video_init.cpp
+END
+precomp.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/opencv/!svn/ver/8362/trunk/opencv/modules/video/src/precomp.hpp
+END
+lkpyramid.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/8453/trunk/opencv/modules/video/src/lkpyramid.cpp
+END
+motempl.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/opencv/!svn/ver/7527/trunk/opencv/modules/video/src/motempl.cpp
+END
+camshift.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/video/src/camshift.cpp
+END
+lkpyramid.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/8404/trunk/opencv/modules/video/src/lkpyramid.hpp
+END
+kalman.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/opencv/!svn/ver/3988/trunk/opencv/modules/video/src/kalman.cpp
+END
+bgfg_gaussmix.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/video/src/bgfg_gaussmix.cpp
+END
+precomp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/opencv/!svn/ver/3060/trunk/opencv/modules/video/src/precomp.cpp
+END
+bgfg_gaussmix2.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/8351/trunk/opencv/modules/video/src/bgfg_gaussmix2.cpp
+END
+optflowgf.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/5361/trunk/opencv/modules/video/src/optflowgf.cpp
+END

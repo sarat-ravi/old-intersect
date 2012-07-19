@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/stitching/perf
+END
+perf_precomp.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/opencv/!svn/ver/6719/trunk/opencv/modules/stitching/perf/perf_precomp.hpp
+END
+perf_stich.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/stitching/perf/perf_stich.cpp
+END
+perf_main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/6719/trunk/opencv/modules/stitching/perf/perf_main.cpp
+END
+perf_precomp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/opencv/!svn/ver/6719/trunk/opencv/modules/stitching/perf/perf_precomp.cpp
+END

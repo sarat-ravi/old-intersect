@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/opencv/!svn/ver/8045/trunk/opencv/apps/haartraining
+END
+haartraining.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/7244/trunk/opencv/apps/haartraining/haartraining.cpp
+END
+createsamples.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/opencv/!svn/ver/7244/trunk/opencv/apps/haartraining/createsamples.cpp
+END
+cvhaarclassifier.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/opencv/!svn/ver/8045/trunk/opencv/apps/haartraining/cvhaarclassifier.cpp
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/opencv/!svn/ver/7436/trunk/opencv/apps/haartraining/CMakeLists.txt
+END
+cvsamples.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/8045/trunk/opencv/apps/haartraining/cvsamples.cpp
+END
+cvboost.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/opencv/!svn/ver/8045/trunk/opencv/apps/haartraining/cvboost.cpp
+END
+cvhaartraining.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/8045/trunk/opencv/apps/haartraining/cvhaartraining.cpp
+END
+cvcommon.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/opencv/!svn/ver/7244/trunk/opencv/apps/haartraining/cvcommon.cpp
+END
+performance.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/7244/trunk/opencv/apps/haartraining/performance.cpp
+END
+cvclassifier.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/opencv/!svn/ver/7244/trunk/opencv/apps/haartraining/cvclassifier.h
+END
+_cvhaartraining.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/opencv/!svn/ver/7244/trunk/opencv/apps/haartraining/_cvhaartraining.h
+END
+_cvcommon.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/opencv/!svn/ver/7244/trunk/opencv/apps/haartraining/_cvcommon.h
+END
+cvhaartraining.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/7244/trunk/opencv/apps/haartraining/cvhaartraining.h
+END

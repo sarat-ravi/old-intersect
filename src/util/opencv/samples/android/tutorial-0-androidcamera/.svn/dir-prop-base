@@ -1,0 +1,12 @@
+K 10
+svn:ignore
+V 57
+bin
+gen
+libs
+obj
+proguard.cfg
+local.properties
+build.xml
+
+END

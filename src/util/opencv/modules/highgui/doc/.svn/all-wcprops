@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/opencv/!svn/ver/8524/trunk/opencv/modules/highgui/doc
+END
+qt_new_functions.rst
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/opencv/!svn/ver/8492/trunk/opencv/modules/highgui/doc/qt_new_functions.rst
+END
+reading_and_writing_images_and_video.rst
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/opencv/!svn/ver/8468/trunk/opencv/modules/highgui/doc/reading_and_writing_images_and_video.rst
+END
+user_interface.rst
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/opencv/!svn/ver/8524/trunk/opencv/modules/highgui/doc/user_interface.rst
+END
+highgui.rst
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/highgui/doc/highgui.rst
+END

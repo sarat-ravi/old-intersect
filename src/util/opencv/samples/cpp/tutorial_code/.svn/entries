@@ -1,0 +1,70 @@
+10
+
+dir
+8583
+http://code.opencv.org/svn/opencv/trunk/opencv/samples/cpp/tutorial_code
+http://code.opencv.org/svn/opencv
+
+
+
+2012-06-06T10:04:09.392568Z
+8573
+vp153
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+c5418bc3-7546-4aae-8bad-fa6f2f3e53e6
+
+images
+dir
+
+objectDetection
+dir
+
+TrackingMotion
+dir
+
+core
+dir
+
+ml
+dir
+
+Histograms_Matching
+dir
+
+gpu
+dir
+
+ImgProc
+dir
+
+calib3d
+dir
+
+introduction
+dir
+
+ShapeDescriptors
+dir
+
+HighGUI
+dir
+
+ImgTrans
+dir
+
+features2D
+dir
+

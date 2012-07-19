@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/8476/trunk/opencv/modules/legacy/include/opencv2/legacy
+END
+streams.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/opencv/!svn/ver/3060/trunk/opencv/modules/legacy/include/opencv2/legacy/streams.hpp
+END
+blobtrack.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/opencv/!svn/ver/5429/trunk/opencv/modules/legacy/include/opencv2/legacy/blobtrack.hpp
+END
+compat.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/opencv/!svn/ver/7504/trunk/opencv/modules/legacy/include/opencv2/legacy/compat.hpp
+END
+legacy.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/opencv/!svn/ver/8476/trunk/opencv/modules/legacy/include/opencv2/legacy/legacy.hpp
+END

@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/opencv/!svn/ver/8500/trunk/opencv/3rdparty/lib
+END
+libavdevice.a
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/opencv/!svn/ver/8045/trunk/opencv/3rdparty/lib/libavdevice.a
+END
+libmingwex64.a
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/opencv/!svn/ver/5466/trunk/opencv/3rdparty/lib/libmingwex64.a
+END
+libavformat64.a
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/opencv/!svn/ver/8045/trunk/opencv/3rdparty/lib/libavformat64.a
+END
+libavcore64.a
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/opencv/!svn/ver/6517/trunk/opencv/3rdparty/lib/libavcore64.a
+END
+libwsock32_.a
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/opencv/!svn/ver/1957/trunk/opencv/3rdparty/lib/libwsock32_.a
+END
+libgcc_.a
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/opencv/!svn/ver/1957/trunk/opencv/3rdparty/lib/libgcc_.a
+END
+libavdevice64.a
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/opencv/!svn/ver/8045/trunk/opencv/3rdparty/lib/libavdevice64.a
+END
+libswscale.a
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/opencv/!svn/ver/8045/trunk/opencv/3rdparty/lib/libswscale.a
+END
+libavcodec.a
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/opencv/!svn/ver/8045/trunk/opencv/3rdparty/lib/libavcodec.a
+END
+libavutil.a
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/opencv/!svn/ver/8045/trunk/opencv/3rdparty/lib/libavutil.a
+END
+libwsock3264.a
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/opencv/!svn/ver/5466/trunk/opencv/3rdparty/lib/libwsock3264.a
+END
+libgcc64.a
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/opencv/!svn/ver/5466/trunk/opencv/3rdparty/lib/libgcc64.a
+END
+libswscale64.a
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/opencv/!svn/ver/8045/trunk/opencv/3rdparty/lib/libswscale64.a
+END
+libmingwex_.a
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/opencv/!svn/ver/1957/trunk/opencv/3rdparty/lib/libmingwex_.a
+END
+libavutil64.a
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/opencv/!svn/ver/8045/trunk/opencv/3rdparty/lib/libavutil64.a
+END
+libavcodec64.a
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/opencv/!svn/ver/8045/trunk/opencv/3rdparty/lib/libavcodec64.a
+END
+libavformat.a
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/opencv/!svn/ver/8045/trunk/opencv/3rdparty/lib/libavformat.a
+END
+libcoldname_.a
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/opencv/!svn/ver/1957/trunk/opencv/3rdparty/lib/libcoldname_.a
+END

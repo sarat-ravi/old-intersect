@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/opencv/!svn/ver/8045/trunk/opencv/ios
+END
+readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/opencv/!svn/ver/6573/trunk/opencv/ios/readme.txt
+END
+configure-device_xcode.sh
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/opencv/!svn/ver/6573/trunk/opencv/ios/configure-device_xcode.sh
+END
+configure-simulator_xcode.sh
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/opencv/!svn/ver/6573/trunk/opencv/ios/configure-simulator_xcode.sh
+END

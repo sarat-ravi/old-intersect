@@ -1,0 +1,7 @@
+K 13
+svn:mergeinfo
+V 244
+/branches/opencv_pthread_framework/opencv/doc/tutorials/features2d/trackingmotion:4873-4972
+/branches/perf_tests/doc/tutorials/features2d/trackingmotion:6430-6673
+/trunk/opencv/doc/tutorials/features2d/trackingmotion/good_features_to_track:6131
+END

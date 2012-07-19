@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/java/android_test/src/org/opencv/test/objdetect
+END
+ObjdetectTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/java/android_test/src/org/opencv/test/objdetect/ObjdetectTest.java
+END
+CascadeClassifierTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/java/android_test/src/org/opencv/test/objdetect/CascadeClassifierTest.java
+END
+HOGDescriptorTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/opencv/!svn/ver/6451/trunk/opencv/modules/java/android_test/src/org/opencv/test/objdetect/HOGDescriptorTest.java
+END

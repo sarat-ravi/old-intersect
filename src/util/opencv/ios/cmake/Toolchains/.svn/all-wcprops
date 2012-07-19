@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/opencv/!svn/ver/8045/trunk/opencv/ios/cmake/Toolchains
+END
+Toolchain-iPhoneSimulator_Xcode.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/opencv/!svn/ver/8045/trunk/opencv/ios/cmake/Toolchains/Toolchain-iPhoneSimulator_Xcode.cmake
+END
+Toolchain-iPhoneOS_Xcode.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/opencv/!svn/ver/8045/trunk/opencv/ios/cmake/Toolchains/Toolchain-iPhoneOS_Xcode.cmake
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/opencv/!svn/ver/8325/trunk/opencv/samples/gpu/performance
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/opencv/!svn/ver/7244/trunk/opencv/samples/gpu/performance/CMakeLists.txt
+END
+performance.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/opencv/!svn/ver/8325/trunk/opencv/samples/gpu/performance/performance.cpp
+END
+tests.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/8168/trunk/opencv/samples/gpu/performance/tests.cpp
+END
+performance.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/7349/trunk/opencv/samples/gpu/performance/performance.h
+END

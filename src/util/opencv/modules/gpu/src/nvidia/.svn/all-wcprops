@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/gpu/src/nvidia
+END
+NCVBroxOpticalFlow.cu
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/gpu/src/nvidia/NCVBroxOpticalFlow.cu
+END
+NCVBroxOpticalFlow.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/gpu/src/nvidia/NCVBroxOpticalFlow.hpp
+END
+NCVHaarObjectDetection.cu
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/opencv/!svn/ver/7697/trunk/opencv/modules/gpu/src/nvidia/NCVHaarObjectDetection.cu
+END
+NCVHaarObjectDetection.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/opencv/!svn/ver/8252/trunk/opencv/modules/gpu/src/nvidia/NCVHaarObjectDetection.hpp
+END

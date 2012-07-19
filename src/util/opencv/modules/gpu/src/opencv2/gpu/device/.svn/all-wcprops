@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/8575/trunk/opencv/modules/gpu/src/opencv2/gpu/device
+END
+dynamic_smem.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/opencv/!svn/ver/6970/trunk/opencv/modules/gpu/src/opencv2/gpu/device/dynamic_smem.hpp
+END
+type_traits.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/opencv/!svn/ver/6970/trunk/opencv/modules/gpu/src/opencv2/gpu/device/type_traits.hpp
+END
+filters.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/opencv/!svn/ver/8575/trunk/opencv/modules/gpu/src/opencv2/gpu/device/filters.hpp
+END
+warp.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/opencv/!svn/ver/6970/trunk/opencv/modules/gpu/src/opencv2/gpu/device/warp.hpp
+END
+transform.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/opencv/!svn/ver/7128/trunk/opencv/modules/gpu/src/opencv2/gpu/device/transform.hpp
+END
+datamov_utils.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/opencv/!svn/ver/6970/trunk/opencv/modules/gpu/src/opencv2/gpu/device/datamov_utils.hpp
+END
+color.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/opencv/!svn/ver/6970/trunk/opencv/modules/gpu/src/opencv2/gpu/device/color.hpp
+END
+border_interpolate.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/opencv/!svn/ver/7696/trunk/opencv/modules/gpu/src/opencv2/gpu/device/border_interpolate.hpp
+END
+static_check.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/opencv/!svn/ver/6969/trunk/opencv/modules/gpu/src/opencv2/gpu/device/static_check.hpp
+END
+vec_math.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/opencv/!svn/ver/6970/trunk/opencv/modules/gpu/src/opencv2/gpu/device/vec_math.hpp
+END
+vec_distance.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/opencv/!svn/ver/6970/trunk/opencv/modules/gpu/src/opencv2/gpu/device/vec_distance.hpp
+END
+common.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/opencv/!svn/ver/7225/trunk/opencv/modules/gpu/src/opencv2/gpu/device/common.hpp
+END
+emulation.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/opencv/!svn/ver/6970/trunk/opencv/modules/gpu/src/opencv2/gpu/device/emulation.hpp
+END
+warp_reduce.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/opencv/!svn/ver/6970/trunk/opencv/modules/gpu/src/opencv2/gpu/device/warp_reduce.hpp
+END
+limits.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/opencv/!svn/ver/6970/trunk/opencv/modules/gpu/src/opencv2/gpu/device/limits.hpp
+END
+funcattrib.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/opencv/!svn/ver/6970/trunk/opencv/modules/gpu/src/opencv2/gpu/device/funcattrib.hpp
+END
+saturate_cast.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/opencv/!svn/ver/6970/trunk/opencv/modules/gpu/src/opencv2/gpu/device/saturate_cast.hpp
+END
+functional.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/opencv/!svn/ver/6970/trunk/opencv/modules/gpu/src/opencv2/gpu/device/functional.hpp
+END
+utility.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/opencv/!svn/ver/7128/trunk/opencv/modules/gpu/src/opencv2/gpu/device/utility.hpp
+END
+vec_traits.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/opencv/!svn/ver/8575/trunk/opencv/modules/gpu/src/opencv2/gpu/device/vec_traits.hpp
+END

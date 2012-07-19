@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/opencv/!svn/ver/8574/trunk/opencv/modules/ml/src
+END
+nbayes.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/opencv/!svn/ver/4876/trunk/opencv/modules/ml/src/nbayes.cpp
+END
+ann_mlp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/opencv/!svn/ver/5375/trunk/opencv/modules/ml/src/ann_mlp.cpp
+END
+boost.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/opencv/!svn/ver/8574/trunk/opencv/modules/ml/src/boost.cpp
+END
+ml_init.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/opencv/!svn/ver/8407/trunk/opencv/modules/ml/src/ml_init.cpp
+END
+testset.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/opencv/!svn/ver/3060/trunk/opencv/modules/ml/src/testset.cpp
+END
+tree.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/opencv/!svn/ver/7763/trunk/opencv/modules/ml/src/tree.cpp
+END
+em.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/ml/src/em.cpp
+END
+inner_functions.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/4102/trunk/opencv/modules/ml/src/inner_functions.cpp
+END
+rtrees.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/ml/src/rtrees.cpp
+END
+svm.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/opencv/!svn/ver/5048/trunk/opencv/modules/ml/src/svm.cpp
+END
+precomp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/opencv/!svn/ver/3060/trunk/opencv/modules/ml/src/precomp.cpp
+END
+ertrees.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/ml/src/ertrees.cpp
+END
+data.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/opencv/!svn/ver/8450/trunk/opencv/modules/ml/src/data.cpp
+END
+precomp.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/opencv/!svn/ver/5445/trunk/opencv/modules/ml/src/precomp.hpp
+END
+estimate.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/opencv/!svn/ver/3060/trunk/opencv/modules/ml/src/estimate.cpp
+END
+knearest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/opencv/!svn/ver/5925/trunk/opencv/modules/ml/src/knearest.cpp
+END
+gbt.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/opencv/!svn/ver/5554/trunk/opencv/modules/ml/src/gbt.cpp
+END
+cnn.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/opencv/!svn/ver/3060/trunk/opencv/modules/ml/src/cnn.cpp
+END

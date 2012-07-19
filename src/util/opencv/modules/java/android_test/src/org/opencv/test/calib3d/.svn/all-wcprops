@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/java/android_test/src/org/opencv/test/calib3d
+END
+StereoSGBMTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/opencv/!svn/ver/6339/trunk/opencv/modules/java/android_test/src/org/opencv/test/calib3d/StereoSGBMTest.java
+END
+StereoBMTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/opencv/!svn/ver/6339/trunk/opencv/modules/java/android_test/src/org/opencv/test/calib3d/StereoBMTest.java
+END
+Calib3dTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/java/android_test/src/org/opencv/test/calib3d/Calib3dTest.java
+END

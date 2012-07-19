@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/opencv/!svn/ver/6131/trunk/opencv/doc/tutorials/imgproc/histograms/histogram_equalization/images
+END
+Histogram_Equalization_Original_Image.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/opencv/!svn/ver/6131/trunk/opencv/doc/tutorials/imgproc/histograms/histogram_equalization/images/Histogram_Equalization_Original_Image.jpg
+END
+Histogram_Equalization_Theory_0.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/opencv/!svn/ver/6131/trunk/opencv/doc/tutorials/imgproc/histograms/histogram_equalization/images/Histogram_Equalization_Theory_0.jpg
+END
+Histogram_Equalization_Theory_1.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/opencv/!svn/ver/6131/trunk/opencv/doc/tutorials/imgproc/histograms/histogram_equalization/images/Histogram_Equalization_Theory_1.jpg
+END
+Histogram_Equalization_Theory_2.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/opencv/!svn/ver/6131/trunk/opencv/doc/tutorials/imgproc/histograms/histogram_equalization/images/Histogram_Equalization_Theory_2.jpg
+END
+Histogram_Equalization_Equalized_Histogram.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/opencv/!svn/ver/6131/trunk/opencv/doc/tutorials/imgproc/histograms/histogram_equalization/images/Histogram_Equalization_Equalized_Histogram.jpg
+END
+Histogram_Equalization_Original_Histogram.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/opencv/!svn/ver/6131/trunk/opencv/doc/tutorials/imgproc/histograms/histogram_equalization/images/Histogram_Equalization_Original_Histogram.jpg
+END
+Histogram_Equalization_Equalized_Image.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/opencv/!svn/ver/6131/trunk/opencv/doc/tutorials/imgproc/histograms/histogram_equalization/images/Histogram_Equalization_Equalized_Image.jpg
+END

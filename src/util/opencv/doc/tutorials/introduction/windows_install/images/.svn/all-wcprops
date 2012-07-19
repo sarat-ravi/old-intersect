@@ -1,0 +1,155 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/opencv/!svn/ver/6131/trunk/opencv/doc/tutorials/introduction/windows_install/images
+END
+Sphinx_Install.png
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/opencv/!svn/ver/6131/trunk/opencv/doc/tutorials/introduction/windows_install/images/Sphinx_Install.png
+END
+WindowsBuildDoc.png
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/opencv/!svn/ver/6131/trunk/opencv/doc/tutorials/introduction/windows_install/images/WindowsBuildDoc.png
+END
+WindowsBuildInstall.png
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/opencv/!svn/ver/6131/trunk/opencv/doc/tutorials/introduction/windows_install/images/WindowsBuildInstall.png
+END
+IntelTBB.png
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/opencv/!svn/ver/6131/trunk/opencv/doc/tutorials/introduction/windows_install/images/IntelTBB.png
+END
+OpenCV_Install_Directory.png
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/opencv/!svn/ver/6131/trunk/opencv/doc/tutorials/introduction/windows_install/images/OpenCV_Install_Directory.png
+END
+CMakeSelectBin.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/opencv/!svn/ver/6131/trunk/opencv/doc/tutorials/introduction/windows_install/images/CMakeSelectBin.jpg
+END
+PathEditorOpenCVSetPath.png
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/opencv/!svn/ver/6131/trunk/opencv/doc/tutorials/introduction/windows_install/images/PathEditorOpenCVSetPath.png
+END
+CMakeBuildWithWindowsGUI.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/opencv/!svn/ver/6131/trunk/opencv/doc/tutorials/introduction/windows_install/images/CMakeBuildWithWindowsGUI.jpg
+END
+cmsdstartwindows.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/opencv/!svn/ver/6131/trunk/opencv/doc/tutorials/introduction/windows_install/images/cmsdstartwindows.jpg
+END
+PathEditorOpenCVInsertNew.png
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/opencv/!svn/ver/6131/trunk/opencv/doc/tutorials/introduction/windows_install/images/PathEditorOpenCVInsertNew.png
+END
+ChangeBuildVisualStudio.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/opencv/!svn/ver/6131/trunk/opencv/doc/tutorials/introduction/windows_install/images/ChangeBuildVisualStudio.jpg
+END
+TortoiseSVNCheckoutWindow.png
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/opencv/!svn/ver/6131/trunk/opencv/doc/tutorials/introduction/windows_install/images/TortoiseSVNCheckoutWindow.png
+END
+WindowsQtContoursOutput.png
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/opencv/!svn/ver/6131/trunk/opencv/doc/tutorials/introduction/windows_install/images/WindowsQtContoursOutput.png
+END
+OpenCVBuildResultWindows.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/opencv/!svn/ver/6131/trunk/opencv/doc/tutorials/introduction/windows_install/images/OpenCVBuildResultWindows.jpg
+END
+CMakePackageNotFoundWindows.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/opencv/!svn/ver/6131/trunk/opencv/doc/tutorials/introduction/windows_install/images/CMakePackageNotFoundWindows.jpg
+END
+qtDownloadThisPackage.png
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/opencv/!svn/ver/6131/trunk/opencv/doc/tutorials/introduction/windows_install/images/qtDownloadThisPackage.png
+END
+SVNCheckOutProgress.png
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/opencv/!svn/ver/6131/trunk/opencv/doc/tutorials/introduction/windows_install/images/SVNCheckOutProgress.png
+END
+WindowsOpenCVDirPath.png
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/opencv/!svn/ver/6131/trunk/opencv/doc/tutorials/introduction/windows_install/images/WindowsOpenCVDirPath.png
+END
+CMakeBuildOptionsOpenCV.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/opencv/!svn/ver/6131/trunk/opencv/doc/tutorials/introduction/windows_install/images/CMakeBuildOptionsOpenCV.jpg
+END
+WindowsOpenCVInstaller.png
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/opencv/!svn/ver/6131/trunk/opencv/doc/tutorials/introduction/windows_install/images/WindowsOpenCVInstaller.png
+END
+TortoiseSVNCheckout.png
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/opencv/!svn/ver/6131/trunk/opencv/doc/tutorials/introduction/windows_install/images/TortoiseSVNCheckout.png
+END
+CMakeOutputPackageNotFound.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/opencv/!svn/ver/5859/trunk/opencv/doc/tutorials/introduction/windows_install/images/CMakeOutputPackageNotFound.jpg
+END
+CMake_Configure_Windows.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/opencv/!svn/ver/6131/trunk/opencv/doc/tutorials/introduction/windows_install/images/CMake_Configure_Windows.jpg
+END
+MiktexInstall.png
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/opencv/!svn/ver/6131/trunk/opencv/doc/tutorials/introduction/windows_install/images/MiktexInstall.png
+END
+visualstudiocommandprompt.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/opencv/!svn/ver/6131/trunk/opencv/doc/tutorials/introduction/windows_install/images/visualstudiocommandprompt.jpg
+END

@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/opencv/!svn/ver/4951/trunk/opencv/3rdparty/libjasper/jasper
+END
+jas_stream.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/opencv/!svn/ver/4951/trunk/opencv/3rdparty/libjasper/jasper/jas_stream.h
+END
+jas_icc.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/opencv/!svn/ver/4951/trunk/opencv/3rdparty/libjasper/jasper/jas_icc.h
+END
+jas_cm.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/4951/trunk/opencv/3rdparty/libjasper/jasper/jas_cm.h
+END
+jas_tmr.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/opencv/!svn/ver/4951/trunk/opencv/3rdparty/libjasper/jasper/jas_tmr.h
+END
+jas_getopt.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/opencv/!svn/ver/4951/trunk/opencv/3rdparty/libjasper/jasper/jas_getopt.h
+END
+jas_init.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/4951/trunk/opencv/3rdparty/libjasper/jasper/jas_init.h
+END
+jas_types.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/4951/trunk/opencv/3rdparty/libjasper/jasper/jas_types.h
+END
+jas_config.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/opencv/!svn/ver/4951/trunk/opencv/3rdparty/libjasper/jasper/jas_config.h
+END
+jas_string.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/opencv/!svn/ver/4951/trunk/opencv/3rdparty/libjasper/jasper/jas_string.h
+END
+jas_malloc.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/opencv/!svn/ver/4951/trunk/opencv/3rdparty/libjasper/jasper/jas_malloc.h
+END
+jas_tvp.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/opencv/!svn/ver/4951/trunk/opencv/3rdparty/libjasper/jasper/jas_tvp.h
+END
+jas_config.h.in
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/opencv/!svn/ver/4951/trunk/opencv/3rdparty/libjasper/jasper/jas_config.h.in
+END
+jas_image.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/4951/trunk/opencv/3rdparty/libjasper/jasper/jas_image.h
+END
+jas_version.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/opencv/!svn/ver/4951/trunk/opencv/3rdparty/libjasper/jasper/jas_version.h
+END
+jas_fix.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/opencv/!svn/ver/4951/trunk/opencv/3rdparty/libjasper/jasper/jas_fix.h
+END
+jas_debug.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/4951/trunk/opencv/3rdparty/libjasper/jasper/jas_debug.h
+END
+jas_config2.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/opencv/!svn/ver/4951/trunk/opencv/3rdparty/libjasper/jasper/jas_config2.h
+END
+jasper.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/4951/trunk/opencv/3rdparty/libjasper/jasper/jasper.h
+END
+jas_seq.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/opencv/!svn/ver/4951/trunk/opencv/3rdparty/libjasper/jasper/jas_seq.h
+END
+jas_math.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/4951/trunk/opencv/3rdparty/libjasper/jasper/jas_math.h
+END

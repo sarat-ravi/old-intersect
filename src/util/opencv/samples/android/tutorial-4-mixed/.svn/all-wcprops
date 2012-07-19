@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/opencv/!svn/ver/8572/trunk/opencv/samples/android/tutorial-4-mixed
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/opencv/!svn/ver/7667/trunk/opencv/samples/android/tutorial-4-mixed/CMakeLists.txt
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/opencv/!svn/ver/7299/trunk/opencv/samples/android/tutorial-4-mixed/.classpath
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/opencv/!svn/ver/8045/trunk/opencv/samples/android/tutorial-4-mixed/.project
+END
+AndroidManifest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/opencv/!svn/ver/6074/trunk/opencv/samples/android/tutorial-4-mixed/AndroidManifest.xml
+END

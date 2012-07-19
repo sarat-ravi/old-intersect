@@ -1,0 +1,251 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/opencv/!svn/ver/8583/trunk/opencv/modules/gpu/src/cuda
+END
+calib3d.cu
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/7128/trunk/opencv/modules/gpu/src/cuda/calib3d.cu
+END
+pyr_down.cu
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/opencv/!svn/ver/7544/trunk/opencv/modules/gpu/src/cuda/pyr_down.cu
+END
+column_filter.cu
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/7307/trunk/opencv/modules/gpu/src/cuda/column_filter.cu
+END
+bf_match.cu
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/opencv/!svn/ver/8291/trunk/opencv/modules/gpu/src/cuda/bf_match.cu
+END
+remap.cu
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/opencv/!svn/ver/7491/trunk/opencv/modules/gpu/src/cuda/remap.cu
+END
+bilateral_filter.cu
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/opencv/!svn/ver/7349/trunk/opencv/modules/gpu/src/cuda/bilateral_filter.cu
+END
+copy_make_border.cu
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/opencv/!svn/ver/6969/trunk/opencv/modules/gpu/src/cuda/copy_make_border.cu
+END
+hist.cu
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/opencv/!svn/ver/6969/trunk/opencv/modules/gpu/src/cuda/hist.cu
+END
+warp.cu
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/opencv/!svn/ver/7491/trunk/opencv/modules/gpu/src/cuda/warp.cu
+END
+bf_knnmatch.cu
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/opencv/!svn/ver/6969/trunk/opencv/modules/gpu/src/cuda/bf_knnmatch.cu
+END
+bf_radius_match.cu
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/opencv/!svn/ver/6969/trunk/opencv/modules/gpu/src/cuda/bf_radius_match.cu
+END
+split_merge.cu
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/opencv/!svn/ver/6988/trunk/opencv/modules/gpu/src/cuda/split_merge.cu
+END
+row_filter.cu
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/7307/trunk/opencv/modules/gpu/src/cuda/row_filter.cu
+END
+color.cu
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/opencv/!svn/ver/7128/trunk/opencv/modules/gpu/src/cuda/color.cu
+END
+pyr_up.cu
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/opencv/!svn/ver/7544/trunk/opencv/modules/gpu/src/cuda/pyr_up.cu
+END
+optical_flow_farneback.cu
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/gpu/src/cuda/optical_flow_farneback.cu
+END
+surf.cu
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/opencv/!svn/ver/7653/trunk/opencv/modules/gpu/src/cuda/surf.cu
+END
+stereobm.cu
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/opencv/!svn/ver/6988/trunk/opencv/modules/gpu/src/cuda/stereobm.cu
+END
+fgd_bgfg.cu
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/opencv/!svn/ver/8565/trunk/opencv/modules/gpu/src/cuda/fgd_bgfg.cu
+END
+rgb_to_yv12.cu
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/opencv/!svn/ver/8076/trunk/opencv/modules/gpu/src/cuda/rgb_to_yv12.cu
+END
+imgproc.cu
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/7790/trunk/opencv/modules/gpu/src/cuda/imgproc.cu
+END
+resize.cu
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/opencv/!svn/ver/8583/trunk/opencv/modules/gpu/src/cuda/resize.cu
+END
+pyrlk.cu
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/gpu/src/cuda/pyrlk.cu
+END
+matrix_reductions.cu
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/opencv/!svn/ver/7628/trunk/opencv/modules/gpu/src/cuda/matrix_reductions.cu
+END
+gftt.cu
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/opencv/!svn/ver/7290/trunk/opencv/modules/gpu/src/cuda/gftt.cu
+END
+mathfunc.cu
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/opencv/!svn/ver/6969/trunk/opencv/modules/gpu/src/cuda/mathfunc.cu
+END
+canny.cu
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/opencv/!svn/ver/7186/trunk/opencv/modules/gpu/src/cuda/canny.cu
+END
+stereocsbp.cu
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/7786/trunk/opencv/modules/gpu/src/cuda/stereocsbp.cu
+END
+fgd_bgfg_common.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/opencv/!svn/ver/8565/trunk/opencv/modules/gpu/src/cuda/fgd_bgfg_common.hpp
+END
+hog.cu
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/opencv/!svn/ver/6988/trunk/opencv/modules/gpu/src/cuda/hog.cu
+END
+optical_flow.cu
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/7274/trunk/opencv/modules/gpu/src/cuda/optical_flow.cu
+END
+internal_shared.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/opencv/!svn/ver/6971/trunk/opencv/modules/gpu/src/cuda/internal_shared.hpp
+END
+orb.cu
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/opencv/!svn/ver/7094/trunk/opencv/modules/gpu/src/cuda/orb.cu
+END
+stereobp.cu
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/opencv/!svn/ver/6969/trunk/opencv/modules/gpu/src/cuda/stereobp.cu
+END
+blend.cu
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/opencv/!svn/ver/6969/trunk/opencv/modules/gpu/src/cuda/blend.cu
+END
+NV12ToARGB.cu
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/8091/trunk/opencv/modules/gpu/src/cuda/NV12ToARGB.cu
+END
+global_motion.cu
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/8140/trunk/opencv/modules/gpu/src/cuda/global_motion.cu
+END
+match_template.cu
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/opencv/!svn/ver/7678/trunk/opencv/modules/gpu/src/cuda/match_template.cu
+END
+safe_call.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/6971/trunk/opencv/modules/gpu/src/cuda/safe_call.hpp
+END
+element_operations.cu
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/opencv/!svn/ver/8484/trunk/opencv/modules/gpu/src/cuda/element_operations.cu
+END
+fast.cu
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/opencv/!svn/ver/7101/trunk/opencv/modules/gpu/src/cuda/fast.cu
+END

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/opencv/!svn/ver/7526/trunk/opencv/modules/calib3d/perf
+END
+perf_main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/6717/trunk/opencv/modules/calib3d/perf/perf_main.cpp
+END
+perf_precomp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/6717/trunk/opencv/modules/calib3d/perf/perf_precomp.cpp
+END
+perf_cicrlesGrid.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/opencv/!svn/ver/7110/trunk/opencv/modules/calib3d/perf/perf_cicrlesGrid.cpp
+END
+perf_precomp.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/6717/trunk/opencv/modules/calib3d/perf/perf_precomp.hpp
+END
+perf_pnp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/7526/trunk/opencv/modules/calib3d/perf/perf_pnp.cpp
+END

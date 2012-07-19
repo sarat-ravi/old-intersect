@@ -1,0 +1,77 @@
+10
+
+dir
+8583
+http://code.opencv.org/svn/opencv/trunk/opencv/modules/features2d
+http://code.opencv.org/svn/opencv
+
+
+
+2012-06-01T09:10:53.311857Z
+8544
+vp153
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+c5418bc3-7546-4aae-8bad-fa6f2f3e53e6
+
+CMakeLists.txt
+file
+
+
+
+
+2012-06-06T19:54:00.991141Z
+9cec665c4e08af457493837bba0f1a45
+2012-03-13T12:33:16.971907Z
+7485
+andrey.kamaev
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+128
+
+test
+dir
+
+include
+dir
+
+doc
+dir
+
+src
+dir
+
+perf
+dir
+

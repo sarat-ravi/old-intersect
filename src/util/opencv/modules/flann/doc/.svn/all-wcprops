@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/flann/doc
+END
+flann_clustering.rst
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/flann/doc/flann_clustering.rst
+END
+flann.rst
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/opencv/!svn/ver/5939/trunk/opencv/modules/flann/doc/flann.rst
+END
+flann_fast_approximate_nearest_neighbor_search.rst
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/flann/doc/flann_fast_approximate_nearest_neighbor_search.rst
+END

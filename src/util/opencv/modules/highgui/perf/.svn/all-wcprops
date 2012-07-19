@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/highgui/perf
+END
+perf_precomp.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/highgui/perf/perf_precomp.hpp
+END
+perf_input.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/highgui/perf/perf_input.cpp
+END
+perf_output.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/highgui/perf/perf_output.cpp
+END
+perf_main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/highgui/perf/perf_main.cpp
+END
+perf_precomp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/highgui/perf/perf_precomp.cpp
+END

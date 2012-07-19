@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/opencv/!svn/ver/8508/trunk/opencv/modules/gpu/misc
+END
+mark_nvidia.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/8508/trunk/opencv/modules/gpu/misc/mark_nvidia.py
+END

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/opencv/!svn/ver/8280/trunk/opencv/android/scripts
+END
+cmake_android_neon.sh
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/7265/trunk/opencv/android/scripts/cmake_android_neon.sh
+END
+cmake_android.sh
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/opencv/!svn/ver/7265/trunk/opencv/android/scripts/cmake_android.sh
+END
+cmake_android_armeabi.sh
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/opencv/!svn/ver/7265/trunk/opencv/android/scripts/cmake_android_armeabi.sh
+END
+wincfg.cmd.tmpl
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/7381/trunk/opencv/android/scripts/wincfg.cmd.tmpl
+END
+cmake_android_x86.sh
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/7799/trunk/opencv/android/scripts/cmake_android_x86.sh
+END
+build.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/opencv/!svn/ver/8280/trunk/opencv/android/scripts/build.cmd
+END
+cmake_android.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/5077/trunk/opencv/android/scripts/cmake_android.cmd
+END
+package.sh
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/opencv/!svn/ver/7265/trunk/opencv/android/scripts/package.sh
+END

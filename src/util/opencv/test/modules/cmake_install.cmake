@@ -1,0 +1,78 @@
+# Install script for directory: /home/saratt/Documents/openML/src/util/opencv/modules
+
+# Set the install prefix
+IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
+  SET(CMAKE_INSTALL_PREFIX "/usr/local")
+ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
+STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
+
+# Set the install configuration name.
+IF(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
+  IF(BUILD_TYPE)
+    STRING(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
+           CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
+  ELSE(BUILD_TYPE)
+    SET(CMAKE_INSTALL_CONFIG_NAME "RELEASE")
+  ENDIF(BUILD_TYPE)
+  MESSAGE(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
+ENDIF(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
+
+# Set the component getting installed.
+IF(NOT CMAKE_INSTALL_COMPONENT)
+  IF(COMPONENT)
+    MESSAGE(STATUS "Install component: \"${COMPONENT}\"")
+    SET(CMAKE_INSTALL_COMPONENT "${COMPONENT}")
+  ELSE(COMPONENT)
+    SET(CMAKE_INSTALL_COMPONENT)
+  ENDIF(COMPONENT)
+ENDIF(NOT CMAKE_INSTALL_COMPONENT)
+
+# Install shared libraries without execute permission?
+IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
+  SET(CMAKE_INSTALL_SO_NO_EXE "1")
+ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
+
+IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for each subdirectory.
+  INCLUDE("/home/saratt/Documents/openML/src/util/opencv/test/modules/androidcamera/.androidcamera/cmake_install.cmake")
+  INCLUDE("/home/saratt/Documents/openML/src/util/opencv/test/modules/calib3d/.calib3d/cmake_install.cmake")
+  INCLUDE("/home/saratt/Documents/openML/src/util/opencv/test/modules/contrib/.contrib/cmake_install.cmake")
+  INCLUDE("/home/saratt/Documents/openML/src/util/opencv/test/modules/core/.core/cmake_install.cmake")
+  INCLUDE("/home/saratt/Documents/openML/src/util/opencv/test/modules/features2d/.features2d/cmake_install.cmake")
+  INCLUDE("/home/saratt/Documents/openML/src/util/opencv/test/modules/flann/.flann/cmake_install.cmake")
+  INCLUDE("/home/saratt/Documents/openML/src/util/opencv/test/modules/gpu/.gpu/cmake_install.cmake")
+  INCLUDE("/home/saratt/Documents/openML/src/util/opencv/test/modules/highgui/.highgui/cmake_install.cmake")
+  INCLUDE("/home/saratt/Documents/openML/src/util/opencv/test/modules/imgproc/.imgproc/cmake_install.cmake")
+  INCLUDE("/home/saratt/Documents/openML/src/util/opencv/test/modules/java/.java/cmake_install.cmake")
+  INCLUDE("/home/saratt/Documents/openML/src/util/opencv/test/modules/legacy/.legacy/cmake_install.cmake")
+  INCLUDE("/home/saratt/Documents/openML/src/util/opencv/test/modules/ml/.ml/cmake_install.cmake")
+  INCLUDE("/home/saratt/Documents/openML/src/util/opencv/test/modules/nonfree/.nonfree/cmake_install.cmake")
+  INCLUDE("/home/saratt/Documents/openML/src/util/opencv/test/modules/objdetect/.objdetect/cmake_install.cmake")
+  INCLUDE("/home/saratt/Documents/openML/src/util/opencv/test/modules/photo/.photo/cmake_install.cmake")
+  INCLUDE("/home/saratt/Documents/openML/src/util/opencv/test/modules/python/.python/cmake_install.cmake")
+  INCLUDE("/home/saratt/Documents/openML/src/util/opencv/test/modules/stitching/.stitching/cmake_install.cmake")
+  INCLUDE("/home/saratt/Documents/openML/src/util/opencv/test/modules/ts/.ts/cmake_install.cmake")
+  INCLUDE("/home/saratt/Documents/openML/src/util/opencv/test/modules/video/.video/cmake_install.cmake")
+  INCLUDE("/home/saratt/Documents/openML/src/util/opencv/test/modules/videostab/.videostab/cmake_install.cmake")
+  INCLUDE("/home/saratt/Documents/openML/src/util/opencv/test/modules/world/.world/cmake_install.cmake")
+  INCLUDE("/home/saratt/Documents/openML/src/util/opencv/test/modules/core/cmake_install.cmake")
+  INCLUDE("/home/saratt/Documents/openML/src/util/opencv/test/modules/imgproc/cmake_install.cmake")
+  INCLUDE("/home/saratt/Documents/openML/src/util/opencv/test/modules/flann/cmake_install.cmake")
+  INCLUDE("/home/saratt/Documents/openML/src/util/opencv/test/modules/features2d/cmake_install.cmake")
+  INCLUDE("/home/saratt/Documents/openML/src/util/opencv/test/modules/calib3d/cmake_install.cmake")
+  INCLUDE("/home/saratt/Documents/openML/src/util/opencv/test/modules/highgui/cmake_install.cmake")
+  INCLUDE("/home/saratt/Documents/openML/src/util/opencv/test/modules/ml/cmake_install.cmake")
+  INCLUDE("/home/saratt/Documents/openML/src/util/opencv/test/modules/video/cmake_install.cmake")
+  INCLUDE("/home/saratt/Documents/openML/src/util/opencv/test/modules/objdetect/cmake_install.cmake")
+  INCLUDE("/home/saratt/Documents/openML/src/util/opencv/test/modules/contrib/cmake_install.cmake")
+  INCLUDE("/home/saratt/Documents/openML/src/util/opencv/test/modules/nonfree/cmake_install.cmake")
+  INCLUDE("/home/saratt/Documents/openML/src/util/opencv/test/modules/legacy/cmake_install.cmake")
+  INCLUDE("/home/saratt/Documents/openML/src/util/opencv/test/modules/gpu/cmake_install.cmake")
+  INCLUDE("/home/saratt/Documents/openML/src/util/opencv/test/modules/photo/cmake_install.cmake")
+  INCLUDE("/home/saratt/Documents/openML/src/util/opencv/test/modules/python/cmake_install.cmake")
+  INCLUDE("/home/saratt/Documents/openML/src/util/opencv/test/modules/stitching/cmake_install.cmake")
+  INCLUDE("/home/saratt/Documents/openML/src/util/opencv/test/modules/ts/cmake_install.cmake")
+  INCLUDE("/home/saratt/Documents/openML/src/util/opencv/test/modules/videostab/cmake_install.cmake")
+
+ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
+

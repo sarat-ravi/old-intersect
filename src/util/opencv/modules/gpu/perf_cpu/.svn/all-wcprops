@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/opencv/!svn/ver/8583/trunk/opencv/modules/gpu/perf_cpu
+END
+perf_cpu_precomp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/opencv/!svn/ver/8420/trunk/opencv/modules/gpu/perf_cpu/perf_cpu_precomp.cpp
+END
+perf_imgproc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/8583/trunk/opencv/modules/gpu/perf_cpu/perf_imgproc.cpp
+END
+perf_matop.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/opencv/!svn/ver/8439/trunk/opencv/modules/gpu/perf_cpu/perf_matop.cpp
+END
+perf_calib3d.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/8439/trunk/opencv/modules/gpu/perf_cpu/perf_calib3d.cpp
+END
+perf_cpu_precomp.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/opencv/!svn/ver/8565/trunk/opencv/modules/gpu/perf_cpu/perf_cpu_precomp.hpp
+END
+perf_objdetect.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/opencv/!svn/ver/8439/trunk/opencv/modules/gpu/perf_cpu/perf_objdetect.cpp
+END
+perf_utility.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/8439/trunk/opencv/modules/gpu/perf_cpu/perf_utility.cpp
+END
+perf_features2d.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/opencv/!svn/ver/8469/trunk/opencv/modules/gpu/perf_cpu/perf_features2d.cpp
+END
+perf_main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/8420/trunk/opencv/modules/gpu/perf_cpu/perf_main.cpp
+END
+perf_video.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/opencv/!svn/ver/8567/trunk/opencv/modules/gpu/perf_cpu/perf_video.cpp
+END
+perf_core.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/8439/trunk/opencv/modules/gpu/perf_cpu/perf_core.cpp
+END
+perf_filters.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/8439/trunk/opencv/modules/gpu/perf_cpu/perf_filters.cpp
+END
+perf_utility.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/8580/trunk/opencv/modules/gpu/perf_cpu/perf_utility.hpp
+END

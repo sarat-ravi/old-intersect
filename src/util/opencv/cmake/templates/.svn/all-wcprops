@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/opencv/!svn/ver/8280/trunk/opencv/cmake/templates
+END
+OpenCVConfig-version.cmake.in
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/opencv/!svn/ver/7113/trunk/opencv/cmake/templates/OpenCVConfig-version.cmake.in
+END
+cmake_uninstall.cmake.in
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/opencv/!svn/ver/7113/trunk/opencv/cmake/templates/cmake_uninstall.cmake.in
+END
+opencv_modules.hpp.in
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/7244/trunk/opencv/cmake/templates/opencv_modules.hpp.in
+END
+cvconfig.h.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/opencv/!svn/ver/8045/trunk/opencv/cmake/templates/cvconfig.h.cmake
+END
+OpenCVConfig.cmake.in
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/8280/trunk/opencv/cmake/templates/OpenCVConfig.cmake.in
+END
+opencv-XXX.pc.cmake.in
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/opencv/!svn/ver/7113/trunk/opencv/cmake/templates/opencv-XXX.pc.cmake.in
+END
+OpenCV.mk.in
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/opencv/!svn/ver/7616/trunk/opencv/cmake/templates/OpenCV.mk.in
+END

@@ -1,0 +1,11 @@
+K 13
+svn:eol-style
+V 6
+native
+K 13
+svn:mergeinfo
+V 205
+/branches/2.4/opencv/samples/cpp/facerec_demo.cpp:7793-8266,8311
+/branches/opencv_pthread_framework/opencv/samples/cpp/facerec_demo.cpp:4873-4972
+/branches/perf_tests/samples/cpp/facerec_demo.cpp:6430-6673
+END

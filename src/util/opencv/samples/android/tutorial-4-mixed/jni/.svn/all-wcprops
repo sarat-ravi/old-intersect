@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/8572/trunk/opencv/samples/android/tutorial-4-mixed/jni
+END
+Android.mk
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/opencv/!svn/ver/8572/trunk/opencv/samples/android/tutorial-4-mixed/jni/Android.mk
+END
+jni_part.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/opencv/!svn/ver/6074/trunk/opencv/samples/android/tutorial-4-mixed/jni/jni_part.cpp
+END
+Application.mk
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/opencv/!svn/ver/6072/trunk/opencv/samples/android/tutorial-4-mixed/jni/Application.mk
+END

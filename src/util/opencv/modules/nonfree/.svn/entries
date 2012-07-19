@@ -1,0 +1,77 @@
+10
+
+dir
+8583
+http://code.opencv.org/svn/opencv/trunk/opencv/modules/nonfree
+http://code.opencv.org/svn/opencv
+
+
+
+2012-05-29T16:55:46.491607Z
+8506
+andrey.kamaev
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+c5418bc3-7546-4aae-8bad-fa6f2f3e53e6
+
+include
+dir
+
+doc
+dir
+
+src
+dir
+
+perf
+dir
+
+CMakeLists.txt
+file
+
+
+
+
+2012-06-06T19:53:32.367141Z
+c89c149e3de770ae3be570bfd9d1ff56
+2012-03-15T14:36:01.304972Z
+7504
+vp153
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+134
+
+test
+dir
+

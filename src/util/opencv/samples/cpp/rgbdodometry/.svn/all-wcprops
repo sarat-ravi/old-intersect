@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/opencv/!svn/ver/7461/trunk/opencv/samples/cpp/rgbdodometry
+END
+image_00000.png
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/opencv/!svn/ver/7461/trunk/opencv/samples/cpp/rgbdodometry/image_00000.png
+END
+depth_00000.png
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/opencv/!svn/ver/7461/trunk/opencv/samples/cpp/rgbdodometry/depth_00000.png
+END
+image_00002.png
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/opencv/!svn/ver/7461/trunk/opencv/samples/cpp/rgbdodometry/image_00002.png
+END
+depth_00002.png
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/opencv/!svn/ver/7461/trunk/opencv/samples/cpp/rgbdodometry/depth_00002.png
+END

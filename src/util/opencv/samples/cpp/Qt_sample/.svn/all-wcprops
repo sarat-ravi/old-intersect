@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/opencv/!svn/ver/5556/trunk/opencv/samples/cpp/Qt_sample
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/3524/trunk/opencv/samples/cpp/Qt_sample/CMakeLists.txt
+END
+cube4.avi
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/3524/trunk/opencv/samples/cpp/Qt_sample/cube4.avi
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/opencv/!svn/ver/5556/trunk/opencv/samples/cpp/Qt_sample/main.cpp
+END

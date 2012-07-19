@@ -1,0 +1,10 @@
+K 10
+svn:ignore
+V 63
+libjasper*.lib
+libjpeg*.lib
+libpng*.lib
+libtiff*.lib
+zlib*.lib
+
+END

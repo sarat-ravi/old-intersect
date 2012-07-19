@@ -1,0 +1,43 @@
+10
+
+dir
+8583
+http://code.opencv.org/svn/opencv/trunk/opencv/3rdparty/include/ffmpeg_
+http://code.opencv.org/svn/opencv
+
+
+
+2012-04-13T21:50:59.489896Z
+8045
+vp153
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+c5418bc3-7546-4aae-8bad-fa6f2f3e53e6
+
+libavformat
+dir
+
+libswscale
+dir
+
+libavcodec
+dir
+
+libavutil
+dir
+
+libavdevice
+dir
+

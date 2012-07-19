@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/8499/trunk/opencv/modules/androidcamera/camera_wrapper
+END
+camera_wrapper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/opencv/!svn/ver/8499/trunk/opencv/modules/androidcamera/camera_wrapper/camera_wrapper.cpp
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/opencv/!svn/ver/7436/trunk/opencv/modules/androidcamera/camera_wrapper/CMakeLists.txt
+END
+camera_wrapper.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/opencv/!svn/ver/6185/trunk/opencv/modules/androidcamera/camera_wrapper/camera_wrapper.h
+END

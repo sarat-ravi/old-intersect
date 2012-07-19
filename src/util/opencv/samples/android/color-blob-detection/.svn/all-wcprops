@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/8527/trunk/opencv/samples/android/color-blob-detection
+END
+AndroidManifest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/opencv/!svn/ver/8280/trunk/opencv/samples/android/color-blob-detection/AndroidManifest.xml
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/opencv/!svn/ver/8280/trunk/opencv/samples/android/color-blob-detection/CMakeLists.txt
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/opencv/!svn/ver/8280/trunk/opencv/samples/android/color-blob-detection/.classpath
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/opencv/!svn/ver/8280/trunk/opencv/samples/android/color-blob-detection/.project
+END

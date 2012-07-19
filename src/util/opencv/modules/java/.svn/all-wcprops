@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/opencv/!svn/ver/8507/trunk/opencv/modules/java
+END
+rst_parser.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/opencv/!svn/ver/8507/trunk/opencv/modules/java/rst_parser.py
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/java/CMakeLists.txt
+END
+gen_java.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/opencv/!svn/ver/8507/trunk/opencv/modules/java/gen_java.py
+END
+check-tests.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/opencv/!svn/ver/6414/trunk/opencv/modules/java/check-tests.py
+END
+gen_javadoc.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/java/gen_javadoc.py
+END

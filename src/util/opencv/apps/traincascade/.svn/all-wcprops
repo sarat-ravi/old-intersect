@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/opencv/!svn/ver/8045/trunk/opencv/apps/traincascade
+END
+boost.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/opencv/!svn/ver/7244/trunk/opencv/apps/traincascade/boost.h
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/opencv/!svn/ver/7436/trunk/opencv/apps/traincascade/CMakeLists.txt
+END
+cascadeclassifier.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/7244/trunk/opencv/apps/traincascade/cascadeclassifier.h
+END
+imagestorage.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/8045/trunk/opencv/apps/traincascade/imagestorage.cpp
+END
+haarfeatures.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/7244/trunk/opencv/apps/traincascade/haarfeatures.cpp
+END
+lbpfeatures.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/7244/trunk/opencv/apps/traincascade/lbpfeatures.cpp
+END
+imagestorage.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/opencv/!svn/ver/7244/trunk/opencv/apps/traincascade/imagestorage.h
+END
+HOGfeatures.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/7244/trunk/opencv/apps/traincascade/HOGfeatures.cpp
+END
+features.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/opencv/!svn/ver/7244/trunk/opencv/apps/traincascade/features.cpp
+END
+haarfeatures.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/opencv/!svn/ver/7244/trunk/opencv/apps/traincascade/haarfeatures.h
+END
+traincascade.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/7244/trunk/opencv/apps/traincascade/traincascade.cpp
+END
+lbpfeatures.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/7244/trunk/opencv/apps/traincascade/lbpfeatures.h
+END
+HOGfeatures.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/7526/trunk/opencv/apps/traincascade/HOGfeatures.h
+END
+traincascade_features.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/opencv/!svn/ver/7244/trunk/opencv/apps/traincascade/traincascade_features.h
+END
+boost.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/opencv/!svn/ver/7527/trunk/opencv/apps/traincascade/boost.cpp
+END
+cascadeclassifier.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/opencv/!svn/ver/7565/trunk/opencv/apps/traincascade/cascadeclassifier.cpp
+END

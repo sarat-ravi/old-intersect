@@ -1,0 +1,215 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/opencv/!svn/ver/7541/trunk/opencv/samples/python
+END
+cv20squares.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/opencv/!svn/ver/7541/trunk/opencv/samples/python/cv20squares.py
+END
+logpolar.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/opencv/!svn/ver/7540/trunk/opencv/samples/python/logpolar.py
+END
+numpy_warhol.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/opencv/!svn/ver/7539/trunk/opencv/samples/python/numpy_warhol.py
+END
+distrans.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/opencv/!svn/ver/7541/trunk/opencv/samples/python/distrans.py
+END
+facedetect.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/opencv/!svn/ver/5989/trunk/opencv/samples/python/facedetect.py
+END
+convexhull.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/opencv/!svn/ver/7541/trunk/opencv/samples/python/convexhull.py
+END
+camera.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/opencv/!svn/ver/7541/trunk/opencv/samples/python/camera.py
+END
+cvutils.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/opencv/!svn/ver/7468/trunk/opencv/samples/python/cvutils.py
+END
+drawing.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/opencv/!svn/ver/7541/trunk/opencv/samples/python/drawing.py
+END
+morphology.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/opencv/!svn/ver/7468/trunk/opencv/samples/python/morphology.py
+END
+fitellipse.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/opencv/!svn/ver/7468/trunk/opencv/samples/python/fitellipse.py
+END
+minidemo.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/opencv/!svn/ver/7539/trunk/opencv/samples/python/minidemo.py
+END
+laplace.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/opencv/!svn/ver/5989/trunk/opencv/samples/python/laplace.py
+END
+ffilldemo.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/opencv/!svn/ver/7540/trunk/opencv/samples/python/ffilldemo.py
+END
+houghlines.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/opencv/!svn/ver/7540/trunk/opencv/samples/python/houghlines.py
+END
+lkdemo.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/opencv/!svn/ver/7540/trunk/opencv/samples/python/lkdemo.py
+END
+minarea.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/opencv/!svn/ver/7540/trunk/opencv/samples/python/minarea.py
+END
+contours.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/opencv/!svn/ver/7541/trunk/opencv/samples/python/contours.py
+END
+dmtx.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/opencv/!svn/ver/7541/trunk/opencv/samples/python/dmtx.py
+END
+chessboard.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/opencv/!svn/ver/7541/trunk/opencv/samples/python/chessboard.py
+END
+kmeans.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/opencv/!svn/ver/5989/trunk/opencv/samples/python/kmeans.py
+END
+pyramid_segmentation.py
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/opencv/!svn/ver/7539/trunk/opencv/samples/python/pyramid_segmentation.py
+END
+squares.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/opencv/!svn/ver/5989/trunk/opencv/samples/python/squares.py
+END
+watershed.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/opencv/!svn/ver/7538/trunk/opencv/samples/python/watershed.py
+END
+demhist.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/opencv/!svn/ver/7541/trunk/opencv/samples/python/demhist.py
+END
+camshift.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/opencv/!svn/ver/7541/trunk/opencv/samples/python/camshift.py
+END
+inpaint.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/opencv/!svn/ver/7540/trunk/opencv/samples/python/inpaint.py
+END
+delaunay.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/opencv/!svn/ver/5989/trunk/opencv/samples/python/delaunay.py
+END
+kalman.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/opencv/!svn/ver/5989/trunk/opencv/samples/python/kalman.py
+END
+edge.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/opencv/!svn/ver/7540/trunk/opencv/samples/python/edge.py
+END
+numpy_array.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/opencv/!svn/ver/7539/trunk/opencv/samples/python/numpy_array.py
+END
+fback.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/opencv/!svn/ver/7540/trunk/opencv/samples/python/fback.py
+END
+peopledetect.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/opencv/!svn/ver/7539/trunk/opencv/samples/python/peopledetect.py
+END
+motempl.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/opencv/!svn/ver/5989/trunk/opencv/samples/python/motempl.py
+END
+dft.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/opencv/!svn/ver/7541/trunk/opencv/samples/python/dft.py
+END

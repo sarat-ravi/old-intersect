@@ -1,0 +1,19 @@
+// ------------------------------------------------------------------
+// Transitive dependencies of this project determined from the
+// maven pom organized by organization.
+// ------------------------------------------------------------------
+
+Apache OpenNLP Tools
+
+
+From: 'an unknown organization'
+  - jwnl  jwnl:jwnl:jar:1.3.3
+
+
+From: 'The Apache Software Foundation' (http://www.apache.org/)
+  - Apache OpenNLP Maxent (http://www.apache.org/opennlp-maxent/) org.apache.opennlp:opennlp-maxent:bundle:3.0.2-incubating
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+
+
+

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/opencv/!svn/ver/3987/trunk/opencv/samples/cpp/matching_to_many_images/train
+END
+trainImages.txt
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/opencv/!svn/ver/3987/trunk/opencv/samples/cpp/matching_to_many_images/train/trainImages.txt
+END
+1.png
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/opencv/!svn/ver/3987/trunk/opencv/samples/cpp/matching_to_many_images/train/1.png
+END
+2.png
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/opencv/!svn/ver/3987/trunk/opencv/samples/cpp/matching_to_many_images/train/2.png
+END
+3.png
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/opencv/!svn/ver/3987/trunk/opencv/samples/cpp/matching_to_many_images/train/3.png
+END

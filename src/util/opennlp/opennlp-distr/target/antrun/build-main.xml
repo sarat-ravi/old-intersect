@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <checksum format="MD5SUM" algorithm="sha1">
+    <fileset dir="/Users/saratt/Documents/openML/src/util/opennlp/opennlp-distr/target">
+      <include name="*.zip"/>
+      <include name="*.gz"/>
+    </fileset>
+  </checksum>
+  <checksum format="MD5SUM" algorithm="md5">
+    <fileset dir="/Users/saratt/Documents/openML/src/util/opennlp/opennlp-distr/target">
+      <include name="*.zip"/>
+      <include name="*.gz"/>
+    </fileset>
+  </checksum>
+</target>
+</project>

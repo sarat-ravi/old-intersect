@@ -1,0 +1,263 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/opencv/!svn/ver/8581/trunk/opencv/modules/imgproc/src
+END
+contours.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/opencv/!svn/ver/8482/trunk/opencv/modules/imgproc/src/contours.cpp
+END
+gcgraph.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/5325/trunk/opencv/modules/imgproc/src/gcgraph.hpp
+END
+shapedescr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/7726/trunk/opencv/modules/imgproc/src/shapedescr.cpp
+END
+moments.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/6101/trunk/opencv/modules/imgproc/src/moments.cpp
+END
+morph.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/imgproc/src/morph.cpp
+END
+phasecorr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/8376/trunk/opencv/modules/imgproc/src/phasecorr.cpp
+END
+grabcut.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/5361/trunk/opencv/modules/imgproc/src/grabcut.cpp
+END
+pyramids.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/imgproc/src/pyramids.cpp
+END
+accum.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/opencv/!svn/ver/8374/trunk/opencv/modules/imgproc/src/accum.cpp
+END
+corner.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/opencv/!svn/ver/8453/trunk/opencv/modules/imgproc/src/corner.cpp
+END
+matchcontours.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/3060/trunk/opencv/modules/imgproc/src/matchcontours.cpp
+END
+sumpixels.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/7096/trunk/opencv/modules/imgproc/src/sumpixels.cpp
+END
+linefit.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/5473/trunk/opencv/modules/imgproc/src/linefit.cpp
+END
+gabor.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/opencv/!svn/ver/7526/trunk/opencv/modules/imgproc/src/gabor.cpp
+END
+convhull.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/opencv/!svn/ver/3060/trunk/opencv/modules/imgproc/src/convhull.cpp
+END
+geometry.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/opencv/!svn/ver/7751/trunk/opencv/modules/imgproc/src/geometry.cpp
+END
+featureselect.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/5361/trunk/opencv/modules/imgproc/src/featureselect.cpp
+END
+undistort.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/5361/trunk/opencv/modules/imgproc/src/undistort.cpp
+END
+segmentation.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/7773/trunk/opencv/modules/imgproc/src/segmentation.cpp
+END
+templmatch.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/imgproc/src/templmatch.cpp
+END
+emd.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/opencv/!svn/ver/6232/trunk/opencv/modules/imgproc/src/emd.cpp
+END
+approx.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/opencv/!svn/ver/8492/trunk/opencv/modules/imgproc/src/approx.cpp
+END
+deriv.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/opencv/!svn/ver/6943/trunk/opencv/modules/imgproc/src/deriv.cpp
+END
+smooth.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/opencv/!svn/ver/8457/trunk/opencv/modules/imgproc/src/smooth.cpp
+END
+hough.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/opencv/!svn/ver/8280/trunk/opencv/modules/imgproc/src/hough.cpp
+END
+floodfill.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/7764/trunk/opencv/modules/imgproc/src/floodfill.cpp
+END
+tables.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/opencv/!svn/ver/3060/trunk/opencv/modules/imgproc/src/tables.cpp
+END
+color.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/opencv/!svn/ver/8517/trunk/opencv/modules/imgproc/src/color.cpp
+END
+_list.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/opencv/!svn/ver/7504/trunk/opencv/modules/imgproc/src/_list.h
+END
+cornersubpix.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/6786/trunk/opencv/modules/imgproc/src/cornersubpix.cpp
+END
+subdivision2d.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opencv/!svn/ver/7751/trunk/opencv/modules/imgproc/src/subdivision2d.cpp
+END
+filter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/opencv/!svn/ver/8045/trunk/opencv/modules/imgproc/src/filter.cpp
+END
+samplers.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/opencv/!svn/ver/5361/trunk/opencv/modules/imgproc/src/samplers.cpp
+END
+rotcalipers.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/opencv/!svn/ver/4122/trunk/opencv/modules/imgproc/src/rotcalipers.cpp
+END
+_geom.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/opencv/!svn/ver/8476/trunk/opencv/modules/imgproc/src/_geom.h
+END
+histogram.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/opencv/!svn/ver/7701/trunk/opencv/modules/imgproc/src/histogram.cpp
+END
+thresh.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/opencv/!svn/ver/7526/trunk/opencv/modules/imgproc/src/thresh.cpp
+END
+utils.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/opencv/!svn/ver/8384/trunk/opencv/modules/imgproc/src/utils.cpp
+END
+precomp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/3060/trunk/opencv/modules/imgproc/src/precomp.cpp
+END
+imgwarp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/8581/trunk/opencv/modules/imgproc/src/imgwarp.cpp
+END
+canny.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/opencv/!svn/ver/7343/trunk/opencv/modules/imgproc/src/canny.cpp
+END
+precomp.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/opencv/!svn/ver/7097/trunk/opencv/modules/imgproc/src/precomp.hpp
+END
+distransform.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opencv/!svn/ver/7656/trunk/opencv/modules/imgproc/src/distransform.cpp
+END

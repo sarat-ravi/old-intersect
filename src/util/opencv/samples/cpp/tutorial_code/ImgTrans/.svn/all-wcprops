@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/opencv/!svn/ver/5748/trunk/opencv/samples/cpp/tutorial_code/ImgTrans
+END
+filter2D_demo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/opencv/!svn/ver/5677/trunk/opencv/samples/cpp/tutorial_code/ImgTrans/filter2D_demo.cpp
+END
+Geometric_Transforms_Demo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/opencv/!svn/ver/5748/trunk/opencv/samples/cpp/tutorial_code/ImgTrans/Geometric_Transforms_Demo.cpp
+END
+HoughCircle_Demo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/opencv/!svn/ver/5722/trunk/opencv/samples/cpp/tutorial_code/ImgTrans/HoughCircle_Demo.cpp
+END
+Laplace_Demo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/opencv/!svn/ver/5680/trunk/opencv/samples/cpp/tutorial_code/ImgTrans/Laplace_Demo.cpp
+END
+CannyDetector_Demo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/opencv/!svn/ver/5703/trunk/opencv/samples/cpp/tutorial_code/ImgTrans/CannyDetector_Demo.cpp
+END
+Remap_Demo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/opencv/!svn/ver/5748/trunk/opencv/samples/cpp/tutorial_code/ImgTrans/Remap_Demo.cpp
+END
+Sobel_Demo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/opencv/!svn/ver/5680/trunk/opencv/samples/cpp/tutorial_code/ImgTrans/Sobel_Demo.cpp
+END
+HoughLines_Demo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/opencv/!svn/ver/5722/trunk/opencv/samples/cpp/tutorial_code/ImgTrans/HoughLines_Demo.cpp
+END
+copyMakeBorder_demo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/opencv/!svn/ver/5677/trunk/opencv/samples/cpp/tutorial_code/ImgTrans/copyMakeBorder_demo.cpp
+END

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/opencv/!svn/ver/8583/trunk/opencv/modules
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/opencv/!svn/ver/7244/trunk/opencv/modules/CMakeLists.txt
+END
+refman.rst.in
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/opencv/!svn/ver/8519/trunk/opencv/modules/refman.rst.in
+END

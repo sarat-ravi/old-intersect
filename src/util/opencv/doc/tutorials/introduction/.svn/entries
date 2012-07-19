@@ -1,0 +1,61 @@
+10
+
+dir
+8583
+http://code.opencv.org/svn/opencv/trunk/opencv/doc/tutorials/introduction
+http://code.opencv.org/svn/opencv
+
+
+
+2012-04-30T14:33:52.424773Z
+8280
+vp153
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+c5418bc3-7546-4aae-8bad-fa6f2f3e53e6
+
+linux_install
+dir
+
+table_of_content_introduction
+dir
+
+display_image
+dir
+
+linux_gcc_cmake
+dir
+
+how_to_write_a_tutorial
+dir
+
+windows_visual_studio_Opencv
+dir
+
+android_binary_package
+dir
+
+load_save_image
+dir
+
+ios_install
+dir
+
+windows_install
+dir
+
+linux_eclipse
+dir
+

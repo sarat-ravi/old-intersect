@@ -1,0 +1,159 @@
+10
+
+dir
+8583
+http://code.opencv.org/svn/opencv/trunk/opencv/modules
+http://code.opencv.org/svn/opencv
+
+
+
+2012-06-06T16:05:31.136858Z
+8583
+marina.kolpakova
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+c5418bc3-7546-4aae-8bad-fa6f2f3e53e6
+
+photo
+dir
+
+androidcamera
+dir
+
+gpu
+dir
+
+nonfree
+dir
+
+stitching
+dir
+
+flann
+dir
+
+imgproc
+dir
+
+contrib
+dir
+
+calib3d
+dir
+
+objdetect
+dir
+
+legacy
+dir
+
+features2d
+dir
+
+video
+dir
+
+ml
+dir
+
+CMakeLists.txt
+file
+
+
+
+
+2012-06-06T19:54:05.763140Z
+c889a6c7580649b65e49c75230db605d
+2012-02-03T11:26:49.556268Z
+7244
+andrey.kamaev
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+135
+
+videostab
+dir
+
+java
+dir
+
+python
+dir
+
+highgui
+dir
+
+refman.rst.in
+file
+
+
+
+
+2012-06-06T19:54:05.763140Z
+70bf9551dba6e2fd4affdd9577bd672b
+2012-05-30T14:06:47.502182Z
+8519
+andrey.kamaev
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+152
+
+ts
+dir
+
+world
+dir
+
+core
+dir
+

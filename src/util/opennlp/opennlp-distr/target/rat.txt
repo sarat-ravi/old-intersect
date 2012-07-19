@@ -1,0 +1,46 @@
+
+*****************************************************
+Summary
+-------
+Notes: 4
+Binaries: 0
+Archives: 0
+Standards: 6
+
+Apache Licensed: 6
+Generated Documents: 0
+
+JavaDocs are generated and so license header is optional
+Generated files do not required license headers
+
+0 Unknown Licenses
+
+*******************************
+
+Unapproved licenses:
+
+
+*******************************
+
+Archives:
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require AL headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc will be marked N
+  AL    pom.xml
+  N     README
+  AL    RELEASE_NOTES.html
+  AL    src/main/assembly/bin.xml
+  AL    src/main/assembly/src.xml
+  AL    src/main/bin/opennlp
+  AL    src/main/bin/opennlp.bat
+  N     src/main/readme/DISCLAIMER.txt
+  N     src/main/readme/LICENSE
+  N     src/main/readme/NOTICE
+ 
+ *****************************************************
+ Printing headers for files without AL header...
+ 
+ 

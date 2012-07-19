@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/opencv/!svn/ver/5986/trunk/opencv/samples/cpp/tutorial_code/TrackingMotion
+END
+goodFeaturesToTrack_Demo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/opencv/!svn/ver/5983/trunk/opencv/samples/cpp/tutorial_code/TrackingMotion/goodFeaturesToTrack_Demo.cpp
+END
+cornerHarris_Demo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/opencv/!svn/ver/5982/trunk/opencv/samples/cpp/tutorial_code/TrackingMotion/cornerHarris_Demo.cpp
+END
+cornerDetector_Demo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/opencv/!svn/ver/5986/trunk/opencv/samples/cpp/tutorial_code/TrackingMotion/cornerDetector_Demo.cpp
+END
+cornerSubPix_Demo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/opencv/!svn/ver/5984/trunk/opencv/samples/cpp/tutorial_code/TrackingMotion/cornerSubPix_Demo.cpp
+END

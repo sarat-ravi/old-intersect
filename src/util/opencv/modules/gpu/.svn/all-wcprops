@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/opencv/!svn/ver/8583/trunk/opencv/modules/gpu
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/opencv/!svn/ver/8565/trunk/opencv/modules/gpu/CMakeLists.txt
+END
