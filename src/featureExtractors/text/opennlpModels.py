@@ -123,7 +123,27 @@ class NameFinder(NlpCLI):
     else:
       raise Exception("Input file not specified. Call setInputFile('<filepath>')")
 
+class PosTagger(NlpCLI):
+  
+  def run(self):
+    if self.inputFile:
+      cmd = opennlp + " POSTagger " + models["en-pos-maxent.bin"] + " < " + absPath + self.inputFile 
+      self.shellOutput = subprocess.check_output(cmd, shell=True)
+      f = lambda x: x != ""
+      self.lines = filter(f,self.shellOutput.split('\n'))
+    else:
+      raise Exception("Input file not specified. Call setInputFile('<filepath>')")
 
+class Chunker(NlpCLI):
+  
+  def run(self):
+    if self.inputFile:
+      cmd = opennlp + " ChunkerME " + models["en-chunker.bin"] + " < " + absPath + self.inputFile 
+      self.shellOutput = subprocess.check_output(cmd, shell=True)
+      f = lambda x: x != ""
+      self.lines = filter(f,self.shellOutput.split('\n'))
+    else:
+      raise Exception("Input file not specified. Call setInputFile('<filepath>')")
 
 
   
