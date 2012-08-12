@@ -29,10 +29,31 @@ class driver:
 
     self.cascadeList = []
 
-  def selectCascades(self, cascadeLst):
+  def display_available_actions(self):
+    
+    print '''
+    Available Cascades:
+    ---------------------------------
+    haarcascade_eye_tree_eyeglasses
+    haarcascade_eye
+    haarcascade_frontalface_alt2
+    haarcascade_frontalface_alt_tree
+    haarcascade_frontalface_alt
+    haarcascade_frontalface_default
+    haarcascade_fullbody
+    haarcascade_lefteye_2splits
+    haarcascade_lowerbody
+    haarcascade_mcs_eyepair_big
+    haarcascade_mcs_eyepair_small
+    haarcascade_mcs_nose
+    haarcascade_mcs_lefteye
+    ---------------------------------
+    '''
+
+  def select_actions(self, cascadeLst):
 
     print self.haarCascadeUri['haarcascade_eye']
-    print "Cascades Being Used:"
+    print "Actions Selected:"
     print "------------------------"
 
     for cascade in cascadeLst:
