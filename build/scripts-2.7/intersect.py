@@ -2,9 +2,9 @@ import cv
 import imp
 import os
 
-from src.featureExtractors.video import haarvideo
-from src.featureExtractors.image import haarimage
-from src.featureExtractors.text import nlp
+from featureExtractors.video import haarvideo
+from featureExtractors.image import haarimage
+from featureExtractors.text import nlp
 
 #a = haarvideo.driver()
 #a.display_available_cascades()
