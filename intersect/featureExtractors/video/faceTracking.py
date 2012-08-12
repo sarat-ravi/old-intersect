@@ -9,7 +9,7 @@ storage = cv.CreateMemStorage()
 
 for f in files:
     capture = cv.CaptureFromFile(f)
-    print capture
+    #print capture
 
     width =  cv.GetCaptureProperty(capture, cv.CV_CAP_PROP_FRAME_WIDTH)
     height = cv.GetCaptureProperty(capture, cv.CV_CAP_PROP_FRAME_HEIGHT)
@@ -17,8 +17,10 @@ for f in files:
     fps = cv.GetCaptureProperty(capture, cv.CV_CAP_PROP_FPS) 
     fourcc = cv.GetCaptureProperty(capture, cv.CV_CAP_PROP_FOURCC)
 
-    print "fourcc:"
-    print fourcc
+    fourcc = cv.CV_FOURCC('I', '4', '2', '0')
+
+    #print "fourcc:"
+    #print fourcc
 
 
     aviRatio = cv.GetCaptureProperty(capture, cv.CV_CAP_PROP_POS_AVI_RATIO)
@@ -38,7 +40,7 @@ for f in files:
             #print frame
             percent = float(i/numFrames)
             percent = percent/0.015
-            print(percent)
+            #print(percent)
             detectedEyes = cv.HaarDetectObjects(imcolor, haarEyes, storage)
             if detectedEyes:
                 for face in detectedEyes:

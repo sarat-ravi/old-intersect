@@ -3,6 +3,7 @@ import os
 #import src.util.dataStructures as dataStructures
 
 absPath = os.path.dirname(os.path.abspath(__file__)) + '/'
+STORAGE = cv.CreateMemStorage()
 
 #haarNose = cv.Load(absPath + '../../opencv/data/haarcascades/haarcascade_mcs_nose.xml')
 
@@ -83,17 +84,11 @@ class driver:
       frame = cv.QueryFrame(camera)
 
       for cascade in self.cascadeList:
-        if frame_index % cascade.getDownsamplingFactor() == 0:
-          detectedObjects = cv.HaarDetectObjects(frame, cascade.getCascade(), storage)
-          if detectedObjects:
-            cascade.setDetectedObjects(detectedObjects)
+        cascade.detect_objects(frame)
 
-        detectedObjects = cascade.getDetectedObjects()
-        if detectedObjects:
-          for face in cascade.getDetectedObjects():
-            cv.Rectangle(frame,(face[0][0],face[0][1]),
-                           (face[0][0]+face[0][2],face[0][1]+face[0][3]),
-                           cascade.getColor(),2)
+      for cascade in self.cascadeList:
+        frame = cascade.draw_detected_objects_to_frame(frame)
+
   
       cv.ShowImage("live", frame)
       c = cv.WaitKey(1)
@@ -133,11 +128,38 @@ class haarcascade:
     self.downsamplingFactor = 1
     self.color = cv.RGB(255,0,0)
     self.name = nme
+    self.frame_index = 0
+    # all the detected stuff with frame_index as the key
+    self.detected_objects_list = {}
+    
+    # a rectangle, defined by something that cv understands 
     self.detectedObjects = None
+
     self.visible = True
     self.extrapolationLevel = 0
     self.objectBuffer = []
     self.maxBufferLength = 10
+
+  def detect_objects(self, frame):
+    self.frame_index += 1
+    if self.frame_index % self.getDownsamplingFactor() == 0:
+      detectedObjects = cv.HaarDetectObjects(frame, self.getCascade(), STORAGE)
+      if detectedObjects:
+        self.setDetectedObjects(detectedObjects)
+
+    self.detected_objects_list[self.frame_index] = self.getDetectedObjects()
+
+  def draw_detected_objects_to_frame(self, frame):
+    detectedObjects = self.detected_objects_list[self.frame_index]
+    if detectedObjects:
+      for face in detectedObjects:
+        cv.Rectangle(frame,(face[0][0],face[0][1]),
+                       (face[0][0]+face[0][2],face[0][1]+face[0][3]),
+                       self.getColor(),2)
+
+    return frame
+
+
 
   def setDetectedObjects(self, val):
     self.detectedObjects = val
@@ -145,6 +167,8 @@ class haarcascade:
     if len(self.objectBuffer) == self.maxBufferLength:
       self.objectBuffer.pop(0)
     self.objectBuffer.append(val)
+
+  
 
   def getDetectedObjects(self):
   

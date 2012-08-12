@@ -41,5 +41,5 @@ class TextFeatureExtractor(FeatureExtractor):
 b = TextFeatureExtractor()
 a = VideoFeatureExtractor()
 
-b.test()
+#b.test()
 a.test()
