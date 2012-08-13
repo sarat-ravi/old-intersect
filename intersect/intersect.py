@@ -17,8 +17,11 @@ class VideoFeatureExtractor(FeatureExtractor):
   def test(self):
     a = haarvideo.driver()
     a.display_available_actions()
-    a.select_actions(['haarcascade_mcs_nose'])
-    a.seeCascadesLive()
+    a.select_actions(['haarcascade_eye', 'haarcascade_mcs_nose'])
+    #a.seeCascadesLive()
+
+    a.run_actions(input_file="testfiles/input.avi", output_file="testfiles/output.avi", display_output=True)
+    #a.run_actions(output_file="testfiles/output.avi", display_output=True)
 
 
 class TextFeatureExtractor(FeatureExtractor):

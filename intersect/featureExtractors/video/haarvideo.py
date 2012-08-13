@@ -28,12 +28,12 @@ class driver:
     self.haarCascadeUri['haarcascade_mcs_nose'] = absPath + '../../util/opencv/data/haarcascades/haarcascade_mcs_nose.xml'
     self.haarCascadeUri['haarcascade_mcs_lefteye'] = absPath + '../../util/opencv/data/haarcascades/haarcascade_mcs_lefteye.xml'
 
-    self.cascadeList = []
+    self.actions = {}
 
   def display_available_actions(self):
     
     print '''
-    Available Cascades:
+    Available Actions:
     ---------------------------------
     haarcascade_eye_tree_eyeglasses
     haarcascade_eye
@@ -60,7 +60,8 @@ class driver:
     for cascade in cascadeLst:
       print cascade
       loadedCascade = cv.Load(str(self.haarCascadeUri[cascade]))
-      self.cascadeList.append(self.getHaarCascade(loadedCascade, cascade))
+      #self.actions.append(self.getHaarCascade(loadedCascade, cascade))
+      self.actions[cascade] = self.getHaarCascade(loadedCascade, cascade)
 
     print "------------------------"
 
@@ -71,7 +72,7 @@ class driver:
   def seeCascadesLive(self):
     frame_index = 0
     camera = cv.CaptureFromCAM(-1)
-    storage = cv.CreateMemStorage()
+    #storage = cv.CreateMemStorage()
     cv.NamedWindow("live",cv.CV_WINDOW_AUTOSIZE)
 
     #frame = None
@@ -83,10 +84,10 @@ class driver:
 
       frame = cv.QueryFrame(camera)
 
-      for cascade in self.cascadeList:
+      for cascade_name, cascade in self.actions.items():
         cascade.detect_objects(frame)
 
-      for cascade in self.cascadeList:
+      for cascade_name, cascade in self.actions.items():
         frame = cascade.draw_detected_objects_to_frame(frame)
 
   
@@ -110,6 +111,206 @@ class driver:
       
 
       frame_index += 1
+
+  #def handle_input(self, input_file, debug):
+    #capture_source = cv.CaptureFromCAM(-1)
+
+    #if not input_file:
+      #capture_source = cv.CaptureFromCAM(-1)
+    #else:
+      #capture_source = cv.CaptureFromFile(input_file)
+
+    #return capture_source
+
+  #class VideoInputHandler:
+    #def __init__(self, input_file=None, debug=False)
+      #self.input_file = input_file
+      #self.debug = debug
+
+    #def set_debug(self, dbg):
+      #self.debug = dbg
+
+    #def set_input_file(self, inp):
+      #if not self.input_file
+        #self.input_file = inp
+
+    #def get_input(self):
+      #capture_source = cv.CaptureFromCAM(-1)
+
+      #if not self.input_file:
+        #capture_source = cv.CaptureFromCAM(-1)
+      #else:
+        #capture_source = cv.CaptureFromFile(self.input_file)
+
+      #return capture_source
+
+  #class VideoInputHandler:
+    #def __init__(self, inputfile=None, debug=False)
+      #self.input_file = inputfile
+      #self.debug = debug
+
+    #def set_debug(self, dbg):
+      #self.debug = dbg
+
+    #def set_input_file(self, inp):
+      #if not self.input_file
+        #self.input_file = inp
+
+    #def handle_input(self):
+      #capture_source = cv.CaptureFromCAM(-1)
+
+      #if not self.input_file:
+        #capture_source = cv.CaptureFromCAM(-1)
+      #else:
+        #capture_source = cv.CaptureFromFile(self.input_file)
+
+      #return capture_source
+
+  class VideoIOHandler:
+    def __init__(self, input_file=None, output_file=None, debug=False, display_output=True, save_output=False):
+      self.input_file = input_file
+      self.output_file = output_file
+      self.debug = debug
+      self.display_output = display_output
+      self.window_name = "live"
+      cv.NamedWindow(self.window_name,cv.CV_WINDOW_AUTOSIZE)
+      self.save_output = save_output
+      self.video_writer = None
+
+      #self.set_video_writer()
+
+
+
+    def set_debug(self, dbg):
+      self.debug = dbg
+
+    def set_input_file(self, inp):
+      if not self.input_file:
+        self.input_file = inp
+
+    def set_output_file(self, out):
+      if not self.output_file:
+        self.output_file = out
+
+    def handle_input(self):
+      capture_source = None 
+
+      if not self.input_file:
+        capture_source = cv.CaptureFromCAM(-1)
+      else:
+        capture_source = cv.CaptureFromFile(self.input_file)
+
+      if self.output_file:
+        self.set_video_writer(capture_source)
+
+      return capture_source
+
+    def set_video_writer(self, capture):
+      #capture = self.handle_input() 
+      width =  cv.GetCaptureProperty(capture, cv.CV_CAP_PROP_FRAME_WIDTH)
+      height = cv.GetCaptureProperty(capture, cv.CV_CAP_PROP_FRAME_HEIGHT)
+      #frame_size = tuple([width, height])
+      fps = cv.GetCaptureProperty(capture, cv.CV_CAP_PROP_FPS) 
+      #fourcc = cv.GetCaptureProperty(capture, cv.CV_CAP_PROP_FOURCC)
+      fourcc = cv.CV_FOURCC('I', '4', '2', '0')
+
+      aviRatio = cv.GetCaptureProperty(capture, cv.CV_CAP_PROP_POS_AVI_RATIO)
+      framePos = cv.GetCaptureProperty(capture, cv.CV_CAP_PROP_POS_FRAMES)
+      numFrames = cv.GetCaptureProperty(capture, cv.CV_CAP_PROP_FRAME_COUNT)
+      posTime = cv.GetCaptureProperty(capture, cv.CV_CAP_PROP_POS_MSEC)
+
+      #fps = float(fps/100)
+      fps = float(fps)
+      print fps
+      
+
+      self.video_writer = cv.CreateVideoWriter(self.output_file,int(fourcc), float(fps), (int(width), int(height)), int(1)) 
+      print "video writer initialized"
+
+    def handle_output(self, frame):
+      if self.display_output:
+        cv.ShowImage(self.window_name, frame)
+        c = cv.WaitKey(1)
+        c = cv.WaitKey(1)
+        c = cv.WaitKey(1)
+        c = cv.WaitKey(1)
+        c = cv.WaitKey(1)
+        c = cv.WaitKey(1)
+        c = cv.WaitKey(1)
+        c = cv.WaitKey(1)
+        c = cv.WaitKey(1)
+        c = cv.WaitKey(1)
+        c = cv.WaitKey(1)
+        c = cv.WaitKey(1)
+        c = cv.WaitKey(1)
+        c = cv.WaitKey(1)
+        c = cv.WaitKey(1)
+        c = cv.WaitKey(1)
+
+      if self.output_file:
+        if self.video_writer:
+          cv.WriteFrame(self.video_writer, frame)
+        else:
+          print "Doing nothing with output because video writer is not initialized"
+        
+
+
+
+
+  def run_actions(self, input_file=None, io_handler=None, output_file=None, buffer_file=None, debug=False, display_output=True):
+    if not io_handler:
+      io_handler = self.VideoIOHandler(input_file=input_file, output_file=output_file, display_output=display_output, debug=debug)
+
+    #io_handler.set_input_file(input_file)
+    #io_handler.set_output_file(output_file)
+    #io_handler.display_output = display_output
+    #io_handler.set_debug(debug)
+    capture_source = io_handler.handle_input()
+    num_error = 0
+    error_tolerance = 1
+
+    while True:
+      #global detectedObjects
+      #global frame
+
+      if num_error >= error_tolerance:
+        break
+
+      frame = cv.QueryFrame(capture_source)
+      if not frame:
+        #num_error += 1
+        print "null frame detected and skipped"
+        break
+      else:
+
+        for cascade_name, cascade in self.actions.items():
+          cascade.detect_objects(frame)
+
+        for cascade_name, cascade in self.actions.items():
+          frame = cascade.draw_detected_objects_to_frame(frame)
+
+        io_handler.handle_output(frame)
+
+  
+      #cv.ShowImage("live", frame)
+      #c = cv.WaitKey(1)
+      #c = cv.WaitKey(1)
+      #c = cv.WaitKey(1)
+      #c = cv.WaitKey(1)
+      #c = cv.WaitKey(1)
+      #c = cv.WaitKey(1)
+      #c = cv.WaitKey(1)
+      #c = cv.WaitKey(1)
+      #c = cv.WaitKey(1)
+      #c = cv.WaitKey(1)
+      #c = cv.WaitKey(1)
+      #c = cv.WaitKey(1)
+      #c = cv.WaitKey(1)
+      #c = cv.WaitKey(1)
+      #c = cv.WaitKey(1)
+      #c = cv.WaitKey(1)
+
+
 
   def getHaarCascade(self, loadedCascade, cascadeName):
 
@@ -143,19 +344,20 @@ class haarcascade:
   def detect_objects(self, frame):
     self.frame_index += 1
     if self.frame_index % self.getDownsamplingFactor() == 0:
-      detectedObjects = cv.HaarDetectObjects(frame, self.getCascade(), STORAGE)
+      detectedObjects = cv.HaarDetectObjects(frame, self.cascade, STORAGE)
       if detectedObjects:
         self.setDetectedObjects(detectedObjects)
 
     self.detected_objects_list[self.frame_index] = self.getDetectedObjects()
 
   def draw_detected_objects_to_frame(self, frame):
-    detectedObjects = self.detected_objects_list[self.frame_index]
-    if detectedObjects:
-      for face in detectedObjects:
-        cv.Rectangle(frame,(face[0][0],face[0][1]),
-                       (face[0][0]+face[0][2],face[0][1]+face[0][3]),
-                       self.getColor(),2)
+    if self.visible:
+      detectedObjects = self.detected_objects_list[self.frame_index]
+      if detectedObjects:
+        for face in detectedObjects:
+          cv.Rectangle(frame,(face[0][0],face[0][1]),
+                         (face[0][0]+face[0][2],face[0][1]+face[0][3]),
+                         self.getColor(),2)
 
     return frame
 
@@ -172,7 +374,7 @@ class haarcascade:
 
   def getDetectedObjects(self):
   
-    if self.visible and len(self.objectBuffer) > 0:
+    if len(self.objectBuffer) > 0:
 
       #insert logic here to smoothen rectangles using buffer data
       

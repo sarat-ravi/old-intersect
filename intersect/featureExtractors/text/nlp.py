@@ -48,7 +48,7 @@ class driver:
   
   def __init__(self):
     self.models = models
-    self.actions = []
+    self.actions = {}
 
   def display_available_actions(self):
     print """
