@@ -1,11 +1,14 @@
 import cv
 import os
+from util.dataStructures import PriorityQueue
 #import src.util.dataStructures as dataStructures
 
 absPath = os.path.dirname(os.path.abspath(__file__)) + '/'
 STORAGE = cv.CreateMemStorage()
 
 #haarNose = cv.Load(absPath + '../../opencv/data/haarcascades/haarcascade_mcs_nose.xml')
+
+detected_face_objects = []
 
 numFaces = 1
 
@@ -40,7 +43,6 @@ class driver:
     haarcascade_frontalface_alt2
     haarcascade_frontalface_alt_tree
     haarcascade_frontalface_alt
-    haarcascade_frontalface_default
     haarcascade_fullbody
     haarcascade_lefteye_2splits
     haarcascade_lowerbody
@@ -57,60 +59,21 @@ class driver:
     print "Actions Selected:"
     print "------------------------"
 
+    cascadeLst.insert(0, "haarcascade_frontalface_default")
+
     for cascade in cascadeLst:
       print cascade
       loadedCascade = cv.Load(str(self.haarCascadeUri[cascade]))
       #self.actions.append(self.getHaarCascade(loadedCascade, cascade))
       self.actions[cascade] = self.getHaarCascade(loadedCascade, cascade)
 
+
+
     print "------------------------"
 
   def test(self):
     print "cascadeUri: "
     print self.haarCascadeUri['haarcascade_eye']
-
-  def seeCascadesLive(self):
-    frame_index = 0
-    camera = cv.CaptureFromCAM(-1)
-    #storage = cv.CreateMemStorage()
-    cv.NamedWindow("live",cv.CV_WINDOW_AUTOSIZE)
-
-    #frame = None
-    #detectedObjects = {}
-
-    while True:
-      #global detectedObjects
-      #global frame
-
-      frame = cv.QueryFrame(camera)
-
-      for cascade_name, cascade in self.actions.items():
-        cascade.detect_objects(frame)
-
-      for cascade_name, cascade in self.actions.items():
-        frame = cascade.draw_detected_objects_to_frame(frame)
-
-  
-      cv.ShowImage("live", frame)
-      c = cv.WaitKey(1)
-      c = cv.WaitKey(1)
-      c = cv.WaitKey(1)
-      c = cv.WaitKey(1)
-      c = cv.WaitKey(1)
-      c = cv.WaitKey(1)
-      c = cv.WaitKey(1)
-      c = cv.WaitKey(1)
-      c = cv.WaitKey(1)
-      c = cv.WaitKey(1)
-      c = cv.WaitKey(1)
-      c = cv.WaitKey(1)
-      c = cv.WaitKey(1)
-      c = cv.WaitKey(1)
-      c = cv.WaitKey(1)
-      c = cv.WaitKey(1)
-      
-
-      frame_index += 1
 
 
   class VideoIOHandler:
@@ -123,10 +86,7 @@ class driver:
       cv.NamedWindow(self.window_name,cv.CV_WINDOW_AUTOSIZE)
       self.save_output = save_output
       self.video_writer = None
-
       #self.set_video_writer()
-
-
 
     def set_debug(self, dbg):
       self.debug = dbg
@@ -238,27 +198,6 @@ class driver:
 
         io_handler.handle_output(frame)
 
-  
-      #cv.ShowImage("live", frame)
-      #c = cv.WaitKey(1)
-      #c = cv.WaitKey(1)
-      #c = cv.WaitKey(1)
-      #c = cv.WaitKey(1)
-      #c = cv.WaitKey(1)
-      #c = cv.WaitKey(1)
-      #c = cv.WaitKey(1)
-      #c = cv.WaitKey(1)
-      #c = cv.WaitKey(1)
-      #c = cv.WaitKey(1)
-      #c = cv.WaitKey(1)
-      #c = cv.WaitKey(1)
-      #c = cv.WaitKey(1)
-      #c = cv.WaitKey(1)
-      #c = cv.WaitKey(1)
-      #c = cv.WaitKey(1)
-
-
-
   def getHaarCascade(self, loadedCascade, cascadeName):
 
     haar = None
@@ -268,6 +207,13 @@ class driver:
       haar = haarcascade(loadedCascade, cascadeName)
 
     return haar
+
+  def get_action_processor(action_name):
+
+    if action_name in self.actions:
+      return self.actions[action_name]
+    else:
+      raise LookupError("Action '" + action_name + "' is not a valid action")     
 
 
 class haarcascade:
@@ -279,6 +225,9 @@ class haarcascade:
     self.frame_index = 0
     # all the detected stuff with frame_index as the key
     self.detected_objects_list = {}
+    self.max_allowed_objects_per_face = 99999
+    self.confidence = 99999 
+    self.confidence_threshold = 15
     
     # a rectangle, defined by something that cv understands 
     self.detectedObjects = None
@@ -287,15 +236,18 @@ class haarcascade:
     self.extrapolationLevel = 0
     self.objectBuffer = []
     self.maxBufferLength = 10
+    self.detectedObjects = None
+    self.video_quality_factor = 1.1
 
   def detect_objects(self, frame):
     self.frame_index += 1
     if self.frame_index % self.getDownsamplingFactor() == 0:
-      detectedObjects = cv.HaarDetectObjects(frame, self.cascade, STORAGE)
+      detectedObjects = cv.HaarDetectObjects(frame, self.cascade, STORAGE, self.video_quality_factor, self.confidence_threshold)
       if detectedObjects:
         self.setDetectedObjects(detectedObjects)
 
-    self.detected_objects_list[self.frame_index] = self.getDetectedObjects()
+    detected_objects = self.getDetectedObjects()
+    self.detected_objects_list[self.frame_index] = detected_objects
 
   def draw_detected_objects_to_frame(self, frame):
     if self.visible:
@@ -336,7 +288,14 @@ class haarcascade:
 
   def filterDetectedObjects(self):
     #insert logic to filter detectedObjects. I.E. there are only 2 eyes, not 3
-    return None
+    #def remove_low_confidence_objects(detected_obj):
+      #if detected_obj[1] < self.confidence_threshold:
+        #return None
+      #return detected_obj
+
+    #self.detectedObjects = filter(remove_low_confidence_objects, self.detectedObjects)
+    pass
+
 
 
   def setDownsamplingFactor(self, val):
@@ -365,13 +324,33 @@ class haarcascade_mcs_nose(haarcascade):
   def __init__(self, cscde, nme):
     haarcascade.__init__(self, cscde, nme)
     self.color = cv.RGB(0,0,255)
-    self.downsamplingFactor = 2;
+    self.downsamplingFactor = 2
+    self.confidence_threshold = 10
+    self.max_allowed_objects_per_face = 1
 
-class haarcascade_frontalface_alt_tree(haarcascade):
+class haarcascade_eye(haarcascade):
   def __init__(self, cscde, nme):
     haarcascade.__init__(self, cscde, nme)
-    self.downsamplingFactor = 15
+    self.color = cv.RGB(0,255,255)
+    self.downsamplingFactor = 2
+    self.confidence_threshold = 20
+    self.max_allowed_objects_per_face = 2
+
+class haarcascade_frontalface_default(haarcascade):
+  def __init__(self, cscde, nme):
+    haarcascade.__init__(self, cscde, nme)
+    self.downsamplingFactor = 12
     self.visible = True
+    self.color = cv.RGB(0,255,0)
+
+  def detect_objects(self, frame):
+    haarcascade.detect_objects(self, frame)
+    detected_face_objects = self.detected_objects_list[self.frame_index]
+    #if detected_face_objects:
+      #print str(detected_face_objects)
+
+
+
 
     
 

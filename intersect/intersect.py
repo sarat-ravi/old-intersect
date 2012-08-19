@@ -2,9 +2,9 @@ import cv
 import imp
 import os
 
-from featureExtractors.video import haarvideo
-from featureExtractors.image import haarimage
-from featureExtractors.text import nlp
+from features.video import haarvideo
+from features.image import haarimage
+from features.text import nlp
 
 
 #a.test()
@@ -20,8 +20,9 @@ class VideoFeatureExtractor(FeatureExtractor):
     a.select_actions(['haarcascade_eye', 'haarcascade_mcs_nose'])
     #a.seeCascadesLive()
 
-    a.run_actions(input_file="testfiles/input.avi", output_file="testfiles/output.avi", display_output=True)
+    #a.run_actions(input_file="testfiles/input.avi", output_file="testfiles/output.avi", display_output=True)
     #a.run_actions(output_file="testfiles/output.avi", display_output=True)
+    a.run_actions(display_output=True)
 
 
 class TextFeatureExtractor(FeatureExtractor):
