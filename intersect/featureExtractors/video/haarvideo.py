@@ -112,59 +112,6 @@ class driver:
 
       frame_index += 1
 
-  #def handle_input(self, input_file, debug):
-    #capture_source = cv.CaptureFromCAM(-1)
-
-    #if not input_file:
-      #capture_source = cv.CaptureFromCAM(-1)
-    #else:
-      #capture_source = cv.CaptureFromFile(input_file)
-
-    #return capture_source
-
-  #class VideoInputHandler:
-    #def __init__(self, input_file=None, debug=False)
-      #self.input_file = input_file
-      #self.debug = debug
-
-    #def set_debug(self, dbg):
-      #self.debug = dbg
-
-    #def set_input_file(self, inp):
-      #if not self.input_file
-        #self.input_file = inp
-
-    #def get_input(self):
-      #capture_source = cv.CaptureFromCAM(-1)
-
-      #if not self.input_file:
-        #capture_source = cv.CaptureFromCAM(-1)
-      #else:
-        #capture_source = cv.CaptureFromFile(self.input_file)
-
-      #return capture_source
-
-  #class VideoInputHandler:
-    #def __init__(self, inputfile=None, debug=False)
-      #self.input_file = inputfile
-      #self.debug = debug
-
-    #def set_debug(self, dbg):
-      #self.debug = dbg
-
-    #def set_input_file(self, inp):
-      #if not self.input_file
-        #self.input_file = inp
-
-    #def handle_input(self):
-      #capture_source = cv.CaptureFromCAM(-1)
-
-      #if not self.input_file:
-        #capture_source = cv.CaptureFromCAM(-1)
-      #else:
-        #capture_source = cv.CaptureFromFile(self.input_file)
-
-      #return capture_source
 
   class VideoIOHandler:
     def __init__(self, input_file=None, output_file=None, debug=False, display_output=True, save_output=False):
@@ -221,11 +168,11 @@ class driver:
 
       #fps = float(fps/100)
       fps = float(fps)
-      print fps
+      #print fps
       
 
       self.video_writer = cv.CreateVideoWriter(self.output_file,int(fourcc), float(fps), (int(width), int(height)), int(1)) 
-      print "video writer initialized"
+      #print "video writer initialized"
 
     def handle_output(self, frame):
       if self.display_output:
