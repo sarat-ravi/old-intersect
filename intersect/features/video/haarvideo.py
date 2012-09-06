@@ -1,6 +1,6 @@
 import cv
 import os
-from util.dataStructures import PriorityQueue
+from util.datastructures import PriorityQueue
 #import src.util.dataStructures as dataStructures
 
 absPath = os.path.dirname(os.path.abspath(__file__)) + '/'

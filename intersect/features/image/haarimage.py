@@ -1,7 +1,4 @@
 import cv
-#import src.util.dataStructures as dataStructures
-
-
 
 #haarNose = cv.Load('src/util/opencv/data/haarcascades/haarcascade_mcs_nose.xml')
 
