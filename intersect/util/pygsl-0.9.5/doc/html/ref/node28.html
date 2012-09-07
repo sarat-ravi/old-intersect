@@ -1,0 +1,265 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<link rel="STYLESHEET" href="ref.css" type='text/css' />
+<link rel="SHORTCUT ICON" href="-dvips-safe" />
+<link rel="first" href="ref.html" title='PyGSL Reference Manual' />
+<link rel='contents' href='contents.html' title="Contents" />
+<link rel='index' href='genindex.html' title='Index' />
+<link rel='last' href='about.html' title='About this document...' />
+<link rel='help' href='about.html' title='About this document...' />
+<link rel="next" href="module-pygsl.chebyshev.html" />
+<link rel="prev" href="module-pygsl.const.html" />
+<link rel="parent" href="ref.html" />
+<link rel="next" href="module-pygsl.chebyshev.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name='aesop' content='information' />
+<title>5. pygsl.poly -- Polynomials</title>
+</head>
+<body>
+<DIV CLASS="navigation">
+<div id='top-navigation-panel' xml:id='top-navigation-panel'>
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="4.4 pygsl.const.num  "
+  href="node27.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></A></td>
+<td class='online-navigation'><a rel="parent" title="PyGSL Reference Manual"
+  href="ref.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up One Level' width='32' /></A></td>
+<td class='online-navigation'><a rel="next" title="6. pygsl.chebyshev"
+  href="module-pygsl.chebyshev.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></A></td>
+<td align="center" width="100%">PyGSL Reference Manual</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></A></td>
+<td class='online-navigation'><img src='../icons/blank.png'
+  border='0' height='32'  alt='' width='32' /></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></A></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node27.html">4.4 pygsl.const.num  </A>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="ref.html">PyGSL Reference Manual</A>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="module-pygsl.chebyshev.html">6. pygsl.chebyshev</A>
+</div>
+<hr /></div>
+</DIV>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION007000000000000000000"></A>
+<A NAME="cha:poly-module"></A>
+<BR>
+5. <tt class="module">pygsl.poly</tt> 
+<BR>
+Polynomials
+</H1>
+
+<P>
+Wrapper over the functions as described in Chaper 6 of the
+ GNU Scientific Libraryreference manual.
+
+<P>
+There are routines for finding real  and complex roots of quadratic and cubic
+equations  using analytic  methods. An  iterative polynomial  solver  is also
+available for finding the roots of general polynomials with real coefficients
+(of any order). 
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-51' xml:id='l2h-51' class="function">eval</tt></b>(</nobr></td>
+  <td><var>c, a</var>)</td></tr></table></dt>
+<dd><a id='l2h-62' xml:id='l2h-62'></a>
+  evaluate the equation
+  <!-- MATH
+ $c[0] + c[1] x + c[2] x^2 + \dots + c[len-1] x^{len-1}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="306" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img18.png"
+ ALT="$ c[0] + c[1] x + c[2] x^2 + \dots + c[len-1] x^{len-1}$"></SPAN>
+
+  using Horner's method for stability at <var>x</var>. ``len'' is the number of coefficients 
+  (equal to the length of the python object)
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><span class="typelabel">class</span>&nbsp;<tt id='l2h-52' xml:id='l2h-52' class="class">dd</tt></b>(</nobr></td>
+  <td><var>xa,ya</var>)</td></tr></table></dt>
+<dd><a id='l2h-63' xml:id='l2h-63'></a>
+  This class computes a divided-difference representation of the
+  interpolating polynomial for the points (<var>xa</var>, <var>ya</var>). 
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-53' xml:id='l2h-53' class="method">get_dd</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd><a id='l2h-64' xml:id='l2h-64'></a>
+  Get the devided-difference representation
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-54' xml:id='l2h-54' class="method">eval</tt></b>(</nobr></td>
+  <td><var><var>x</var></var>)</td></tr></table></dt>
+<dd><a id='l2h-65' xml:id='l2h-65'></a>
+  evaluate the representation at <var>x</var>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-55' xml:id='l2h-55' class="method">taylor</tt></b>(</nobr></td>
+  <td><var><var>x</var></var>)</td></tr></table></dt>
+<dd><a id='l2h-66' xml:id='l2h-66'></a>
+  convert the internal representation to a Taylor expansion
+</dl>
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-56' xml:id='l2h-56' class="function">solve_quadratic</tt></b>(</nobr></td>
+  <td><var>a,b,c</var>)</td></tr></table></dt>
+<dd><a id='l2h-67' xml:id='l2h-67'></a>
+  computes the real roots of the equation
+  <!-- MATH
+ $\var{a} \cdot x^2 + \var{b} \cdot x + \var{c} = 0$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="143" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img19.png"
+ ALT="$ \var{a} \cdot x^2 + \var{b} \cdot x + \var{c} = 0$"></SPAN>
+
+  all variables are real varibales using a ``C double type'' for internal representation.
+  returns the number of roots and their value.
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-57' xml:id='l2h-57' class="function">complex_solve_quadratic</tt></b>(</nobr></td>
+  <td><var>a,b,c</var>)</td></tr></table></dt>
+<dd><a id='l2h-68' xml:id='l2h-68'></a>
+  computes the complex roots of the equation
+  <!-- MATH
+ $\var{a} \cdot x^2 + \var{b} \cdot x + \var{c} = 0$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="143" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img19.png"
+ ALT="$ \var{a} \cdot x^2 + \var{b} \cdot x + \var{c} = 0$"></SPAN>
+.
+  all variables are complex varibales.
+  Returns the number of roots and their value.
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-58' xml:id='l2h-58' class="function">solve_cubic</tt></b>(</nobr></td>
+  <td><var>a,b,c</var>)</td></tr></table></dt>
+<dd><a id='l2h-69' xml:id='l2h-69'></a>
+  computes the real roots of the equation
+  <!-- MATH
+ $x^3 + \var{a} \cdot x^2 + \var{b} \cdot x + \var{c} = 0$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="179" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img20.png"
+ ALT="$ x^3 + \var{a} \cdot x^2 + \var{b} \cdot x + \var{c} = 0$"></SPAN>
+.
+  All variables are real varibales using a ``C double type'' for internal representation.
+  Returns the number of roots and their value.
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-59' xml:id='l2h-59' class="function">complex_solve_cubic</tt></b>(</nobr></td>
+  <td><var>a,b,c</var>)</td></tr></table></dt>
+<dd><a id='l2h-70' xml:id='l2h-70'></a>
+  computes the complex roots of the equation
+  <!-- MATH
+ $x^3 + \var{a} \cdot x^2 + \var{b} \cdot x + \var{c} = 0$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="179" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img20.png"
+ ALT="$ x^3 + \var{a} \cdot x^2 + \var{b} \cdot x + \var{c} = 0$"></SPAN>
+.
+  all variables are complex variables.
+  returns the number of roots and their value.
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><span class="typelabel">class</span>&nbsp;<tt id='l2h-60' xml:id='l2h-60' class="class">poly_complex</tt></b>(</nobr></td>
+  <td><var>n</var>)</td></tr></table></dt>
+<dd><a id='l2h-71' xml:id='l2h-71'></a>
+  intialise the class giving the dimension of the problem
+  <dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-61' xml:id='l2h-61' class="method">solve</tt></b>(</nobr></td>
+  <td><var>a</var>)</td></tr></table></dt>
+<dd>
+    This method computes the roots of the general polynomial 
+    <!-- MATH
+ $P(x) = a_0 + a_1 x + a_2 x^2 + ... + a_{n-1} x^{n-1}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="307" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img21.png"
+ ALT="$ P(x) = a_0 + a_1 x + a_2 x^2 + ... + a_{n-1} x^{n-1}$"></SPAN>
+ using balanced-QR reduction
+    of the companion matrix. The  parameter n specifies the length of the
+    coefficient array. The coefficient of  the highest order term must be
+    non-zero.   The  n-1 roots are  returned in a complex array.
+
+<P>
+The method raises GSL_EFAILED if the QR reduction does not converge.
+  </dl>  
+</dl>
+
+<DIV CLASS="navigation">
+<div class='online-navigation'>
+<p></p><hr />
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="4.4 pygsl.const.num  "
+  href="node27.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></A></td>
+<td class='online-navigation'><a rel="parent" title="PyGSL Reference Manual"
+  href="ref.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up One Level' width='32' /></A></td>
+<td class='online-navigation'><a rel="next" title="6. pygsl.chebyshev"
+  href="module-pygsl.chebyshev.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></A></td>
+<td align="center" width="100%">PyGSL Reference Manual</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></A></td>
+<td class='online-navigation'><img src='../icons/blank.png'
+  border='0' height='32'  alt='' width='32' /></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></A></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node27.html">4.4 pygsl.const.num  </A>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="ref.html">PyGSL Reference Manual</A>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="module-pygsl.chebyshev.html">6. pygsl.chebyshev</A>
+</div>
+</div>
+<hr />
+<span class="release-info">Release 0.9, documentation updated on October, 2008.</span>
+</DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

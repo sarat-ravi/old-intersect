@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<link rel="STYLESHEET" href="ref.css" type='text/css' />
+<link rel="SHORTCUT ICON" href="-dvips-safe" />
+<link rel="first" href="ref.html" title='PyGSL Reference Manual' />
+<link rel='contents' href='contents.html' title="Contents" />
+<link rel='index' href='genindex.html' title='Index' />
+<link rel='last' href='about.html' title='About this document...' />
+<link rel='help' href='about.html' title='About this document...' />
+<link rel="next" href="node47.html" />
+<link rel="prev" href="node45.html" />
+<link rel="parent" href="node44.html" />
+<link rel="next" href="node47.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name='aesop' content='information' />
+<title>11.2.2 Absolute deviation</title>
+</head>
+<body>
+<DIV CLASS="navigation">
+<div id='top-navigation-panel' xml:id='top-navigation-panel'>
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="11.2.1 Mean, Standard Deviation,"
+  href="node45.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></A></td>
+<td class='online-navigation'><a rel="parent" title="11.2 Available functions"
+  href="node44.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up One Level' width='32' /></A></td>
+<td class='online-navigation'><a rel="next" title="11.2.3 Higher moments (skewness"
+  href="node47.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></A></td>
+<td align="center" width="100%">PyGSL Reference Manual</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></A></td>
+<td class='online-navigation'><img src='../icons/blank.png'
+  border='0' height='32'  alt='' width='32' /></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></A></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node45.html">11.2.1 Mean, Standard Deviation,</A>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="node44.html">11.2 Available functions</A>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node47.html">11.2.3 Higher moments (skewness</A>
+</div>
+<hr /></div>
+</DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0013220000000000000000"></A>
+<A NAME="sec:stat:absolute-deviation"></A>
+<BR>
+11.2.2 Absolute deviation
+</H2>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-258' xml:id='l2h-258' class="function">absdev</tt></b>(</nobr></td>
+  <td><var>data</var>)</td></tr></table></dt>
+<dd>
+   Compute the absolute deviation from the mean of <var>data</var> The absolute
+   deviation from the mean is defined as
+   <P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+absdev  = (1/N) \sum |x_i - \hat\mu|
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="195" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img44.png"
+ ALT="$\displaystyle absdev = (1/N) \sum \vert x_i - \hat\mu\vert$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(11.5)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+where <SPAN CLASS="MATH"><IMG
+ WIDTH="19" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img45.png"
+ ALT="$ x_i$"></SPAN>
+ are the elements of the dataset <var>data</var>.  The absolute
+   deviation from the mean provides a more robust measure of the width of a
+   distribution than the variance.  This function computes the mean of
+   <var>data</var> via a call to <tt class="function">mean</tt>.
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-259' xml:id='l2h-259' class="function">absdev_m</tt></b>(</nobr></td>
+  <td><var>data, mean</var>)</td></tr></table></dt>
+<dd>
+   Compute the absolute deviation of the dataset <var>data</var> relative to the
+   given value of <var>mean</var>
+   <P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+absdev  = (1/N) \sum |x_i - mean|
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="225" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$\displaystyle absdev = (1/N) \sum \vert x_i - mean\vert$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(11.6)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+This function is useful if you have already computed the mean of <var>data</var>
+   (and want to avoid recomputing it), or wish to calculate the absolute
+   deviation relative to another value (such as zero, or the median).
+</dl>
+
+<P>
+
+<DIV CLASS="navigation">
+<div class='online-navigation'>
+<p></p><hr />
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="11.2.1 Mean, Standard Deviation,"
+  href="node45.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></A></td>
+<td class='online-navigation'><a rel="parent" title="11.2 Available functions"
+  href="node44.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up One Level' width='32' /></A></td>
+<td class='online-navigation'><a rel="next" title="11.2.3 Higher moments (skewness"
+  href="node47.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></A></td>
+<td align="center" width="100%">PyGSL Reference Manual</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></A></td>
+<td class='online-navigation'><img src='../icons/blank.png'
+  border='0' height='32'  alt='' width='32' /></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></A></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node45.html">11.2.1 Mean, Standard Deviation,</A>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="node44.html">11.2 Available functions</A>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node47.html">11.2.3 Higher moments (skewness</A>
+</div>
+</div>
+<hr />
+<span class="release-info">Release 0.9, documentation updated on October, 2008.</span>
+</DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

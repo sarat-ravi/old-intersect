@@ -1,0 +1,186 @@
+/* -*- C -*- */
+static PyArrayObject *
+PyGSL_New_Array(int nd,  PyGSL_array_index_t *dimensions, int type)
+{
+     PyGSL_array_index_t tmp[2];
+     if (nd > 2){
+	  pygsl_error("This function must not be called to create an array with more than two dimensions!",
+		    filename, __LINE__, GSL_ESANITY);
+	  return NULL;
+     }
+     if(nd <= 0){
+	  pygsl_error("Dimesions must be 1 or 2!",
+		    filename, __LINE__, GSL_ESANITY);
+	  return NULL;
+     }
+     tmp[0] = dimensions[0];
+     if(nd == 2)
+	  tmp[1] = dimensions[1];
+     return (PyArrayObject *) PyArray_SimpleNew(nd, tmp, type);
+}
+
+static PyArrayObject *
+PyGSL_Copy_Array(PyArrayObject *ob, int type)
+{
+     int nd;
+     nd = ob->nd;
+     if(!PyArray_Check((PyObject *) ob)){
+	  pygsl_error("This function only copies arrays!", filename, __LINE__, GSL_ESANITY);
+	  return NULL;
+     }
+     return (PyArrayObject *) PyArray_Copy(ob);
+}
+
+#ifndef CONTIGUOUS
+#define CONTIGUOUS NPY_CONTIGUOUS
+#endif
+#ifndef NOTSWAPPED
+#define NOTSWAPPED NPY_NOTSWAPPED
+#endif
+#ifndef ALIGNED
+#define ALIGNED    NPY_ALIGNED
+#endif
+#ifndef WRITEABLE
+#define WRITEABLE  NPY_WRITEABLE
+#endif
+
+#define __PyGSL_ARRAY_FLAG(flag_bit, flag) ((flag & flag_bit) ==  flag_bit)
+#define __PyGSL_GENERATE_TYPE_INFO(flag) \
+        ( NOTSWAPPED |  ALIGNED | \
+         __PyGSL_ARRAY_FLAG(PyGSL_CONTIGUOUS, flag) * CONTIGUOUS |\
+         ((!__PyGSL_ARRAY_FLAG(PyGSL_INPUT_ARRAY, flag)) * WRITEABLE) ) 
+
+#define PyGSL_ARRAY_CONVERT(src, array_type, nd, flag) \
+         ((PyArrayObject *) (PyArray_FromAny(src, PyArray_DescrFromType(array_type), nd, nd, \
+                          __PyGSL_GENERATE_TYPE_INFO(flag), NULL)))
+
+#define PyGSL_VECTOR_CONVERT(src, array_type, flag) \
+         PyGSL_ARRAY_CONVERT(src, array_type, 1, flag)
+
+#define PyGSL_MATRIX_CONVERT(src, array_type, flag) \
+         PyGSL_ARRAY_CONVERT(src, array_type, 2, flag)
+          
+static 
+#ifdef HAVE_INLINE
+inline
+#endif
+PyArrayObject * 
+PyGSL_numpy_convert(PyObject *src, int array_type, int nd, int flag)
+{
+     PyArrayObject * a_array = NULL;
+     int contiguous = CONTIGUOUS;
+     int line = -1;
+     int requires;
+
+     FUNC_MESS_BEGIN();
+     
+     if ( (flag & PyGSL_INPUT_ARRAY) ==  PyGSL_INPUT_ARRAY){
+	  requires = 0;
+     } else if ( (flag & PyGSL_OUTPUT_ARRAY) == PyGSL_OUTPUT_ARRAY){
+	  requires = WRITEABLE;
+     } else if( (flag & PyGSL_IO_ARRAY) == PyGSL_IO_ARRAY){
+	  requires = WRITEABLE;
+     } else {
+	  line =  __LINE__;
+	  pygsl_error("Either Input of Output or InOut array must be sepecified",
+		    filename, line, GSL_ESANITY);
+	  goto fail;
+     }
+
+     contiguous = (flag & PyGSL_CONTIGUOUS) * CONTIGUOUS;
+
+     requires |= NOTSWAPPED |  ALIGNED | contiguous;
+     DEBUG_MESS(3, "requesting flags %d", requires);
+     a_array = (PyArrayObject * ) PyArray_FromAny(src, PyArray_DescrFromType(array_type), nd, nd, requires, NULL);
+     if(a_array == NULL){
+	  goto fail;
+	  line = __LINE__ - 1;
+     }
+
+     DEBUG_MESS(4, "Got an array @ %p with refcnt %d", (void *)a_array, a_array->ob_refcnt);
+     FUNC_MESS_END();
+
+     return a_array;          
+
+ fail:
+     PyGSL_add_traceback(NULL, __FILE__, __FUNCTION__, line);     
+     DEBUG_MESS(3, "contiguous = %d, array_type = %d", contiguous, array_type);
+     DEBUG_MESS(4, "common array types: Double %d, CDouble %d", PyArray_DOUBLE, PyArray_CDOUBLE);
+     DEBUG_MESS(8, "Char type %d", PyArray_CHAR);
+     return NULL;
+}
+
+static
+#ifdef HAVE_INLINE
+inline
+#endif
+PyArrayObject * 
+PyGSL_PyArray_prepare_gsl_vector_view(PyObject *src,
+				      int array_type,
+				      int flag, 
+				      PyGSL_array_index_t size, int argnum, PyGSL_error_info * info)
+{
+     PyArrayObject * a_array = NULL;
+     int line=-1;
+
+     FUNC_MESS_BEGIN();
+     if(!PyArray_Check(src))
+	  PyGSL_INCREASE_vector_transform_counter();
+
+     a_array = PyGSL_numpy_convert(src, array_type, 1, flag);
+     if(NULL == a_array){
+	  line = __LINE__ - 2;
+	  /* Here one could put some more information */
+	  goto fail;
+     }
+     if(PyGSL_PyArray_Check(a_array, array_type, flag,  1, &size, argnum, info) != GSL_SUCCESS){
+	  line = __LINE__ - 1;
+	  goto fail;
+     }
+     FUNC_MESS_END();
+     return a_array;
+ fail:
+     PyGSL_add_traceback(NULL, __FILE__, __FUNCTION__, line);
+     Py_XDECREF(a_array);
+     return NULL;
+}
+
+static
+#ifdef HAVE_INLINE
+inline
+#endif
+PyArrayObject *
+PyGSL_PyArray_prepare_gsl_matrix_view(PyObject *src,
+				      int array_type,
+				      int flag, 
+				      PyGSL_array_index_t size1, PyGSL_array_index_t size2, int argnum, 
+				      PyGSL_error_info * info)
+{
+     PyArrayObject * a_array = NULL;
+     PyGSL_array_index_t dimensions[2];
+
+     FUNC_MESS_BEGIN();
+     if(!PyArray_Check(src))
+	  PyGSL_INCREASE_matrix_transform_counter();
+
+     a_array = PyGSL_numpy_convert(src, array_type, 2, flag);
+     /* Here one could put some more information */
+     if(NULL == a_array)
+	  goto fail;
+
+     dimensions[0] = size1;
+     dimensions[1] = size2;
+     if(PyGSL_PyArray_Check(a_array, array_type, flag,  2, dimensions, argnum, info) != GSL_SUCCESS)
+	  goto fail;
+
+     DEBUG_MESS(3, "a_array @ %p is a matrix with refcnt %d", (void *) a_array, a_array->ob_refcnt);
+     FUNC_MESS_END();
+     return a_array;
+ fail:
+     PyGSL_add_traceback(NULL, filename, __FUNCTION__, __LINE__);
+     Py_XDECREF(a_array);
+     return NULL;
+
+}
+
+/* EOF */

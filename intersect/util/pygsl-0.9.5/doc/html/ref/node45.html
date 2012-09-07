@@ -1,0 +1,231 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<link rel="STYLESHEET" href="ref.css" type='text/css' />
+<link rel="SHORTCUT ICON" href="-dvips-safe" />
+<link rel="first" href="ref.html" title='PyGSL Reference Manual' />
+<link rel='contents' href='contents.html' title="Contents" />
+<link rel='index' href='genindex.html' title='Index' />
+<link rel='last' href='about.html' title='About this document...' />
+<link rel='help' href='about.html' title='About this document...' />
+<link rel="next" href="node46.html" />
+<link rel="prev" href="node44.html" />
+<link rel="parent" href="node44.html" />
+<link rel="next" href="node46.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name='aesop' content='information' />
+<title>11.2.1 Mean, Standard Deviation, and Variance</title>
+</head>
+<body>
+<DIV CLASS="navigation">
+<div id='top-navigation-panel' xml:id='top-navigation-panel'>
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="11.2 Available functions"
+  href="node44.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></A></td>
+<td class='online-navigation'><a rel="parent" title="11.2 Available functions"
+  href="node44.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up One Level' width='32' /></A></td>
+<td class='online-navigation'><a rel="next" title="11.2.2 Absolute deviation"
+  href="node46.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></A></td>
+<td align="center" width="100%">PyGSL Reference Manual</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></A></td>
+<td class='online-navigation'><img src='../icons/blank.png'
+  border='0' height='32'  alt='' width='32' /></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></A></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node44.html">11.2 Available functions</A>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="node44.html">11.2 Available functions</A>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node46.html">11.2.2 Absolute deviation</A>
+</div>
+<hr /></div>
+</DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0013210000000000000000"></A>
+<A NAME="sec:stat:mean-stddev-var"></A>
+<BR>
+11.2.1 Mean, Standard Deviation, and Variance
+</H2>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-247' xml:id='l2h-247' class="function">mean</tt></b>(</nobr></td>
+  <td><var>x</var>)</td></tr></table></dt>
+<dd><a id='l2h-253' xml:id='l2h-253'></a>
+   Arithmetic mean (<em>sample mean</em>) of <var>x</var>:
+   <P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\hat\mu = \frac{1}{N} \sum x_i
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="97" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img37.png"
+ ALT="$\displaystyle \hat\mu = \frac{1}{N} \sum x_i$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(11.1)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-248' xml:id='l2h-248' class="function">variance</tt></b>(</nobr></td>
+  <td><var>x</var>)</td></tr></table></dt>
+<dd><a id='l2h-254' xml:id='l2h-254'></a>
+   Estimated (<em>sample</em>) variance of <var>x</var>:
+   <P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\hat\sigma^2 = \frac{1}{N-1} \sum (x_i - \hat\mu)^2
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="177" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img38.png"
+ ALT="$\displaystyle \hat\sigma^2 = \frac{1}{N-1} \sum (x_i - \hat\mu)^2$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(11.2)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+This function computes the mean via a call to <tt class="function">mean</tt>.  If you have
+   already computed the mean then you can pass it directly to
+   <tt class="function">variance_m</tt>.
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-249' xml:id='l2h-249' class="function">variance_m</tt></b>(</nobr></td>
+  <td><var>x, mean</var>)</td></tr></table></dt>
+<dd><a id='l2h-255' xml:id='l2h-255'></a>
+   Estimated (<em>sample</em>) variance of <var>x</var> relative to <var>mean</var>:
+   <P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\hat\sigma^2 = \frac{1}{N-1} \sum (x_i - mean)^2
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="207" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img39.png"
+ ALT="$\displaystyle \hat\sigma^2 = \frac{1}{N-1} \sum (x_i - mean)^2$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(11.3)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-250' xml:id='l2h-250' class="function">sd</tt></b>(</nobr></td>
+  <td><var>x</var>)</td></tr></table></dt>
+<dd>
+</dl>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-251' xml:id='l2h-251' class="function">sd_m</tt></b>(</nobr></td>
+  <td><var>x, mean</var>)</td></tr></table></dt>
+<dd><a id='l2h-256' xml:id='l2h-256'></a>
+   The standard deviation is defined as the square root of the variance of
+   <var>x</var>.  These functions returns the square root of the respective
+   variance-functions above.
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-252' xml:id='l2h-252' class="function">variance_with_fixed_mean</tt></b>(</nobr></td>
+  <td><var>x, mean</var>)</td></tr></table></dt>
+<dd><a id='l2h-257' xml:id='l2h-257'></a>
+   Compute an unbiased estimate of the variance of <var>x</var> when the population
+   mean <var>mean</var> of the underlying distribution is known <em>a priori</em>.  In
+   this case the estimator for the variance uses the factor <SPAN CLASS="MATH"><IMG
+ WIDTH="34" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img40.png"
+ ALT="$ 1/N$"></SPAN>
+ and the
+   sample mean <SPAN CLASS="MATH"><IMG
+ WIDTH="14" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img41.png"
+ ALT="$ \hat\mu$"></SPAN>
+ is replaced by the known population mean <SPAN CLASS="MATH"><IMG
+ WIDTH="14" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img42.png"
+ ALT="$ \mu$"></SPAN>
+:
+   <P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\hat\sigma^2 = \frac{1}{N} \sum (x_i - \mu)^2
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="150" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img43.png"
+ ALT="$\displaystyle \hat\sigma^2 = \frac{1}{N} \sum (x_i - \mu)^2$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(11.4)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+</dl>
+
+<P>
+
+<DIV CLASS="navigation">
+<div class='online-navigation'>
+<p></p><hr />
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="11.2 Available functions"
+  href="node44.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></A></td>
+<td class='online-navigation'><a rel="parent" title="11.2 Available functions"
+  href="node44.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up One Level' width='32' /></A></td>
+<td class='online-navigation'><a rel="next" title="11.2.2 Absolute deviation"
+  href="node46.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></A></td>
+<td align="center" width="100%">PyGSL Reference Manual</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></A></td>
+<td class='online-navigation'><img src='../icons/blank.png'
+  border='0' height='32'  alt='' width='32' /></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></A></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node44.html">11.2 Available functions</A>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="node44.html">11.2 Available functions</A>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node46.html">11.2.2 Absolute deviation</A>
+</div>
+</div>
+<hr />
+<span class="release-info">Release 0.9, documentation updated on October, 2008.</span>
+</DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

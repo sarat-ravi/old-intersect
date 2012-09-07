@@ -1,0 +1,10 @@
+# Human Readable format
+
+python2.7
+pkg-config
+distribute
+pip
+gfortran
+
+numpy
+scipy

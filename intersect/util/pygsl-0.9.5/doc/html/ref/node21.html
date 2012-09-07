@@ -1,0 +1,406 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<link rel="STYLESHEET" href="ref.css" type='text/css' />
+<link rel="SHORTCUT ICON" href="-dvips-safe" />
+<link rel="first" href="ref.html" title='PyGSL Reference Manual' />
+<link rel='contents' href='contents.html' title="Contents" />
+<link rel='index' href='genindex.html' title='Index' />
+<link rel='last' href='about.html' title='About this document...' />
+<link rel='help' href='about.html' title='About this document...' />
+<link rel="next" href="node22.html" />
+<link rel="prev" href="module-pygsl.errors.html" />
+<link rel="parent" href="module-pygsl.errors.html" />
+<link rel="next" href="node22.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name='aesop' content='information' />
+<title>3.1 Exception Classes</title>
+</head>
+<body>
+<DIV CLASS="navigation">
+<div id='top-navigation-panel' xml:id='top-navigation-panel'>
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="3. pygsl.errors  "
+  href="module-pygsl.errors.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></A></td>
+<td class='online-navigation'><a rel="parent" title="3. pygsl.errors  "
+  href="module-pygsl.errors.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up One Level' width='32' /></A></td>
+<td class='online-navigation'><a rel="next" title="3.2 Warning Classes"
+  href="node22.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></A></td>
+<td align="center" width="100%">PyGSL Reference Manual</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></A></td>
+<td class='online-navigation'><img src='../icons/blank.png'
+  border='0' height='32'  alt='' width='32' /></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></A></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="module-pygsl.errors.html">3. pygsl.errors  </A>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="module-pygsl.errors.html">3. pygsl.errors  </A>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node22.html">3.2 Warning Classes</A>
+</div>
+<hr /></div>
+</DIV>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION005100000000000000000">
+3.1 Exception Classes</A>
+</H1>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><span class="typelabel">exception</span>&nbsp;<tt id='l2h-8' xml:id='l2h-8' class="exception">gsl_Error</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+derived from <tt class="exception">Exception</tt>, can be constructed with any object as parameter.
+It is baseclass to all other  GSL Exceptions
+</dl>
+These classes are translations of the <span class="file">&lt;gsl/gsl_errno.h&gt;</span> to python
+exceptions.
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><span class="typelabel">exception</span>&nbsp;<tt id='l2h-9' xml:id='l2h-9' class="exception">gsl_ArithmeticError</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+derived from <tt class="exception">gsl_Error</tt> and <tt class="exception">exceptions.ArithmeticError</tt>,
+base of all common arithmetic exceptions
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><span class="typelabel">exception</span>&nbsp;<tt id='l2h-10' xml:id='l2h-10' class="exception">gsl_OverflowError</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+derived from <tt class="exception">gsl_Error</tt> and <tt class="exception">exceptions.OverflowError</tt>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><span class="typelabel">exception</span>&nbsp;<tt id='l2h-11' xml:id='l2h-11' class="exception">gsl_ZeroDivisionError</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+derived from <tt class="exception">gsl_Error</tt> and <tt class="exception">exceptions.ZeroDivisionError</tt>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><span class="typelabel">exception</span>&nbsp;<tt id='l2h-12' xml:id='l2h-12' class="exception">gsl_FloatingPointError</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+derived from <tt class="exception">gsl_Error</tt> and <tt class="exception">exceptions.FloatingPointError</tt>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><span class="typelabel">exception</span>&nbsp;<tt id='l2h-13' xml:id='l2h-13' class="exception">gsl_ArithmeticError</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+is derived from  <tt class="exception">gsl_Error</tt> and from  <tt class="exception">ArithmeticError</tt> .
+This exception is the    base of all common arithmetic exceptions.
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><span class="typelabel">exception</span>&nbsp;<tt id='l2h-14' xml:id='l2h-14' class="exception">gsl_AccuracyLossError</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+is derived from  <tt class="exception">gsl_ArithmeticError</tt> .
+This exception is raised if the failed to reach the specified tolerance.
+</dl>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><span class="typelabel">exception</span>&nbsp;<tt id='l2h-15' xml:id='l2h-15' class="exception">gsl_BadFuncError</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+is derived from  <tt class="exception">gsl_Error</tt> .
+This exception is raised if problem with a user-supplied function occur.
+</dl>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><span class="typelabel">exception</span>&nbsp;<tt id='l2h-16' xml:id='l2h-16' class="exception">gsl_BadLength</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+is derived from  <tt class="exception">gsl_Error</tt> .
+This exception is raised if  matrix or  vector lengths are not conformant.
+</dl>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><span class="typelabel">exception</span>&nbsp;<tt id='l2h-17' xml:id='l2h-17' class="exception">gsl_BadToleranceError</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+is derived from  <tt class="exception">gsl_Error</tt> .
+This exception is raised if user specified an tolerance which can not be reached.
+</dl>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><span class="typelabel">exception</span>&nbsp;<tt id='l2h-18' xml:id='l2h-18' class="exception">gsl_CacheLimitError</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+is derived from  <tt class="exception">gsl_Error</tt> .
+This exception is raised if the    cache limit is exceeded.
+</dl>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><span class="typelabel">exception</span>&nbsp;<tt id='l2h-19' xml:id='l2h-19' class="exception">gsl_DivergeError</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+is derived from  <tt class="exception">gsl_ArithmeticError</tt> .
+This exception is raised if an   integral or series is divergent.
+</dl>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><span class="typelabel">exception</span>&nbsp;<tt id='l2h-20' xml:id='l2h-20' class="exception">gsl_DomainError</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+is derived from  <tt class="exception">gsl_Error</tt> .
+This exception is raised if    domain errors occure. e.g. sqrt(-1).
+</dl>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><span class="typelabel">exception</span>&nbsp;<tt id='l2h-21' xml:id='l2h-21' class="exception">gsl_EOFError</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+is derived from  <tt class="exception">gsl_Error</tt> and from  <tt class="exception">EOFError</tt> .
+This exception is raised if 
+    end of file
+     .
+</dl>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><span class="typelabel">exception</span>&nbsp;<tt id='l2h-22' xml:id='l2h-22' class="exception">gsl_FactorizationError</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+is derived from  <tt class="exception">gsl_Error</tt> .
+This exception is raised if     factorization failed.
+</dl>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><span class="typelabel">exception</span>&nbsp;<tt id='l2h-23' xml:id='l2h-23' class="exception">gsl_FloatingPointError</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+is derived from  <tt class="exception">gsl_Error</tt> and from  <tt class="exception">FloatingPointError</tt> .
+</dl>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><span class="typelabel">exception</span>&nbsp;<tt id='l2h-24' xml:id='l2h-24' class="exception">gsl_GenericError</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+is derived from  <tt class="exception">gsl_Error</tt> .
+</dl>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><span class="typelabel">exception</span>&nbsp;<tt id='l2h-25' xml:id='l2h-25' class="exception">gsl_InvalidArgumentError</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+is derived from  <tt class="exception">gsl_Error</tt> .
+This exception is raised if an invalid argument is supplied by the user.
+</dl>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><span class="typelabel">exception</span>&nbsp;<tt id='l2h-26' xml:id='l2h-26' class="exception">gsl_JacobianEvaluationError</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+is derived from  <tt class="exception">gsl_ArithmeticError</tt> .
+This exception is raised if jacobian evaluations are not improving the solution.
+</dl>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><span class="typelabel">exception</span>&nbsp;<tt id='l2h-27' xml:id='l2h-27' class="exception">gsl_MatrixNotSquare</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+is derived from  <tt class="exception">gsl_Error</tt> .
+This exception is raised if the given matrix is not square.
+</dl>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><span class="typelabel">exception</span>&nbsp;<tt id='l2h-28' xml:id='l2h-28' class="exception">gsl_MaximumIterationError</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+is derived from  <tt class="exception">gsl_ArithmeticError</tt> .
+This exception is raised if    the maximum number  of iterations is exceeded.
+</dl>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><span class="typelabel">exception</span>&nbsp;<tt id='l2h-29' xml:id='l2h-29' class="exception">gsl_NoHardwareSupportError</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+is derived from  <tt class="exception">gsl_Error</tt> .
+This exception is raised if the requested feature is not supported by the hardware.
+</dl>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><span class="typelabel">exception</span>&nbsp;<tt id='l2h-30' xml:id='l2h-30' class="exception">gsl_NoProgressError</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+is derived from  <tt class="exception">gsl_ArithmeticError</tt> .
+This exception is raised if the  iteration is not making progress towards solution.
+</dl>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><span class="typelabel">exception</span>&nbsp;<tt id='l2h-31' xml:id='l2h-31' class="exception">gsl_NotImplementedError</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+is derived from  <tt class="exception">gsl_Error</tt> and from  <tt class="exception">NotImplementedError</tt> .
+This exception is raised if  a requested feature is not (yet) implemented .
+</dl>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><span class="typelabel">exception</span>&nbsp;<tt id='l2h-32' xml:id='l2h-32' class="exception">gsl_OverflowError</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+is derived from  <tt class="exception">gsl_Error</tt> and from  <tt class="exception">OverflowError</tt> .
+</dl>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><span class="typelabel">exception</span>&nbsp;<tt id='l2h-33' xml:id='l2h-33' class="exception">gsl_PointerError</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+is derived from  <tt class="exception">gsl_Error</tt> .
+This exception is raised if an invalid pointer is found by the C wrapper code
+or by the GSL library.
+</dl>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><span class="typelabel">exception</span>&nbsp;<tt id='l2h-34' xml:id='l2h-34' class="exception">gsl_RangeError</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+is derived from  <tt class="exception">gsl_ArithmeticError</tt> .
+This exception is raised if     output would be out or range, e.g. exp(1e100)
+     .
+</dl>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><span class="typelabel">exception</span>&nbsp;<tt id='l2h-35' xml:id='l2h-35' class="exception">gsl_RoundOffError</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+is derived from  <tt class="exception">gsl_ArithmeticError</tt> .
+This exception is raised if  arithmetic failed because of roundoff error.
+</dl>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><span class="typelabel">exception</span>&nbsp;<tt id='l2h-36' xml:id='l2h-36' class="exception">gsl_RunAwayError</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+is derived from  <tt class="exception">gsl_ArithmeticError</tt> .
+This exception is raised if   iterative process is out of control.
+</dl>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><span class="typelabel">exception</span>&nbsp;<tt id='l2h-37' xml:id='l2h-37' class="exception">gsl_SanityCheckError</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+is derived from  <tt class="exception">gsl_Error</tt> .
+This exception is raised if a sanity check failed - shouldn't happen.
+</dl>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><span class="typelabel">exception</span>&nbsp;<tt id='l2h-38' xml:id='l2h-38' class="exception">gsl_SingularityError</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+is derived from  <tt class="exception">gsl_ArithmeticError</tt> .
+This exception is raised if  an   apparent singularity is detected.
+</dl>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><span class="typelabel">exception</span>&nbsp;<tt id='l2h-39' xml:id='l2h-39' class="exception">gsl_TableLimitError</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+is derived from  <tt class="exception">gsl_Error</tt> .
+This exception is raised if the table limit is exceeded.
+</dl>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><span class="typelabel">exception</span>&nbsp;<tt id='l2h-40' xml:id='l2h-40' class="exception">gsl_ToleranceError</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+is derived from  <tt class="exception">gsl_ArithmeticError</tt> .
+This exception is raised if  the alghorithm failed to reach the specified tolerance.
+</dl>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><span class="typelabel">exception</span>&nbsp;<tt id='l2h-41' xml:id='l2h-41' class="exception">gsl_ToleranceFError</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+is derived from  <tt class="exception">gsl_ArithmeticError</tt> .
+This exception is raised if  the alghorithm cannot reach the specified
+tolerance in F (typically the variation of the evaluated function).
+</dl>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><span class="typelabel">exception</span>&nbsp;<tt id='l2h-42' xml:id='l2h-42' class="exception">gsl_ToleranceGradientError</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+is derived from  <tt class="exception">gsl_ArithmeticError</tt> .
+This exception is raised if  cannot reach the specified tolerance for the gradient.
+</dl>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><span class="typelabel">exception</span>&nbsp;<tt id='l2h-43' xml:id='l2h-43' class="exception">gsl_ToleranceXError</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+is derived from  <tt class="exception">gsl_ArithmeticError</tt> .
+This exception is raised if cannot reach the specified tolerance in X
+(typically a search result).
+</dl>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><span class="typelabel">exception</span>&nbsp;<tt id='l2h-44' xml:id='l2h-44' class="exception">gsl_UnderflowError</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+is derived from  <tt class="exception">gsl_Error</tt> and from  <tt class="exception">OverflowError</tt> .
+</dl>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><span class="typelabel">exception</span>&nbsp;<tt id='l2h-45' xml:id='l2h-45' class="exception">gsl_ZeroDivisionError</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+is derived from  <tt class="exception">gsl_Error</tt> and from  <tt class="exception">ZeroDivisionError</tt> .
+</dl>
+
+<P>
+All the above errors are just translations of the errno to python exceptions.
+
+<P>
+The following two are specific to pygsl:
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><span class="typelabel">exception</span>&nbsp;<tt id='l2h-46' xml:id='l2h-46' class="exception">pygsl.errors.pygsl_NotImplementedError</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+is derived from  <tt class="exception">gsl_Error</tt> and from  <tt class="exception">NotImplementedError</tt> .
+This exception is raised if a feature is requested but not
+implemented. Currently only used if a module requests the debugging enviroment
+of the init module, but the init module was not compiled with <code>#define DEBUG=1</code>
+</dl>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><span class="typelabel">exception</span>&nbsp;<tt id='l2h-47' xml:id='l2h-47' class="exception">pygsl.errors.pygsl_StrideError</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+is derived from  <tt class="exception">gsl_SanityCheckError</tt> .
+GSL uses as strides multiples of the basis type; for a vector or doubles, one
+means from one double to the next. Numpy or numarray count the stride in
+multiples of the size of a char. Therefore the stride has to be recalculated
+before the approbriate  GSL function can be called. If that fails this
+exception is raised.
+</dl>
+
+<P>
+
+<DIV CLASS="navigation">
+<div class='online-navigation'>
+<p></p><hr />
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="3. pygsl.errors  "
+  href="module-pygsl.errors.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></A></td>
+<td class='online-navigation'><a rel="parent" title="3. pygsl.errors  "
+  href="module-pygsl.errors.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up One Level' width='32' /></A></td>
+<td class='online-navigation'><a rel="next" title="3.2 Warning Classes"
+  href="node22.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></A></td>
+<td align="center" width="100%">PyGSL Reference Manual</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></A></td>
+<td class='online-navigation'><img src='../icons/blank.png'
+  border='0' height='32'  alt='' width='32' /></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></A></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="module-pygsl.errors.html">3. pygsl.errors  </A>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="module-pygsl.errors.html">3. pygsl.errors  </A>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node22.html">3.2 Warning Classes</A>
+</div>
+</div>
+<hr />
+<span class="release-info">Release 0.9, documentation updated on October, 2008.</span>
+</DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

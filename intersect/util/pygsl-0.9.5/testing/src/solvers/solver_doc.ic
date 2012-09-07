@@ -1,0 +1,13 @@
+/* -*- C -*- */
+#ifndef SOLVER_DOC_IC
+#define SOLVER_DOC_IC 1
+static const char PyGSL_solver_module_doc[] = "XXX Missing";
+static const char PyGSL_solver_type_doc[] = "XXX Missing";
+
+
+
+
+
+
+
+#endif /* SOLVER_DOC_IC */

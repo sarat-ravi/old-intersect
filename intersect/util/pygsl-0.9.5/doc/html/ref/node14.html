@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<link rel="STYLESHEET" href="ref.css" type='text/css' />
+<link rel="SHORTCUT ICON" href="-dvips-safe" />
+<link rel="first" href="ref.html" title='PyGSL Reference Manual' />
+<link rel='contents' href='contents.html' title="Contents" />
+<link rel='index' href='genindex.html' title='Index' />
+<link rel='last' href='about.html' title='About this document...' />
+<link rel='help' href='about.html' title='About this document...' />
+<link rel="next" href="module-pygsl.errors.html" />
+<link rel="prev" href="node3.html" />
+<link rel="parent" href="ref.html" />
+<link rel="next" href="node15.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name='aesop' content='information' />
+<title>2. Design of the PyGSL interface</title>
+</head>
+<body>
+<DIV CLASS="navigation">
+<div id='top-navigation-panel' xml:id='top-navigation-panel'>
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="1.4.5 The special function"
+  href="node13.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></A></td>
+<td class='online-navigation'><a rel="parent" title="PyGSL Reference Manual"
+  href="ref.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up One Level' width='32' /></A></td>
+<td class='online-navigation'><a rel="next" title="2.1 Callbacks"
+  href="node15.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></A></td>
+<td align="center" width="100%">PyGSL Reference Manual</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></A></td>
+<td class='online-navigation'><img src='../icons/blank.png'
+  border='0' height='32'  alt='' width='32' /></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></A></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node13.html">1.4.5 The special function</A>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="ref.html">PyGSL Reference Manual</A>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node15.html">2.1 Callbacks</A>
+</div>
+<hr /></div>
+</DIV>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION004000000000000000000">
+2. Design of the PyGSL interface</A>
+</H1>
+
+<P>
+The GSL library was implemented using the C language. This implies that 
+each function uses a certain type for the different variables and are fixed
+ to one specific type. The wrapper will try to convert each argument to the approbriate
+C type. 
+The  PyGSL interface
+tries to follow it as much as possible but only as far as resonable. 
+For example the definition of the poly_eval function in C is given by
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-1' xml:id='l2h-1' class="function"><TT>double</TT> gsl_poly_eval</tt></b>(</nobr></td>
+  <td><var><TT>const double</TT> C[], <TT>const int</TT> LEN, <TT>const double</TT> X</var>)</td></tr></table></dt>
+<dd>
+</dl>
+
+<P>
+The corresponding python wrapper was implemented by
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-2' xml:id='l2h-2' class="function">poly.poly_eval</tt></b>(</nobr></td>
+  <td><var>C, x</var>)</td></tr></table></dt>
+<dd>
+</dl>
+as the wrapper can get the length of any python object and then fill the len variable. 
+The mathematical calculation is performed by the GSL library. Thus the calculation is limited 
+to the precision provided by the underlying hardware.
+
+<P>
+Default arguments are used to allocate workspaces on the fly if not provided by the user. 
+Consider for example the fft module. The function for the real forward transform is
+named 
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-3' xml:id='l2h-3' class="function"><TT>int</TT> gsl_fft_real_transform</tt></b>(</nobr></td>
+  <td><var><TT>double DATA[]</TT>, 
+ <TT>size_t STRIDE</TT>,
+ <TT>size_t N</TT>, 
+ <TT>const gsl_fft_real_wavetable * WAVETABLE</TT>,
+ <TT>gsl_fft_real_workspace * WORK</TT>
+</var>)</td></tr></table></dt>
+<dd>
+</dl>
+
+<P>
+The corresponding python wrapper is found in the fft module called
+real_transform
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-4' xml:id='l2h-4' class="function">real_transform</tt></b>(</nobr></td>
+  <td><var>data, </var><big>[</big><var>space, 
+    table, 
+    output</var><big>]</big><var></var>)</td></tr></table></dt>
+<dd>
+</dl>
+The wrapper will get the stride and size information from the data object provided
+by the user. If space or table are not provided, these objects will be generated on 
+the fly. As the GSL function applies the transformation in space, an internal copy is 
+made of the data and only then the object is passed to the  GSL function. If an output
+object is provided the data will be copied there instead. PyGSL will always make copies
+of objects which would be otherwise modified in place.
+
+<P>
+
+<p><br /></p><hr class='online-navigation' />
+<div class='online-navigation'>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></a>
+
+<UL CLASS="ChildLinks">
+<LI><A href="node15.html">2.1 Callbacks</a>
+<LI><A href="node16.html">2.2 Error handling</a>
+<LI><A href="node17.html">2.3 Exception handling</a>
+<UL>
+<LI><A href="node18.html">2.3.1 Change of internal error handling.</a>
+</ul>
+<LI><A href="node19.html">2.4 The documentation gap</a>
+</ul>
+<!--End of Table of Child-Links-->
+</div>
+
+<DIV CLASS="navigation">
+<div class='online-navigation'>
+<p></p><hr />
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="1.4.5 The special function"
+  href="node13.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></A></td>
+<td class='online-navigation'><a rel="parent" title="PyGSL Reference Manual"
+  href="ref.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up One Level' width='32' /></A></td>
+<td class='online-navigation'><a rel="next" title="2.1 Callbacks"
+  href="node15.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></A></td>
+<td align="center" width="100%">PyGSL Reference Manual</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></A></td>
+<td class='online-navigation'><img src='../icons/blank.png'
+  border='0' height='32'  alt='' width='32' /></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></A></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node13.html">1.4.5 The special function</A>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="ref.html">PyGSL Reference Manual</A>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node15.html">2.1 Callbacks</A>
+</div>
+</div>
+<hr />
+<span class="release-info">Release 0.9, documentation updated on October, 2008.</span>
+</DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

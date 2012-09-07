@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<link rel="STYLESHEET" href="ref.css" type='text/css' />
+<link rel="SHORTCUT ICON" href="-dvips-safe" />
+<link rel="first" href="ref.html" title='PyGSL Reference Manual' />
+<link rel='contents' href='contents.html' title="Contents" />
+<link rel='index' href='genindex.html' title='Index' />
+<link rel='last' href='about.html' title='About this document...' />
+<link rel='help' href='about.html' title='About this document...' />
+<link rel="next" href="module-pygsl.testing.html" />
+<link rel="prev" href="module-pygsl.sum.html" />
+<link rel="parent" href="ref.html" />
+<link rel="next" href="node43.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name='aesop' content='information' />
+<title>11. pygsl.statistics -- Statistics
+functions</title>
+</head>
+<body>
+<DIV CLASS="navigation">
+<div id='top-navigation-panel' xml:id='top-navigation-panel'>
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="10.2 Further Reading"
+  href="node41.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></A></td>
+<td class='online-navigation'><a rel="parent" title="PyGSL Reference Manual"
+  href="ref.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up One Level' width='32' /></A></td>
+<td class='online-navigation'><a rel="next" title="11.1 Organization of the"
+  href="node43.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></A></td>
+<td align="center" width="100%">PyGSL Reference Manual</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></A></td>
+<td class='online-navigation'><img src='../icons/blank.png'
+  border='0' height='32'  alt='' width='32' /></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></A></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node41.html">10.2 Further Reading</A>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="ref.html">PyGSL Reference Manual</A>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node43.html">11.1 Organization of the</A>
+</div>
+<hr /></div>
+</DIV>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION0013000000000000000000"></A>
+<A NAME="cha:statistics-module"></A>
+<BR>
+11. <tt class="module">pygsl.statistics</tt> 
+<BR>
+Statistics functions
+</H1>
+
+<P>
+<A NAME="module-pygsl.statistics"></A>
+
+<P>
+<a id='l2h-246' xml:id='l2h-246'></a>
+
+<P>
+<BLOCKQUOTE>
+This chapter describes the statistical functions in the library.  The basic
+   statistical functions include routines to compute the mean, variance and
+   standard deviation. More advanced functions allow you to calculate absolute
+   deviations, skewness, and kurtosis as well as the median and arbitrary
+   percentiles.
+
+</BLOCKQUOTE>
+
+<P>
+The algorithms provided here use recurrence relations to compute average
+quantities in a stable way, without large intermediate values that might
+overflow.  All functions work on any Python sequence (of appropriate
+data-type), but see section <A HREF="node51.html#sec:stat:speed-considerations"><tex2html_cross_ref_visible_mark></A> for advantages
+and drawbacks of different kinds of input data.
+
+<P>
+<div class="seealso">
+  <p class="heading">See Also:</p>
+
+   For details on the underlying implementation of these functions please
+   consult the  GNU Scientific Library reference manual.
+</div>
+
+<P>
+
+<p><br /></p><hr class='online-navigation' />
+<div class='online-navigation'>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></a>
+
+<UL CLASS="ChildLinks">
+<LI><A href="node43.html">11.1 Organization of the module</a>
+<LI><A href="node44.html">11.2 Available functions</a>
+<UL>
+<LI><A href="node45.html">11.2.1 Mean, Standard Deviation, and Variance</a>
+<LI><A href="node46.html">11.2.2 Absolute deviation</a>
+<LI><A href="node47.html">11.2.3 Higher moments (skewness and kurtosis)</a>
+<LI><A href="node48.html">11.2.4 Autocorrelation</a>
+<LI><A href="node49.html">11.2.5 Covariance</a>
+<LI><A href="node50.html">11.2.6 Maximum and Minimum values</a>
+<LI><A href="node51.html">11.2.7 Median and Percentiles</a>
+<LI><A href="node52.html">11.2.8 Weighted Samples</a>
+</ul>
+<LI><A href="node53.html">11.3 Further Reading</a>
+</ul>
+<!--End of Table of Child-Links-->
+</div>
+
+<DIV CLASS="navigation">
+<div class='online-navigation'>
+<p></p><hr />
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="10.2 Further Reading"
+  href="node41.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></A></td>
+<td class='online-navigation'><a rel="parent" title="PyGSL Reference Manual"
+  href="ref.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up One Level' width='32' /></A></td>
+<td class='online-navigation'><a rel="next" title="11.1 Organization of the"
+  href="node43.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></A></td>
+<td align="center" width="100%">PyGSL Reference Manual</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></A></td>
+<td class='online-navigation'><img src='../icons/blank.png'
+  border='0' height='32'  alt='' width='32' /></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></A></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node41.html">10.2 Further Reading</A>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="ref.html">PyGSL Reference Manual</A>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node43.html">11.1 Organization of the</A>
+</div>
+</div>
+<hr />
+<span class="release-info">Release 0.9, documentation updated on October, 2008.</span>
+</DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

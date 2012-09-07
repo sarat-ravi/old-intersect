@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<link rel="STYLESHEET" href="ref.css" type='text/css' />
+<link rel="SHORTCUT ICON" href="-dvips-safe" />
+<link rel="first" href="ref.html" title='PyGSL Reference Manual' />
+<link rel='contents' href='contents.html' title="Contents" />
+<link rel='index' href='genindex.html' title='Index' />
+<link rel='last' href='about.html' title='About this document...' />
+<link rel='help' href='about.html' title='About this document...' />
+<link rel="next" href="front.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name='aesop' content='information' />
+<title>PyGSL Reference Manual</title>
+</head>
+<body>
+<DIV CLASS="navigation">
+<div id='top-navigation-panel' xml:id='top-navigation-panel'>
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></td>
+<td class='online-navigation'><img src='../icons/up.png'
+  border='0' height='32'  alt='Up One Level' width='32' /></td>
+<td class='online-navigation'><a rel="next" title="Front Matter"
+  href="front.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></A></td>
+<td align="center" width="100%">PyGSL Reference Manual</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></A></td>
+<td class='online-navigation'><img src='../icons/blank.png'
+  border='0' height='32'  alt='' width='32' /></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></A></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="front.html">Front Matter</A>
+</div>
+<hr /></div>
+</DIV>
+<!--End of Navigation Panel-->
+
+<P>
+<H1 ALIGN=CENTER>PyGSL Reference Manual</H1>
+<P ALIGN=CENTER><STRONG><a class="ulink" href="mailto:achimgaedke@users.sourceforge.net"
+  >Achim G&#228;dke</a></STRONG>
+<BR><I>  Technische Universit&#228;t Darmstadt, Darmstadt, Germany
+</I>
+</P><P ALIGN=CENTER><STRONG><a class="ulink" href="mailto:schnizer@users.sourceforge.net"
+  >Pierre Schnizer</a></STRONG>
+<BR><I>  Gesellschaft f&#252;r Schwerionenforschung, Darmstadt, Germany
+</I>
+</P>
+<BR><P ALIGN=CENTER><B>Date:</B> October, 2008</P>
+
+<HR>
+
+<P>
+
+<p><br /></p><hr class='online-navigation' />
+<div class='online-navigation'>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"></a>
+
+<UL CLASS="ChildLinks">
+<LI><A href="front.html">Front Matter</a>
+<LI><A href="contents.html">Contents</a>
+<LI><A href="node3.html">1. System Requirements, Installation</a>
+<UL>
+<LI><A href="node4.html">1.1 Status</a>
+<LI><A href="node5.html">1.2 Requirements</a>
+<LI><A href="node6.html">1.3 Installing the pygsl interface</a>
+<UL>
+<LI><A href="node7.html">1.3.1 Building on win32</a>
+</ul>
+<LI><A href="node8.html">1.4 Information for Distributors</a>
+<UL>
+<LI><A href="node9.html">1.4.1 Preferable array module</a>
+<LI><A href="node10.html">1.4.2 Wrapper generated modules</a>
+<LI><A href="node11.html">1.4.3 Dedicated wrappers</a>
+<LI><A href="module-pygsl.diff.html">1.4.4 The const module</a>
+<LI><A href="node13.html">1.4.5 The special function module.</a>
+</ul>
+</ul>
+<LI><A href="node14.html">2. Design of the PyGSL interface</a>
+<UL>
+<LI><A href="node15.html">2.1 Callbacks</a>
+<LI><A href="node16.html">2.2 Error handling</a>
+<LI><A href="node17.html">2.3 Exception handling</a>
+<UL>
+<LI><A href="node18.html">2.3.1 Change of internal error handling.</a>
+</ul>
+<LI><A href="node19.html">2.4 The documentation gap</a>
+</ul>
+<LI><A href="module-pygsl.errors.html">3. <tt class="module">pygsl.errors</tt> -- Error and warning classes</a>
+<UL>
+<LI><A href="node21.html">3.1 Exception Classes</a>
+<LI><A href="node22.html">3.2 Warning Classes</a>
+</ul>
+<LI><A href="module-pygsl.const.html">4. <tt class="module">pygsl.const</tt> -- Mathematical and scientific
+constants</a>
+<UL>
+<LI><A href="node24.html">4.1 <tt class="module">pygsl.const.m</tt> -- Mathematical constants</a>
+<LI><A href="node25.html">4.2 <tt class="module">pygsl.const.mksa</tt> -- Scientific constants in mksa units</a>
+<LI><A href="node26.html">4.3 <tt class="module">pygsl.const.cgsm</tt> -- Scientific constants in cgsm units</a>
+<LI><A href="node27.html">4.4 <tt class="module">pygsl.const.num</tt> -- Scientific number constants</a>
+</ul>
+<LI><A href="node28.html">5. <tt class="module">pygsl.poly</tt> -- Polynomials</a>
+<LI><A href="module-pygsl.chebyshev.html">6. <tt class="module">pygsl.chebyshev</tt></a>
+<LI><A href="module-pygsl.deriv.html">7. <tt class="module">pygsl.deriv</tt> -- NumericalDifferentiation</a>
+<LI><A href="module-pygsl.histogram.html">8. <tt class="module">pygsl.histogram</tt> -- Histogram Types</a>
+<UL>
+<LI><A href="node32.html">8.1 <tt class="class">histogram</tt> -- 1-dimensional histograms</a>
+<LI><A href="node33.html">8.2 <tt class="class">histogram2d</tt> -- 2-dimensional histograms</a>
+<LI><A href="node34.html">8.3 <tt class="class">histogram_pdf</tt> and <tt class="class">histogram2d_pdf</tt></a>
+</ul>
+<LI><A href="module-pygsl.rng.html">9. <tt class="module">pygsl.rng</tt> -- Random Number Generators</a>
+<UL>
+<LI><A href="module-pygsl.sf.html">9.1 Random Number Generators</a>
+<LI><A href="node37.html">9.2 Probability Density Functions</a>
+<LI><A href="node38.html">9.3 Using probability densities with random number generators</a>
+</ul>
+<LI><A href="module-pygsl.sum.html">10. <tt class="module">pygsl.sum</tt> -- Series acceleration</a>
+<UL>
+<LI><A href="node40.html">10.1 Function list</a>
+<LI><A href="node41.html">10.2 Further Reading</a>
+</ul>
+<LI><A href="module-pygsl.statistics.html">11. <tt class="module">pygsl.statistics</tt> -- Statistics
+functions</a>
+<UL>
+<LI><A href="node43.html">11.1 Organization of the module</a>
+<LI><A href="node44.html">11.2 Available functions</a>
+<UL>
+<LI><A href="node45.html">11.2.1 Mean, Standard Deviation, and Variance</a>
+<LI><A href="node46.html">11.2.2 Absolute deviation</a>
+<LI><A href="node47.html">11.2.3 Higher moments (skewness and kurtosis)</a>
+<LI><A href="node48.html">11.2.4 Autocorrelation</a>
+<LI><A href="node49.html">11.2.5 Covariance</a>
+<LI><A href="node50.html">11.2.6 Maximum and Minimum values</a>
+<LI><A href="node51.html">11.2.7 Median and Percentiles</a>
+<LI><A href="node52.html">11.2.8 Weighted Samples</a>
+</ul>
+<LI><A href="node53.html">11.3 Further Reading</a>
+</ul>
+<LI><A href="module-pygsl.testing.html">12. <tt class="module">pygsl.testing</tt> --  Modules in Testing</a>
+<UL>
+<LI><A href="module-pygsl.testing.sf.html">12.1 <tt class="module">pygsl.testing.sf</tt> -- Special UFuncs</a>
+<LI><A href="node56.html">12.2 UFuncs</a>
+<LI><A href="node57.html">12.3 Ordinary Functions</a>
+<LI><A href="node58.html">12.4 Ordinary Functions</a>
+</ul>
+<LI><A href="module-pygsl.init.html">A. <tt class="module">pygsl.ieee</tt> -- Floating Point Unit Support</a>
+<LI><A href="node60.html">B. GNU Free Documentation License</a>
+<UL>
+<LI><A href="node61.html">Preamble</a>
+<LI><A href="node62.html">B.1 Applicability and Definitions</a>
+<LI><A href="node63.html">B.2 Verbatim Copying</a>
+<LI><A href="node64.html">B.3 Copying in Quantity</a>
+<LI><A href="node65.html">B.4 Modifications</a>
+<LI><A href="node66.html">B.5 Combining Documents</a>
+<LI><A href="node67.html">B.6 Collections of Documents</a>
+<LI><A href="node68.html">B.7 Aggregation With Independent Works</a>
+<LI><A href="node69.html">B.8 Translation</a>
+<LI><A href="node70.html">B.9 Termination</a>
+<LI><A href="node71.html">B.10 Future Revisions of This License</a>
+</ul>
+<LI><A href="genindex.html">Index</a>
+<LI><A href="about.html">About this document ...</a>
+</ul>
+<!--End of Table of Child-Links-->
+</div>
+
+<DIV CLASS="navigation">
+<div class='online-navigation'>
+<p></p><hr />
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></td>
+<td class='online-navigation'><img src='../icons/up.png'
+  border='0' height='32'  alt='Up One Level' width='32' /></td>
+<td class='online-navigation'><a rel="next" title="Front Matter"
+  href="front.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></A></td>
+<td align="center" width="100%">PyGSL Reference Manual</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></A></td>
+<td class='online-navigation'><img src='../icons/blank.png'
+  border='0' height='32'  alt='' width='32' /></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></A></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="front.html">Front Matter</A>
+</div>
+</div>
+<hr />
+<span class="release-info">Release 0.9, documentation updated on October, 2008.</span>
+</DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

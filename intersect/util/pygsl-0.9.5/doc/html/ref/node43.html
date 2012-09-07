@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<link rel="STYLESHEET" href="ref.css" type='text/css' />
+<link rel="SHORTCUT ICON" href="-dvips-safe" />
+<link rel="first" href="ref.html" title='PyGSL Reference Manual' />
+<link rel='contents' href='contents.html' title="Contents" />
+<link rel='index' href='genindex.html' title='Index' />
+<link rel='last' href='about.html' title='About this document...' />
+<link rel='help' href='about.html' title='About this document...' />
+<link rel="next" href="node44.html" />
+<link rel="prev" href="module-pygsl.statistics.html" />
+<link rel="parent" href="module-pygsl.statistics.html" />
+<link rel="next" href="node44.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name='aesop' content='information' />
+<title>11.1 Organization of the module</title>
+</head>
+<body>
+<DIV CLASS="navigation">
+<div id='top-navigation-panel' xml:id='top-navigation-panel'>
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="11. pygsl.statistics  "
+  href="module-pygsl.statistics.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></A></td>
+<td class='online-navigation'><a rel="parent" title="11. pygsl.statistics  "
+  href="module-pygsl.statistics.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up One Level' width='32' /></A></td>
+<td class='online-navigation'><a rel="next" title="11.2 Available functions"
+  href="node44.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></A></td>
+<td align="center" width="100%">PyGSL Reference Manual</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></A></td>
+<td class='online-navigation'><img src='../icons/blank.png'
+  border='0' height='32'  alt='' width='32' /></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></A></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="module-pygsl.statistics.html">11. pygsl.statistics  </A>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="module-pygsl.statistics.html">11. pygsl.statistics  </A>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node44.html">11.2 Available functions</A>
+</div>
+<hr /></div>
+</DIV>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION0013100000000000000000"></A>
+<A NAME="sec:stat:organization"></A>
+<BR>
+11.1 Organization of the module
+</H1>
+
+<P>
+Individual parts of the  GSL functions names, providing artificial namespaces
+in C, are mapped to modules and submodules in PyGSL.  That is,
+<tt class="cfunction">gsl_stats_mean</tt> can be found as <tt class="function">pygsl.statistics.mean</tt> and
+<tt class="cfunction">gsl_stats_long_mean</tt> as <tt class="function">pygsl.statistics.long.mean</tt>.
+
+<P>
+The functions in the module are available in versions for datasets in the
+standard and  NumPy floating-point and integer types. The generic versions
+available in the <tt class="module">pygsl.statistics</tt> module are using the generic GSL
+<tt class="ctype">double</tt> versions.  The submodules use GSL functions according to the
+submodule name, e.g. long for <tt class="module">pygsl.statistics.long</tt>.
+
+<P>
+Implemented submodules are <tt class="module">char</tt>, <tt class="module">uchar</tt>, <tt class="module">short</tt>,
+<tt class="module">int</tt>, <tt class="module">long</tt>, <tt class="module">float</tt>, and <tt class="module">double</tt>. The latter
+one also serves as default and is used whenever you don't expclicitely state a
+different datatype. In most cases it is appropriate to simply use the default
+implementation as it covers the widest range of the real space, offers high
+precision, and as such is simple to use. If you have a sequence of all integer
+values it is straightforward to use <tt class="module">pygsl.statistics.long</tt> functions as
+these use an implementation corresponding to Pythons <tt class="class">Float</tt>-type. These
+implemented submodules represent all numeric datatypes available in Python
+(<tt class="class">Int</tt>, <tt class="class">Float</tt>) besides <tt class="class">Long Int</tt> which has no
+representation in standard C, as well as all numeric datatypes available in
+ NumPy that have corresponding implementations in GSL (on 32 bit systems
+these are: Character, UnsigendInt8, Int16, Int32, Int, Float32, Float).
+
+<P>
+
+<DIV CLASS="navigation">
+<div class='online-navigation'>
+<p></p><hr />
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="11. pygsl.statistics  "
+  href="module-pygsl.statistics.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></A></td>
+<td class='online-navigation'><a rel="parent" title="11. pygsl.statistics  "
+  href="module-pygsl.statistics.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up One Level' width='32' /></A></td>
+<td class='online-navigation'><a rel="next" title="11.2 Available functions"
+  href="node44.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></A></td>
+<td align="center" width="100%">PyGSL Reference Manual</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></A></td>
+<td class='online-navigation'><img src='../icons/blank.png'
+  border='0' height='32'  alt='' width='32' /></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></A></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="module-pygsl.statistics.html">11. pygsl.statistics  </A>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="module-pygsl.statistics.html">11. pygsl.statistics  </A>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node44.html">11.2 Available functions</A>
+</div>
+</div>
+<hr />
+<span class="release-info">Release 0.9, documentation updated on October, 2008.</span>
+</DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

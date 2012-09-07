@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<link rel="STYLESHEET" href="ref.css" type='text/css' />
+<link rel="SHORTCUT ICON" href="-dvips-safe" />
+<link rel="first" href="ref.html" title='PyGSL Reference Manual' />
+<link rel='contents' href='contents.html' title="Contents" />
+<link rel='index' href='genindex.html' title='Index' />
+<link rel='last' href='about.html' title='About this document...' />
+<link rel='help' href='about.html' title='About this document...' />
+<link rel="next" href="module-pygsl.histogram.html" />
+<link rel="prev" href="module-pygsl.chebyshev.html" />
+<link rel="parent" href="ref.html" />
+<link rel="next" href="module-pygsl.histogram.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name='aesop' content='information' />
+<title>7. pygsl.deriv -- NumericalDifferentiation</title>
+</head>
+<body>
+<DIV CLASS="navigation">
+<div id='top-navigation-panel' xml:id='top-navigation-panel'>
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="6. pygsl.chebyshev"
+  href="module-pygsl.chebyshev.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></A></td>
+<td class='online-navigation'><a rel="parent" title="PyGSL Reference Manual"
+  href="ref.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up One Level' width='32' /></A></td>
+<td class='online-navigation'><a rel="next" title="8. pygsl.histogram  "
+  href="module-pygsl.histogram.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></A></td>
+<td align="center" width="100%">PyGSL Reference Manual</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></A></td>
+<td class='online-navigation'><img src='../icons/blank.png'
+  border='0' height='32'  alt='' width='32' /></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></A></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="module-pygsl.chebyshev.html">6. pygsl.chebyshev</A>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="ref.html">PyGSL Reference Manual</A>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="module-pygsl.histogram.html">8. pygsl.histogram  </A>
+</div>
+<hr /></div>
+</DIV>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION009000000000000000000"></A>
+<A NAME="cha:diff-module"></A>
+<BR>
+7. <tt class="module">pygsl.deriv</tt> 
+<BR>
+Numerical Differentiation
+</H1>
+
+<P>
+<A NAME="module-pygsl.deriv"></A>
+<P>
+<BLOCKQUOTE>
+This chapter describes the available functions for numerical differentiation.
+
+</BLOCKQUOTE>
+
+<P>
+The functions described in this chapter compute numerical derivatives by finite
+differencing.  An adaptive algorithm is used to find the best choice of finite
+difference and to estimate the error in the derivative. This module supersedes
+the diff module which has been deprecated with the release of GSL-1. XXX
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-113' xml:id='l2h-113' class="function">central</tt></b>(</nobr></td>
+  <td><var>func, x, h</var>)</td></tr></table></dt>
+<dd>
+  This function computes the numerical derivative of the function <var>func</var> at
+  the point <var>x</var> using an adaptive central difference algorithm with a step
+  size of h.  A tuple <code>(result, error)</code> is returned with the derivative
+  and its estimated absolute error.
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-114' xml:id='l2h-114' class="function">backward</tt></b>(</nobr></td>
+  <td><var>func, x, h</var>)</td></tr></table></dt>
+<dd>
+  This function computes the numerical derivative of the function <var>func</var> at
+  the point <var>x</var> using an adaptive backward difference algorithm with a step
+  size of h.  The function <var>func</var> is evaluated only at points smaller than
+  <var>x</var> and at <var>x</var> itself.  A tuple <code>(result, error)</code> is returned
+  with the derivative and its estimated absolute error.
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-115' xml:id='l2h-115' class="function">forward</tt></b>(</nobr></td>
+  <td><var>func, x, h</var>)</td></tr></table></dt>
+<dd>
+  This function computes the numerical derivative of the function <var>func</var> at
+  the point <var>x</var> using an adaptive forward difference algorithm with a step
+  size of h.  The function <var>func</var> is evaluated only at points greater than
+  <var>x</var> and at <var>x</var> itself.  A tuple <code>(result, error)</code> is returned
+  with the derivative and its estimated absolute error.
+</dl>
+
+<P>
+<div class="seealso">
+  <p class="heading">See Also:</p>
+
+  The algorithms used by these functions are described in the following book:
+  <div class="seetext"><p>S.D. Conte and Carl de Boor, <em>Elementary Numerical Analysis:
+      An Algorithmic Approach</em>, McGraw-Hill, 1972.</p></div>
+</div>
+
+<P>
+
+<P>
+
+<DIV CLASS="navigation">
+<div class='online-navigation'>
+<p></p><hr />
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="6. pygsl.chebyshev"
+  href="module-pygsl.chebyshev.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></A></td>
+<td class='online-navigation'><a rel="parent" title="PyGSL Reference Manual"
+  href="ref.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up One Level' width='32' /></A></td>
+<td class='online-navigation'><a rel="next" title="8. pygsl.histogram  "
+  href="module-pygsl.histogram.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></A></td>
+<td align="center" width="100%">PyGSL Reference Manual</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></A></td>
+<td class='online-navigation'><img src='../icons/blank.png'
+  border='0' height='32'  alt='' width='32' /></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></A></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="module-pygsl.chebyshev.html">6. pygsl.chebyshev</A>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="ref.html">PyGSL Reference Manual</A>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="module-pygsl.histogram.html">8. pygsl.histogram  </A>
+</div>
+</div>
+<hr />
+<span class="release-info">Release 0.9, documentation updated on October, 2008.</span>
+</DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

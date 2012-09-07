@@ -1,0 +1,4 @@
+matplotlib==1.1.1
+numpy==1.6.2
+-e git+https://github.com/scipy/scipy@858610f150dcb84f1bc757d4a2a61d8536178aac#egg=scipy-dev
+wsgiref==0.1.2

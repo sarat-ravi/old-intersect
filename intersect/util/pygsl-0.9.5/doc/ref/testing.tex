@@ -1,0 +1,67 @@
+\chapter[\protect\module{pygsl.testing} ---  Modules in Testing]
+{\protect\module{pygsl.testing} \\ Modules in Testing}
+\label{cha:statistics-module}
+
+\declaremodule{standard}{pygsl.testing}
+
+\moduleauthor{Pierre Schnizer}{schnizer@users.sourceforge.net}
+Modules in this package are often reimplementations of an original package
+with significant change to the original. The current rng implementation, for
+example, started its life here.  The sf module implemented here will supersede
+the sf package in one of the next releases. Concerning the other modules the 
+usage is encouraged for tests
+to see if they work, but use them with caution in your production code!
+
+\section[\protect\module{pygsl.testing.sf} --- Special UFuncs]
+{\protect\module{pygsl.testing.sf} \\ Special Functions as UFuncs}
+
+\declaremodule{standard}{pygsl.testing.sf}
+\moduleauthor{Pierre Schnizer}{schnizer@users.sourceforge.net}
+
+This chapter provides mainly \numpy{} UFuncs over the special functions. This means
+that all input variable can be arrays, and the UFunc will evaluate the gsl
+function for all its inputs. It is meant to replace the sf module later;
+please use it and find out if it is useful for you. 
+Only the python specific part is described here. For a general description of
+the function please see the GSL Reference document.  
+
+\section{UFuncs}
+\label{sec:ufuncs}
+These UFuncs allow to evaluate an array of doubles or an array of floats
+typically. Note that the return values of the functions ending with an _e are
+not turned to exceptions. Instead the error codes are returned as an separate
+array. So if you are interested in them you have to do check the error code
+yourself. 
+
+\input{providedufuncs.tex}
+
+\section{Ordinary Functions}
+
+The following array functions have been wrapped. These are supposingly faster
+than the equivalent functions from above.
+\begin{funcdesc}{bessel_In_array}{...}\index{bessel_In_array}
+\end{funcdesc}
+\begin{funcdesc}{bessel_Jn_array}{...}\index{bessel_Jn_array}
+\end{funcdesc}
+\begin{funcdesc}{bessel_Kn_array}{...}\index{bessel_Kn_array}
+\end{funcdesc}
+\begin{funcdesc}{bessel_Kn_scaled_array}{...}\index{bessel_Kn_scaled_array}
+\end{funcdesc}
+\begin{funcdesc}{bessel_Yn_array}{...}\index{bessel_Yn_array}
+\end{funcdesc}
+\begin{funcdesc}{bessel_il_scaled_array}{...}\index{bessel_il_scaled_array}
+\end{funcdesc}
+\begin{funcdesc}{bessel_jl_array}{...}\index{bessel_jl_array}
+\end{funcdesc}
+\begin{funcdesc}{bessel_jl_steed_array}{...}\index{bessel_jl_steed_array}
+\end{funcdesc}
+\begin{funcdesc}{bessel_kl_scaled_array}{...}\index{bessel_kl_scaled_array}
+\end{funcdesc}
+\begin{funcdesc}{bessel_yl_array}{...}\index{bessel_yl_array}
+\end{funcdesc}
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "ref"
+%%% End: 

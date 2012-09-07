@@ -1,0 +1,6 @@
+python2.7
+pkg-config
+distribute
+pip
+gfortran
+gsl

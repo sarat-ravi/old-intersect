@@ -1,0 +1,50 @@
+recursive-include src *.c
+exclude src/fftmodule.c
+exclude src/histogrammodule.c
+recursive-include src *.ic
+recursive-include src *.i
+#exclude src/gslwarp/fft.i
+recursive-include src *.h
+
+recursive-include gsl_dist *.py
+recursive-include typemaps *.py
+recursive-include typemaps *.h
+recursive-include typemaps *.i
+
+recursive-include swig_src *.c
+recursive-include pygsl *.py
+exclude pygsl/_numobj.py
+exclude pygsl/_mlab.py
+recursive-include tests *.py
+recursive-include Include *.h
+recursive-include examples *.py
+recursive-include testing/src *.c
+recursive-include testing/src *.h
+recursive-include testing/src *.ic
+recursive-include testing *.py
+
+#include gsl_Extension.py
+include gsl_numobj.py
+#include swig_extension.py
+#include gsl_site_example.py
+
+recursive-include doc *.tex
+include doc/Makefile
+include doc/README
+include doc/README-RPM
+include doc/README.html
+include doc/README-Distributors.html
+
+recursive-include doc *.html
+recursive-include doc *.pdf
+
+include README
+include CREDITS
+include TODO
+include ChangeLog
+include setup.py
+include setup.cfg
+include MANIFEST.in
+include MANIFEST
+include COPYING
+

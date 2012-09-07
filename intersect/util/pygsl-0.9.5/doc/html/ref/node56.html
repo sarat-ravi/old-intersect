@@ -1,0 +1,6021 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<link rel="STYLESHEET" href="ref.css" type='text/css' />
+<link rel="SHORTCUT ICON" href="-dvips-safe" />
+<link rel="first" href="ref.html" title='PyGSL Reference Manual' />
+<link rel='contents' href='contents.html' title="Contents" />
+<link rel='index' href='genindex.html' title='Index' />
+<link rel='last' href='about.html' title='About this document...' />
+<link rel='help' href='about.html' title='About this document...' />
+<link rel="next" href="node57.html" />
+<link rel="prev" href="module-pygsl.testing.sf.html" />
+<link rel="parent" href="module-pygsl.testing.html" />
+<link rel="next" href="node57.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name='aesop' content='information' />
+<title>12.2 UFuncs</title>
+</head>
+<body>
+<DIV CLASS="navigation">
+<div id='top-navigation-panel' xml:id='top-navigation-panel'>
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="12.1 pygsl.testing.sf  "
+  href="module-pygsl.testing.sf.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></A></td>
+<td class='online-navigation'><a rel="parent" title="12. pygsl.testing  "
+  href="module-pygsl.testing.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up One Level' width='32' /></A></td>
+<td class='online-navigation'><a rel="next" title="12.3 Ordinary Functions"
+  href="node57.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></A></td>
+<td align="center" width="100%">PyGSL Reference Manual</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></A></td>
+<td class='online-navigation'><img src='../icons/blank.png'
+  border='0' height='32'  alt='' width='32' /></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></A></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="module-pygsl.testing.sf.html">12.1 pygsl.testing.sf  </A>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="module-pygsl.testing.html">12. pygsl.testing  </A>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node57.html">12.3 Ordinary Functions</A>
+</div>
+<hr /></div>
+</DIV>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION0014200000000000000000"></A>
+<A NAME="sec:ufuncs"></A>
+<BR>
+12.2 UFuncs
+</H1>
+These UFuncs allow to evaluate an array of doubles or an array of floats
+typically. Note that the return values of the functions ending with an _e are
+not turned to exceptions. Instead the error codes are returned as an separate
+array. So if you are interested in them you have to do check the error code
+yourself. 
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-291' xml:id='l2h-291' class="function">Chi</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-687' xml:id='l2h-687'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-292' xml:id='l2h-292' class="function">Chi_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-688' xml:id='l2h-688'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-293' xml:id='l2h-293' class="function">Ci</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-689' xml:id='l2h-689'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-294' xml:id='l2h-294' class="function">Ci_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-690' xml:id='l2h-690'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-295' xml:id='l2h-295' class="function">Shi</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-691' xml:id='l2h-691'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-296' xml:id='l2h-296' class="function">Shi_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-692' xml:id='l2h-692'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-297' xml:id='l2h-297' class="function">Si</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-693' xml:id='l2h-693'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-298' xml:id='l2h-298' class="function">Si_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-694' xml:id='l2h-694'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-299' xml:id='l2h-299' class="function">airy_Ai</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-695' xml:id='l2h-695'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  1
+
+<P>
+Argument 2 is a gsl_mode_t, valid parameters are:
+	sf.PREC_DOUBLE or sf.PREC_SINGLE or sf.PREC_APPROX
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-300' xml:id='l2h-300' class="function">airy_Ai_deriv</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-696' xml:id='l2h-696'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  1
+
+<P>
+Argument 2 is a gsl_mode_t, valid parameters are:
+	sf.PREC_DOUBLE or sf.PREC_SINGLE or sf.PREC_APPROX
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-301' xml:id='l2h-301' class="function">airy_Ai_deriv_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-697' xml:id='l2h-697'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+Argument 2 is a gsl_mode_t, valid parameters are:
+	sf.PREC_DOUBLE or sf.PREC_SINGLE or sf.PREC_APPROX
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-302' xml:id='l2h-302' class="function">airy_Ai_deriv_scaled</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-698' xml:id='l2h-698'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  1
+
+<P>
+Argument 2 is a gsl_mode_t, valid parameters are:
+	sf.PREC_DOUBLE or sf.PREC_SINGLE or sf.PREC_APPROX
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-303' xml:id='l2h-303' class="function">airy_Ai_deriv_scaled_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-699' xml:id='l2h-699'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+Argument 2 is a gsl_mode_t, valid parameters are:
+	sf.PREC_DOUBLE or sf.PREC_SINGLE or sf.PREC_APPROX
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-304' xml:id='l2h-304' class="function">airy_Ai_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-700' xml:id='l2h-700'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+Argument 2 is a gsl_mode_t, valid parameters are:
+	sf.PREC_DOUBLE or sf.PREC_SINGLE or sf.PREC_APPROX
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-305' xml:id='l2h-305' class="function">airy_Ai_scaled</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-701' xml:id='l2h-701'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  1
+
+<P>
+Argument 2 is a gsl_mode_t, valid parameters are:
+	sf.PREC_DOUBLE or sf.PREC_SINGLE or sf.PREC_APPROX
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-306' xml:id='l2h-306' class="function">airy_Ai_scaled_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-702' xml:id='l2h-702'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+Argument 2 is a gsl_mode_t, valid parameters are:
+	sf.PREC_DOUBLE or sf.PREC_SINGLE or sf.PREC_APPROX
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-307' xml:id='l2h-307' class="function">airy_Bi</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-703' xml:id='l2h-703'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  1
+
+<P>
+Argument 2 is a gsl_mode_t, valid parameters are:
+	sf.PREC_DOUBLE or sf.PREC_SINGLE or sf.PREC_APPROX
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-308' xml:id='l2h-308' class="function">airy_Bi_deriv</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-704' xml:id='l2h-704'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  1
+
+<P>
+Argument 2 is a gsl_mode_t, valid parameters are:
+	sf.PREC_DOUBLE or sf.PREC_SINGLE or sf.PREC_APPROX
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-309' xml:id='l2h-309' class="function">airy_Bi_deriv_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-705' xml:id='l2h-705'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+Argument 2 is a gsl_mode_t, valid parameters are:
+	sf.PREC_DOUBLE or sf.PREC_SINGLE or sf.PREC_APPROX
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-310' xml:id='l2h-310' class="function">airy_Bi_deriv_scaled</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-706' xml:id='l2h-706'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  1
+
+<P>
+Argument 2 is a gsl_mode_t, valid parameters are:
+	sf.PREC_DOUBLE or sf.PREC_SINGLE or sf.PREC_APPROX
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-311' xml:id='l2h-311' class="function">airy_Bi_deriv_scaled_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-707' xml:id='l2h-707'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+Argument 2 is a gsl_mode_t, valid parameters are:
+	sf.PREC_DOUBLE or sf.PREC_SINGLE or sf.PREC_APPROX
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-312' xml:id='l2h-312' class="function">airy_Bi_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-708' xml:id='l2h-708'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+Argument 2 is a gsl_mode_t, valid parameters are:
+	sf.PREC_DOUBLE or sf.PREC_SINGLE or sf.PREC_APPROX
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-313' xml:id='l2h-313' class="function">airy_Bi_scaled</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-709' xml:id='l2h-709'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  1
+
+<P>
+Argument 2 is a gsl_mode_t, valid parameters are:
+	sf.PREC_DOUBLE or sf.PREC_SINGLE or sf.PREC_APPROX
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-314' xml:id='l2h-314' class="function">airy_Bi_scaled_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-710' xml:id='l2h-710'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+Argument 2 is a gsl_mode_t, valid parameters are:
+	sf.PREC_DOUBLE or sf.PREC_SINGLE or sf.PREC_APPROX
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-315' xml:id='l2h-315' class="function">airy_zero_Ai</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-711' xml:id='l2h-711'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-316' xml:id='l2h-316' class="function">airy_zero_Ai_deriv</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-712' xml:id='l2h-712'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-317' xml:id='l2h-317' class="function">airy_zero_Ai_deriv_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-713' xml:id='l2h-713'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-318' xml:id='l2h-318' class="function">airy_zero_Ai_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-714' xml:id='l2h-714'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-319' xml:id='l2h-319' class="function">airy_zero_Bi</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-715' xml:id='l2h-715'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-320' xml:id='l2h-320' class="function">airy_zero_Bi_deriv</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-716' xml:id='l2h-716'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-321' xml:id='l2h-321' class="function">airy_zero_Bi_deriv_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-717' xml:id='l2h-717'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-322' xml:id='l2h-322' class="function">airy_zero_Bi_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-718' xml:id='l2h-718'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-323' xml:id='l2h-323' class="function">angle_restrict_pos</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-719' xml:id='l2h-719'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-324' xml:id='l2h-324' class="function">angle_restrict_pos_err_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-720' xml:id='l2h-720'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-325' xml:id='l2h-325' class="function">angle_restrict_symm</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-721' xml:id='l2h-721'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-326' xml:id='l2h-326' class="function">angle_restrict_symm_err_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-722' xml:id='l2h-722'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-327' xml:id='l2h-327' class="function">atanint</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-723' xml:id='l2h-723'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-328' xml:id='l2h-328' class="function">atanint_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-724' xml:id='l2h-724'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-329' xml:id='l2h-329' class="function">bessel_I0</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-725' xml:id='l2h-725'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-330' xml:id='l2h-330' class="function">bessel_I0_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-726' xml:id='l2h-726'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-331' xml:id='l2h-331' class="function">bessel_I0_scaled</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-727' xml:id='l2h-727'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-332' xml:id='l2h-332' class="function">bessel_I0_scaled_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-728' xml:id='l2h-728'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-333' xml:id='l2h-333' class="function">bessel_I1</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-729' xml:id='l2h-729'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-334' xml:id='l2h-334' class="function">bessel_I1_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-730' xml:id='l2h-730'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-335' xml:id='l2h-335' class="function">bessel_I1_scaled</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-731' xml:id='l2h-731'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-336' xml:id='l2h-336' class="function">bessel_I1_scaled_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-732' xml:id='l2h-732'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-337' xml:id='l2h-337' class="function">bessel_In</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-733' xml:id='l2h-733'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-338' xml:id='l2h-338' class="function">bessel_In_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-734' xml:id='l2h-734'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-339' xml:id='l2h-339' class="function">bessel_In_scaled</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-735' xml:id='l2h-735'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-340' xml:id='l2h-340' class="function">bessel_In_scaled_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-736' xml:id='l2h-736'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-341' xml:id='l2h-341' class="function">bessel_Inu</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-737' xml:id='l2h-737'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-342' xml:id='l2h-342' class="function">bessel_Inu_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-738' xml:id='l2h-738'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-343' xml:id='l2h-343' class="function">bessel_Inu_scaled</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-739' xml:id='l2h-739'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-344' xml:id='l2h-344' class="function">bessel_Inu_scaled_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-740' xml:id='l2h-740'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-345' xml:id='l2h-345' class="function">bessel_J0</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-741' xml:id='l2h-741'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-346' xml:id='l2h-346' class="function">bessel_J0_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-742' xml:id='l2h-742'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-347' xml:id='l2h-347' class="function">bessel_J1</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-743' xml:id='l2h-743'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-348' xml:id='l2h-348' class="function">bessel_J1_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-744' xml:id='l2h-744'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-349' xml:id='l2h-349' class="function">bessel_Jn</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-745' xml:id='l2h-745'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-350' xml:id='l2h-350' class="function">bessel_Jn_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-746' xml:id='l2h-746'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-351' xml:id='l2h-351' class="function">bessel_Jnu</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-747' xml:id='l2h-747'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-352' xml:id='l2h-352' class="function">bessel_Jnu_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-748' xml:id='l2h-748'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-353' xml:id='l2h-353' class="function">bessel_K0</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-749' xml:id='l2h-749'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-354' xml:id='l2h-354' class="function">bessel_K0_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-750' xml:id='l2h-750'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-355' xml:id='l2h-355' class="function">bessel_K0_scaled</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-751' xml:id='l2h-751'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-356' xml:id='l2h-356' class="function">bessel_K0_scaled_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-752' xml:id='l2h-752'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-357' xml:id='l2h-357' class="function">bessel_K1</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-753' xml:id='l2h-753'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-358' xml:id='l2h-358' class="function">bessel_K1_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-754' xml:id='l2h-754'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-359' xml:id='l2h-359' class="function">bessel_K1_scaled</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-755' xml:id='l2h-755'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-360' xml:id='l2h-360' class="function">bessel_K1_scaled_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-756' xml:id='l2h-756'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-361' xml:id='l2h-361' class="function">bessel_Kn</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-757' xml:id='l2h-757'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-362' xml:id='l2h-362' class="function">bessel_Kn_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-758' xml:id='l2h-758'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-363' xml:id='l2h-363' class="function">bessel_Kn_scaled</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-759' xml:id='l2h-759'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-364' xml:id='l2h-364' class="function">bessel_Kn_scaled_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-760' xml:id='l2h-760'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-365' xml:id='l2h-365' class="function">bessel_Knu</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-761' xml:id='l2h-761'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-366' xml:id='l2h-366' class="function">bessel_Knu_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-762' xml:id='l2h-762'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-367' xml:id='l2h-367' class="function">bessel_Knu_scaled</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-763' xml:id='l2h-763'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-368' xml:id='l2h-368' class="function">bessel_Knu_scaled_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-764' xml:id='l2h-764'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-369' xml:id='l2h-369' class="function">bessel_Y0</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-765' xml:id='l2h-765'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-370' xml:id='l2h-370' class="function">bessel_Y0_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-766' xml:id='l2h-766'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-371' xml:id='l2h-371' class="function">bessel_Y1</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-767' xml:id='l2h-767'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-372' xml:id='l2h-372' class="function">bessel_Y1_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-768' xml:id='l2h-768'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-373' xml:id='l2h-373' class="function">bessel_Yn</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-769' xml:id='l2h-769'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-374' xml:id='l2h-374' class="function">bessel_Yn_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-770' xml:id='l2h-770'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-375' xml:id='l2h-375' class="function">bessel_Ynu</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-771' xml:id='l2h-771'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-376' xml:id='l2h-376' class="function">bessel_Ynu_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-772' xml:id='l2h-772'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-377' xml:id='l2h-377' class="function">bessel_i0_scaled</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-773' xml:id='l2h-773'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-378' xml:id='l2h-378' class="function">bessel_i0_scaled_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-774' xml:id='l2h-774'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-379' xml:id='l2h-379' class="function">bessel_i1_scaled</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-775' xml:id='l2h-775'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-380' xml:id='l2h-380' class="function">bessel_i1_scaled_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-776' xml:id='l2h-776'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-381' xml:id='l2h-381' class="function">bessel_i2_scaled</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-777' xml:id='l2h-777'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-382' xml:id='l2h-382' class="function">bessel_i2_scaled_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-778' xml:id='l2h-778'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-383' xml:id='l2h-383' class="function">bessel_il_scaled</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-779' xml:id='l2h-779'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-384' xml:id='l2h-384' class="function">bessel_il_scaled_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-780' xml:id='l2h-780'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-385' xml:id='l2h-385' class="function">bessel_j0</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-781' xml:id='l2h-781'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-386' xml:id='l2h-386' class="function">bessel_j0_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-782' xml:id='l2h-782'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-387' xml:id='l2h-387' class="function">bessel_j1</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-783' xml:id='l2h-783'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-388' xml:id='l2h-388' class="function">bessel_j1_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-784' xml:id='l2h-784'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-389' xml:id='l2h-389' class="function">bessel_j2</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-785' xml:id='l2h-785'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-390' xml:id='l2h-390' class="function">bessel_j2_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-786' xml:id='l2h-786'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-391' xml:id='l2h-391' class="function">bessel_jl</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-787' xml:id='l2h-787'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-392' xml:id='l2h-392' class="function">bessel_jl_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-788' xml:id='l2h-788'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-393' xml:id='l2h-393' class="function">bessel_k0_scaled</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-789' xml:id='l2h-789'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-394' xml:id='l2h-394' class="function">bessel_k0_scaled_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-790' xml:id='l2h-790'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-395' xml:id='l2h-395' class="function">bessel_k1_scaled</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-791' xml:id='l2h-791'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-396' xml:id='l2h-396' class="function">bessel_k1_scaled_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-792' xml:id='l2h-792'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-397' xml:id='l2h-397' class="function">bessel_k2_scaled</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-793' xml:id='l2h-793'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-398' xml:id='l2h-398' class="function">bessel_k2_scaled_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-794' xml:id='l2h-794'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-399' xml:id='l2h-399' class="function">bessel_kl_scaled</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-795' xml:id='l2h-795'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-400' xml:id='l2h-400' class="function">bessel_kl_scaled_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-796' xml:id='l2h-796'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-401' xml:id='l2h-401' class="function">bessel_lnKnu</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-797' xml:id='l2h-797'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-402' xml:id='l2h-402' class="function">bessel_lnKnu_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-798' xml:id='l2h-798'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-403' xml:id='l2h-403' class="function">bessel_y0</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-799' xml:id='l2h-799'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-404' xml:id='l2h-404' class="function">bessel_y0_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-800' xml:id='l2h-800'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-405' xml:id='l2h-405' class="function">bessel_y1</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-801' xml:id='l2h-801'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-406' xml:id='l2h-406' class="function">bessel_y1_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-802' xml:id='l2h-802'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-407' xml:id='l2h-407' class="function">bessel_y2</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-803' xml:id='l2h-803'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-408' xml:id='l2h-408' class="function">bessel_y2_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-804' xml:id='l2h-804'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-409' xml:id='l2h-409' class="function">bessel_yl</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-805' xml:id='l2h-805'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-410' xml:id='l2h-410' class="function">bessel_yl_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-806' xml:id='l2h-806'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-411' xml:id='l2h-411' class="function">bessel_zero_J0</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-807' xml:id='l2h-807'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-412' xml:id='l2h-412' class="function">bessel_zero_J0_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-808' xml:id='l2h-808'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-413' xml:id='l2h-413' class="function">bessel_zero_J1</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-809' xml:id='l2h-809'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-414' xml:id='l2h-414' class="function">bessel_zero_J1_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-810' xml:id='l2h-810'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-415' xml:id='l2h-415' class="function">bessel_zero_Jnu</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-811' xml:id='l2h-811'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-416' xml:id='l2h-416' class="function">bessel_zero_Jnu_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-812' xml:id='l2h-812'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-417' xml:id='l2h-417' class="function">beta</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-813' xml:id='l2h-813'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-418' xml:id='l2h-418' class="function">beta_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-814' xml:id='l2h-814'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-419' xml:id='l2h-419' class="function">beta_inc</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-815' xml:id='l2h-815'></a>
+
+<P>
+Number of Input  Arguments:  3
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-420' xml:id='l2h-420' class="function">beta_inc_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-816' xml:id='l2h-816'></a>
+
+<P>
+Number of Input  Arguments:  3
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 3 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-421' xml:id='l2h-421' class="function">choose</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-817' xml:id='l2h-817'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-422' xml:id='l2h-422' class="function">choose_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-818' xml:id='l2h-818'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-423' xml:id='l2h-423' class="function">clausen</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-819' xml:id='l2h-819'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-424' xml:id='l2h-424' class="function">clausen_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-820' xml:id='l2h-820'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-425' xml:id='l2h-425' class="function">conicalP_0</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-821' xml:id='l2h-821'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-426' xml:id='l2h-426' class="function">conicalP_0_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-822' xml:id='l2h-822'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-427' xml:id='l2h-427' class="function">conicalP_1</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-823' xml:id='l2h-823'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-428' xml:id='l2h-428' class="function">conicalP_1_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-824' xml:id='l2h-824'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-429' xml:id='l2h-429' class="function">conicalP_cyl_reg</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-825' xml:id='l2h-825'></a>
+
+<P>
+Number of Input  Arguments:  3
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-430' xml:id='l2h-430' class="function">conicalP_cyl_reg_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-826' xml:id='l2h-826'></a>
+
+<P>
+Number of Input  Arguments:  3
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 3 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-431' xml:id='l2h-431' class="function">conicalP_half</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-827' xml:id='l2h-827'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-432' xml:id='l2h-432' class="function">conicalP_half_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-828' xml:id='l2h-828'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-433' xml:id='l2h-433' class="function">conicalP_mhalf</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-829' xml:id='l2h-829'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-434' xml:id='l2h-434' class="function">conicalP_mhalf_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-830' xml:id='l2h-830'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-435' xml:id='l2h-435' class="function">conicalP_sph_reg</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-831' xml:id='l2h-831'></a>
+
+<P>
+Number of Input  Arguments:  3
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-436' xml:id='l2h-436' class="function">conicalP_sph_reg_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-832' xml:id='l2h-832'></a>
+
+<P>
+Number of Input  Arguments:  3
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 3 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-437' xml:id='l2h-437' class="function">cos</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-833' xml:id='l2h-833'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-438' xml:id='l2h-438' class="function">cos_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-834' xml:id='l2h-834'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-439' xml:id='l2h-439' class="function">cos_err_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-835' xml:id='l2h-835'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-440' xml:id='l2h-440' class="function">coulomb_CL_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-836' xml:id='l2h-836'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-441' xml:id='l2h-441' class="function">coulomb_wave_FG_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-837' xml:id='l2h-837'></a>
+
+<P>
+Number of Input  Arguments:  4
+    Number of Output Arguments: 10
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 4 of the C argument list
+Return Arguments 3 and 4 resemble a gsl_result argument,
+	which is  argument 5 of the C argument list
+Return Arguments 5 and 6 resemble a gsl_result argument,
+	which is  argument 6 of the C argument list
+Return Arguments 7 and 8 resemble a gsl_result argument,
+	which is  argument 7 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-442' xml:id='l2h-442' class="function">coupling_3j</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-838' xml:id='l2h-838'></a>
+
+<P>
+Number of Input  Arguments:  6
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-443' xml:id='l2h-443' class="function">coupling_3j_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-839' xml:id='l2h-839'></a>
+
+<P>
+Number of Input  Arguments:  6
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 6 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-444' xml:id='l2h-444' class="function">coupling_6j</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-840' xml:id='l2h-840'></a>
+
+<P>
+Number of Input  Arguments:  6
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-445' xml:id='l2h-445' class="function">coupling_6j_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-841' xml:id='l2h-841'></a>
+
+<P>
+Number of Input  Arguments:  6
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 6 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-446' xml:id='l2h-446' class="function">coupling_9j</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-842' xml:id='l2h-842'></a>
+
+<P>
+Number of Input  Arguments:  9
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-447' xml:id='l2h-447' class="function">coupling_9j_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-843' xml:id='l2h-843'></a>
+
+<P>
+Number of Input  Arguments:  9
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 9 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-448' xml:id='l2h-448' class="function">coupling_RacahW</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-844' xml:id='l2h-844'></a>
+
+<P>
+Number of Input  Arguments:  6
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-449' xml:id='l2h-449' class="function">coupling_RacahW_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-845' xml:id='l2h-845'></a>
+
+<P>
+Number of Input  Arguments:  6
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 6 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-450' xml:id='l2h-450' class="function">dawson</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-846' xml:id='l2h-846'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-451' xml:id='l2h-451' class="function">dawson_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-847' xml:id='l2h-847'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-452' xml:id='l2h-452' class="function">debye_1</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-848' xml:id='l2h-848'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-453' xml:id='l2h-453' class="function">debye_1_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-849' xml:id='l2h-849'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-454' xml:id='l2h-454' class="function">debye_2</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-850' xml:id='l2h-850'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-455' xml:id='l2h-455' class="function">debye_2_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-851' xml:id='l2h-851'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-456' xml:id='l2h-456' class="function">debye_3</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-852' xml:id='l2h-852'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-457' xml:id='l2h-457' class="function">debye_3_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-853' xml:id='l2h-853'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-458' xml:id='l2h-458' class="function">debye_4</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-854' xml:id='l2h-854'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-459' xml:id='l2h-459' class="function">debye_4_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-855' xml:id='l2h-855'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-460' xml:id='l2h-460' class="function">dilog</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-856' xml:id='l2h-856'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-461' xml:id='l2h-461' class="function">dilog_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-857' xml:id='l2h-857'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-462' xml:id='l2h-462' class="function">doublefact</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-858' xml:id='l2h-858'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-463' xml:id='l2h-463' class="function">doublefact_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-859' xml:id='l2h-859'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-464' xml:id='l2h-464' class="function">ellint_D</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-860' xml:id='l2h-860'></a>
+
+<P>
+Number of Input  Arguments:  4
+    Number of Output Arguments:  1
+
+<P>
+Argument 4 is a gsl_mode_t, valid parameters are:
+	sf.PREC_DOUBLE or sf.PREC_SINGLE or sf.PREC_APPROX
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-465' xml:id='l2h-465' class="function">ellint_D_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-861' xml:id='l2h-861'></a>
+
+<P>
+Number of Input  Arguments:  4
+    Number of Output Arguments:  2
+
+<P>
+Argument 4 is a gsl_mode_t, valid parameters are:
+	sf.PREC_DOUBLE or sf.PREC_SINGLE or sf.PREC_APPROX
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 4 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-466' xml:id='l2h-466' class="function">ellint_E</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-862' xml:id='l2h-862'></a>
+
+<P>
+Number of Input  Arguments:  3
+    Number of Output Arguments:  1
+
+<P>
+Argument 3 is a gsl_mode_t, valid parameters are:
+	sf.PREC_DOUBLE or sf.PREC_SINGLE or sf.PREC_APPROX
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-467' xml:id='l2h-467' class="function">ellint_E_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-863' xml:id='l2h-863'></a>
+
+<P>
+Number of Input  Arguments:  3
+    Number of Output Arguments:  2
+
+<P>
+Argument 3 is a gsl_mode_t, valid parameters are:
+	sf.PREC_DOUBLE or sf.PREC_SINGLE or sf.PREC_APPROX
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 3 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-468' xml:id='l2h-468' class="function">ellint_Ecomp</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-864' xml:id='l2h-864'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  1
+
+<P>
+Argument 2 is a gsl_mode_t, valid parameters are:
+	sf.PREC_DOUBLE or sf.PREC_SINGLE or sf.PREC_APPROX
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-469' xml:id='l2h-469' class="function">ellint_Ecomp_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-865' xml:id='l2h-865'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+Argument 2 is a gsl_mode_t, valid parameters are:
+	sf.PREC_DOUBLE or sf.PREC_SINGLE or sf.PREC_APPROX
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-470' xml:id='l2h-470' class="function">ellint_F</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-866' xml:id='l2h-866'></a>
+
+<P>
+Number of Input  Arguments:  3
+    Number of Output Arguments:  1
+
+<P>
+Argument 3 is a gsl_mode_t, valid parameters are:
+	sf.PREC_DOUBLE or sf.PREC_SINGLE or sf.PREC_APPROX
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-471' xml:id='l2h-471' class="function">ellint_F_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-867' xml:id='l2h-867'></a>
+
+<P>
+Number of Input  Arguments:  3
+    Number of Output Arguments:  2
+
+<P>
+Argument 3 is a gsl_mode_t, valid parameters are:
+	sf.PREC_DOUBLE or sf.PREC_SINGLE or sf.PREC_APPROX
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 3 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-472' xml:id='l2h-472' class="function">ellint_Kcomp</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-868' xml:id='l2h-868'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  1
+
+<P>
+Argument 2 is a gsl_mode_t, valid parameters are:
+	sf.PREC_DOUBLE or sf.PREC_SINGLE or sf.PREC_APPROX
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-473' xml:id='l2h-473' class="function">ellint_Kcomp_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-869' xml:id='l2h-869'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+Argument 2 is a gsl_mode_t, valid parameters are:
+	sf.PREC_DOUBLE or sf.PREC_SINGLE or sf.PREC_APPROX
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-474' xml:id='l2h-474' class="function">ellint_P</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-870' xml:id='l2h-870'></a>
+
+<P>
+Number of Input  Arguments:  4
+    Number of Output Arguments:  1
+
+<P>
+Argument 4 is a gsl_mode_t, valid parameters are:
+	sf.PREC_DOUBLE or sf.PREC_SINGLE or sf.PREC_APPROX
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-475' xml:id='l2h-475' class="function">ellint_P_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-871' xml:id='l2h-871'></a>
+
+<P>
+Number of Input  Arguments:  4
+    Number of Output Arguments:  2
+
+<P>
+Argument 4 is a gsl_mode_t, valid parameters are:
+	sf.PREC_DOUBLE or sf.PREC_SINGLE or sf.PREC_APPROX
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 4 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-476' xml:id='l2h-476' class="function">ellint_RC</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-872' xml:id='l2h-872'></a>
+
+<P>
+Number of Input  Arguments:  3
+    Number of Output Arguments:  1
+
+<P>
+Argument 3 is a gsl_mode_t, valid parameters are:
+	sf.PREC_DOUBLE or sf.PREC_SINGLE or sf.PREC_APPROX
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-477' xml:id='l2h-477' class="function">ellint_RC_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-873' xml:id='l2h-873'></a>
+
+<P>
+Number of Input  Arguments:  3
+    Number of Output Arguments:  2
+
+<P>
+Argument 3 is a gsl_mode_t, valid parameters are:
+	sf.PREC_DOUBLE or sf.PREC_SINGLE or sf.PREC_APPROX
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 3 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-478' xml:id='l2h-478' class="function">ellint_RD</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-874' xml:id='l2h-874'></a>
+
+<P>
+Number of Input  Arguments:  4
+    Number of Output Arguments:  1
+
+<P>
+Argument 4 is a gsl_mode_t, valid parameters are:
+	sf.PREC_DOUBLE or sf.PREC_SINGLE or sf.PREC_APPROX
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-479' xml:id='l2h-479' class="function">ellint_RD_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-875' xml:id='l2h-875'></a>
+
+<P>
+Number of Input  Arguments:  4
+    Number of Output Arguments:  2
+
+<P>
+Argument 4 is a gsl_mode_t, valid parameters are:
+	sf.PREC_DOUBLE or sf.PREC_SINGLE or sf.PREC_APPROX
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 4 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-480' xml:id='l2h-480' class="function">ellint_RF</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-876' xml:id='l2h-876'></a>
+
+<P>
+Number of Input  Arguments:  4
+    Number of Output Arguments:  1
+
+<P>
+Argument 4 is a gsl_mode_t, valid parameters are:
+	sf.PREC_DOUBLE or sf.PREC_SINGLE or sf.PREC_APPROX
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-481' xml:id='l2h-481' class="function">ellint_RF_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-877' xml:id='l2h-877'></a>
+
+<P>
+Number of Input  Arguments:  4
+    Number of Output Arguments:  2
+
+<P>
+Argument 4 is a gsl_mode_t, valid parameters are:
+	sf.PREC_DOUBLE or sf.PREC_SINGLE or sf.PREC_APPROX
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 4 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-482' xml:id='l2h-482' class="function">ellint_RJ</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-878' xml:id='l2h-878'></a>
+
+<P>
+Number of Input  Arguments:  5
+    Number of Output Arguments:  1
+
+<P>
+Argument 5 is a gsl_mode_t, valid parameters are:
+	sf.PREC_DOUBLE or sf.PREC_SINGLE or sf.PREC_APPROX
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-483' xml:id='l2h-483' class="function">ellint_RJ_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-879' xml:id='l2h-879'></a>
+
+<P>
+Number of Input  Arguments:  5
+    Number of Output Arguments:  2
+
+<P>
+Argument 5 is a gsl_mode_t, valid parameters are:
+	sf.PREC_DOUBLE or sf.PREC_SINGLE or sf.PREC_APPROX
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 5 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-484' xml:id='l2h-484' class="function">elljac_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-880' xml:id='l2h-880'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  3
+
+<P>
+The error flag is discarded.
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-485' xml:id='l2h-485' class="function">erf</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-881' xml:id='l2h-881'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-486' xml:id='l2h-486' class="function">erf_Q</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-882' xml:id='l2h-882'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-487' xml:id='l2h-487' class="function">erf_Q_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-883' xml:id='l2h-883'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-488' xml:id='l2h-488' class="function">erf_Z</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-884' xml:id='l2h-884'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-489' xml:id='l2h-489' class="function">erf_Z_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-885' xml:id='l2h-885'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-490' xml:id='l2h-490' class="function">erf_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-886' xml:id='l2h-886'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-491' xml:id='l2h-491' class="function">erfc</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-887' xml:id='l2h-887'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-492' xml:id='l2h-492' class="function">erfc_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-888' xml:id='l2h-888'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-493' xml:id='l2h-493' class="function">eta</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-889' xml:id='l2h-889'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-494' xml:id='l2h-494' class="function">eta_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-890' xml:id='l2h-890'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-495' xml:id='l2h-495' class="function">eta_int</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-891' xml:id='l2h-891'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-496' xml:id='l2h-496' class="function">eta_int_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-892' xml:id='l2h-892'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-497' xml:id='l2h-497' class="function">expint_3</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-893' xml:id='l2h-893'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-498' xml:id='l2h-498' class="function">expint_3_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-894' xml:id='l2h-894'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-499' xml:id='l2h-499' class="function">expint_E1</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-895' xml:id='l2h-895'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-500' xml:id='l2h-500' class="function">expint_E1_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-896' xml:id='l2h-896'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-501' xml:id='l2h-501' class="function">expint_E1_scaled</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-897' xml:id='l2h-897'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-502' xml:id='l2h-502' class="function">expint_E1_scaled_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-898' xml:id='l2h-898'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-503' xml:id='l2h-503' class="function">expint_E2</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-899' xml:id='l2h-899'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-504' xml:id='l2h-504' class="function">expint_E2_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-900' xml:id='l2h-900'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-505' xml:id='l2h-505' class="function">expint_E2_scaled</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-901' xml:id='l2h-901'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-506' xml:id='l2h-506' class="function">expint_E2_scaled_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-902' xml:id='l2h-902'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-507' xml:id='l2h-507' class="function">expint_Ei</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-903' xml:id='l2h-903'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-508' xml:id='l2h-508' class="function">expint_Ei_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-904' xml:id='l2h-904'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-509' xml:id='l2h-509' class="function">expint_Ei_scaled</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-905' xml:id='l2h-905'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-510' xml:id='l2h-510' class="function">expint_Ei_scaled_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-906' xml:id='l2h-906'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-511' xml:id='l2h-511' class="function">fact</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-907' xml:id='l2h-907'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-512' xml:id='l2h-512' class="function">fact_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-908' xml:id='l2h-908'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-513' xml:id='l2h-513' class="function">fermi_dirac_0</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-909' xml:id='l2h-909'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-514' xml:id='l2h-514' class="function">fermi_dirac_0_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-910' xml:id='l2h-910'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-515' xml:id='l2h-515' class="function">fermi_dirac_1</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-911' xml:id='l2h-911'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-516' xml:id='l2h-516' class="function">fermi_dirac_1_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-912' xml:id='l2h-912'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-517' xml:id='l2h-517' class="function">fermi_dirac_2</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-913' xml:id='l2h-913'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-518' xml:id='l2h-518' class="function">fermi_dirac_2_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-914' xml:id='l2h-914'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-519' xml:id='l2h-519' class="function">fermi_dirac_3half</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-915' xml:id='l2h-915'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-520' xml:id='l2h-520' class="function">fermi_dirac_3half_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-916' xml:id='l2h-916'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-521' xml:id='l2h-521' class="function">fermi_dirac_half</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-917' xml:id='l2h-917'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-522' xml:id='l2h-522' class="function">fermi_dirac_half_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-918' xml:id='l2h-918'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-523' xml:id='l2h-523' class="function">fermi_dirac_inc_0</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-919' xml:id='l2h-919'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-524' xml:id='l2h-524' class="function">fermi_dirac_inc_0_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-920' xml:id='l2h-920'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-525' xml:id='l2h-525' class="function">fermi_dirac_int</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-921' xml:id='l2h-921'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-526' xml:id='l2h-526' class="function">fermi_dirac_int_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-922' xml:id='l2h-922'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-527' xml:id='l2h-527' class="function">fermi_dirac_m1</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-923' xml:id='l2h-923'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-528' xml:id='l2h-528' class="function">fermi_dirac_m1_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-924' xml:id='l2h-924'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-529' xml:id='l2h-529' class="function">fermi_dirac_mhalf</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-925' xml:id='l2h-925'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-530' xml:id='l2h-530' class="function">fermi_dirac_mhalf_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-926' xml:id='l2h-926'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-531' xml:id='l2h-531' class="function">gamma</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-927' xml:id='l2h-927'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-532' xml:id='l2h-532' class="function">gamma_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-928' xml:id='l2h-928'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-533' xml:id='l2h-533' class="function">gamma_inc_P</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-929' xml:id='l2h-929'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-534' xml:id='l2h-534' class="function">gamma_inc_P_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-930' xml:id='l2h-930'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-535' xml:id='l2h-535' class="function">gamma_inc_Q</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-931' xml:id='l2h-931'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-536' xml:id='l2h-536' class="function">gamma_inc_Q_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-932' xml:id='l2h-932'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-537' xml:id='l2h-537' class="function">gammainv</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-933' xml:id='l2h-933'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-538' xml:id='l2h-538' class="function">gammainv_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-934' xml:id='l2h-934'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-539' xml:id='l2h-539' class="function">gammastar</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-935' xml:id='l2h-935'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-540' xml:id='l2h-540' class="function">gammastar_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-936' xml:id='l2h-936'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-541' xml:id='l2h-541' class="function">gegenpoly_1</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-937' xml:id='l2h-937'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-542' xml:id='l2h-542' class="function">gegenpoly_1_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-938' xml:id='l2h-938'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-543' xml:id='l2h-543' class="function">gegenpoly_2</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-939' xml:id='l2h-939'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-544' xml:id='l2h-544' class="function">gegenpoly_2_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-940' xml:id='l2h-940'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-545' xml:id='l2h-545' class="function">gegenpoly_3</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-941' xml:id='l2h-941'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-546' xml:id='l2h-546' class="function">gegenpoly_3_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-942' xml:id='l2h-942'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-547' xml:id='l2h-547' class="function">gegenpoly_n</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-943' xml:id='l2h-943'></a>
+
+<P>
+Number of Input  Arguments:  3
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-548' xml:id='l2h-548' class="function">gegenpoly_n_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-944' xml:id='l2h-944'></a>
+
+<P>
+Number of Input  Arguments:  3
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 3 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-549' xml:id='l2h-549' class="function">hydrogenicR</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-945' xml:id='l2h-945'></a>
+
+<P>
+Number of Input  Arguments:  4
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-550' xml:id='l2h-550' class="function">hydrogenicR_1</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-946' xml:id='l2h-946'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-551' xml:id='l2h-551' class="function">hydrogenicR_1_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-947' xml:id='l2h-947'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-552' xml:id='l2h-552' class="function">hydrogenicR_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-948' xml:id='l2h-948'></a>
+
+<P>
+Number of Input  Arguments:  4
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 4 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-553' xml:id='l2h-553' class="function">hyperg_0F1</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-949' xml:id='l2h-949'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-554' xml:id='l2h-554' class="function">hyperg_0F1_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-950' xml:id='l2h-950'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-555' xml:id='l2h-555' class="function">hyperg_1F1</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-951' xml:id='l2h-951'></a>
+
+<P>
+Number of Input  Arguments:  3
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-556' xml:id='l2h-556' class="function">hyperg_1F1_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-952' xml:id='l2h-952'></a>
+
+<P>
+Number of Input  Arguments:  3
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 3 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-557' xml:id='l2h-557' class="function">hyperg_1F1_int</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-953' xml:id='l2h-953'></a>
+
+<P>
+Number of Input  Arguments:  3
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-558' xml:id='l2h-558' class="function">hyperg_1F1_int_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-954' xml:id='l2h-954'></a>
+
+<P>
+Number of Input  Arguments:  3
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 3 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-559' xml:id='l2h-559' class="function">hyperg_2F0</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-955' xml:id='l2h-955'></a>
+
+<P>
+Number of Input  Arguments:  3
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-560' xml:id='l2h-560' class="function">hyperg_2F0_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-956' xml:id='l2h-956'></a>
+
+<P>
+Number of Input  Arguments:  3
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 3 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-561' xml:id='l2h-561' class="function">hyperg_2F1</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-957' xml:id='l2h-957'></a>
+
+<P>
+Number of Input  Arguments:  4
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-562' xml:id='l2h-562' class="function">hyperg_2F1_conj</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-958' xml:id='l2h-958'></a>
+
+<P>
+Number of Input  Arguments:  4
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-563' xml:id='l2h-563' class="function">hyperg_2F1_conj_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-959' xml:id='l2h-959'></a>
+
+<P>
+Number of Input  Arguments:  4
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 4 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-564' xml:id='l2h-564' class="function">hyperg_2F1_conj_renorm</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-960' xml:id='l2h-960'></a>
+
+<P>
+Number of Input  Arguments:  4
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-565' xml:id='l2h-565' class="function">hyperg_2F1_conj_renorm_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-961' xml:id='l2h-961'></a>
+
+<P>
+Number of Input  Arguments:  4
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 4 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-566' xml:id='l2h-566' class="function">hyperg_2F1_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-962' xml:id='l2h-962'></a>
+
+<P>
+Number of Input  Arguments:  4
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 4 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-567' xml:id='l2h-567' class="function">hyperg_2F1_renorm</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-963' xml:id='l2h-963'></a>
+
+<P>
+Number of Input  Arguments:  4
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-568' xml:id='l2h-568' class="function">hyperg_2F1_renorm_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-964' xml:id='l2h-964'></a>
+
+<P>
+Number of Input  Arguments:  4
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 4 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-569' xml:id='l2h-569' class="function">hyperg_U</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-965' xml:id='l2h-965'></a>
+
+<P>
+Number of Input  Arguments:  3
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-570' xml:id='l2h-570' class="function">hyperg_U_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-966' xml:id='l2h-966'></a>
+
+<P>
+Number of Input  Arguments:  3
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 3 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-571' xml:id='l2h-571' class="function">hyperg_U_e10_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-967' xml:id='l2h-967'></a>
+
+<P>
+Number of Input  Arguments:  3
+    Number of Output Arguments:  3
+
+<P>
+The error flag is discarded.
+Return Arguments 1 - 3 resemble a gsl_result_e10 argument,
+	which is argument 3 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-572' xml:id='l2h-572' class="function">hyperg_U_int</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-968' xml:id='l2h-968'></a>
+
+<P>
+Number of Input  Arguments:  3
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-573' xml:id='l2h-573' class="function">hyperg_U_int_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-969' xml:id='l2h-969'></a>
+
+<P>
+Number of Input  Arguments:  3
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 3 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-574' xml:id='l2h-574' class="function">hyperg_U_int_e10_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-970' xml:id='l2h-970'></a>
+
+<P>
+Number of Input  Arguments:  3
+    Number of Output Arguments:  3
+
+<P>
+The error flag is discarded.
+Return Arguments 1 - 3 resemble a gsl_result_e10 argument,
+	which is argument 3 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-575' xml:id='l2h-575' class="function">hypot</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-971' xml:id='l2h-971'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-576' xml:id='l2h-576' class="function">hypot_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-972' xml:id='l2h-972'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-577' xml:id='l2h-577' class="function">hzeta</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-973' xml:id='l2h-973'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-578' xml:id='l2h-578' class="function">hzeta_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-974' xml:id='l2h-974'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-579' xml:id='l2h-579' class="function">laguerre_1</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-975' xml:id='l2h-975'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-580' xml:id='l2h-580' class="function">laguerre_1_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-976' xml:id='l2h-976'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-581' xml:id='l2h-581' class="function">laguerre_2</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-977' xml:id='l2h-977'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-582' xml:id='l2h-582' class="function">laguerre_2_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-978' xml:id='l2h-978'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-583' xml:id='l2h-583' class="function">laguerre_3</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-979' xml:id='l2h-979'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-584' xml:id='l2h-584' class="function">laguerre_3_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-980' xml:id='l2h-980'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-585' xml:id='l2h-585' class="function">laguerre_n</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-981' xml:id='l2h-981'></a>
+
+<P>
+Number of Input  Arguments:  3
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-586' xml:id='l2h-586' class="function">laguerre_n_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-982' xml:id='l2h-982'></a>
+
+<P>
+Number of Input  Arguments:  3
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 3 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-587' xml:id='l2h-587' class="function">lambert_W0</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-983' xml:id='l2h-983'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-588' xml:id='l2h-588' class="function">lambert_W0_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-984' xml:id='l2h-984'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-589' xml:id='l2h-589' class="function">lambert_Wm1</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-985' xml:id='l2h-985'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-590' xml:id='l2h-590' class="function">lambert_Wm1_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-986' xml:id='l2h-986'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-591' xml:id='l2h-591' class="function">legendre_H3d</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-987' xml:id='l2h-987'></a>
+
+<P>
+Number of Input  Arguments:  3
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-592' xml:id='l2h-592' class="function">legendre_H3d_0</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-988' xml:id='l2h-988'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-593' xml:id='l2h-593' class="function">legendre_H3d_0_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-989' xml:id='l2h-989'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-594' xml:id='l2h-594' class="function">legendre_H3d_1</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-990' xml:id='l2h-990'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-595' xml:id='l2h-595' class="function">legendre_H3d_1_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-991' xml:id='l2h-991'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-596' xml:id='l2h-596' class="function">legendre_H3d_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-992' xml:id='l2h-992'></a>
+
+<P>
+Number of Input  Arguments:  3
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 3 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-597' xml:id='l2h-597' class="function">legendre_P1</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-993' xml:id='l2h-993'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-598' xml:id='l2h-598' class="function">legendre_P1_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-994' xml:id='l2h-994'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-599' xml:id='l2h-599' class="function">legendre_P2</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-995' xml:id='l2h-995'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-600' xml:id='l2h-600' class="function">legendre_P2_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-996' xml:id='l2h-996'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-601' xml:id='l2h-601' class="function">legendre_P3</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-997' xml:id='l2h-997'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-602' xml:id='l2h-602' class="function">legendre_P3_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-998' xml:id='l2h-998'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-603' xml:id='l2h-603' class="function">legendre_Pl</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-999' xml:id='l2h-999'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-604' xml:id='l2h-604' class="function">legendre_Pl_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1000' xml:id='l2h-1000'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-605' xml:id='l2h-605' class="function">legendre_Plm</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1001' xml:id='l2h-1001'></a>
+
+<P>
+Number of Input  Arguments:  3
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-606' xml:id='l2h-606' class="function">legendre_Plm_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1002' xml:id='l2h-1002'></a>
+
+<P>
+Number of Input  Arguments:  3
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 3 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-607' xml:id='l2h-607' class="function">legendre_Q0</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1003' xml:id='l2h-1003'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-608' xml:id='l2h-608' class="function">legendre_Q0_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1004' xml:id='l2h-1004'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-609' xml:id='l2h-609' class="function">legendre_Q1</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1005' xml:id='l2h-1005'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-610' xml:id='l2h-610' class="function">legendre_Q1_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1006' xml:id='l2h-1006'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-611' xml:id='l2h-611' class="function">legendre_Ql</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1007' xml:id='l2h-1007'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-612' xml:id='l2h-612' class="function">legendre_Ql_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1008' xml:id='l2h-1008'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-613' xml:id='l2h-613' class="function">legendre_sphPlm</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1009' xml:id='l2h-1009'></a>
+
+<P>
+Number of Input  Arguments:  3
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-614' xml:id='l2h-614' class="function">legendre_sphPlm_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1010' xml:id='l2h-1010'></a>
+
+<P>
+Number of Input  Arguments:  3
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 3 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-615' xml:id='l2h-615' class="function">lnbeta</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1011' xml:id='l2h-1011'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-616' xml:id='l2h-616' class="function">lnbeta_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1012' xml:id='l2h-1012'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-617' xml:id='l2h-617' class="function">lnchoose</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1013' xml:id='l2h-1013'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-618' xml:id='l2h-618' class="function">lnchoose_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1014' xml:id='l2h-1014'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-619' xml:id='l2h-619' class="function">lncosh</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1015' xml:id='l2h-1015'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-620' xml:id='l2h-620' class="function">lncosh_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1016' xml:id='l2h-1016'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-621' xml:id='l2h-621' class="function">lndoublefact</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1017' xml:id='l2h-1017'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-622' xml:id='l2h-622' class="function">lndoublefact_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1018' xml:id='l2h-1018'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-623' xml:id='l2h-623' class="function">lnfact</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1019' xml:id='l2h-1019'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-624' xml:id='l2h-624' class="function">lnfact_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1020' xml:id='l2h-1020'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-625' xml:id='l2h-625' class="function">lngamma</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1021' xml:id='l2h-1021'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-626' xml:id='l2h-626' class="function">lngamma_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1022' xml:id='l2h-1022'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-627' xml:id='l2h-627' class="function">lngamma_sgn_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1023' xml:id='l2h-1023'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  3
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-628' xml:id='l2h-628' class="function">lnpoch</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1024' xml:id='l2h-1024'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-629' xml:id='l2h-629' class="function">lnpoch_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1025' xml:id='l2h-1025'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-630' xml:id='l2h-630' class="function">lnpoch_sgn_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1026' xml:id='l2h-1026'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  3
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-631' xml:id='l2h-631' class="function">lnsinh</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1027' xml:id='l2h-1027'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-632' xml:id='l2h-632' class="function">lnsinh_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1028' xml:id='l2h-1028'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-633' xml:id='l2h-633' class="function">log</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1029' xml:id='l2h-1029'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-634' xml:id='l2h-634' class="function">log_1plusx</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1030' xml:id='l2h-1030'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-635' xml:id='l2h-635' class="function">log_1plusx_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1031' xml:id='l2h-1031'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-636' xml:id='l2h-636' class="function">log_1plusx_mx</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1032' xml:id='l2h-1032'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-637' xml:id='l2h-637' class="function">log_1plusx_mx_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1033' xml:id='l2h-1033'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-638' xml:id='l2h-638' class="function">log_abs</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1034' xml:id='l2h-1034'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-639' xml:id='l2h-639' class="function">log_abs_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1035' xml:id='l2h-1035'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-640' xml:id='l2h-640' class="function">log_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1036' xml:id='l2h-1036'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-641' xml:id='l2h-641' class="function">log_erfc</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1037' xml:id='l2h-1037'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-642' xml:id='l2h-642' class="function">log_erfc_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1038' xml:id='l2h-1038'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-643' xml:id='l2h-643' class="function">multiply</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1039' xml:id='l2h-1039'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-644' xml:id='l2h-644' class="function">multiply_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1040' xml:id='l2h-1040'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-645' xml:id='l2h-645' class="function">multiply_err_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1041' xml:id='l2h-1041'></a>
+
+<P>
+Number of Input  Arguments:  4
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 4 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-646' xml:id='l2h-646' class="function">poch</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1042' xml:id='l2h-1042'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-647' xml:id='l2h-647' class="function">poch_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1043' xml:id='l2h-1043'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-648' xml:id='l2h-648' class="function">pochrel</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1044' xml:id='l2h-1044'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-649' xml:id='l2h-649' class="function">pochrel_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1045' xml:id='l2h-1045'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-650' xml:id='l2h-650' class="function">polar_to_rect</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1046' xml:id='l2h-1046'></a>
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-651' xml:id='l2h-651' class="function">pow_int</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1047' xml:id='l2h-1047'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-652' xml:id='l2h-652' class="function">pow_int_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1048' xml:id='l2h-1048'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-653' xml:id='l2h-653' class="function">psi</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1049' xml:id='l2h-1049'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-654' xml:id='l2h-654' class="function">psi_1_int</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1050' xml:id='l2h-1050'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-655' xml:id='l2h-655' class="function">psi_1_int_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1051' xml:id='l2h-1051'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-656' xml:id='l2h-656' class="function">psi_1piy</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1052' xml:id='l2h-1052'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-657' xml:id='l2h-657' class="function">psi_1piy_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1053' xml:id='l2h-1053'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-658' xml:id='l2h-658' class="function">psi_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1054' xml:id='l2h-1054'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-659' xml:id='l2h-659' class="function">psi_int</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1055' xml:id='l2h-1055'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-660' xml:id='l2h-660' class="function">psi_int_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1056' xml:id='l2h-1056'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-661' xml:id='l2h-661' class="function">psi_n</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1057' xml:id='l2h-1057'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-662' xml:id='l2h-662' class="function">psi_n_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1058' xml:id='l2h-1058'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-663' xml:id='l2h-663' class="function">rect_to_polar</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1059' xml:id='l2h-1059'></a>
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-664' xml:id='l2h-664' class="function">sin</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1060' xml:id='l2h-1060'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-665' xml:id='l2h-665' class="function">sin_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1061' xml:id='l2h-1061'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-666' xml:id='l2h-666' class="function">sin_err_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1062' xml:id='l2h-1062'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-667' xml:id='l2h-667' class="function">sinc</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1063' xml:id='l2h-1063'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-668' xml:id='l2h-668' class="function">sinc_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1064' xml:id='l2h-1064'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-669' xml:id='l2h-669' class="function">synchrotron_1</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1065' xml:id='l2h-1065'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-670' xml:id='l2h-670' class="function">synchrotron_1_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1066' xml:id='l2h-1066'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-671' xml:id='l2h-671' class="function">synchrotron_2</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1067' xml:id='l2h-1067'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-672' xml:id='l2h-672' class="function">synchrotron_2_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1068' xml:id='l2h-1068'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-673' xml:id='l2h-673' class="function">taylorcoeff</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1069' xml:id='l2h-1069'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-674' xml:id='l2h-674' class="function">taylorcoeff_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1070' xml:id='l2h-1070'></a>
+
+<P>
+Number of Input  Arguments:  2
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 2 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-675' xml:id='l2h-675' class="function">transport_2</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1071' xml:id='l2h-1071'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-676' xml:id='l2h-676' class="function">transport_2_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1072' xml:id='l2h-1072'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-677' xml:id='l2h-677' class="function">transport_3</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1073' xml:id='l2h-1073'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-678' xml:id='l2h-678' class="function">transport_3_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1074' xml:id='l2h-1074'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-679' xml:id='l2h-679' class="function">transport_4</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1075' xml:id='l2h-1075'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-680' xml:id='l2h-680' class="function">transport_4_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1076' xml:id='l2h-1076'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-681' xml:id='l2h-681' class="function">transport_5</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1077' xml:id='l2h-1077'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-682' xml:id='l2h-682' class="function">transport_5_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1078' xml:id='l2h-1078'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-683' xml:id='l2h-683' class="function">zeta</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1079' xml:id='l2h-1079'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-684' xml:id='l2h-684' class="function">zeta_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1080' xml:id='l2h-1080'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-685' xml:id='l2h-685' class="function">zeta_int</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1081' xml:id='l2h-1081'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  1
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-686' xml:id='l2h-686' class="function">zeta_int_e</tt></b>(</nobr></td>
+  <td><var>...</var>)</td></tr></table></dt>
+<dd><a id='l2h-1082' xml:id='l2h-1082'></a>
+
+<P>
+Number of Input  Arguments:  1
+    Number of Output Arguments:  2
+
+<P>
+The error flag is discarded.
+Return Arguments 1 and 2 resemble a gsl_result argument,
+	which is  argument 1 of the C argument list
+
+<P>
+</dl>
+
+<P>
+
+<DIV CLASS="navigation">
+<div class='online-navigation'>
+<p></p><hr />
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="12.1 pygsl.testing.sf  "
+  href="module-pygsl.testing.sf.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></A></td>
+<td class='online-navigation'><a rel="parent" title="12. pygsl.testing  "
+  href="module-pygsl.testing.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up One Level' width='32' /></A></td>
+<td class='online-navigation'><a rel="next" title="12.3 Ordinary Functions"
+  href="node57.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></A></td>
+<td align="center" width="100%">PyGSL Reference Manual</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></A></td>
+<td class='online-navigation'><img src='../icons/blank.png'
+  border='0' height='32'  alt='' width='32' /></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></A></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="module-pygsl.testing.sf.html">12.1 pygsl.testing.sf  </A>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="module-pygsl.testing.html">12. pygsl.testing  </A>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node57.html">12.3 Ordinary Functions</A>
+</div>
+</div>
+<hr />
+<span class="release-info">Release 0.9, documentation updated on October, 2008.</span>
+</DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

@@ -1,0 +1,3370 @@
+!%f90 -*- f90 -*-
+!
+! Signatures for f2py wrappers of FORTRAN LAPACK functions.
+!
+! Author: Pearu Peterson
+! Created: Jan-Feb 2002
+! $Revision$ $Date$
+!
+! Additions by Travis Oliphant
+!
+! Split and use scipy_distutils.from_template: Pearu
+!
+
+python module flapack
+interface
+
+python module gees__user__routines 
+    interface gees_user_interface
+        function sselect(arg1,arg2)
+            real :: arg1,arg2
+            logical :: sselect
+        end function sselect
+
+        function dselect(arg1,arg2)
+            double precision :: arg1,arg2
+            logical :: dselect
+        end function dselect
+
+        function cselect(arg)
+            complex :: arg
+            logical :: cselect
+        end function cselect
+
+        function zselect(arg)
+            double complex :: arg
+            logical :: zselect
+        end function zselect
+
+
+    end interface gees_user_interface
+end python module gees__user__routines
+
+   ! Driver Routines
+! -*- f90 -*-
+!
+! Contains wrappers for the following LAPACK routines:
+!
+!  Simple Driver Routines for Linear Equations:
+!   gesv (general)
+!   gbsv (general band)
+!   gtsv (general tridiagonla) - Not Implemented
+!   posv (symmetric/hermitian positive definite)
+!   ppsv (symmetric/hermitian positive definite packed storage) - Not Implemented
+!   pbsv (symmetric/hermitian positive definite band) - Not Implemeted
+!   ptsv (symmetric/hermitian positive definite tridiagonal) - Not Implemented
+!   sysv, hesv (symmetric/hermitian indefinite) - Not Implemented
+!   spsv, hpsv (symmetric/hermitian indefinite packed storage) - Not Implemented
+!
+!
+!  Expert Driver Routines for Linear Equations:
+!   gesvx (general) - Not Implemented
+!   gbsvx (general band) - Not Implemented
+!   gtsvx (general tridiagonla) - Not Implemented
+!   posvx (symmetric/hermitian positive definite) - Not Implemented
+!   ppsvx (symmetric/hermitian positive definite packed storage) - Not Implemented
+!   pbsvx (symmetric/hermitian positive definite band) - Not Implemeted
+!   ptsvx (symmetric/hermitian positive definite tridiagonal) - Not Implemented
+!   sysvx, hesvx (symmetric/hermitian indefinite) - Not Implemented
+!   spsvx, hpsvx (symmetric/hermitian indefinite packed storage) - Not Implemented
+!
+
+!
+! Simple Driver Routines for Linear Equations
+! ===========================================
+
+   subroutine sgesv(n,nrhs,a,piv,b,info)
+
+   ! lu,piv,x,info = gesv(a,b,overwrite_a=0,overwrite_b=0)
+   ! Solve A * X = B.
+   ! A = P * L * U
+   ! U is upper diagonal triangular, L is unit lower triangular,
+   ! piv pivots columns.
+
+     callstatement {int i;(*f2py_func)(&n,&nrhs,a,&n,piv,b,&n,&info);for(i=0;i<n;--piv[i++]);}
+     callprotoargument int*,int*,float*,int*,int*,float*,int*,int*
+
+     integer depend(a),intent(hide):: n = shape(a,0)
+     integer depend(b),intent(hide):: nrhs = shape(b,1)
+     real dimension(n,n),check(shape(a,0)==shape(a,1)) :: a
+     integer dimension(n),depend(n),intent(out) :: piv
+     real dimension(n,nrhs),check(shape(a,0)==shape(b,0)),depend(n) :: b
+     integer intent(out)::info
+     intent(in,out,copy,out=x) b
+     intent(in,out,copy,out=lu) a
+
+   end subroutine sgesv
+
+
+   subroutine dgesv(n,nrhs,a,piv,b,info)
+
+   ! lu,piv,x,info = gesv(a,b,overwrite_a=0,overwrite_b=0)
+   ! Solve A * X = B.
+   ! A = P * L * U
+   ! U is upper diagonal triangular, L is unit lower triangular,
+   ! piv pivots columns.
+
+     callstatement {int i;(*f2py_func)(&n,&nrhs,a,&n,piv,b,&n,&info);for(i=0;i<n;--piv[i++]);}
+     callprotoargument int*,int*,double*,int*,int*,double*,int*,int*
+
+     integer depend(a),intent(hide):: n = shape(a,0)
+     integer depend(b),intent(hide):: nrhs = shape(b,1)
+     double precision dimension(n,n),check(shape(a,0)==shape(a,1)) :: a
+     integer dimension(n),depend(n),intent(out) :: piv
+     double precision dimension(n,nrhs),check(shape(a,0)==shape(b,0)),depend(n) :: b
+     integer intent(out)::info
+     intent(in,out,copy,out=x) b
+     intent(in,out,copy,out=lu) a
+
+   end subroutine dgesv
+
+
+   subroutine cgesv(n,nrhs,a,piv,b,info)
+
+   ! lu,piv,x,info = gesv(a,b,overwrite_a=0,overwrite_b=0)
+   ! Solve A * X = B.
+   ! A = P * L * U
+   ! U is upper diagonal triangular, L is unit lower triangular,
+   ! piv pivots columns.
+
+     callstatement {int i;(*f2py_func)(&n,&nrhs,a,&n,piv,b,&n,&info);for(i=0;i<n;--piv[i++]);}
+     callprotoargument int*,int*,complex_float*,int*,int*,complex_float*,int*,int*
+
+     integer depend(a),intent(hide):: n = shape(a,0)
+     integer depend(b),intent(hide):: nrhs = shape(b,1)
+     complex dimension(n,n),check(shape(a,0)==shape(a,1)) :: a
+     integer dimension(n),depend(n),intent(out) :: piv
+     complex dimension(n,nrhs),check(shape(a,0)==shape(b,0)),depend(n) :: b
+     integer intent(out)::info
+     intent(in,out,copy,out=x) b
+     intent(in,out,copy,out=lu) a
+
+   end subroutine cgesv
+
+
+   subroutine zgesv(n,nrhs,a,piv,b,info)
+
+   ! lu,piv,x,info = gesv(a,b,overwrite_a=0,overwrite_b=0)
+   ! Solve A * X = B.
+   ! A = P * L * U
+   ! U is upper diagonal triangular, L is unit lower triangular,
+   ! piv pivots columns.
+
+     callstatement {int i;(*f2py_func)(&n,&nrhs,a,&n,piv,b,&n,&info);for(i=0;i<n;--piv[i++]);}
+     callprotoargument int*,int*,complex_double*,int*,int*,complex_double*,int*,int*
+
+     integer depend(a),intent(hide):: n = shape(a,0)
+     integer depend(b),intent(hide):: nrhs = shape(b,1)
+     double complex dimension(n,n),check(shape(a,0)==shape(a,1)) :: a
+     integer dimension(n),depend(n),intent(out) :: piv
+     double complex dimension(n,nrhs),check(shape(a,0)==shape(b,0)),depend(n) :: b
+     integer intent(out)::info
+     intent(in,out,copy,out=x) b
+     intent(in,out,copy,out=lu) a
+
+   end subroutine zgesv
+
+
+
+   subroutine sgbsv(n,kl,ku,nrhs,ab,piv,b,info)
+   ! 
+   ! lub,piv,x,info = gbsv(kl,ku,ab,b,overwrite_ab=0,overwrite_b=0)
+   ! Solve A * X = B
+   ! A = P * L * U
+   ! A is a band matrix of order n with kl subdiagonals and ku superdiagonals
+   ! starting at kl-th row.
+   ! X, B are n-by-nrhs matrices
+   !
+     callstatement {int i=2*kl+ku+1;(*f2py_func)(&n,&kl,&ku,&nrhs,ab,&i,piv,b,&n,&info);for(i=0;i<n;--piv[i++]);}
+     callprotoargument int*,int*,int*,int*,float*,int*,int*,float*,int*,int*
+     integer depend(ab),intent(hide):: n = shape(ab,1)
+     integer intent(in) :: kl
+     integer intent(in) :: ku
+     integer depend(b),intent(hide) :: nrhs = shape(b,1)
+     real dimension(2*kl+ku+1,n),depend(kl,ku), check(2*kl+ku+1==shape(ab,0)) :: ab
+     integer dimension(n),depend(n),intent(out) :: piv
+     real dimension(n,nrhs),depend(n),check(shape(ab,1)==shape(b,0)) :: b
+     integer intent(out) :: info
+     intent(in,out,copy,out=x) b
+     intent(in,out,copy,out=lub) ab
+   end subroutine sgbsv
+
+
+   subroutine dgbsv(n,kl,ku,nrhs,ab,piv,b,info)
+   ! 
+   ! lub,piv,x,info = gbsv(kl,ku,ab,b,overwrite_ab=0,overwrite_b=0)
+   ! Solve A * X = B
+   ! A = P * L * U
+   ! A is a band matrix of order n with kl subdiagonals and ku superdiagonals
+   ! starting at kl-th row.
+   ! X, B are n-by-nrhs matrices
+   !
+     callstatement {int i=2*kl+ku+1;(*f2py_func)(&n,&kl,&ku,&nrhs,ab,&i,piv,b,&n,&info);for(i=0;i<n;--piv[i++]);}
+     callprotoargument int*,int*,int*,int*,double*,int*,int*,double*,int*,int*
+     integer depend(ab),intent(hide):: n = shape(ab,1)
+     integer intent(in) :: kl
+     integer intent(in) :: ku
+     integer depend(b),intent(hide) :: nrhs = shape(b,1)
+     double precision dimension(2*kl+ku+1,n),depend(kl,ku), check(2*kl+ku+1==shape(ab,0)) :: ab
+     integer dimension(n),depend(n),intent(out) :: piv
+     double precision dimension(n,nrhs),depend(n),check(shape(ab,1)==shape(b,0)) :: b
+     integer intent(out) :: info
+     intent(in,out,copy,out=x) b
+     intent(in,out,copy,out=lub) ab
+   end subroutine dgbsv
+
+
+   subroutine cgbsv(n,kl,ku,nrhs,ab,piv,b,info)
+   ! 
+   ! lub,piv,x,info = gbsv(kl,ku,ab,b,overwrite_ab=0,overwrite_b=0)
+   ! Solve A * X = B
+   ! A = P * L * U
+   ! A is a band matrix of order n with kl subdiagonals and ku superdiagonals
+   ! starting at kl-th row.
+   ! X, B are n-by-nrhs matrices
+   !
+     callstatement {int i=2*kl+ku+1;(*f2py_func)(&n,&kl,&ku,&nrhs,ab,&i,piv,b,&n,&info);for(i=0;i<n;--piv[i++]);}
+     callprotoargument int*,int*,int*,int*,complex_float*,int*,int*,complex_float*,int*,int*
+     integer depend(ab),intent(hide):: n = shape(ab,1)
+     integer intent(in) :: kl
+     integer intent(in) :: ku
+     integer depend(b),intent(hide) :: nrhs = shape(b,1)
+     complex dimension(2*kl+ku+1,n),depend(kl,ku), check(2*kl+ku+1==shape(ab,0)) :: ab
+     integer dimension(n),depend(n),intent(out) :: piv
+     complex dimension(n,nrhs),depend(n),check(shape(ab,1)==shape(b,0)) :: b
+     integer intent(out) :: info
+     intent(in,out,copy,out=x) b
+     intent(in,out,copy,out=lub) ab
+   end subroutine cgbsv
+
+
+   subroutine zgbsv(n,kl,ku,nrhs,ab,piv,b,info)
+   ! 
+   ! lub,piv,x,info = gbsv(kl,ku,ab,b,overwrite_ab=0,overwrite_b=0)
+   ! Solve A * X = B
+   ! A = P * L * U
+   ! A is a band matrix of order n with kl subdiagonals and ku superdiagonals
+   ! starting at kl-th row.
+   ! X, B are n-by-nrhs matrices
+   !
+     callstatement {int i=2*kl+ku+1;(*f2py_func)(&n,&kl,&ku,&nrhs,ab,&i,piv,b,&n,&info);for(i=0;i<n;--piv[i++]);}
+     callprotoargument int*,int*,int*,int*,complex_double*,int*,int*,complex_double*,int*,int*
+     integer depend(ab),intent(hide):: n = shape(ab,1)
+     integer intent(in) :: kl
+     integer intent(in) :: ku
+     integer depend(b),intent(hide) :: nrhs = shape(b,1)
+     double complex dimension(2*kl+ku+1,n),depend(kl,ku), check(2*kl+ku+1==shape(ab,0)) :: ab
+     integer dimension(n),depend(n),intent(out) :: piv
+     double complex dimension(n,nrhs),depend(n),check(shape(ab,1)==shape(b,0)) :: b
+     integer intent(out) :: info
+     intent(in,out,copy,out=x) b
+     intent(in,out,copy,out=lub) ab
+   end subroutine zgbsv
+
+
+
+   subroutine sposv(n,nrhs,a,b,info,lower)
+
+   ! c,x,info = posv(a,b,lower=0,overwrite_a=0,overwrite_b=0)
+   ! Solve A * X = B.
+   ! A is symmetric positive defined
+   ! A = U^T * U, C = U if lower = 0
+   ! A = L * L^T, C = L if lower = 1
+   ! C is triangular matrix of the corresponding Cholesky decomposition.
+
+     callstatement (*f2py_func)((lower?"L":"U"),&n,&nrhs,a,&n,b,&n,&info)
+     callprotoargument char*,int*,int*,float*,int*,float*,int*,int*
+
+     integer optional,intent(in),check(lower==0||lower==1) :: lower = 0
+
+     integer depend(a),intent(hide):: n = shape(a,0)
+     integer depend(b),intent(hide):: nrhs = shape(b,1)
+     real dimension(n,n),intent(in,out,copy,out=c) :: a
+     check(shape(a,0)==shape(a,1)) :: a
+     real dimension(n,nrhs),intent(in,out,copy,out=x),depend(n):: b
+     check(shape(a,0)==shape(b,0)) :: b
+     integer intent(out) :: info
+
+   end subroutine sposv
+
+
+   subroutine dposv(n,nrhs,a,b,info,lower)
+
+   ! c,x,info = posv(a,b,lower=0,overwrite_a=0,overwrite_b=0)
+   ! Solve A * X = B.
+   ! A is symmetric positive defined
+   ! A = U^T * U, C = U if lower = 0
+   ! A = L * L^T, C = L if lower = 1
+   ! C is triangular matrix of the corresponding Cholesky decomposition.
+
+     callstatement (*f2py_func)((lower?"L":"U"),&n,&nrhs,a,&n,b,&n,&info)
+     callprotoargument char*,int*,int*,double*,int*,double*,int*,int*
+
+     integer optional,intent(in),check(lower==0||lower==1) :: lower = 0
+
+     integer depend(a),intent(hide):: n = shape(a,0)
+     integer depend(b),intent(hide):: nrhs = shape(b,1)
+     double precision dimension(n,n),intent(in,out,copy,out=c) :: a
+     check(shape(a,0)==shape(a,1)) :: a
+     double precision dimension(n,nrhs),intent(in,out,copy,out=x),depend(n):: b
+     check(shape(a,0)==shape(b,0)) :: b
+     integer intent(out) :: info
+
+   end subroutine dposv
+
+
+   subroutine cposv(n,nrhs,a,b,info,lower)
+
+   ! c,x,info = posv(a,b,lower=0,overwrite_a=0,overwrite_b=0)
+   ! Solve A * X = B.
+   ! A is symmetric positive defined
+   ! A = U^T * U, C = U if lower = 0
+   ! A = L * L^T, C = L if lower = 1
+   ! C is triangular matrix of the corresponding Cholesky decomposition.
+
+     callstatement (*f2py_func)((lower?"L":"U"),&n,&nrhs,a,&n,b,&n,&info)
+     callprotoargument char*,int*,int*,complex_float*,int*,complex_float*,int*,int*
+
+     integer optional,intent(in),check(lower==0||lower==1) :: lower = 0
+
+     integer depend(a),intent(hide):: n = shape(a,0)
+     integer depend(b),intent(hide):: nrhs = shape(b,1)
+     complex dimension(n,n),intent(in,out,copy,out=c) :: a
+     check(shape(a,0)==shape(a,1)) :: a
+     complex dimension(n,nrhs),intent(in,out,copy,out=x),depend(n):: b
+     check(shape(a,0)==shape(b,0)) :: b
+     integer intent(out) :: info
+
+   end subroutine cposv
+
+
+   subroutine zposv(n,nrhs,a,b,info,lower)
+
+   ! c,x,info = posv(a,b,lower=0,overwrite_a=0,overwrite_b=0)
+   ! Solve A * X = B.
+   ! A is symmetric positive defined
+   ! A = U^T * U, C = U if lower = 0
+   ! A = L * L^T, C = L if lower = 1
+   ! C is triangular matrix of the corresponding Cholesky decomposition.
+
+     callstatement (*f2py_func)((lower?"L":"U"),&n,&nrhs,a,&n,b,&n,&info)
+     callprotoargument char*,int*,int*,complex_double*,int*,complex_double*,int*,int*
+
+     integer optional,intent(in),check(lower==0||lower==1) :: lower = 0
+
+     integer depend(a),intent(hide):: n = shape(a,0)
+     integer depend(b),intent(hide):: nrhs = shape(b,1)
+     double complex dimension(n,n),intent(in,out,copy,out=c) :: a
+     check(shape(a,0)==shape(a,1)) :: a
+     double complex dimension(n,nrhs),intent(in,out,copy,out=x),depend(n):: b
+     check(shape(a,0)==shape(b,0)) :: b
+     integer intent(out) :: info
+
+   end subroutine zposv
+
+
+
+! -*- f90 -*-
+!
+! Contains wrappers for the following LAPACK routines:
+!
+!  Simple Driver Routines for Standard and Generalized Linear Least Squares Problems:
+!   gels (using QR or LQ factorization, assume full rank) - Not Implemented
+!   gglse (solve LSE problem using GRQ) - Not Implemented
+!   ggglm (solve GLM problem using GQR) - Not Implemented
+!
+!  Divide and Conquer and Expert Driver Routines for Linear Least Squares Problems:
+!   gelss (using SVD, allow rank-deficiency)
+!   gelsy (using complete orthogonal factor) - Not Implemented
+!   gelsd (using D&C SVD, allow rank-deficiency) - Not Implemented
+!
+
+
+   subroutine sgelss(m,n,minmn,maxmn,nrhs,a,b,s,cond,r,work,lwork,info)
+
+   ! v,x,s,rank,info = gelss(a,b,cond=-1.0,overwrite_a=0,overwrite_b=0)
+   ! Solve Minimize 2-norm(A * X - B).
+
+     callstatement (*f2py_func)(&m,&n,&nrhs,a,&m,b,&maxmn,s,&cond,&r,work,&lwork,&info)
+     callprotoargument int*,int*,int*,float*,int*,float*,int*,float*,float*,int*,float*,int*,int*
+
+     integer intent(hide),depend(a):: m = shape(a,0)
+     integer intent(hide),depend(a):: n = shape(a,1)
+     integer intent(hide),depend(m,n):: minmn = MIN(m,n)
+     integer intent(hide),depend(m,n):: maxmn = MAX(m,n)
+     real dimension(m,n),intent(in,out,copy,out=v) :: a
+
+     integer depend(b),intent(hide):: nrhs = shape(b,1)
+     real dimension(maxmn,nrhs),check(maxmn==shape(b,0)),depend(maxmn) :: b
+     intent(in,out,copy,out=x) b
+
+     integer intent(out)::info
+     ! 3*minmn+MAX(2*minmn,MAX(maxmn,nrhs))
+     integer optional,intent(in),depend(nrhs,minmn,maxmn), &
+          check(lwork>=1) &
+          :: lwork=3*minmn+MAX(2*minmn,MAX(maxmn,nrhs))
+          !check(lwork>=3*minmn+MAX(2*minmn,MAX(maxmn,nrhs)))
+     real dimension(lwork),intent(hide),depend(lwork) :: work
+     real dimension(5*minmn-1),intent(hide),depend(lwork) :: rwork
+     real intent(in),optional :: cond = -1.0
+     integer intent(out,out=rank) :: r
+     real intent(out),dimension(minmn),depend(minmn) :: s
+
+   end subroutine sgelss
+
+
+
+   subroutine dgelss(m,n,minmn,maxmn,nrhs,a,b,s,cond,r,work,lwork,info)
+
+   ! v,x,s,rank,info = gelss(a,b,cond=-1.0,overwrite_a=0,overwrite_b=0)
+   ! Solve Minimize 2-norm(A * X - B).
+
+     callstatement (*f2py_func)(&m,&n,&nrhs,a,&m,b,&maxmn,s,&cond,&r,work,&lwork,&info)
+     callprotoargument int*,int*,int*,double*,int*,double*,int*,double*,double*,int*,double*,int*,int*
+
+     integer intent(hide),depend(a):: m = shape(a,0)
+     integer intent(hide),depend(a):: n = shape(a,1)
+     integer intent(hide),depend(m,n):: minmn = MIN(m,n)
+     integer intent(hide),depend(m,n):: maxmn = MAX(m,n)
+     double precision dimension(m,n),intent(in,out,copy,out=v) :: a
+
+     integer depend(b),intent(hide):: nrhs = shape(b,1)
+     double precision dimension(maxmn,nrhs),check(maxmn==shape(b,0)),depend(maxmn) :: b
+     intent(in,out,copy,out=x) b
+
+     integer intent(out)::info
+     ! 3*minmn+MAX(2*minmn,MAX(maxmn,nrhs))
+     integer optional,intent(in),depend(nrhs,minmn,maxmn), &
+          check(lwork>=1) &
+          :: lwork=3*minmn+MAX(2*minmn,MAX(maxmn,nrhs))
+          !check(lwork>=3*minmn+MAX(2*minmn,MAX(maxmn,nrhs)))
+     double precision dimension(lwork),intent(hide),depend(lwork) :: work
+     double precision dimension(5*minmn-1),intent(hide),depend(lwork) :: rwork
+     double precision intent(in),optional :: cond = -1.0
+     integer intent(out,out=rank) :: r
+     double precision intent(out),dimension(minmn),depend(minmn) :: s
+
+   end subroutine dgelss
+
+
+
+   subroutine cgelss(m,n,minmn,maxmn,nrhs,a,b,s,cond,r,work,lwork,rwork,info)
+
+   ! v,x,s,rank,info = gelss(a,b,cond=-1.0,overwrite_a=0,overwrite_b=0)
+   ! Solve Minimize 2-norm(A * X - B).
+
+     callstatement (*f2py_func)(&m,&n,&nrhs,a,&m,b,&maxmn,s,&cond,&r,work,&lwork,rwork,&info)
+     callprotoargument int*,int*,int*,complex_float*,int*,complex_float*,int*,float*,float*,int*,complex_float*,int*,float*,int*
+
+     integer intent(hide),depend(a):: m = shape(a,0)
+     integer intent(hide),depend(a):: n = shape(a,1)
+     integer intent(hide),depend(m,n):: minmn = MIN(m,n)
+     integer intent(hide),depend(m,n):: maxmn = MAX(m,n)
+     complex dimension(m,n),intent(in,out,copy,out=v) :: a
+
+     integer depend(b),intent(hide):: nrhs = shape(b,1)
+     complex dimension(maxmn,nrhs),check(maxmn==shape(b,0)),depend(maxmn) :: b
+     intent(in,out,copy,out=x) b
+
+     integer intent(out)::info
+     ! 2*minmn+MAX(maxmn,nrhs)
+     integer optional,intent(in),depend(nrhs,minmn,maxmn), &
+          check(lwork>=1) &
+          :: lwork=2*minmn+MAX(maxmn,nrhs)
+          !check(lwork>=2*minmn+MAX(maxmn,nrhs))
+     complex dimension(lwork),intent(hide),depend(lwork) :: work
+     real dimension(5*minmn-1),intent(hide),depend(lwork) :: rwork
+     real intent(in),optional :: cond = -1.0
+     integer intent(out,out=rank) :: r
+     real intent(out),dimension(minmn),depend(minmn) :: s
+
+   end subroutine cgelss
+
+
+
+   subroutine zgelss(m,n,minmn,maxmn,nrhs,a,b,s,cond,r,work,lwork,rwork,info)
+
+   ! v,x,s,rank,info = gelss(a,b,cond=-1.0,overwrite_a=0,overwrite_b=0)
+   ! Solve Minimize 2-norm(A * X - B).
+
+     callstatement (*f2py_func)(&m,&n,&nrhs,a,&m,b,&maxmn,s,&cond,&r,work,&lwork,rwork,&info)
+     callprotoargument int*,int*,int*,complex_double*,int*,complex_double*,int*,double*,double*,int*,complex_double*,int*,double*,int*
+
+     integer intent(hide),depend(a):: m = shape(a,0)
+     integer intent(hide),depend(a):: n = shape(a,1)
+     integer intent(hide),depend(m,n):: minmn = MIN(m,n)
+     integer intent(hide),depend(m,n):: maxmn = MAX(m,n)
+     double complex dimension(m,n),intent(in,out,copy,out=v) :: a
+
+     integer depend(b),intent(hide):: nrhs = shape(b,1)
+     double complex dimension(maxmn,nrhs),check(maxmn==shape(b,0)),depend(maxmn) :: b
+     intent(in,out,copy,out=x) b
+
+     integer intent(out)::info
+     ! 2*minmn+MAX(maxmn,nrhs)
+     integer optional,intent(in),depend(nrhs,minmn,maxmn), &
+          check(lwork>=1) &
+          :: lwork=2*minmn+MAX(maxmn,nrhs)
+          !check(lwork>=2*minmn+MAX(maxmn,nrhs))
+     double complex dimension(lwork),intent(hide),depend(lwork) :: work
+     double precision dimension(5*minmn-1),intent(hide),depend(lwork) :: rwork
+     double precision intent(in),optional :: cond = -1.0
+     integer intent(out,out=rank) :: r
+     double precision intent(out),dimension(minmn),depend(minmn) :: s
+
+   end subroutine zgelss
+
+
+
+! -*- f90 -*-
+!
+! Contains wrappers for the following LAPACK routines:
+!
+!  Driver routines for standard eigenvalue and singular value problems:
+!   syev, heev (SEP symmetric/hermitian, eigenvalues/vectors)
+!   syevd, heevd (SEP symmetric/hermitian, eigenvalues/vectors, D&C)
+!   syevx, heevx (.., expert) - Not Implemented
+!   syevr, heevr (.., RRR)
+!   spev, hpev, spevd, hpevd, spevx, hpevx (..., packed storage)  - Not Implemented
+!   sbev, hbev, sbevd, hbevd, sbevx, hbevx (..., band)  - Not Implemented
+!   stev, stevd, stevx, stevr (..., tridiagonal)  - Not Implemented
+!   gees (NEP, general, Schur factorization)
+!   geesx (NEP, general, Schur factorization, expert) - Not Implemented
+!   geev (NEP, general, eigenvalues/vectors)
+!   geevx (NEP, general, eigenvalues/vectors, expert) - Not Implemented
+!   gesvd (SVD, general, singular values/vectors) - Not Implemented
+!   gesdd (SVD, general, singular values/vectors, D&C)
+!
+!
+
+   ! <sym=sy,\0,he,\2>
+
+   subroutine ssyev(compute_v,lower,n,w,a,work,lwork,info)
+
+   ! w,v,info = syev(a,compute_v=1,lower=0,lwork=3*n-1,overwrite_a=0)
+   ! Compute all eigenvalues and, optionally, eigenvectors of a
+   ! real symmetric matrix A.
+   !
+   ! Performance tip:
+   !   If compute_v=0 then set also overwrite_a=1.
+
+   ! w,v,info = heev(a,compute_v=1,lower=0,lwork=2*n-1,overwrite_a=0)
+   ! Compute all eigenvalues and, optionally, eigenvectors of a
+   ! complex Hermitian matrix A.
+   !
+   ! Warning:
+   !   If compute_v=0 and overwrite_a=1, the contents of a is destroyed.
+
+     callstatement (*f2py_func)((compute_v?"V":"N"),(lower?"L":"U"),&n,a,&n,w,work,&lwork,&info)
+     callprotoargument char*,char*,int*,float*,int*,float*,float*,int*,int*
+
+     integer optional,intent(in):: compute_v = 1
+     check(compute_v==1||compute_v==0) compute_v
+     integer optional,intent(in),check(lower==0||lower==1) :: lower = 0   
+
+     integer intent(hide),depend(a):: n = shape(a,0)
+     real dimension(n,n),check(shape(a,0)==shape(a,1)) :: a
+     intent(in,copy,out,out=v) :: a
+
+     real dimension(n),intent(out),depend(n) :: w
+
+     ! 3*n-1
+     integer optional,intent(in),depend(n) :: lwork=3*n-1
+     check(lwork>=3*n-1) :: lwork
+     real dimension(lwork),intent(hide,cache),depend(lwork) :: work
+
+     real dimension(3*n-1),intent(hide,cache),depend(n) :: rwork
+
+     integer intent(out) :: info
+   end subroutine ssyev
+
+
+   subroutine dsyev(compute_v,lower,n,w,a,work,lwork,info)
+
+   ! w,v,info = syev(a,compute_v=1,lower=0,lwork=3*n-1,overwrite_a=0)
+   ! Compute all eigenvalues and, optionally, eigenvectors of a
+   ! real symmetric matrix A.
+   !
+   ! Performance tip:
+   !   If compute_v=0 then set also overwrite_a=1.
+
+   ! w,v,info = heev(a,compute_v=1,lower=0,lwork=2*n-1,overwrite_a=0)
+   ! Compute all eigenvalues and, optionally, eigenvectors of a
+   ! complex Hermitian matrix A.
+   !
+   ! Warning:
+   !   If compute_v=0 and overwrite_a=1, the contents of a is destroyed.
+
+     callstatement (*f2py_func)((compute_v?"V":"N"),(lower?"L":"U"),&n,a,&n,w,work,&lwork,&info)
+     callprotoargument char*,char*,int*,double*,int*,double*,double*,int*,int*
+
+     integer optional,intent(in):: compute_v = 1
+     check(compute_v==1||compute_v==0) compute_v
+     integer optional,intent(in),check(lower==0||lower==1) :: lower = 0   
+
+     integer intent(hide),depend(a):: n = shape(a,0)
+     double precision dimension(n,n),check(shape(a,0)==shape(a,1)) :: a
+     intent(in,copy,out,out=v) :: a
+
+     double precision dimension(n),intent(out),depend(n) :: w
+
+     ! 3*n-1
+     integer optional,intent(in),depend(n) :: lwork=3*n-1
+     check(lwork>=3*n-1) :: lwork
+     double precision dimension(lwork),intent(hide,cache),depend(lwork) :: work
+
+     double precision dimension(3*n-1),intent(hide,cache),depend(n) :: rwork
+
+     integer intent(out) :: info
+   end subroutine dsyev
+
+
+   subroutine cheev(compute_v,lower,n,w,a,work,lwork,rwork,info)
+
+   ! w,v,info = syev(a,compute_v=1,lower=0,lwork=3*n-1,overwrite_a=0)
+   ! Compute all eigenvalues and, optionally, eigenvectors of a
+   ! real symmetric matrix A.
+   !
+   ! Performance tip:
+   !   If compute_v=0 then set also overwrite_a=1.
+
+   ! w,v,info = heev(a,compute_v=1,lower=0,lwork=2*n-1,overwrite_a=0)
+   ! Compute all eigenvalues and, optionally, eigenvectors of a
+   ! complex Hermitian matrix A.
+   !
+   ! Warning:
+   !   If compute_v=0 and overwrite_a=1, the contents of a is destroyed.
+
+     callstatement (*f2py_func)((compute_v?"V":"N"),(lower?"L":"U"),&n,a,&n,w,work,&lwork,rwork,&info)
+     callprotoargument char*,char*,int*,complex_float*,int*,float*,complex_float*,int*,float*,int*
+
+     integer optional,intent(in):: compute_v = 1
+     check(compute_v==1||compute_v==0) compute_v
+     integer optional,intent(in),check(lower==0||lower==1) :: lower = 0   
+
+     integer intent(hide),depend(a):: n = shape(a,0)
+     complex dimension(n,n),check(shape(a,0)==shape(a,1)) :: a
+     intent(in,copy,out,out=v) :: a
+
+     real dimension(n),intent(out),depend(n) :: w
+
+     ! 2*n-1
+     integer optional,intent(in),depend(n) :: lwork=2*n-1
+     check(lwork>=2*n-1) :: lwork
+     complex dimension(lwork),intent(hide,cache),depend(lwork) :: work
+
+     real dimension(3*n-1),intent(hide,cache),depend(n) :: rwork
+
+     integer intent(out) :: info
+   end subroutine cheev
+
+
+   subroutine zheev(compute_v,lower,n,w,a,work,lwork,rwork,info)
+
+   ! w,v,info = syev(a,compute_v=1,lower=0,lwork=3*n-1,overwrite_a=0)
+   ! Compute all eigenvalues and, optionally, eigenvectors of a
+   ! real symmetric matrix A.
+   !
+   ! Performance tip:
+   !   If compute_v=0 then set also overwrite_a=1.
+
+   ! w,v,info = heev(a,compute_v=1,lower=0,lwork=2*n-1,overwrite_a=0)
+   ! Compute all eigenvalues and, optionally, eigenvectors of a
+   ! complex Hermitian matrix A.
+   !
+   ! Warning:
+   !   If compute_v=0 and overwrite_a=1, the contents of a is destroyed.
+
+     callstatement (*f2py_func)((compute_v?"V":"N"),(lower?"L":"U"),&n,a,&n,w,work,&lwork,rwork,&info)
+     callprotoargument char*,char*,int*,complex_double*,int*,double*,complex_double*,int*,double*,int*
+
+     integer optional,intent(in):: compute_v = 1
+     check(compute_v==1||compute_v==0) compute_v
+     integer optional,intent(in),check(lower==0||lower==1) :: lower = 0   
+
+     integer intent(hide),depend(a):: n = shape(a,0)
+     double complex dimension(n,n),check(shape(a,0)==shape(a,1)) :: a
+     intent(in,copy,out,out=v) :: a
+
+     double precision dimension(n),intent(out),depend(n) :: w
+
+     ! 2*n-1
+     integer optional,intent(in),depend(n) :: lwork=2*n-1
+     check(lwork>=2*n-1) :: lwork
+     double complex dimension(lwork),intent(hide,cache),depend(lwork) :: work
+
+     double precision dimension(3*n-1),intent(hide,cache),depend(n) :: rwork
+
+     integer intent(out) :: info
+   end subroutine zheev
+
+
+
+   subroutine ssyevd(compute_v,lower,n,w,a,work,lwork,iwork,liwork,info)
+
+   ! w,v,info = syevd(a,compute_v=1,lower=0,lwork=min_lwork,overwrite_a=0)
+   ! Compute all eigenvalues and, optionally, eigenvectors of a
+   ! real symmetric matrix A using D&C.
+   !
+   ! Performance tip:
+   !   If compute_v=0 then set also overwrite_a=1.
+
+   ! w,v,info = heevd(a,compute_v=1,lower=0,lwork=min_lwork,overwrite_a=0)
+   ! Compute all eigenvalues and, optionally, eigenvectors of a
+   ! complex Hermitian matrix A using D&C.
+   !
+   ! Warning:
+   !   If compute_v=0 and overwrite_a=1, the contents of a is destroyed.
+
+     callstatement (*f2py_func)((compute_v?"V":"N"),(lower?"L":"U"),&n,a,&n,w,work,&lwork,iwork,&liwork,&info)
+     callprotoargument char*,char*,int*,float*,int*,float*,float*,int*,int*,int*,int*
+
+     integer optional,intent(in):: compute_v = 1
+     check(compute_v==1||compute_v==0) compute_v
+     integer optional,intent(in),check(lower==0||lower==1) :: lower = 0   
+
+     integer intent(hide),depend(a):: n = shape(a,0)
+     real dimension(n,n),check(shape(a,0)==shape(a,1)) :: a
+     intent(in,copy,out,out=v) :: a
+
+     real dimension(n),intent(out),depend(n) :: w
+
+     ! (compute_v?1+6*n+2*n*n:2*n+1)
+     integer optional,intent(in),depend(n,compute_v) :: lwork=(compute_v?1+6*n+2*n*n:2*n+1)
+     check(lwork>=(compute_v?1+6*n+2*n*n:2*n+1)) :: lwork
+     real dimension(lwork),intent(hide,cache),depend(lwork) :: work
+
+     integer intent(hide),depend(n,compute_v) :: liwork = (compute_v?3+5*n:1)
+     integer dimension(liwork),intent(hide,cache),depend(liwork) :: iwork
+
+     ! 
+     integer intent(hide),depend(n,compute_v) :: lrwork = 
+     real dimension(lrwork),intent(hide,cache),depend(n,lrwork) :: rwork
+
+     integer intent(out) :: info
+   end subroutine ssyevd
+
+
+   subroutine dsyevd(compute_v,lower,n,w,a,work,lwork,iwork,liwork,info)
+
+   ! w,v,info = syevd(a,compute_v=1,lower=0,lwork=min_lwork,overwrite_a=0)
+   ! Compute all eigenvalues and, optionally, eigenvectors of a
+   ! real symmetric matrix A using D&C.
+   !
+   ! Performance tip:
+   !   If compute_v=0 then set also overwrite_a=1.
+
+   ! w,v,info = heevd(a,compute_v=1,lower=0,lwork=min_lwork,overwrite_a=0)
+   ! Compute all eigenvalues and, optionally, eigenvectors of a
+   ! complex Hermitian matrix A using D&C.
+   !
+   ! Warning:
+   !   If compute_v=0 and overwrite_a=1, the contents of a is destroyed.
+
+     callstatement (*f2py_func)((compute_v?"V":"N"),(lower?"L":"U"),&n,a,&n,w,work,&lwork,iwork,&liwork,&info)
+     callprotoargument char*,char*,int*,double*,int*,double*,double*,int*,int*,int*,int*
+
+     integer optional,intent(in):: compute_v = 1
+     check(compute_v==1||compute_v==0) compute_v
+     integer optional,intent(in),check(lower==0||lower==1) :: lower = 0   
+
+     integer intent(hide),depend(a):: n = shape(a,0)
+     double precision dimension(n,n),check(shape(a,0)==shape(a,1)) :: a
+     intent(in,copy,out,out=v) :: a
+
+     double precision dimension(n),intent(out),depend(n) :: w
+
+     ! (compute_v?1+6*n+2*n*n:2*n+1)
+     integer optional,intent(in),depend(n,compute_v) :: lwork=(compute_v?1+6*n+2*n*n:2*n+1)
+     check(lwork>=(compute_v?1+6*n+2*n*n:2*n+1)) :: lwork
+     double precision dimension(lwork),intent(hide,cache),depend(lwork) :: work
+
+     integer intent(hide),depend(n,compute_v) :: liwork = (compute_v?3+5*n:1)
+     integer dimension(liwork),intent(hide,cache),depend(liwork) :: iwork
+
+     ! 
+     integer intent(hide),depend(n,compute_v) :: lrwork = 
+     double precision dimension(lrwork),intent(hide,cache),depend(n,lrwork) :: rwork
+
+     integer intent(out) :: info
+   end subroutine dsyevd
+
+
+   subroutine cheevd(compute_v,lower,n,w,a,work,lwork,iwork,liwork,rwork,lrwork,info)
+
+   ! w,v,info = syevd(a,compute_v=1,lower=0,lwork=min_lwork,overwrite_a=0)
+   ! Compute all eigenvalues and, optionally, eigenvectors of a
+   ! real symmetric matrix A using D&C.
+   !
+   ! Performance tip:
+   !   If compute_v=0 then set also overwrite_a=1.
+
+   ! w,v,info = heevd(a,compute_v=1,lower=0,lwork=min_lwork,overwrite_a=0)
+   ! Compute all eigenvalues and, optionally, eigenvectors of a
+   ! complex Hermitian matrix A using D&C.
+   !
+   ! Warning:
+   !   If compute_v=0 and overwrite_a=1, the contents of a is destroyed.
+
+     callstatement (*f2py_func)((compute_v?"V":"N"),(lower?"L":"U"),&n,a,&n,w,work,&lwork,rwork,&lrwork,iwork,&liwork,&info)
+     callprotoargument char*,char*,int*,complex_float*,int*,float*,complex_float*,int*,float*,int*,int*,int*,int*
+
+     integer optional,intent(in):: compute_v = 1
+     check(compute_v==1||compute_v==0) compute_v
+     integer optional,intent(in),check(lower==0||lower==1) :: lower = 0   
+
+     integer intent(hide),depend(a):: n = shape(a,0)
+     complex dimension(n,n),check(shape(a,0)==shape(a,1)) :: a
+     intent(in,copy,out,out=v) :: a
+
+     real dimension(n),intent(out),depend(n) :: w
+
+     ! (compute_v?2*n+n*n:n+1)
+     integer optional,intent(in),depend(n,compute_v) :: lwork=(compute_v?2*n+n*n:n+1)
+     check(lwork>=(compute_v?2*n+n*n:n+1)) :: lwork
+     complex dimension(lwork),intent(hide,cache),depend(lwork) :: work
+
+     integer intent(hide),depend(n,compute_v) :: liwork = (compute_v?3+5*n:1)
+     integer dimension(liwork),intent(hide,cache),depend(liwork) :: iwork
+
+     ! (compute_v?1+5*n+2*n*n:n)
+     integer intent(hide),depend(n,compute_v) :: lrwork = (compute_v?1+5*n+2*n*n:n)
+     real dimension(lrwork),intent(hide,cache),depend(n,lrwork) :: rwork
+
+     integer intent(out) :: info
+   end subroutine cheevd
+
+
+   subroutine zheevd(compute_v,lower,n,w,a,work,lwork,iwork,liwork,rwork,lrwork,info)
+
+   ! w,v,info = syevd(a,compute_v=1,lower=0,lwork=min_lwork,overwrite_a=0)
+   ! Compute all eigenvalues and, optionally, eigenvectors of a
+   ! real symmetric matrix A using D&C.
+   !
+   ! Performance tip:
+   !   If compute_v=0 then set also overwrite_a=1.
+
+   ! w,v,info = heevd(a,compute_v=1,lower=0,lwork=min_lwork,overwrite_a=0)
+   ! Compute all eigenvalues and, optionally, eigenvectors of a
+   ! complex Hermitian matrix A using D&C.
+   !
+   ! Warning:
+   !   If compute_v=0 and overwrite_a=1, the contents of a is destroyed.
+
+     callstatement (*f2py_func)((compute_v?"V":"N"),(lower?"L":"U"),&n,a,&n,w,work,&lwork,rwork,&lrwork,iwork,&liwork,&info)
+     callprotoargument char*,char*,int*,complex_double*,int*,double*,complex_double*,int*,double*,int*,int*,int*,int*
+
+     integer optional,intent(in):: compute_v = 1
+     check(compute_v==1||compute_v==0) compute_v
+     integer optional,intent(in),check(lower==0||lower==1) :: lower = 0   
+
+     integer intent(hide),depend(a):: n = shape(a,0)
+     double complex dimension(n,n),check(shape(a,0)==shape(a,1)) :: a
+     intent(in,copy,out,out=v) :: a
+
+     double precision dimension(n),intent(out),depend(n) :: w
+
+     ! (compute_v?2*n+n*n:n+1)
+     integer optional,intent(in),depend(n,compute_v) :: lwork=(compute_v?2*n+n*n:n+1)
+     check(lwork>=(compute_v?2*n+n*n:n+1)) :: lwork
+     double complex dimension(lwork),intent(hide,cache),depend(lwork) :: work
+
+     integer intent(hide),depend(n,compute_v) :: liwork = (compute_v?3+5*n:1)
+     integer dimension(liwork),intent(hide,cache),depend(liwork) :: iwork
+
+     ! (compute_v?1+5*n+2*n*n:n)
+     integer intent(hide),depend(n,compute_v) :: lrwork = (compute_v?1+5*n+2*n*n:n)
+     double precision dimension(lrwork),intent(hide,cache),depend(n,lrwork) :: rwork
+
+     integer intent(out) :: info
+   end subroutine zheevd
+
+
+
+   subroutine ssyevr(n,a,compute_v,lower,vrange,irange,atol,w,z,m,ldz,isuppz,work,lwork,iwork,liwork,info)
+
+   !  w,v,info = {sy|he}evr(a,compute_v=1,lower=0,vrange=None,irange=None,atol=-1,lwork=min_lwork,overwrite_a=0)
+   !
+   ! Compute range of eigenvalues and, optionally, eigenvectors of a
+   ! real symmetric matrix A using RRR.
+   !
+   ! Performance tip:
+   !   If compute_v=0 then set also overwrite_a=1.
+   ! Warning:
+   !   If compute_v=0 and overwrite_a=1, the contents of a is destroyed.
+
+     callstatement if(irange_capi==Py_None);else{irange[0]++;irange[1]++;}(*f2py_func)((compute_v?"V":"N"),(vrange_capi==Py_None?(irange_capi==Py_None?"A":"I"):"V"),(lower?"L":"U"),&n,a,&n,vrange,vrange+1,irange,irange+1,&atol,&m,w,z,&ldz,isuppz,work,&lwork,iwork,&liwork,&info);if(irange_capi==Py_None);else{irange[0]--;irange[1]--;}if(vrange_capi==Py_None);else {capi_w_tmp->dimensions[0]=capi_z_tmp->dimensions[1]=m;/*capi_z_tmp->strides[0]=m*capi_z_tmp->descr->elsize;*/}
+
+     callprotoargument char*,char*,char*,int*,float*,int*,float*,float*,int*,int*,float*,int*,float*,float*,int*,int*,float*,int*,int*,int*,int*
+
+     integer optional,intent(in):: compute_v = 1
+     check(compute_v==1||compute_v==0) compute_v
+     integer optional,intent(in),check(lower==0||lower==1) :: lower = 0   
+
+     integer intent(hide),depend(a):: n = shape(a,0)
+     real dimension(n,n),check(shape(a,0)==shape(a,1)) :: a
+     intent(in,copy) :: a
+
+     real optional,dimension(2),intent(in) :: vrange
+     integer optional,dimension(2),intent(in),depend(n) :: irange
+     check(irange_capi==Py_None || (irange[0]>=0 && irange[1]<n)) irange
+
+     real optional,intent(in) :: atol = -1.0
+
+     integer intent(hide),depend(vrange,irange,n) :: m = (irange_capi==Py_None?n:irange[1]-irange[0]+1)
+
+     real dimension(m),intent(out),depend(m) :: w
+
+     integer intent(hide),depend(compute_v,n) :: ldz = (compute_v?n:1)
+     real dimension(ldz,m),intent(out,out=v),depend(ldz,m) :: z
+
+     integer intent(hide),depend(m),dimension(2*m) :: isuppz
+
+     ! 26*n  Includes bug fix in `man zheevr`.
+     integer optional,intent(in),depend(n) :: lwork=26*n
+     check(lwork>=26*n) lwork
+     real dimension(lwork),intent(hide,cache),depend(lwork) :: work
+
+     integer intent(hide),depend(n,compute_v) :: liwork = 10*n
+     integer dimension(liwork),intent(hide,cache),depend(liwork) :: iwork
+
+     ! 
+     integer intent(hide),depend(n) :: lrwork = 
+     real dimension(lrwork),intent(hide,cache),depend(n,lrwork) :: rwork
+
+     integer intent(out) :: info
+   end subroutine ssyevr
+
+
+   subroutine dsyevr(n,a,compute_v,lower,vrange,irange,atol,w,z,m,ldz,isuppz,work,lwork,iwork,liwork,info)
+
+   !  w,v,info = {sy|he}evr(a,compute_v=1,lower=0,vrange=None,irange=None,atol=-1,lwork=min_lwork,overwrite_a=0)
+   !
+   ! Compute range of eigenvalues and, optionally, eigenvectors of a
+   ! real symmetric matrix A using RRR.
+   !
+   ! Performance tip:
+   !   If compute_v=0 then set also overwrite_a=1.
+   ! Warning:
+   !   If compute_v=0 and overwrite_a=1, the contents of a is destroyed.
+
+     callstatement if(irange_capi==Py_None);else{irange[0]++;irange[1]++;}(*f2py_func)((compute_v?"V":"N"),(vrange_capi==Py_None?(irange_capi==Py_None?"A":"I"):"V"),(lower?"L":"U"),&n,a,&n,vrange,vrange+1,irange,irange+1,&atol,&m,w,z,&ldz,isuppz,work,&lwork,iwork,&liwork,&info);if(irange_capi==Py_None);else{irange[0]--;irange[1]--;}if(vrange_capi==Py_None);else {capi_w_tmp->dimensions[0]=capi_z_tmp->dimensions[1]=m;/*capi_z_tmp->strides[0]=m*capi_z_tmp->descr->elsize;*/}
+
+     callprotoargument char*,char*,char*,int*,double*,int*,double*,double*,int*,int*,double*,int*,double*,double*,int*,int*,double*,int*,int*,int*,int*
+
+     integer optional,intent(in):: compute_v = 1
+     check(compute_v==1||compute_v==0) compute_v
+     integer optional,intent(in),check(lower==0||lower==1) :: lower = 0   
+
+     integer intent(hide),depend(a):: n = shape(a,0)
+     double precision dimension(n,n),check(shape(a,0)==shape(a,1)) :: a
+     intent(in,copy) :: a
+
+     double precision optional,dimension(2),intent(in) :: vrange
+     integer optional,dimension(2),intent(in),depend(n) :: irange
+     check(irange_capi==Py_None || (irange[0]>=0 && irange[1]<n)) irange
+
+     double precision optional,intent(in) :: atol = -1.0
+
+     integer intent(hide),depend(vrange,irange,n) :: m = (irange_capi==Py_None?n:irange[1]-irange[0]+1)
+
+     double precision dimension(m),intent(out),depend(m) :: w
+
+     integer intent(hide),depend(compute_v,n) :: ldz = (compute_v?n:1)
+     double precision dimension(ldz,m),intent(out,out=v),depend(ldz,m) :: z
+
+     integer intent(hide),depend(m),dimension(2*m) :: isuppz
+
+     ! 26*n  Includes bug fix in `man zheevr`.
+     integer optional,intent(in),depend(n) :: lwork=26*n
+     check(lwork>=26*n) lwork
+     double precision dimension(lwork),intent(hide,cache),depend(lwork) :: work
+
+     integer intent(hide),depend(n,compute_v) :: liwork = 10*n
+     integer dimension(liwork),intent(hide,cache),depend(liwork) :: iwork
+
+     ! 
+     integer intent(hide),depend(n) :: lrwork = 
+     double precision dimension(lrwork),intent(hide,cache),depend(n,lrwork) :: rwork
+
+     integer intent(out) :: info
+   end subroutine dsyevr
+
+
+   subroutine cheevr(n,a,compute_v,lower,vrange,irange,atol,w,z,m,ldz,isuppz,work,lwork,rwork,lrwork,iwork,liwork,info)
+
+   !  w,v,info = {sy|he}evr(a,compute_v=1,lower=0,vrange=None,irange=None,atol=-1,lwork=min_lwork,overwrite_a=0)
+   !
+   ! Compute range of eigenvalues and, optionally, eigenvectors of a
+   ! real symmetric matrix A using RRR.
+   !
+   ! Performance tip:
+   !   If compute_v=0 then set also overwrite_a=1.
+   ! Warning:
+   !   If compute_v=0 and overwrite_a=1, the contents of a is destroyed.
+
+     callstatement if(irange_capi==Py_None);else{irange[0]++;irange[1]++;}(*f2py_func)((compute_v?"V":"N"),(vrange_capi==Py_None?(irange_capi==Py_None?"A":"I"):"V"),(lower?"L":"U"),&n,a,&n,vrange,vrange+1,irange,irange+1,&atol,&m,w,z,&ldz,isuppz,work,&lwork,rwork,&lrwork,iwork,&liwork,&info);if(irange_capi==Py_None);else{irange[0]--;irange[1]--;}if(vrange_capi==Py_None);else {capi_w_tmp->dimensions[0]=capi_z_tmp->dimensions[1]=m;/*capi_z_tmp->strides[0]=m*capi_z_tmp->descr->elsize;*/}
+
+     callprotoargument char*,char*,char*,int*,complex_float*,int*,float*,float*,int*,int*,float*,int*,float*,complex_float*,int*,int*,complex_float*,int*,float*,int*,int*,int*,int*
+
+     integer optional,intent(in):: compute_v = 1
+     check(compute_v==1||compute_v==0) compute_v
+     integer optional,intent(in),check(lower==0||lower==1) :: lower = 0   
+
+     integer intent(hide),depend(a):: n = shape(a,0)
+     complex dimension(n,n),check(shape(a,0)==shape(a,1)) :: a
+     intent(in,copy) :: a
+
+     real optional,dimension(2),intent(in) :: vrange
+     integer optional,dimension(2),intent(in),depend(n) :: irange
+     check(irange_capi==Py_None || (irange[0]>=0 && irange[1]<n)) irange
+
+     real optional,intent(in) :: atol = -1.0
+
+     integer intent(hide),depend(vrange,irange,n) :: m = (irange_capi==Py_None?n:irange[1]-irange[0]+1)
+
+     real dimension(m),intent(out),depend(m) :: w
+
+     integer intent(hide),depend(compute_v,n) :: ldz = (compute_v?n:1)
+     complex dimension(ldz,m),intent(out,out=v),depend(ldz,m) :: z
+
+     integer intent(hide),depend(m),dimension(2*m) :: isuppz
+
+     ! 18*n  Includes bug fix in `man zheevr`.
+     integer optional,intent(in),depend(n) :: lwork=18*n
+     check(lwork>=18*n) lwork
+     complex dimension(lwork),intent(hide,cache),depend(lwork) :: work
+
+     integer intent(hide),depend(n,compute_v) :: liwork = 10*n
+     integer dimension(liwork),intent(hide,cache),depend(liwork) :: iwork
+
+     ! 24*n
+     integer intent(hide),depend(n) :: lrwork = 24*n
+     real dimension(lrwork),intent(hide,cache),depend(n,lrwork) :: rwork
+
+     integer intent(out) :: info
+   end subroutine cheevr
+
+
+   subroutine zheevr(n,a,compute_v,lower,vrange,irange,atol,w,z,m,ldz,isuppz,work,lwork,rwork,lrwork,iwork,liwork,info)
+
+   !  w,v,info = {sy|he}evr(a,compute_v=1,lower=0,vrange=None,irange=None,atol=-1,lwork=min_lwork,overwrite_a=0)
+   !
+   ! Compute range of eigenvalues and, optionally, eigenvectors of a
+   ! real symmetric matrix A using RRR.
+   !
+   ! Performance tip:
+   !   If compute_v=0 then set also overwrite_a=1.
+   ! Warning:
+   !   If compute_v=0 and overwrite_a=1, the contents of a is destroyed.
+
+     callstatement if(irange_capi==Py_None);else{irange[0]++;irange[1]++;}(*f2py_func)((compute_v?"V":"N"),(vrange_capi==Py_None?(irange_capi==Py_None?"A":"I"):"V"),(lower?"L":"U"),&n,a,&n,vrange,vrange+1,irange,irange+1,&atol,&m,w,z,&ldz,isuppz,work,&lwork,rwork,&lrwork,iwork,&liwork,&info);if(irange_capi==Py_None);else{irange[0]--;irange[1]--;}if(vrange_capi==Py_None);else {capi_w_tmp->dimensions[0]=capi_z_tmp->dimensions[1]=m;/*capi_z_tmp->strides[0]=m*capi_z_tmp->descr->elsize;*/}
+
+     callprotoargument char*,char*,char*,int*,complex_double*,int*,double*,double*,int*,int*,double*,int*,double*,complex_double*,int*,int*,complex_double*,int*,double*,int*,int*,int*,int*
+
+     integer optional,intent(in):: compute_v = 1
+     check(compute_v==1||compute_v==0) compute_v
+     integer optional,intent(in),check(lower==0||lower==1) :: lower = 0   
+
+     integer intent(hide),depend(a):: n = shape(a,0)
+     double complex dimension(n,n),check(shape(a,0)==shape(a,1)) :: a
+     intent(in,copy) :: a
+
+     double precision optional,dimension(2),intent(in) :: vrange
+     integer optional,dimension(2),intent(in),depend(n) :: irange
+     check(irange_capi==Py_None || (irange[0]>=0 && irange[1]<n)) irange
+
+     double precision optional,intent(in) :: atol = -1.0
+
+     integer intent(hide),depend(vrange,irange,n) :: m = (irange_capi==Py_None?n:irange[1]-irange[0]+1)
+
+     double precision dimension(m),intent(out),depend(m) :: w
+
+     integer intent(hide),depend(compute_v,n) :: ldz = (compute_v?n:1)
+     double complex dimension(ldz,m),intent(out,out=v),depend(ldz,m) :: z
+
+     integer intent(hide),depend(m),dimension(2*m) :: isuppz
+
+     ! 18*n  Includes bug fix in `man zheevr`.
+     integer optional,intent(in),depend(n) :: lwork=18*n
+     check(lwork>=18*n) lwork
+     double complex dimension(lwork),intent(hide,cache),depend(lwork) :: work
+
+     integer intent(hide),depend(n,compute_v) :: liwork = 10*n
+     integer dimension(liwork),intent(hide,cache),depend(liwork) :: iwork
+
+     ! 24*n
+     integer intent(hide),depend(n) :: lrwork = 24*n
+     double precision dimension(lrwork),intent(hide,cache),depend(n,lrwork) :: rwork
+
+     integer intent(out) :: info
+   end subroutine zheevr
+
+
+
+   subroutine sgees(compute_v,sort_t,sselect,n,a,nrows,sdim,wr,wi,vs,ldvs,work,lwork,bwork,info)
+
+     !  t,sdim,(wr,wi|w),vs,info = gees(zselect,a,compute_v=1,sort_t=0,lwork=3*n,zselect_extra_args=(),overwrite_a=0)
+     ! For an NxN matrix compute the eigenvalues, the schur form T, and optionally
+     !  the matrix of Schur vectors Z.  This gives the Schur factorization 
+     !  A = Z * T * Z^H  -- a complex matrix is in Schur form if it is upper 
+     !  triangular
+
+     ! t,sdim,wr,wi,vs,info=gees(compute_v=1,sort_t=0,select,a,lwork=3*n)
+     ! For an NxN matrix compute the eigenvalues, the schur form T, and optionally
+     !  the matrix of Schur vectors Z.  This gives the Schur factorization 
+     !  A = Z * T * Z^H  -- a real matrix is in Schur form if it is upper quasi-
+     !  triangular with 1x1 and 2x2 blocks.
+
+     callstatement (*f2py_func)((compute_v?"V":"N"),(sort_t?"S":"N"),cb_sselect_in_gees__user__routines,&n,a,&nrows,&sdim,wr,wi,vs,&ldvs,work,&lwork,bwork,&info,1,1)
+     callprotoargument char*,char*,int(*)(float*,float*),int*,float*,int*,int*,float*,float*,float*,int*,float*,int*,int*,int*,int,int
+
+     use gees__user__routines
+
+     integer optional,intent(in),check(compute_v==0||compute_v==1) :: compute_v = 1
+     integer optional,intent(in),check(sort_t==0||sort_t==1) :: sort_t = 0
+     external sselect
+     integer intent(hide),depend(a) :: n = shape(a,1)
+     real intent(in,out,copy,out=t),check(shape(a,0)==shape(a,1)),dimension(n,n) :: a
+     integer intent(hide),depend(a) :: nrows=shape(a,0)
+     integer intent(out) :: sdim=0
+     real intent(out),dimension(n) :: wr,wi
+     real intent(out),depend(ldvs,n),dimension(ldvs,n) :: vs
+     integer intent(hide),depend(compute_v,n) :: ldvs=((compute_v==1)?n:1)
+     real intent(hide,cache),depend(lwork),dimension(lwork) :: work
+     integer optional,intent(in),check(lwork >= MAX(1,3*n)),depend(n) :: lwork = 3*n
+     real intent(hide,cache),depend(n),dimension(n) :: rwork
+     logical intent(hide,cache),depend(n),dimension(n) :: bwork
+     integer intent(out) :: info
+   end subroutine sgees
+
+
+   subroutine dgees(compute_v,sort_t,dselect,n,a,nrows,sdim,wr,wi,vs,ldvs,work,lwork,bwork,info)
+
+     !  t,sdim,(wr,wi|w),vs,info = gees(zselect,a,compute_v=1,sort_t=0,lwork=3*n,zselect_extra_args=(),overwrite_a=0)
+     ! For an NxN matrix compute the eigenvalues, the schur form T, and optionally
+     !  the matrix of Schur vectors Z.  This gives the Schur factorization 
+     !  A = Z * T * Z^H  -- a complex matrix is in Schur form if it is upper 
+     !  triangular
+
+     ! t,sdim,wr,wi,vs,info=gees(compute_v=1,sort_t=0,select,a,lwork=3*n)
+     ! For an NxN matrix compute the eigenvalues, the schur form T, and optionally
+     !  the matrix of Schur vectors Z.  This gives the Schur factorization 
+     !  A = Z * T * Z^H  -- a real matrix is in Schur form if it is upper quasi-
+     !  triangular with 1x1 and 2x2 blocks.
+
+     callstatement (*f2py_func)((compute_v?"V":"N"),(sort_t?"S":"N"),cb_dselect_in_gees__user__routines,&n,a,&nrows,&sdim,wr,wi,vs,&ldvs,work,&lwork,bwork,&info,1,1)
+     callprotoargument char*,char*,int(*)(double*,double*),int*,double*,int*,int*,double*,double*,double*,int*,double*,int*,int*,int*,int,int
+
+     use gees__user__routines
+
+     integer optional,intent(in),check(compute_v==0||compute_v==1) :: compute_v = 1
+     integer optional,intent(in),check(sort_t==0||sort_t==1) :: sort_t = 0
+     external dselect
+     integer intent(hide),depend(a) :: n = shape(a,1)
+     double precision intent(in,out,copy,out=t),check(shape(a,0)==shape(a,1)),dimension(n,n) :: a
+     integer intent(hide),depend(a) :: nrows=shape(a,0)
+     integer intent(out) :: sdim=0
+     double precision intent(out),dimension(n) :: wr,wi
+     double precision intent(out),depend(ldvs,n),dimension(ldvs,n) :: vs
+     integer intent(hide),depend(compute_v,n) :: ldvs=((compute_v==1)?n:1)
+     double precision intent(hide,cache),depend(lwork),dimension(lwork) :: work
+     integer optional,intent(in),check(lwork >= MAX(1,3*n)),depend(n) :: lwork = 3*n
+     double precision intent(hide,cache),depend(n),dimension(n) :: rwork
+     logical intent(hide,cache),depend(n),dimension(n) :: bwork
+     integer intent(out) :: info
+   end subroutine dgees
+
+
+   subroutine cgees(compute_v,sort_t,cselect,n,a,nrows,sdim,w,vs,ldvs,work,lwork,rwork,bwork,info)
+
+     !  t,sdim,(wr,wi|w),vs,info = gees(zselect,a,compute_v=1,sort_t=0,lwork=3*n,zselect_extra_args=(),overwrite_a=0)
+     ! For an NxN matrix compute the eigenvalues, the schur form T, and optionally
+     !  the matrix of Schur vectors Z.  This gives the Schur factorization 
+     !  A = Z * T * Z^H  -- a complex matrix is in Schur form if it is upper 
+     !  triangular
+
+     ! t,sdim,wr,wi,vs,info=gees(compute_v=1,sort_t=0,select,a,lwork=3*n)
+     ! For an NxN matrix compute the eigenvalues, the schur form T, and optionally
+     !  the matrix of Schur vectors Z.  This gives the Schur factorization 
+     !  A = Z * T * Z^H  -- a real matrix is in Schur form if it is upper quasi-
+     !  triangular with 1x1 and 2x2 blocks.
+
+     callstatement (*f2py_func)((compute_v?"V":"N"),(sort_t?"S":"N"),cb_cselect_in_gees__user__routines,&n,a,&nrows,&sdim,w,vs,&ldvs,work,&lwork,rwork,bwork,&info,1,1)
+     callprotoargument char*,char*,int(*)(complex_float*),int*,complex_float*,int*,int*,complex_float*,complex_float*,int*,complex_float*,int*,float*,int*,int*,int,int
+
+     use gees__user__routines
+
+     integer optional,intent(in),check(compute_v==0||compute_v==1) :: compute_v = 1
+     integer optional,intent(in),check(sort_t==0||sort_t==1) :: sort_t = 0
+     external cselect
+     integer intent(hide),depend(a) :: n = shape(a,1)
+     complex intent(in,out,copy,out=t),check(shape(a,0)==shape(a,1)),dimension(n,n) :: a
+     integer intent(hide),depend(a) :: nrows=shape(a,0)
+     integer intent(out) :: sdim=0
+     complex intent(out),dimension(n) :: w
+     complex intent(out),depend(ldvs,n),dimension(ldvs,n) :: vs
+     integer intent(hide),depend(compute_v,n) :: ldvs=((compute_v==1)?n:1)
+     complex intent(hide,cache),depend(lwork),dimension(lwork) :: work
+     integer optional,intent(in),check(lwork >= MAX(1,3*n)),depend(n) :: lwork = 3*n
+     real intent(hide,cache),depend(n),dimension(n) :: rwork
+     logical intent(hide,cache),depend(n),dimension(n) :: bwork
+     integer intent(out) :: info
+   end subroutine cgees
+
+
+   subroutine zgees(compute_v,sort_t,zselect,n,a,nrows,sdim,w,vs,ldvs,work,lwork,rwork,bwork,info)
+
+     !  t,sdim,(wr,wi|w),vs,info = gees(zselect,a,compute_v=1,sort_t=0,lwork=3*n,zselect_extra_args=(),overwrite_a=0)
+     ! For an NxN matrix compute the eigenvalues, the schur form T, and optionally
+     !  the matrix of Schur vectors Z.  This gives the Schur factorization 
+     !  A = Z * T * Z^H  -- a complex matrix is in Schur form if it is upper 
+     !  triangular
+
+     ! t,sdim,wr,wi,vs,info=gees(compute_v=1,sort_t=0,select,a,lwork=3*n)
+     ! For an NxN matrix compute the eigenvalues, the schur form T, and optionally
+     !  the matrix of Schur vectors Z.  This gives the Schur factorization 
+     !  A = Z * T * Z^H  -- a real matrix is in Schur form if it is upper quasi-
+     !  triangular with 1x1 and 2x2 blocks.
+
+     callstatement (*f2py_func)((compute_v?"V":"N"),(sort_t?"S":"N"),cb_zselect_in_gees__user__routines,&n,a,&nrows,&sdim,w,vs,&ldvs,work,&lwork,rwork,bwork,&info,1,1)
+     callprotoargument char*,char*,int(*)(complex_double*),int*,complex_double*,int*,int*,complex_double*,complex_double*,int*,complex_double*,int*,double*,int*,int*,int,int
+
+     use gees__user__routines
+
+     integer optional,intent(in),check(compute_v==0||compute_v==1) :: compute_v = 1
+     integer optional,intent(in),check(sort_t==0||sort_t==1) :: sort_t = 0
+     external zselect
+     integer intent(hide),depend(a) :: n = shape(a,1)
+     double complex intent(in,out,copy,out=t),check(shape(a,0)==shape(a,1)),dimension(n,n) :: a
+     integer intent(hide),depend(a) :: nrows=shape(a,0)
+     integer intent(out) :: sdim=0
+     double complex intent(out),dimension(n) :: w
+     double complex intent(out),depend(ldvs,n),dimension(ldvs,n) :: vs
+     integer intent(hide),depend(compute_v,n) :: ldvs=((compute_v==1)?n:1)
+     double complex intent(hide,cache),depend(lwork),dimension(lwork) :: work
+     integer optional,intent(in),check(lwork >= MAX(1,3*n)),depend(n) :: lwork = 3*n
+     double precision intent(hide,cache),depend(n),dimension(n) :: rwork
+     logical intent(hide,cache),depend(n),dimension(n) :: bwork
+     integer intent(out) :: info
+   end subroutine zgees
+
+
+
+   subroutine sgeev(compute_vl,compute_vr,n,a,wr,wi,vl,ldvl,vr,ldvr,work,lwork,info)
+
+     ! wr,wi,vl,vr,info = geev(a,compute_vl=1,compute_vr=1,lwork=4*n,overwrite_a=0)
+     ! w,vl,vr,info = geev(a,compute_vl=1,compute_vr=1,lwork=2*n,overwrite_a=0)
+
+     callstatement {(*f2py_func)((compute_vl?"V":"N"),(compute_vr?"V":"N"),&n,a,&n,wr,wi,vl,&ldvl,vr,&ldvr,work,&lwork,&info);}
+     callprotoargument char*,char*,int*,float*,int*,float*,float*,float*,int*,float*,int*,float*,int*,int*
+
+     integer optional,intent(in):: compute_vl = 1
+     check(compute_vl==1||compute_vl==0) compute_vl
+     integer optional,intent(in):: compute_vr = 1
+     check(compute_vr==1||compute_vr==0) compute_vr
+
+     integer intent(hide),depend(a) :: n = shape(a,0)
+     real  dimension(n,n),intent(in,copy) :: a
+     check(shape(a,0)==shape(a,1)) :: a
+
+     real  dimension(n),intent(out),depend(n) :: wr,wi
+
+     real  dimension(ldvl,n),intent(out) :: vl
+     integer intent(hide),depend(n,compute_vl) :: ldvl=(compute_vl?n:1)
+
+     real  dimension(ldvr,n),intent(out) :: vr
+     integer intent(hide),depend(n,compute_vr) :: ldvr=(compute_vr?n:1)
+
+     ! (compute_vl||compute_vr)?4*n:3*n
+     integer optional,intent(in),depend(n,compute_vl,compute_vr) :: lwork=(compute_vl||compute_vr)?4*n:3*n
+     check(lwork>=(compute_vl||compute_vr)?4*n:3*n) :: lwork
+     real dimension(lwork),intent(hide,cache),depend(lwork) :: work
+     real dimension(2*n),intent(hide,cache),depend(n) :: rwork
+
+     integer intent(out):: info
+   end subroutine sgeev
+
+
+   subroutine dgeev(compute_vl,compute_vr,n,a,wr,wi,vl,ldvl,vr,ldvr,work,lwork,info)
+
+     ! wr,wi,vl,vr,info = geev(a,compute_vl=1,compute_vr=1,lwork=4*n,overwrite_a=0)
+     ! w,vl,vr,info = geev(a,compute_vl=1,compute_vr=1,lwork=2*n,overwrite_a=0)
+
+     callstatement {(*f2py_func)((compute_vl?"V":"N"),(compute_vr?"V":"N"),&n,a,&n,wr,wi,vl,&ldvl,vr,&ldvr,work,&lwork,&info);}
+     callprotoargument char*,char*,int*,double*,int*,double*,double*,double*,int*,double*,int*,double*,int*,int*
+
+     integer optional,intent(in):: compute_vl = 1
+     check(compute_vl==1||compute_vl==0) compute_vl
+     integer optional,intent(in):: compute_vr = 1
+     check(compute_vr==1||compute_vr==0) compute_vr
+
+     integer intent(hide),depend(a) :: n = shape(a,0)
+     double precision  dimension(n,n),intent(in,copy) :: a
+     check(shape(a,0)==shape(a,1)) :: a
+
+     double precision  dimension(n),intent(out),depend(n) :: wr,wi
+
+     double precision  dimension(ldvl,n),intent(out) :: vl
+     integer intent(hide),depend(n,compute_vl) :: ldvl=(compute_vl?n:1)
+
+     double precision  dimension(ldvr,n),intent(out) :: vr
+     integer intent(hide),depend(n,compute_vr) :: ldvr=(compute_vr?n:1)
+
+     ! (compute_vl||compute_vr)?4*n:3*n
+     integer optional,intent(in),depend(n,compute_vl,compute_vr) :: lwork=(compute_vl||compute_vr)?4*n:3*n
+     check(lwork>=(compute_vl||compute_vr)?4*n:3*n) :: lwork
+     double precision dimension(lwork),intent(hide,cache),depend(lwork) :: work
+     double precision dimension(2*n),intent(hide,cache),depend(n) :: rwork
+
+     integer intent(out):: info
+   end subroutine dgeev
+
+
+   subroutine cgeev(compute_vl,compute_vr,n,a,w,vl,ldvl,vr,ldvr,work,lwork,rwork,info)
+
+     ! wr,wi,vl,vr,info = geev(a,compute_vl=1,compute_vr=1,lwork=4*n,overwrite_a=0)
+     ! w,vl,vr,info = geev(a,compute_vl=1,compute_vr=1,lwork=2*n,overwrite_a=0)
+
+     callstatement {(*f2py_func)((compute_vl?"V":"N"),(compute_vr?"V":"N"),&n,a,&n,w,vl,&ldvl,vr,&ldvr,work,&lwork,rwork,&info);}
+     callprotoargument char*,char*,int*,complex_float*,int*,complex_float*,complex_float*,int*,complex_float*,int*,complex_float*,int*,float*,int*
+
+     integer optional,intent(in):: compute_vl = 1
+     check(compute_vl==1||compute_vl==0) compute_vl
+     integer optional,intent(in):: compute_vr = 1
+     check(compute_vr==1||compute_vr==0) compute_vr
+
+     integer intent(hide),depend(a) :: n = shape(a,0)
+     complex  dimension(n,n),intent(in,copy) :: a
+     check(shape(a,0)==shape(a,1)) :: a
+
+     complex  dimension(n),intent(out),depend(n) :: w
+
+     complex  dimension(ldvl,n),intent(out) :: vl
+     integer intent(hide),depend(n,compute_vl) :: ldvl=(compute_vl?n:1)
+
+     complex  dimension(ldvr,n),intent(out) :: vr
+     integer intent(hide),depend(n,compute_vr) :: ldvr=(compute_vr?n:1)
+
+     ! 2*n
+     integer optional,intent(in),depend(n,compute_vl,compute_vr) :: lwork=2*n
+     check(lwork>=2*n) :: lwork
+     complex dimension(lwork),intent(hide,cache),depend(lwork) :: work
+     real dimension(2*n),intent(hide,cache),depend(n) :: rwork
+
+     integer intent(out):: info
+   end subroutine cgeev
+
+
+   subroutine zgeev(compute_vl,compute_vr,n,a,w,vl,ldvl,vr,ldvr,work,lwork,rwork,info)
+
+     ! wr,wi,vl,vr,info = geev(a,compute_vl=1,compute_vr=1,lwork=4*n,overwrite_a=0)
+     ! w,vl,vr,info = geev(a,compute_vl=1,compute_vr=1,lwork=2*n,overwrite_a=0)
+
+     callstatement {(*f2py_func)((compute_vl?"V":"N"),(compute_vr?"V":"N"),&n,a,&n,w,vl,&ldvl,vr,&ldvr,work,&lwork,rwork,&info);}
+     callprotoargument char*,char*,int*,complex_double*,int*,complex_double*,complex_double*,int*,complex_double*,int*,complex_double*,int*,double*,int*
+
+     integer optional,intent(in):: compute_vl = 1
+     check(compute_vl==1||compute_vl==0) compute_vl
+     integer optional,intent(in):: compute_vr = 1
+     check(compute_vr==1||compute_vr==0) compute_vr
+
+     integer intent(hide),depend(a) :: n = shape(a,0)
+     double complex  dimension(n,n),intent(in,copy) :: a
+     check(shape(a,0)==shape(a,1)) :: a
+
+     double complex  dimension(n),intent(out),depend(n) :: w
+
+     double complex  dimension(ldvl,n),intent(out) :: vl
+     integer intent(hide),depend(n,compute_vl) :: ldvl=(compute_vl?n:1)
+
+     double complex  dimension(ldvr,n),intent(out) :: vr
+     integer intent(hide),depend(n,compute_vr) :: ldvr=(compute_vr?n:1)
+
+     ! 2*n
+     integer optional,intent(in),depend(n,compute_vl,compute_vr) :: lwork=2*n
+     check(lwork>=2*n) :: lwork
+     double complex dimension(lwork),intent(hide,cache),depend(lwork) :: work
+     double precision dimension(2*n),intent(hide,cache),depend(n) :: rwork
+
+     integer intent(out):: info
+   end subroutine zgeev
+
+
+
+   subroutine sgesdd(m,n,minmn,du,dvt,a,compute_uv,u,s,vt,work,lwork,iwork,info)
+   
+   ! u,s,vh,info = gesdd(a,compute_uv=1,lwork=..,overwrite_a=0)
+   ! Compute the singular value decomposition (SVD):
+   !   A = U * SIGMA * conjugate-transpose(V)
+   ! A - M x N matrix
+   ! U - M x M matrix
+   ! SIGMA - M x N zero matrix with a main diagonal filled with min(M,N) 
+   !               singular values  
+   ! conjugate-transpose(V) - N x N matrix
+   !
+
+   callstatement (*f2py_func)((compute_uv?"A":"N"),&m,&n,a,&m,s,u,&du,vt,&dvt,work,&lwork,iwork,&info)
+   callprotoargument char*,int*,int*,float*,int*,float*,float*,int*,float*,int*,float*,int*,int*,int*
+
+   integer intent(in),optional,check(compute_uv==0||compute_uv==1):: compute_uv = 1
+   integer intent(hide),depend(a):: m = shape(a,0)
+   integer intent(hide),depend(a):: n = shape(a,1)
+   integer intent(hide),depend(m,n):: minmn = MIN(m,n)
+   integer intent(hide),depend(compute_uv,minmn) :: du = (compute_uv?m:1)
+   integer intent(hide),depend(compute_uv,n) :: dvt = (compute_uv?n:1)
+   real dimension(m,n),intent(in,copy) :: a
+   real dimension(minmn),intent(out),depend(minmn) :: s
+   real dimension(du,du),intent(out),depend(du) :: u
+   real dimension(dvt,dvt),intent(out),depend(dvt) :: vt
+   real dimension(lwork),intent(hide,cache),depend(lwork) :: work
+
+   ! (compute_uv?4*minmn*minmn+MAX(m,n)+9*minmn:MAX(14*minmn+4,10*minmn+827)+MAX(m,n))
+   integer optional,intent(in),depend(minmn,compute_uv) &
+        :: lwork = (compute_uv?4*minmn*minmn+MAX(m,n)+9*minmn:MAX(14*minmn+4,10*minmn+827)+MAX(m,n))
+   ! gesdd docs are mess: optimal turns out to be less than minimal in docs
+   ! check(lwork>=(compute_uv?3*minmn*minmn+MAX(MAX(m,n),4*minmn*(minmn+1)):MAX(14*minmn+4,10*minmn+2+25*(25+8))+MAX(m,n))) :: lwork
+   real dimension((compute_uv?5*minmn*minmn+7*minmn:5*minmn)),intent(hide,cache),depend(minmn,compute_uv) :: rwork
+
+   integer intent(hide,cache),dimension(8*minmn),depend(minmn) :: iwork
+   integer intent(out)::info
+
+   end subroutine sgesdd
+
+
+   subroutine dgesdd(m,n,minmn,du,dvt,a,compute_uv,u,s,vt,work,lwork,iwork,info)
+   
+   ! u,s,vh,info = gesdd(a,compute_uv=1,lwork=..,overwrite_a=0)
+   ! Compute the singular value decomposition (SVD):
+   !   A = U * SIGMA * conjugate-transpose(V)
+   ! A - M x N matrix
+   ! U - M x M matrix
+   ! SIGMA - M x N zero matrix with a main diagonal filled with min(M,N) 
+   !               singular values  
+   ! conjugate-transpose(V) - N x N matrix
+   !
+
+   callstatement (*f2py_func)((compute_uv?"A":"N"),&m,&n,a,&m,s,u,&du,vt,&dvt,work,&lwork,iwork,&info)
+   callprotoargument char*,int*,int*,double*,int*,double*,double*,int*,double*,int*,double*,int*,int*,int*
+
+   integer intent(in),optional,check(compute_uv==0||compute_uv==1):: compute_uv = 1
+   integer intent(hide),depend(a):: m = shape(a,0)
+   integer intent(hide),depend(a):: n = shape(a,1)
+   integer intent(hide),depend(m,n):: minmn = MIN(m,n)
+   integer intent(hide),depend(compute_uv,minmn) :: du = (compute_uv?m:1)
+   integer intent(hide),depend(compute_uv,n) :: dvt = (compute_uv?n:1)
+   double precision dimension(m,n),intent(in,copy) :: a
+   double precision dimension(minmn),intent(out),depend(minmn) :: s
+   double precision dimension(du,du),intent(out),depend(du) :: u
+   double precision dimension(dvt,dvt),intent(out),depend(dvt) :: vt
+   double precision dimension(lwork),intent(hide,cache),depend(lwork) :: work
+
+   ! (compute_uv?4*minmn*minmn+MAX(m,n)+9*minmn:MAX(14*minmn+4,10*minmn+827)+MAX(m,n))
+   integer optional,intent(in),depend(minmn,compute_uv) &
+        :: lwork = (compute_uv?4*minmn*minmn+MAX(m,n)+9*minmn:MAX(14*minmn+4,10*minmn+827)+MAX(m,n))
+   ! gesdd docs are mess: optimal turns out to be less than minimal in docs
+   ! check(lwork>=(compute_uv?3*minmn*minmn+MAX(MAX(m,n),4*minmn*(minmn+1)):MAX(14*minmn+4,10*minmn+2+25*(25+8))+MAX(m,n))) :: lwork
+   double precision dimension((compute_uv?5*minmn*minmn+7*minmn:5*minmn)),intent(hide,cache),depend(minmn,compute_uv) :: rwork
+
+   integer intent(hide,cache),dimension(8*minmn),depend(minmn) :: iwork
+   integer intent(out)::info
+
+   end subroutine dgesdd
+
+
+   subroutine cgesdd(m,n,minmn,du,dvt,a,compute_uv,u,s,vt,work,lwork,rwork,iwork,info)
+   
+   ! u,s,vh,info = gesdd(a,compute_uv=1,lwork=..,overwrite_a=0)
+   ! Compute the singular value decomposition (SVD):
+   !   A = U * SIGMA * conjugate-transpose(V)
+   ! A - M x N matrix
+   ! U - M x M matrix
+   ! SIGMA - M x N zero matrix with a main diagonal filled with min(M,N) 
+   !               singular values  
+   ! conjugate-transpose(V) - N x N matrix
+   !
+
+   callstatement (*f2py_func)((compute_uv?"A":"N"),&m,&n,a,&m,s,u,&du,vt,&dvt,work,&lwork,rwork,iwork,&info)
+   callprotoargument char*,int*,int*,complex_float*,int*,float*,complex_float*,int*,complex_float*,int*,complex_float*,int*,float*,int*,int*
+
+   integer intent(in),optional,check(compute_uv==0||compute_uv==1):: compute_uv = 1
+   integer intent(hide),depend(a):: m = shape(a,0)
+   integer intent(hide),depend(a):: n = shape(a,1)
+   integer intent(hide),depend(m,n):: minmn = MIN(m,n)
+   integer intent(hide),depend(compute_uv,minmn) :: du = (compute_uv?m:1)
+   integer intent(hide),depend(compute_uv,n) :: dvt = (compute_uv?n:1)
+   complex dimension(m,n),intent(in,copy) :: a
+   real dimension(minmn),intent(out),depend(minmn) :: s
+   complex dimension(du,du),intent(out),depend(du) :: u
+   complex dimension(dvt,dvt),intent(out),depend(dvt) :: vt
+   complex dimension(lwork),intent(hide,cache),depend(lwork) :: work
+
+   ! (compute_uv?2*minmn*minmn+MAX(m,n)+2*minmn:2*minmn+MAX(m,n))
+   integer optional,intent(in),depend(minmn,compute_uv) &
+        :: lwork = (compute_uv?2*minmn*minmn+MAX(m,n)+2*minmn:2*minmn+MAX(m,n))
+   ! gesdd docs are mess: optimal turns out to be less than minimal in docs
+   ! check(lwork>=(compute_uv?3*minmn*minmn+MAX(MAX(m,n),4*minmn*(minmn+1)):MAX(14*minmn+4,10*minmn+2+25*(25+8))+MAX(m,n))) :: lwork
+   real dimension((compute_uv?5*minmn*minmn+7*minmn:5*minmn)),intent(hide,cache),depend(minmn,compute_uv) :: rwork
+
+   integer intent(hide,cache),dimension(8*minmn),depend(minmn) :: iwork
+   integer intent(out)::info
+
+   end subroutine cgesdd
+
+
+   subroutine zgesdd(m,n,minmn,du,dvt,a,compute_uv,u,s,vt,work,lwork,rwork,iwork,info)
+   
+   ! u,s,vh,info = gesdd(a,compute_uv=1,lwork=..,overwrite_a=0)
+   ! Compute the singular value decomposition (SVD):
+   !   A = U * SIGMA * conjugate-transpose(V)
+   ! A - M x N matrix
+   ! U - M x M matrix
+   ! SIGMA - M x N zero matrix with a main diagonal filled with min(M,N) 
+   !               singular values  
+   ! conjugate-transpose(V) - N x N matrix
+   !
+
+   callstatement (*f2py_func)((compute_uv?"A":"N"),&m,&n,a,&m,s,u,&du,vt,&dvt,work,&lwork,rwork,iwork,&info)
+   callprotoargument char*,int*,int*,complex_double*,int*,double*,complex_double*,int*,complex_double*,int*,complex_double*,int*,double*,int*,int*
+
+   integer intent(in),optional,check(compute_uv==0||compute_uv==1):: compute_uv = 1
+   integer intent(hide),depend(a):: m = shape(a,0)
+   integer intent(hide),depend(a):: n = shape(a,1)
+   integer intent(hide),depend(m,n):: minmn = MIN(m,n)
+   integer intent(hide),depend(compute_uv,minmn) :: du = (compute_uv?m:1)
+   integer intent(hide),depend(compute_uv,n) :: dvt = (compute_uv?n:1)
+   double complex dimension(m,n),intent(in,copy) :: a
+   double precision dimension(minmn),intent(out),depend(minmn) :: s
+   double complex dimension(du,du),intent(out),depend(du) :: u
+   double complex dimension(dvt,dvt),intent(out),depend(dvt) :: vt
+   double complex dimension(lwork),intent(hide,cache),depend(lwork) :: work
+
+   ! (compute_uv?2*minmn*minmn+MAX(m,n)+2*minmn:2*minmn+MAX(m,n))
+   integer optional,intent(in),depend(minmn,compute_uv) &
+        :: lwork = (compute_uv?2*minmn*minmn+MAX(m,n)+2*minmn:2*minmn+MAX(m,n))
+   ! gesdd docs are mess: optimal turns out to be less than minimal in docs
+   ! check(lwork>=(compute_uv?3*minmn*minmn+MAX(MAX(m,n),4*minmn*(minmn+1)):MAX(14*minmn+4,10*minmn+2+25*(25+8))+MAX(m,n))) :: lwork
+   double precision dimension((compute_uv?5*minmn*minmn+7*minmn:5*minmn)),intent(hide,cache),depend(minmn,compute_uv) :: rwork
+
+   integer intent(hide,cache),dimension(8*minmn),depend(minmn) :: iwork
+   integer intent(out)::info
+
+   end subroutine zgesdd
+
+
+! -*- f90 -*-
+!
+! Contains wrappers for the following LAPACK routines:
+!
+!  Driver routines for generalized eigenvalue and singular value problems:
+!  
+!   sygv,hegv (GSEP, symmetric-definite eigenvalues/vectors)
+!   sygvd,hegvd (GSEP, symmetric-definite eigenvalues/vectors, D&C)
+!   sygvx,hegvx (GSEP, symmetric-definite eigenvalues/vectors, expert) - Not Implemented
+!   spgv, hpgv, spgvd, hpgvd, spgvx, hpgvx (..., packed storage) - Not Implemented
+!   sbgv, hbgv, sbgvd, hbgvd, sbgvx, hbgvx (..., band) - Not Implemented
+!   gges,ggesx (GNEP, general, Schur Factorization) - Not Implemented
+!   ggev,ggevx (GNEP, general, eigenvalues/vectors)
+!   ggsvd (GSVD, general, singular values/vectors) - Not Implemented
+!   gegv (general, eigenvalues/vectors, deprecated, use ggev instead) - Removed
+!
+
+! <sym=sy,sy,he,he>
+! <rwork=,,rwork\,,\2>
+! <rworkptr=,,float*\,,double*\,>
+! <rworkl=,,rwork\,lrwork\,,\2>
+! <rworklc=,,rwork\,&lrwork\,,\2>
+! <rworklptr=,,float*\,int*\,,double*\,int*\,>
+
+subroutine ssygv(itype,compute_v,lower,n,w,a,b,work,lwork,info)
+  !
+  ! w,v,info = sygv|hegv(a,b,itype=1,compute_v=1,lower=0,lwork=min_lwork,overwrite_a=0,overwrite_b=0)
+  !
+  integer check(1<=itype && itype<=3):: itype = 1
+  integer :: compute_v=1
+  integer :: lower=0
+  integer intent(hide),depend(a) :: n = shape(a,0)
+  real dimension(n,n),intent(in,out,copy,out=v) :: a
+  real dimension(n,n),intent(in,copy) :: b
+  real dimension(n),intent(out) :: w
+  3*n-1
+  integer optional,intent(in),depend(n) :: lwork=3*n-1
+  check(3*n-1<=lwork) lwork
+  real dimension(lwork),intent(hide,cache),depend(lwork) :: work
+  real dimension(3*n-2),intent(hide,cache),depend(n) :: rwork
+  integer intent(out) :: info
+  callstatement (*f2py_func)(&itype,(compute_v?"V":"N"),(lower?"L":"U"),&n,a,&n,b,&n,w,work,&lwork,&info)
+  callprotoargument int*,char*,char*,int*,float*,int*,float*,int*,float*,float*,int*,int*
+end subroutine ssygv
+
+
+subroutine dsygv(itype,compute_v,lower,n,w,a,b,work,lwork,info)
+  !
+  ! w,v,info = sygv|hegv(a,b,itype=1,compute_v=1,lower=0,lwork=min_lwork,overwrite_a=0,overwrite_b=0)
+  !
+  integer check(1<=itype && itype<=3):: itype = 1
+  integer :: compute_v=1
+  integer :: lower=0
+  integer intent(hide),depend(a) :: n = shape(a,0)
+  double precision dimension(n,n),intent(in,out,copy,out=v) :: a
+  double precision dimension(n,n),intent(in,copy) :: b
+  double precision dimension(n),intent(out) :: w
+  3*n-1
+  integer optional,intent(in),depend(n) :: lwork=3*n-1
+  check(3*n-1<=lwork) lwork
+  double precision dimension(lwork),intent(hide,cache),depend(lwork) :: work
+  double precision dimension(3*n-2),intent(hide,cache),depend(n) :: rwork
+  integer intent(out) :: info
+  callstatement (*f2py_func)(&itype,(compute_v?"V":"N"),(lower?"L":"U"),&n,a,&n,b,&n,w,work,&lwork,&info)
+  callprotoargument int*,char*,char*,int*,double*,int*,double*,int*,double*,double*,int*,int*
+end subroutine dsygv
+
+
+subroutine chegv(itype,compute_v,lower,n,w,a,b,work,lwork,rwork,info)
+  !
+  ! w,v,info = sygv|hegv(a,b,itype=1,compute_v=1,lower=0,lwork=min_lwork,overwrite_a=0,overwrite_b=0)
+  !
+  integer check(1<=itype && itype<=3):: itype = 1
+  integer :: compute_v=1
+  integer :: lower=0
+  integer intent(hide),depend(a) :: n = shape(a,0)
+  complex dimension(n,n),intent(in,out,copy,out=v) :: a
+  complex dimension(n,n),intent(in,copy) :: b
+  real dimension(n),intent(out) :: w
+  2*n-1
+  integer optional,intent(in),depend(n) :: lwork=2*n-1
+  check(2*n-1<=lwork) lwork
+  complex dimension(lwork),intent(hide,cache),depend(lwork) :: work
+  real dimension(3*n-2),intent(hide,cache),depend(n) :: rwork
+  integer intent(out) :: info
+  callstatement (*f2py_func)(&itype,(compute_v?"V":"N"),(lower?"L":"U"),&n,a,&n,b,&n,w,work,&lwork,rwork,&info)
+  callprotoargument int*,char*,char*,int*,complex_float*,int*,complex_float*,int*,float*,complex_float*,int*,float*,int*
+end subroutine chegv
+
+
+subroutine zhegv(itype,compute_v,lower,n,w,a,b,work,lwork,rwork,info)
+  !
+  ! w,v,info = sygv|hegv(a,b,itype=1,compute_v=1,lower=0,lwork=min_lwork,overwrite_a=0,overwrite_b=0)
+  !
+  integer check(1<=itype && itype<=3):: itype = 1
+  integer :: compute_v=1
+  integer :: lower=0
+  integer intent(hide),depend(a) :: n = shape(a,0)
+  double complex dimension(n,n),intent(in,out,copy,out=v) :: a
+  double complex dimension(n,n),intent(in,copy) :: b
+  double precision dimension(n),intent(out) :: w
+  2*n-1
+  integer optional,intent(in),depend(n) :: lwork=2*n-1
+  check(2*n-1<=lwork) lwork
+  double complex dimension(lwork),intent(hide,cache),depend(lwork) :: work
+  double precision dimension(3*n-2),intent(hide,cache),depend(n) :: rwork
+  integer intent(out) :: info
+  callstatement (*f2py_func)(&itype,(compute_v?"V":"N"),(lower?"L":"U"),&n,a,&n,b,&n,w,work,&lwork,rwork,&info)
+  callprotoargument int*,char*,char*,int*,complex_double*,int*,complex_double*,int*,double*,complex_double*,int*,double*,int*
+end subroutine zhegv
+
+
+
+subroutine ssygvd(itype,compute_v,lower,n,w,a,b,work,lwork,iwork,liwork,info)
+  !
+  ! w,v,info = sygvd|hegvd(a,b,itype=1,compute_v=1,lower=0,lwork=min_lwork,overwrite_a=0,overwrite_b=0)
+  !
+  integer check(1<=itype && itype<=3):: itype = 1
+  integer :: compute_v=1
+  integer :: lower=0
+  integer intent(hide),depend(a) :: n = shape(a,0)
+  real dimension(n,n),intent(in,out,copy,out=v) :: a
+  real dimension(n,n),intent(in,copy) :: b
+  real dimension(n),intent(out) :: w
+  (compute_v?1+6*n+2*n*n:2*n+1)
+  integer optional,intent(in),depend(n,compute_v) :: lwork=(compute_v?1+6*n+2*n*n:2*n+1)
+  check((compute_v?1+6*n+2*n*n:2*n+1)<=lwork) lwork
+  real dimension(lwork),intent(hide,cache),depend(lwork) :: work
+  integer intent(hide),depend(n,compute_v) :: lrwork = (compute_v?1+5*n+2*n*n:n)
+  real dimension(lrwork),intent(hide,cache),depend(lrwork) :: rwork
+  integer intent(hide),depend(compute_v,n) :: liwork = (compute_v?3+5*n:1)
+  integer intent(hide,cache),dimension(liwork),depend(liwork) :: iwork
+  integer intent(out) :: info
+  callstatement (*f2py_func)(&itype,(compute_v?"V":"N"),(lower?"L":"U"),&n,a,&n,b,&n,w,work,&lwork,iwork,&liwork,&info)
+  callprotoargument int*,char*,char*,int*,float*,int*,float*,int*,float*,float*,int*,int*,int*,int*
+end subroutine ssygvd
+
+
+subroutine dsygvd(itype,compute_v,lower,n,w,a,b,work,lwork,iwork,liwork,info)
+  !
+  ! w,v,info = sygvd|hegvd(a,b,itype=1,compute_v=1,lower=0,lwork=min_lwork,overwrite_a=0,overwrite_b=0)
+  !
+  integer check(1<=itype && itype<=3):: itype = 1
+  integer :: compute_v=1
+  integer :: lower=0
+  integer intent(hide),depend(a) :: n = shape(a,0)
+  double precision dimension(n,n),intent(in,out,copy,out=v) :: a
+  double precision dimension(n,n),intent(in,copy) :: b
+  double precision dimension(n),intent(out) :: w
+  (compute_v?1+6*n+2*n*n:2*n+1)
+  integer optional,intent(in),depend(n,compute_v) :: lwork=(compute_v?1+6*n+2*n*n:2*n+1)
+  check((compute_v?1+6*n+2*n*n:2*n+1)<=lwork) lwork
+  double precision dimension(lwork),intent(hide,cache),depend(lwork) :: work
+  integer intent(hide),depend(n,compute_v) :: lrwork = (compute_v?1+5*n+2*n*n:n)
+  double precision dimension(lrwork),intent(hide,cache),depend(lrwork) :: rwork
+  integer intent(hide),depend(compute_v,n) :: liwork = (compute_v?3+5*n:1)
+  integer intent(hide,cache),dimension(liwork),depend(liwork) :: iwork
+  integer intent(out) :: info
+  callstatement (*f2py_func)(&itype,(compute_v?"V":"N"),(lower?"L":"U"),&n,a,&n,b,&n,w,work,&lwork,iwork,&liwork,&info)
+  callprotoargument int*,char*,char*,int*,double*,int*,double*,int*,double*,double*,int*,int*,int*,int*
+end subroutine dsygvd
+
+
+subroutine chegvd(itype,compute_v,lower,n,w,a,b,work,lwork,rwork,lrwork,iwork,liwork,info)
+  !
+  ! w,v,info = sygvd|hegvd(a,b,itype=1,compute_v=1,lower=0,lwork=min_lwork,overwrite_a=0,overwrite_b=0)
+  !
+  integer check(1<=itype && itype<=3):: itype = 1
+  integer :: compute_v=1
+  integer :: lower=0
+  integer intent(hide),depend(a) :: n = shape(a,0)
+  complex dimension(n,n),intent(in,out,copy,out=v) :: a
+  complex dimension(n,n),intent(in,copy) :: b
+  real dimension(n),intent(out) :: w
+  (compute_v?2*n+n*n:n+1)
+  integer optional,intent(in),depend(n,compute_v) :: lwork=(compute_v?2*n+n*n:n+1)
+  check((compute_v?2*n+n*n:n+1)<=lwork) lwork
+  complex dimension(lwork),intent(hide,cache),depend(lwork) :: work
+  integer intent(hide),depend(n,compute_v) :: lrwork = (compute_v?1+5*n+2*n*n:n)
+  real dimension(lrwork),intent(hide,cache),depend(lrwork) :: rwork
+  integer intent(hide),depend(compute_v,n) :: liwork = (compute_v?3+5*n:1)
+  integer intent(hide,cache),dimension(liwork),depend(liwork) :: iwork
+  integer intent(out) :: info
+  callstatement (*f2py_func)(&itype,(compute_v?"V":"N"),(lower?"L":"U"),&n,a,&n,b,&n,w,work,&lwork,rwork,&lrwork,iwork,&liwork,&info)
+  callprotoargument int*,char*,char*,int*,complex_float*,int*,complex_float*,int*,float*,complex_float*,int*,float*,int*,int*,int*,int*
+end subroutine chegvd
+
+
+subroutine zhegvd(itype,compute_v,lower,n,w,a,b,work,lwork,rwork,lrwork,iwork,liwork,info)
+  !
+  ! w,v,info = sygvd|hegvd(a,b,itype=1,compute_v=1,lower=0,lwork=min_lwork,overwrite_a=0,overwrite_b=0)
+  !
+  integer check(1<=itype && itype<=3):: itype = 1
+  integer :: compute_v=1
+  integer :: lower=0
+  integer intent(hide),depend(a) :: n = shape(a,0)
+  double complex dimension(n,n),intent(in,out,copy,out=v) :: a
+  double complex dimension(n,n),intent(in,copy) :: b
+  double precision dimension(n),intent(out) :: w
+  (compute_v?2*n+n*n:n+1)
+  integer optional,intent(in),depend(n,compute_v) :: lwork=(compute_v?2*n+n*n:n+1)
+  check((compute_v?2*n+n*n:n+1)<=lwork) lwork
+  double complex dimension(lwork),intent(hide,cache),depend(lwork) :: work
+  integer intent(hide),depend(n,compute_v) :: lrwork = (compute_v?1+5*n+2*n*n:n)
+  double precision dimension(lrwork),intent(hide,cache),depend(lrwork) :: rwork
+  integer intent(hide),depend(compute_v,n) :: liwork = (compute_v?3+5*n:1)
+  integer intent(hide,cache),dimension(liwork),depend(liwork) :: iwork
+  integer intent(out) :: info
+  callstatement (*f2py_func)(&itype,(compute_v?"V":"N"),(lower?"L":"U"),&n,a,&n,b,&n,w,work,&lwork,rwork,&lrwork,iwork,&liwork,&info)
+  callprotoargument int*,char*,char*,int*,complex_double*,int*,complex_double*,int*,double*,complex_double*,int*,double*,int*,int*,int*,int*
+end subroutine zhegvd
+
+
+
+! <alpha=alphar\,alphai,\0,alpha,\2>
+! <alphaptr=float*\,float*,double*\,double*,complex_float*,complex_double*>
+
+subroutine sggev(compute_vl,compute_vr,n,a,b,alphar,alphai,beta,vl,ldvl,vr,ldvr,work,lwork,info)
+
+     callstatement {(*f2py_func)((compute_vl?"V":"N"),(compute_vr?"V":"N"),&n,a,&n,b,&n,alphar,alphai,beta,vl,&ldvl,vr,&ldvr,work,&lwork,&info);}
+     callprotoargument char*,char*,int*,float*,int*,float*,int*,float*,float*,float*,float*,int*,float*,int*,float*,int*,int*
+
+    integer optional,intent(in):: compute_vl = 1
+    check(compute_vl==1||compute_vl==0) compute_vl
+    integer optional,intent(in):: compute_vr = 1
+    check(compute_vr==1||compute_vr==0) compute_vr
+
+    integer intent(hide),depend(a) :: n = shape(a,0)
+    real  dimension(n,n),intent(in,copy) :: a
+    check(shape(a,0)==shape(a,1)) :: a
+
+    real intent(in,copy), dimension(n,n) :: b
+    check(shape(b,0)==shape(b,1)) :: b
+
+    real intent(out), dimension(n), depend(n) :: alphar,alphai
+    real intent(out), dimension(n), depend(n) :: beta
+
+    real  depend(ldvl,n), dimension(ldvl,n),intent(out) :: vl
+    integer intent(hide),depend(n,compute_vl) :: ldvl=(compute_vl?n:1)
+    
+    real  depend(ldvr,n), dimension(ldvr,n),intent(out) :: vr
+    integer intent(hide),depend(n,compute_vr) :: ldvr=(compute_vr?n:1)
+
+    ! 8*n
+    integer optional,intent(in),depend(n,compute_vl,compute_vr) :: lwork=8*n
+    check(lwork>=8*n) :: lwork
+    real intent(hide,cache), dimension(lwork), depend(lwork) :: work
+    real intent(hide), dimension(8*n), depend(n) :: rwork
+
+    integer intent(out):: info
+
+end subroutine sggev
+
+
+subroutine dggev(compute_vl,compute_vr,n,a,b,alphar,alphai,beta,vl,ldvl,vr,ldvr,work,lwork,info)
+
+     callstatement {(*f2py_func)((compute_vl?"V":"N"),(compute_vr?"V":"N"),&n,a,&n,b,&n,alphar,alphai,beta,vl,&ldvl,vr,&ldvr,work,&lwork,&info);}
+     callprotoargument char*,char*,int*,double*,int*,double*,int*,double*,double*,double*,double*,int*,double*,int*,double*,int*,int*
+
+    integer optional,intent(in):: compute_vl = 1
+    check(compute_vl==1||compute_vl==0) compute_vl
+    integer optional,intent(in):: compute_vr = 1
+    check(compute_vr==1||compute_vr==0) compute_vr
+
+    integer intent(hide),depend(a) :: n = shape(a,0)
+    double precision  dimension(n,n),intent(in,copy) :: a
+    check(shape(a,0)==shape(a,1)) :: a
+
+    double precision intent(in,copy), dimension(n,n) :: b
+    check(shape(b,0)==shape(b,1)) :: b
+
+    double precision intent(out), dimension(n), depend(n) :: alphar,alphai
+    double precision intent(out), dimension(n), depend(n) :: beta
+
+    double precision  depend(ldvl,n), dimension(ldvl,n),intent(out) :: vl
+    integer intent(hide),depend(n,compute_vl) :: ldvl=(compute_vl?n:1)
+    
+    double precision  depend(ldvr,n), dimension(ldvr,n),intent(out) :: vr
+    integer intent(hide),depend(n,compute_vr) :: ldvr=(compute_vr?n:1)
+
+    ! 8*n
+    integer optional,intent(in),depend(n,compute_vl,compute_vr) :: lwork=8*n
+    check(lwork>=8*n) :: lwork
+    double precision intent(hide,cache), dimension(lwork), depend(lwork) :: work
+    double precision intent(hide), dimension(8*n), depend(n) :: rwork
+
+    integer intent(out):: info
+
+end subroutine dggev
+
+
+subroutine cggev(compute_vl,compute_vr,n,a,b,alpha,beta,vl,ldvl,vr,ldvr,work,lwork,rwork,info)
+
+     callstatement {(*f2py_func)((compute_vl?"V":"N"),(compute_vr?"V":"N"),&n,a,&n,b,&n,alpha,beta,vl,&ldvl,vr,&ldvr,work,&lwork,rwork,&info);}
+     callprotoargument char*,char*,int*,complex_float*,int*,complex_float*,int*,complex_float*,complex_float*,complex_float*,int*,complex_float*,int*,complex_float*,int*,float*,int*
+
+    integer optional,intent(in):: compute_vl = 1
+    check(compute_vl==1||compute_vl==0) compute_vl
+    integer optional,intent(in):: compute_vr = 1
+    check(compute_vr==1||compute_vr==0) compute_vr
+
+    integer intent(hide),depend(a) :: n = shape(a,0)
+    complex  dimension(n,n),intent(in,copy) :: a
+    check(shape(a,0)==shape(a,1)) :: a
+
+    complex intent(in,copy), dimension(n,n) :: b
+    check(shape(b,0)==shape(b,1)) :: b
+
+    complex intent(out), dimension(n), depend(n) :: alpha
+    complex intent(out), dimension(n), depend(n) :: beta
+
+    complex  depend(ldvl,n), dimension(ldvl,n),intent(out) :: vl
+    integer intent(hide),depend(n,compute_vl) :: ldvl=(compute_vl?n:1)
+    
+    complex  depend(ldvr,n), dimension(ldvr,n),intent(out) :: vr
+    integer intent(hide),depend(n,compute_vr) :: ldvr=(compute_vr?n:1)
+
+    ! 2*n
+    integer optional,intent(in),depend(n,compute_vl,compute_vr) :: lwork=2*n
+    check(lwork>=2*n) :: lwork
+    complex intent(hide,cache), dimension(lwork), depend(lwork) :: work
+    real intent(hide), dimension(8*n), depend(n) :: rwork
+
+    integer intent(out):: info
+
+end subroutine cggev
+
+
+subroutine zggev(compute_vl,compute_vr,n,a,b,alpha,beta,vl,ldvl,vr,ldvr,work,lwork,rwork,info)
+
+     callstatement {(*f2py_func)((compute_vl?"V":"N"),(compute_vr?"V":"N"),&n,a,&n,b,&n,alpha,beta,vl,&ldvl,vr,&ldvr,work,&lwork,rwork,&info);}
+     callprotoargument char*,char*,int*,complex_double*,int*,complex_double*,int*,complex_double*,complex_double*,complex_double*,int*,complex_double*,int*,complex_double*,int*,double*,int*
+
+    integer optional,intent(in):: compute_vl = 1
+    check(compute_vl==1||compute_vl==0) compute_vl
+    integer optional,intent(in):: compute_vr = 1
+    check(compute_vr==1||compute_vr==0) compute_vr
+
+    integer intent(hide),depend(a) :: n = shape(a,0)
+    double complex  dimension(n,n),intent(in,copy) :: a
+    check(shape(a,0)==shape(a,1)) :: a
+
+    double complex intent(in,copy), dimension(n,n) :: b
+    check(shape(b,0)==shape(b,1)) :: b
+
+    double complex intent(out), dimension(n), depend(n) :: alpha
+    double complex intent(out), dimension(n), depend(n) :: beta
+
+    double complex  depend(ldvl,n), dimension(ldvl,n),intent(out) :: vl
+    integer intent(hide),depend(n,compute_vl) :: ldvl=(compute_vl?n:1)
+    
+    double complex  depend(ldvr,n), dimension(ldvr,n),intent(out) :: vr
+    integer intent(hide),depend(n,compute_vr) :: ldvr=(compute_vr?n:1)
+
+    ! 2*n
+    integer optional,intent(in),depend(n,compute_vl,compute_vr) :: lwork=2*n
+    check(lwork>=2*n) :: lwork
+    double complex intent(hide,cache), dimension(lwork), depend(lwork) :: work
+    double precision intent(hide), dimension(8*n), depend(n) :: rwork
+
+    integer intent(out):: info
+
+end subroutine zggev
+
+
+
+
+   ! Computational Routines
+! -*- f90 -*-
+!
+! Contains wrappers for the following LAPACK routines:
+!
+!  Computational routines for linear equations:
+!
+!   getrf (general, factorize)
+!   getrs (general, solve)
+!   gecon (general, estimate condition number) - Not Implemented
+!   gerfs (general, error bounds) - Not Implemented
+!   getri (general, invert)
+!   geequ  (general, equilibrate) - Not Implemented
+!   gbtrf, gbtrs, gbcon, gbrfs, gbequ (general band) - Not Implemented
+!   gttrf, gttrs, gtcon, gtrfs (general tridiagonal) - Not Implemented
+!   potrf (symmetric/Hermitian positive, factorize)
+!   potrs (symmetric/Hermitian positive, solve)
+!   pocon (symmetric/Hermitian positive, estimate condition number) - Not Implemented
+!   porfs (symmetric/Hermitian positive, error bounds) - Not Implemented
+!   potri (symmetric/Hermitian positive, invert)
+!   poequ (symmetric/Hermitian positive, equilibrate) - Not Implemented
+!   pptrf, pptrs, ppcon, pprfs, pptri, ppequ (symmetric/Hermitian positive packed storage) - Not Implemented
+!   pbtrf, pbtrs, pbcon, pbrfs, pbequ (symmetric/Hermitian positive band) - Not Implemented
+!   pttrf, pttrs, ptcon, ptrfs (symmetric/Hermitian positive tridiagonal) - Not Implemented
+!   sytrf, sytrs, sycon, syrfs, sytri (symmetric indefinite) - Not Implemented
+!   hetrf, hetrs, hecon, herfs, hetri (Hermitian indefinite) - Not Implemented
+!   sptrf, sptrs, spcon, sprfs, sptri (symmetric indefinite packed storage) - Not Implemented
+!   hptrf, hptrs, hpcon, hprfs, hptri (Hermitian indefinite packed storage) - Not Implemented
+!   trtrs (triangular, solve) - Not Implemented
+!   trcon (triangular, estimate condition number) - Not Implemented
+!   trrfs (triangular, error bounds) - Not Implemented
+!   trtri (triangular, invert)
+!   tptrs, tpcon, tprfs, tptri (triangular packed storage) - Not Implemented
+!   tbtrs, tbcon, tbrfs (triangular band) - Not Implemented
+
+!
+! Factorize
+! =========
+
+   subroutine sgetrf(m,n,a,piv,info)
+
+   ! lu,piv,info = getrf(a,overwrite_a=0)
+   ! Compute an LU factorization of a  general  M-by-N  matrix  A.
+   ! A = P * L * U
+     threadsafe
+     callstatement {int i;(*f2py_func)(&m,&n,a,&m,piv,&info);for(i=0,n=MIN(m,n);i<n;--piv[i++]);}
+     callprotoargument int*,int*,float*,int*,int*,int*
+
+     integer depend(a),intent(hide):: m = shape(a,0)
+     integer depend(a),intent(hide):: n = shape(a,1)
+     real dimension(m,n),intent(in,out,copy,out=lu) :: a
+     integer dimension(MIN(m,n)),depend(m,n),intent(out) :: piv
+     integer intent(out):: info
+
+   end subroutine sgetrf
+
+
+   subroutine dgetrf(m,n,a,piv,info)
+
+   ! lu,piv,info = getrf(a,overwrite_a=0)
+   ! Compute an LU factorization of a  general  M-by-N  matrix  A.
+   ! A = P * L * U
+     threadsafe
+     callstatement {int i;(*f2py_func)(&m,&n,a,&m,piv,&info);for(i=0,n=MIN(m,n);i<n;--piv[i++]);}
+     callprotoargument int*,int*,double*,int*,int*,int*
+
+     integer depend(a),intent(hide):: m = shape(a,0)
+     integer depend(a),intent(hide):: n = shape(a,1)
+     double precision dimension(m,n),intent(in,out,copy,out=lu) :: a
+     integer dimension(MIN(m,n)),depend(m,n),intent(out) :: piv
+     integer intent(out):: info
+
+   end subroutine dgetrf
+
+
+   subroutine cgetrf(m,n,a,piv,info)
+
+   ! lu,piv,info = getrf(a,overwrite_a=0)
+   ! Compute an LU factorization of a  general  M-by-N  matrix  A.
+   ! A = P * L * U
+     threadsafe
+     callstatement {int i;(*f2py_func)(&m,&n,a,&m,piv,&info);for(i=0,n=MIN(m,n);i<n;--piv[i++]);}
+     callprotoargument int*,int*,complex_float*,int*,int*,int*
+
+     integer depend(a),intent(hide):: m = shape(a,0)
+     integer depend(a),intent(hide):: n = shape(a,1)
+     complex dimension(m,n),intent(in,out,copy,out=lu) :: a
+     integer dimension(MIN(m,n)),depend(m,n),intent(out) :: piv
+     integer intent(out):: info
+
+   end subroutine cgetrf
+
+
+   subroutine zgetrf(m,n,a,piv,info)
+
+   ! lu,piv,info = getrf(a,overwrite_a=0)
+   ! Compute an LU factorization of a  general  M-by-N  matrix  A.
+   ! A = P * L * U
+     threadsafe
+     callstatement {int i;(*f2py_func)(&m,&n,a,&m,piv,&info);for(i=0,n=MIN(m,n);i<n;--piv[i++]);}
+     callprotoargument int*,int*,complex_double*,int*,int*,int*
+
+     integer depend(a),intent(hide):: m = shape(a,0)
+     integer depend(a),intent(hide):: n = shape(a,1)
+     double complex dimension(m,n),intent(in,out,copy,out=lu) :: a
+     integer dimension(MIN(m,n)),depend(m,n),intent(out) :: piv
+     integer intent(out):: info
+
+   end subroutine zgetrf
+
+
+
+   subroutine spotrf(n,a,info,lower,clean)
+   
+     ! c,info = potrf(a,lower=0,clean=1,overwrite_a=0)
+     ! Compute Cholesky decomposition of symmetric positive defined matrix:
+     ! A = U^T * U, C = U if lower = 0
+     ! A = L * L^T, C = L if lower = 1
+     ! C is triangular matrix of the corresponding Cholesky decomposition.
+     ! clean==1 zeros strictly lower or upper parts of U or L, respectively
+
+
+     ! 
+     ! *(a+j*n+i)=0.0;
+     ! *(a+i*n+j)=0.0;
+     callstatement (*f2py_func)((lower?"L":"U"),&n,a,&n,&info); if(clean){int i,j;if(lower){for(i=0;i<n;++i) for(j=i+1;j<n;++j) {*(a+j*n+i)=0.0;}} else {for(i=0;i<n;++i) for(j=i+1;j<n;++j) {*(a+i*n+j)=0.0;}}}
+     callprotoargument char*,int*,float*,int*,int*
+
+     integer optional,intent(in),check(lower==0||lower==1) :: lower = 0
+     integer optional,intent(in),check(clean==0||clean==1) :: clean = 1
+     integer depend(a),intent(hide):: n = shape(a,0)
+     real dimension(n,n),intent(in,out,copy,out=c) :: a
+     check(shape(a,0)==shape(a,1)) :: a
+     integer intent(out) :: info
+     
+   end subroutine spotrf
+
+
+   subroutine dpotrf(n,a,info,lower,clean)
+   
+     ! c,info = potrf(a,lower=0,clean=1,overwrite_a=0)
+     ! Compute Cholesky decomposition of symmetric positive defined matrix:
+     ! A = U^T * U, C = U if lower = 0
+     ! A = L * L^T, C = L if lower = 1
+     ! C is triangular matrix of the corresponding Cholesky decomposition.
+     ! clean==1 zeros strictly lower or upper parts of U or L, respectively
+
+
+     ! 
+     ! *(a+j*n+i)=0.0;
+     ! *(a+i*n+j)=0.0;
+     callstatement (*f2py_func)((lower?"L":"U"),&n,a,&n,&info); if(clean){int i,j;if(lower){for(i=0;i<n;++i) for(j=i+1;j<n;++j) {*(a+j*n+i)=0.0;}} else {for(i=0;i<n;++i) for(j=i+1;j<n;++j) {*(a+i*n+j)=0.0;}}}
+     callprotoargument char*,int*,double*,int*,int*
+
+     integer optional,intent(in),check(lower==0||lower==1) :: lower = 0
+     integer optional,intent(in),check(clean==0||clean==1) :: clean = 1
+     integer depend(a),intent(hide):: n = shape(a,0)
+     double precision dimension(n,n),intent(in,out,copy,out=c) :: a
+     check(shape(a,0)==shape(a,1)) :: a
+     integer intent(out) :: info
+     
+   end subroutine dpotrf
+
+
+   subroutine cpotrf(n,a,info,lower,clean)
+   
+     ! c,info = potrf(a,lower=0,clean=1,overwrite_a=0)
+     ! Compute Cholesky decomposition of symmetric positive defined matrix:
+     ! A = U^T * U, C = U if lower = 0
+     ! A = L * L^T, C = L if lower = 1
+     ! C is triangular matrix of the corresponding Cholesky decomposition.
+     ! clean==1 zeros strictly lower or upper parts of U or L, respectively
+
+
+     ! ,k
+     ! k=j*n+i;(*(a+k)).r=(*(a+k)).i=0.0;
+     ! k=i*n+j;(*(a+k)).r=(*(a+k)).i=0.0;
+     callstatement (*f2py_func)((lower?"L":"U"),&n,a,&n,&info); if(clean){int i,j,k;if(lower){for(i=0;i<n;++i) for(j=i+1;j<n;++j) {k=j*n+i;(*(a+k)).r=(*(a+k)).i=0.0;}} else {for(i=0;i<n;++i) for(j=i+1;j<n;++j) {k=i*n+j;(*(a+k)).r=(*(a+k)).i=0.0;}}}
+     callprotoargument char*,int*,complex_float*,int*,int*
+
+     integer optional,intent(in),check(lower==0||lower==1) :: lower = 0
+     integer optional,intent(in),check(clean==0||clean==1) :: clean = 1
+     integer depend(a),intent(hide):: n = shape(a,0)
+     complex dimension(n,n),intent(in,out,copy,out=c) :: a
+     check(shape(a,0)==shape(a,1)) :: a
+     integer intent(out) :: info
+     
+   end subroutine cpotrf
+
+
+   subroutine zpotrf(n,a,info,lower,clean)
+   
+     ! c,info = potrf(a,lower=0,clean=1,overwrite_a=0)
+     ! Compute Cholesky decomposition of symmetric positive defined matrix:
+     ! A = U^T * U, C = U if lower = 0
+     ! A = L * L^T, C = L if lower = 1
+     ! C is triangular matrix of the corresponding Cholesky decomposition.
+     ! clean==1 zeros strictly lower or upper parts of U or L, respectively
+
+
+     ! ,k
+     ! k=j*n+i;(*(a+k)).r=(*(a+k)).i=0.0;
+     ! k=i*n+j;(*(a+k)).r=(*(a+k)).i=0.0;
+     callstatement (*f2py_func)((lower?"L":"U"),&n,a,&n,&info); if(clean){int i,j,k;if(lower){for(i=0;i<n;++i) for(j=i+1;j<n;++j) {k=j*n+i;(*(a+k)).r=(*(a+k)).i=0.0;}} else {for(i=0;i<n;++i) for(j=i+1;j<n;++j) {k=i*n+j;(*(a+k)).r=(*(a+k)).i=0.0;}}}
+     callprotoargument char*,int*,complex_double*,int*,int*
+
+     integer optional,intent(in),check(lower==0||lower==1) :: lower = 0
+     integer optional,intent(in),check(clean==0||clean==1) :: clean = 1
+     integer depend(a),intent(hide):: n = shape(a,0)
+     double complex dimension(n,n),intent(in,out,copy,out=c) :: a
+     check(shape(a,0)==shape(a,1)) :: a
+     integer intent(out) :: info
+     
+   end subroutine zpotrf
+
+
+
+
+!
+! Solve using factorization
+! =========================
+
+
+   subroutine sgetrs(n,nrhs,lu,piv,b,info,trans)
+
+   ! x,info = getrs(lu,piv,b,trans=0,overwrite_b=0)
+   ! Solve  A  * X = B if trans=0
+   ! Solve A^T * X = B if trans=1
+   ! Solve A^H * X = B if trans=2
+   ! A = P * L * U
+     threadsafe
+     callstatement {int i;for(i=0;i<n;++piv[i++]);(*f2py_func)((trans?(trans==2?"C":"T"):"N"),&n,&nrhs,lu,&n,piv,b,&n,&info);for(i=0;i<n;--piv[i++]);}
+     callprotoargument char*,int*,int*,float*,int*,int*,float*,int*,int*
+
+     integer optional,intent(in),check(trans>=0 && trans <=2) :: trans = 0
+
+     integer depend(lu),intent(hide):: n = shape(lu,0)
+     integer depend(b),intent(hide):: nrhs = shape(b,1)
+     real dimension(n,n),intent(in) :: lu
+     check(shape(lu,0)==shape(lu,1)) :: lu
+     integer dimension(n),intent(in),depend(n) :: piv
+     real dimension(n,nrhs),intent(in,out,copy,out=x),depend(n),check(shape(lu,0)==shape(b,0)) :: b
+     integer intent(out):: info
+   end subroutine sgetrs
+
+
+
+   subroutine dgetrs(n,nrhs,lu,piv,b,info,trans)
+
+   ! x,info = getrs(lu,piv,b,trans=0,overwrite_b=0)
+   ! Solve  A  * X = B if trans=0
+   ! Solve A^T * X = B if trans=1
+   ! Solve A^H * X = B if trans=2
+   ! A = P * L * U
+     threadsafe
+     callstatement {int i;for(i=0;i<n;++piv[i++]);(*f2py_func)((trans?(trans==2?"C":"T"):"N"),&n,&nrhs,lu,&n,piv,b,&n,&info);for(i=0;i<n;--piv[i++]);}
+     callprotoargument char*,int*,int*,double*,int*,int*,double*,int*,int*
+
+     integer optional,intent(in),check(trans>=0 && trans <=2) :: trans = 0
+
+     integer depend(lu),intent(hide):: n = shape(lu,0)
+     integer depend(b),intent(hide):: nrhs = shape(b,1)
+     double precision dimension(n,n),intent(in) :: lu
+     check(shape(lu,0)==shape(lu,1)) :: lu
+     integer dimension(n),intent(in),depend(n) :: piv
+     double precision dimension(n,nrhs),intent(in,out,copy,out=x),depend(n),check(shape(lu,0)==shape(b,0)) :: b
+     integer intent(out):: info
+   end subroutine dgetrs
+
+
+
+   subroutine cgetrs(n,nrhs,lu,piv,b,info,trans)
+
+   ! x,info = getrs(lu,piv,b,trans=0,overwrite_b=0)
+   ! Solve  A  * X = B if trans=0
+   ! Solve A^T * X = B if trans=1
+   ! Solve A^H * X = B if trans=2
+   ! A = P * L * U
+     threadsafe
+     callstatement {int i;for(i=0;i<n;++piv[i++]);(*f2py_func)((trans?(trans==2?"C":"T"):"N"),&n,&nrhs,lu,&n,piv,b,&n,&info);for(i=0;i<n;--piv[i++]);}
+     callprotoargument char*,int*,int*,complex_float*,int*,int*,complex_float*,int*,int*
+
+     integer optional,intent(in),check(trans>=0 && trans <=2) :: trans = 0
+
+     integer depend(lu),intent(hide):: n = shape(lu,0)
+     integer depend(b),intent(hide):: nrhs = shape(b,1)
+     complex dimension(n,n),intent(in) :: lu
+     check(shape(lu,0)==shape(lu,1)) :: lu
+     integer dimension(n),intent(in),depend(n) :: piv
+     complex dimension(n,nrhs),intent(in,out,copy,out=x),depend(n),check(shape(lu,0)==shape(b,0)) :: b
+     integer intent(out):: info
+   end subroutine cgetrs
+
+
+
+   subroutine zgetrs(n,nrhs,lu,piv,b,info,trans)
+
+   ! x,info = getrs(lu,piv,b,trans=0,overwrite_b=0)
+   ! Solve  A  * X = B if trans=0
+   ! Solve A^T * X = B if trans=1
+   ! Solve A^H * X = B if trans=2
+   ! A = P * L * U
+     threadsafe
+     callstatement {int i;for(i=0;i<n;++piv[i++]);(*f2py_func)((trans?(trans==2?"C":"T"):"N"),&n,&nrhs,lu,&n,piv,b,&n,&info);for(i=0;i<n;--piv[i++]);}
+     callprotoargument char*,int*,int*,complex_double*,int*,int*,complex_double*,int*,int*
+
+     integer optional,intent(in),check(trans>=0 && trans <=2) :: trans = 0
+
+     integer depend(lu),intent(hide):: n = shape(lu,0)
+     integer depend(b),intent(hide):: nrhs = shape(b,1)
+     double complex dimension(n,n),intent(in) :: lu
+     check(shape(lu,0)==shape(lu,1)) :: lu
+     integer dimension(n),intent(in),depend(n) :: piv
+     double complex dimension(n,nrhs),intent(in,out,copy,out=x),depend(n),check(shape(lu,0)==shape(b,0)) :: b
+     integer intent(out):: info
+   end subroutine zgetrs
+
+
+
+   subroutine spotrs(n,nrhs,c,b,info,lower)
+
+   ! x,info = potrs(c,b,lower=0=1,overwrite_b=0)
+   ! Solve A * X = B.
+   ! A is symmetric positive defined
+   ! A = U^T * U, C = U if lower = 0
+   ! A = L * L^T, C = L if lower = 1
+   ! C is triangular matrix of the corresponding Cholesky decomposition.
+
+     callstatement (*f2py_func)((lower?"L":"U"),&n,&nrhs,c,&n,b,&n,&info)
+     callprotoargument char*,int*,int*,float*,int*,float*,int*,int*
+
+     integer optional,intent(in),check(lower==0||lower==1) :: lower = 0
+
+     integer depend(c),intent(hide):: n = shape(c,0)
+     integer depend(b),intent(hide):: nrhs = shape(b,1)
+     real dimension(n,n),intent(in) :: c
+     check(shape(c,0)==shape(c,1)) :: c
+     real dimension(n,nrhs),intent(in,out,copy,out=x),depend(n):: b
+     check(shape(c,0)==shape(b,0)) :: b
+     integer intent(out) :: info
+
+   end subroutine spotrs
+
+
+   subroutine dpotrs(n,nrhs,c,b,info,lower)
+
+   ! x,info = potrs(c,b,lower=0=1,overwrite_b=0)
+   ! Solve A * X = B.
+   ! A is symmetric positive defined
+   ! A = U^T * U, C = U if lower = 0
+   ! A = L * L^T, C = L if lower = 1
+   ! C is triangular matrix of the corresponding Cholesky decomposition.
+
+     callstatement (*f2py_func)((lower?"L":"U"),&n,&nrhs,c,&n,b,&n,&info)
+     callprotoargument char*,int*,int*,double*,int*,double*,int*,int*
+
+     integer optional,intent(in),check(lower==0||lower==1) :: lower = 0
+
+     integer depend(c),intent(hide):: n = shape(c,0)
+     integer depend(b),intent(hide):: nrhs = shape(b,1)
+     double precision dimension(n,n),intent(in) :: c
+     check(shape(c,0)==shape(c,1)) :: c
+     double precision dimension(n,nrhs),intent(in,out,copy,out=x),depend(n):: b
+     check(shape(c,0)==shape(b,0)) :: b
+     integer intent(out) :: info
+
+   end subroutine dpotrs
+
+
+   subroutine cpotrs(n,nrhs,c,b,info,lower)
+
+   ! x,info = potrs(c,b,lower=0=1,overwrite_b=0)
+   ! Solve A * X = B.
+   ! A is symmetric positive defined
+   ! A = U^T * U, C = U if lower = 0
+   ! A = L * L^T, C = L if lower = 1
+   ! C is triangular matrix of the corresponding Cholesky decomposition.
+
+     callstatement (*f2py_func)((lower?"L":"U"),&n,&nrhs,c,&n,b,&n,&info)
+     callprotoargument char*,int*,int*,complex_float*,int*,complex_float*,int*,int*
+
+     integer optional,intent(in),check(lower==0||lower==1) :: lower = 0
+
+     integer depend(c),intent(hide):: n = shape(c,0)
+     integer depend(b),intent(hide):: nrhs = shape(b,1)
+     complex dimension(n,n),intent(in) :: c
+     check(shape(c,0)==shape(c,1)) :: c
+     complex dimension(n,nrhs),intent(in,out,copy,out=x),depend(n):: b
+     check(shape(c,0)==shape(b,0)) :: b
+     integer intent(out) :: info
+
+   end subroutine cpotrs
+
+
+   subroutine zpotrs(n,nrhs,c,b,info,lower)
+
+   ! x,info = potrs(c,b,lower=0=1,overwrite_b=0)
+   ! Solve A * X = B.
+   ! A is symmetric positive defined
+   ! A = U^T * U, C = U if lower = 0
+   ! A = L * L^T, C = L if lower = 1
+   ! C is triangular matrix of the corresponding Cholesky decomposition.
+
+     callstatement (*f2py_func)((lower?"L":"U"),&n,&nrhs,c,&n,b,&n,&info)
+     callprotoargument char*,int*,int*,complex_double*,int*,complex_double*,int*,int*
+
+     integer optional,intent(in),check(lower==0||lower==1) :: lower = 0
+
+     integer depend(c),intent(hide):: n = shape(c,0)
+     integer depend(b),intent(hide):: nrhs = shape(b,1)
+     double complex dimension(n,n),intent(in) :: c
+     check(shape(c,0)==shape(c,1)) :: c
+     double complex dimension(n,nrhs),intent(in,out,copy,out=x),depend(n):: b
+     check(shape(c,0)==shape(b,0)) :: b
+     integer intent(out) :: info
+
+   end subroutine zpotrs
+
+
+
+!
+! Invert using factorization
+! ==========================
+
+   subroutine sgetri(n,lu,piv,work,lwork,info)
+
+   ! inv_a,info = getri(lu,piv,lwork=3*n,overwrite_lu=0)
+   ! Find A inverse A^-1.
+   ! A = P * L * U
+
+     callstatement {int i;for(i=0;i<n;++piv[i++]);(*f2py_func)(&n,lu,&n,piv,work,&lwork,&info);for(i=0;i<n;--piv[i++]);}
+     callprotoargument int*,float*,int*,int*,float*,int*,int*
+
+     integer depend(lu),intent(hide):: n = shape(lu,0)
+     real dimension(n,n),intent(in,out,copy,out=inv_a) :: lu
+     check(shape(lu,0)==shape(lu,1)) :: lu
+     integer dimension(n),intent(in),depend(n) :: piv
+     integer intent(out):: info
+     integer optional,intent(in),depend(n),check(lwork>=n) :: lwork=3*n
+     real dimension(lwork),intent(hide,cache),depend(lwork) :: work
+
+   end subroutine sgetri
+
+
+   subroutine dgetri(n,lu,piv,work,lwork,info)
+
+   ! inv_a,info = getri(lu,piv,lwork=3*n,overwrite_lu=0)
+   ! Find A inverse A^-1.
+   ! A = P * L * U
+
+     callstatement {int i;for(i=0;i<n;++piv[i++]);(*f2py_func)(&n,lu,&n,piv,work,&lwork,&info);for(i=0;i<n;--piv[i++]);}
+     callprotoargument int*,double*,int*,int*,double*,int*,int*
+
+     integer depend(lu),intent(hide):: n = shape(lu,0)
+     double precision dimension(n,n),intent(in,out,copy,out=inv_a) :: lu
+     check(shape(lu,0)==shape(lu,1)) :: lu
+     integer dimension(n),intent(in),depend(n) :: piv
+     integer intent(out):: info
+     integer optional,intent(in),depend(n),check(lwork>=n) :: lwork=3*n
+     double precision dimension(lwork),intent(hide,cache),depend(lwork) :: work
+
+   end subroutine dgetri
+
+
+   subroutine cgetri(n,lu,piv,work,lwork,info)
+
+   ! inv_a,info = getri(lu,piv,lwork=3*n,overwrite_lu=0)
+   ! Find A inverse A^-1.
+   ! A = P * L * U
+
+     callstatement {int i;for(i=0;i<n;++piv[i++]);(*f2py_func)(&n,lu,&n,piv,work,&lwork,&info);for(i=0;i<n;--piv[i++]);}
+     callprotoargument int*,complex_float*,int*,int*,complex_float*,int*,int*
+
+     integer depend(lu),intent(hide):: n = shape(lu,0)
+     complex dimension(n,n),intent(in,out,copy,out=inv_a) :: lu
+     check(shape(lu,0)==shape(lu,1)) :: lu
+     integer dimension(n),intent(in),depend(n) :: piv
+     integer intent(out):: info
+     integer optional,intent(in),depend(n),check(lwork>=n) :: lwork=3*n
+     complex dimension(lwork),intent(hide,cache),depend(lwork) :: work
+
+   end subroutine cgetri
+
+
+   subroutine zgetri(n,lu,piv,work,lwork,info)
+
+   ! inv_a,info = getri(lu,piv,lwork=3*n,overwrite_lu=0)
+   ! Find A inverse A^-1.
+   ! A = P * L * U
+
+     callstatement {int i;for(i=0;i<n;++piv[i++]);(*f2py_func)(&n,lu,&n,piv,work,&lwork,&info);for(i=0;i<n;--piv[i++]);}
+     callprotoargument int*,complex_double*,int*,int*,complex_double*,int*,int*
+
+     integer depend(lu),intent(hide):: n = shape(lu,0)
+     double complex dimension(n,n),intent(in,out,copy,out=inv_a) :: lu
+     check(shape(lu,0)==shape(lu,1)) :: lu
+     integer dimension(n),intent(in),depend(n) :: piv
+     integer intent(out):: info
+     integer optional,intent(in),depend(n),check(lwork>=n) :: lwork=3*n
+     double complex dimension(lwork),intent(hide,cache),depend(lwork) :: work
+
+   end subroutine zgetri
+
+
+
+   subroutine spotri(n,c,info,lower)
+   
+     ! inv_a,info = potri(c,lower=0,overwrite_c=0)
+     ! Compute A inverse A^-1.
+     ! A = U^T * U, C = U if lower = 0
+     ! A = L * L^T, C = L if lower = 1
+     ! C is triangular matrix of the corresponding Cholesky decomposition.
+
+     callstatement (*f2py_func)((lower?"L":"U"),&n,c,&n,&info)
+     callprotoargument char*,int*,float*,int*,int*
+
+     integer optional,intent(in),check(lower==0||lower==1) :: lower = 0
+     
+     integer depend(c),intent(hide):: n = shape(c,0)
+     real dimension(n,n),intent(c,in,out,copy,out=inv_a) :: c
+     check(shape(c,0)==shape(c,1)) :: c
+     integer intent(out) :: info
+     
+   end subroutine spotri
+
+
+   subroutine dpotri(n,c,info,lower)
+   
+     ! inv_a,info = potri(c,lower=0,overwrite_c=0)
+     ! Compute A inverse A^-1.
+     ! A = U^T * U, C = U if lower = 0
+     ! A = L * L^T, C = L if lower = 1
+     ! C is triangular matrix of the corresponding Cholesky decomposition.
+
+     callstatement (*f2py_func)((lower?"L":"U"),&n,c,&n,&info)
+     callprotoargument char*,int*,double*,int*,int*
+
+     integer optional,intent(in),check(lower==0||lower==1) :: lower = 0
+     
+     integer depend(c),intent(hide):: n = shape(c,0)
+     double precision dimension(n,n),intent(c,in,out,copy,out=inv_a) :: c
+     check(shape(c,0)==shape(c,1)) :: c
+     integer intent(out) :: info
+     
+   end subroutine dpotri
+
+
+   subroutine cpotri(n,c,info,lower)
+   
+     ! inv_a,info = potri(c,lower=0,overwrite_c=0)
+     ! Compute A inverse A^-1.
+     ! A = U^T * U, C = U if lower = 0
+     ! A = L * L^T, C = L if lower = 1
+     ! C is triangular matrix of the corresponding Cholesky decomposition.
+
+     callstatement (*f2py_func)((lower?"L":"U"),&n,c,&n,&info)
+     callprotoargument char*,int*,complex_float*,int*,int*
+
+     integer optional,intent(in),check(lower==0||lower==1) :: lower = 0
+     
+     integer depend(c),intent(hide):: n = shape(c,0)
+     complex dimension(n,n),intent(c,in,out,copy,out=inv_a) :: c
+     check(shape(c,0)==shape(c,1)) :: c
+     integer intent(out) :: info
+     
+   end subroutine cpotri
+
+
+   subroutine zpotri(n,c,info,lower)
+   
+     ! inv_a,info = potri(c,lower=0,overwrite_c=0)
+     ! Compute A inverse A^-1.
+     ! A = U^T * U, C = U if lower = 0
+     ! A = L * L^T, C = L if lower = 1
+     ! C is triangular matrix of the corresponding Cholesky decomposition.
+
+     callstatement (*f2py_func)((lower?"L":"U"),&n,c,&n,&info)
+     callprotoargument char*,int*,complex_double*,int*,int*
+
+     integer optional,intent(in),check(lower==0||lower==1) :: lower = 0
+     
+     integer depend(c),intent(hide):: n = shape(c,0)
+     double complex dimension(n,n),intent(c,in,out,copy,out=inv_a) :: c
+     check(shape(c,0)==shape(c,1)) :: c
+     integer intent(out) :: info
+     
+   end subroutine zpotri
+
+
+
+  subroutine strtri(n,c,info,lower,unitdiag)
+   
+     ! inv_c,info = trtri(c,lower=0,unitdiag=1,overwrite_c=0)
+     ! Compute C inverse C^-1 where
+     ! C = U if lower = 0
+     ! C = L if lower = 1
+     ! C is non-unit triangular matrix if unitdiag = 0
+     ! C is unit triangular matrix if unitdiag = 1
+
+     callstatement (*f2py_func)((lower?"L":"U"),(unitdiag?"U":"N"),&n,c,&n,&info)
+     callprotoargument char*,char*,int*,float*,int*,int*
+
+     integer optional,intent(in),check(lower==0||lower==1) :: lower = 0
+     integer optional,intent(in),check(unitdiag==0||unitdiag==1) :: unitdiag = 0
+     
+     integer depend(c),intent(hide):: n = shape(c,0)
+     real dimension(n,n),intent(in,out,copy,out=inv_c) :: c
+     check(shape(c,0)==shape(c,1)) :: c
+     integer intent(out) :: info
+     
+   end subroutine strtri
+
+
+  subroutine dtrtri(n,c,info,lower,unitdiag)
+   
+     ! inv_c,info = trtri(c,lower=0,unitdiag=1,overwrite_c=0)
+     ! Compute C inverse C^-1 where
+     ! C = U if lower = 0
+     ! C = L if lower = 1
+     ! C is non-unit triangular matrix if unitdiag = 0
+     ! C is unit triangular matrix if unitdiag = 1
+
+     callstatement (*f2py_func)((lower?"L":"U"),(unitdiag?"U":"N"),&n,c,&n,&info)
+     callprotoargument char*,char*,int*,double*,int*,int*
+
+     integer optional,intent(in),check(lower==0||lower==1) :: lower = 0
+     integer optional,intent(in),check(unitdiag==0||unitdiag==1) :: unitdiag = 0
+     
+     integer depend(c),intent(hide):: n = shape(c,0)
+     double precision dimension(n,n),intent(in,out,copy,out=inv_c) :: c
+     check(shape(c,0)==shape(c,1)) :: c
+     integer intent(out) :: info
+     
+   end subroutine dtrtri
+
+
+  subroutine ctrtri(n,c,info,lower,unitdiag)
+   
+     ! inv_c,info = trtri(c,lower=0,unitdiag=1,overwrite_c=0)
+     ! Compute C inverse C^-1 where
+     ! C = U if lower = 0
+     ! C = L if lower = 1
+     ! C is non-unit triangular matrix if unitdiag = 0
+     ! C is unit triangular matrix if unitdiag = 1
+
+     callstatement (*f2py_func)((lower?"L":"U"),(unitdiag?"U":"N"),&n,c,&n,&info)
+     callprotoargument char*,char*,int*,complex_float*,int*,int*
+
+     integer optional,intent(in),check(lower==0||lower==1) :: lower = 0
+     integer optional,intent(in),check(unitdiag==0||unitdiag==1) :: unitdiag = 0
+     
+     integer depend(c),intent(hide):: n = shape(c,0)
+     complex dimension(n,n),intent(in,out,copy,out=inv_c) :: c
+     check(shape(c,0)==shape(c,1)) :: c
+     integer intent(out) :: info
+     
+   end subroutine ctrtri
+
+
+  subroutine ztrtri(n,c,info,lower,unitdiag)
+   
+     ! inv_c,info = trtri(c,lower=0,unitdiag=1,overwrite_c=0)
+     ! Compute C inverse C^-1 where
+     ! C = U if lower = 0
+     ! C = L if lower = 1
+     ! C is non-unit triangular matrix if unitdiag = 0
+     ! C is unit triangular matrix if unitdiag = 1
+
+     callstatement (*f2py_func)((lower?"L":"U"),(unitdiag?"U":"N"),&n,c,&n,&info)
+     callprotoargument char*,char*,int*,complex_double*,int*,int*
+
+     integer optional,intent(in),check(lower==0||lower==1) :: lower = 0
+     integer optional,intent(in),check(unitdiag==0||unitdiag==1) :: unitdiag = 0
+     
+     integer depend(c),intent(hide):: n = shape(c,0)
+     double complex dimension(n,n),intent(in,out,copy,out=inv_c) :: c
+     check(shape(c,0)==shape(c,1)) :: c
+     integer intent(out) :: info
+     
+   end subroutine ztrtri
+
+
+
+! -*- f90 -*-
+!
+! Contains wrappers for the following LAPACK routines:
+!
+!  Computational routines for orthogonal/unitary factorizations:
+!
+!   geqp3 (QR, general,factorize with pivoting) - Not Implemented
+!   geqrf (QR, general, factorize, no pivoting)
+!   orgqr, ungqr (QR, general, generate Q)
+!   ormqr, unmqr (QR, general, multiply matrix by Q) - Not Implemented
+!   gelqf (LQ, general, factorize, no pivoting) - Not Implemented
+!   orglq, unglq (LQ, general, generate Q) - Not Implemented
+!   ormlq, unmlq (LQ, general, multiply matrix by Q) - Not Implemented
+!   geqlf (QL, general, factorize, no pivoting) - Not Implemented
+!   orgql, ungql (QL, general, generate Q) - Not Implemented
+!   ormql, unmql (QL, general, multiply matrix by Q) - Not Implemented
+!   gerqf (RQ, general, factorize, no pivoting) - Not Implemented
+!   orgrq, ungrq (RQ, general, generate Q) - Not Implemented
+!   ormrq, unmrq (RQ, general, multiply matrix by Q) - Not Implemented
+!   tzrzf (RZ, trapezoidal, factorize, no pivoting) - Not Implemented
+!   ormrz, unmrz (RZ, trapezoidal,multiply matrix by Q) - Not Implemented
+!
+!  Computational routines for general orthogonal/unitary factorizations:
+!
+!   ggqrf (GQR, factorize) - Not Implemented
+!   ggrqf (GRQ, factorize) - Not Implemented
+!
+
+   subroutine sgeqrf(m,n,a,tau,work,lwork,info)
+
+   ! qr,tau,info = geqrf(a,lwork=n,overwrite_a=0)
+   ! Compute a QR factorization of a real M-by-N matrix A:
+   !   A = Q * R.
+
+     callstatement (*f2py_func)(&m,&n,a,&m,tau,work,&lwork,&info)
+     callprotoargument int*,int*,float*,int*,float*,float*,int*,int*
+
+     integer intent(hide),depend(a):: m = shape(a,0)
+     integer intent(hide),depend(a):: n = shape(a,1)
+     real dimension(m,n),intent(in,out,copy,out=qr) :: a
+     real dimension(MIN(m,n)),intent(out) :: tau
+
+     n
+     integer optional,intent(in),depend(n),check(lwork>=n) :: lwork=n
+     real dimension(lwork),intent(hide,cache),depend(lwork) :: work
+     integer intent(out) :: info
+   end subroutine sgeqrf
+
+
+   subroutine dgeqrf(m,n,a,tau,work,lwork,info)
+
+   ! qr,tau,info = geqrf(a,lwork=n,overwrite_a=0)
+   ! Compute a QR factorization of a real M-by-N matrix A:
+   !   A = Q * R.
+
+     callstatement (*f2py_func)(&m,&n,a,&m,tau,work,&lwork,&info)
+     callprotoargument int*,int*,double*,int*,double*,double*,int*,int*
+
+     integer intent(hide),depend(a):: m = shape(a,0)
+     integer intent(hide),depend(a):: n = shape(a,1)
+     double precision dimension(m,n),intent(in,out,copy,out=qr) :: a
+     double precision dimension(MIN(m,n)),intent(out) :: tau
+
+     n
+     integer optional,intent(in),depend(n),check(lwork>=n) :: lwork=n
+     double precision dimension(lwork),intent(hide,cache),depend(lwork) :: work
+     integer intent(out) :: info
+   end subroutine dgeqrf
+
+
+   subroutine cgeqrf(m,n,a,tau,work,lwork,info)
+
+   ! qr,tau,info = geqrf(a,lwork=n,overwrite_a=0)
+   ! Compute a QR factorization of a real M-by-N matrix A:
+   !   A = Q * R.
+
+     callstatement (*f2py_func)(&m,&n,a,&m,tau,work,&lwork,&info)
+     callprotoargument int*,int*,complex_float*,int*,complex_float*,complex_float*,int*,int*
+
+     integer intent(hide),depend(a):: m = shape(a,0)
+     integer intent(hide),depend(a):: n = shape(a,1)
+     complex dimension(m,n),intent(in,out,copy,out=qr) :: a
+     complex dimension(MIN(m,n)),intent(out) :: tau
+
+     n
+     integer optional,intent(in),depend(n),check(lwork>=n) :: lwork=n
+     complex dimension(lwork),intent(hide,cache),depend(lwork) :: work
+     integer intent(out) :: info
+   end subroutine cgeqrf
+
+
+   subroutine zgeqrf(m,n,a,tau,work,lwork,info)
+
+   ! qr,tau,info = geqrf(a,lwork=n,overwrite_a=0)
+   ! Compute a QR factorization of a real M-by-N matrix A:
+   !   A = Q * R.
+
+     callstatement (*f2py_func)(&m,&n,a,&m,tau,work,&lwork,&info)
+     callprotoargument int*,int*,complex_double*,int*,complex_double*,complex_double*,int*,int*
+
+     integer intent(hide),depend(a):: m = shape(a,0)
+     integer intent(hide),depend(a):: n = shape(a,1)
+     double complex dimension(m,n),intent(in,out,copy,out=qr) :: a
+     double complex dimension(MIN(m,n)),intent(out) :: tau
+
+     n
+     integer optional,intent(in),depend(n),check(lwork>=n) :: lwork=n
+     double complex dimension(lwork),intent(hide,cache),depend(lwork) :: work
+     integer intent(out) :: info
+   end subroutine zgeqrf
+
+
+   
+   ! <orth=or,\0,un,\2>
+   subroutine sorgqr(m,n,k,qr,tau,work,lwork,info)
+
+   ! q,info = (or|un)gqr(qr,tau,lwork=n,overwrite_qr=0,overwrite_tau=1)
+   ! Compute matrix Q of a QR factorization of a real M-by-N matrix A
+   ! from the results of geqrf.
+
+     callstatement (*f2py_func)(&m,&n,&k,qr,&m,tau,work,&lwork,&info)
+     callprotoargument int*,int*,int*,float*,int*,float*,float*,int*,int*
+
+     integer intent(hide),depend(qr):: m = shape(qr,0)
+     integer intent(hide),depend(qr):: n = shape(qr,1)
+     integer intent(hide),depend(m,n):: k = MIN(m,n)
+     real dimension(m,n),intent(in,out,copy,out=q) :: qr
+     real dimension(k),intent(in,overwrite) :: tau
+     ! n
+     integer optional,intent(in),depend(n),check(lwork>=n) :: lwork=n
+     real dimension(lwork),intent(hide,cache),depend(lwork) :: work
+
+     integer intent(out) :: info
+   end subroutine sorgqr
+
+   subroutine dorgqr(m,n,k,qr,tau,work,lwork,info)
+
+   ! q,info = (or|un)gqr(qr,tau,lwork=n,overwrite_qr=0,overwrite_tau=1)
+   ! Compute matrix Q of a QR factorization of a real M-by-N matrix A
+   ! from the results of geqrf.
+
+     callstatement (*f2py_func)(&m,&n,&k,qr,&m,tau,work,&lwork,&info)
+     callprotoargument int*,int*,int*,double*,int*,double*,double*,int*,int*
+
+     integer intent(hide),depend(qr):: m = shape(qr,0)
+     integer intent(hide),depend(qr):: n = shape(qr,1)
+     integer intent(hide),depend(m,n):: k = MIN(m,n)
+     double precision dimension(m,n),intent(in,out,copy,out=q) :: qr
+     double precision dimension(k),intent(in,overwrite) :: tau
+     ! n
+     integer optional,intent(in),depend(n),check(lwork>=n) :: lwork=n
+     double precision dimension(lwork),intent(hide,cache),depend(lwork) :: work
+
+     integer intent(out) :: info
+   end subroutine dorgqr
+
+   subroutine cungqr(m,n,k,qr,tau,work,lwork,info)
+
+   ! q,info = (or|un)gqr(qr,tau,lwork=n,overwrite_qr=0,overwrite_tau=1)
+   ! Compute matrix Q of a QR factorization of a real M-by-N matrix A
+   ! from the results of geqrf.
+
+     callstatement (*f2py_func)(&m,&n,&k,qr,&m,tau,work,&lwork,&info)
+     callprotoargument int*,int*,int*,complex_float*,int*,complex_float*,complex_float*,int*,int*
+
+     integer intent(hide),depend(qr):: m = shape(qr,0)
+     integer intent(hide),depend(qr):: n = shape(qr,1)
+     integer intent(hide),depend(m,n):: k = MIN(m,n)
+     complex dimension(m,n),intent(in,out,copy,out=q) :: qr
+     complex dimension(k),intent(in,overwrite) :: tau
+     ! n
+     integer optional,intent(in),depend(n),check(lwork>=n) :: lwork=n
+     complex dimension(lwork),intent(hide,cache),depend(lwork) :: work
+
+     integer intent(out) :: info
+   end subroutine cungqr
+
+   subroutine zungqr(m,n,k,qr,tau,work,lwork,info)
+
+   ! q,info = (or|un)gqr(qr,tau,lwork=n,overwrite_qr=0,overwrite_tau=1)
+   ! Compute matrix Q of a QR factorization of a real M-by-N matrix A
+   ! from the results of geqrf.
+
+     callstatement (*f2py_func)(&m,&n,&k,qr,&m,tau,work,&lwork,&info)
+     callprotoargument int*,int*,int*,complex_double*,int*,complex_double*,complex_double*,int*,int*
+
+     integer intent(hide),depend(qr):: m = shape(qr,0)
+     integer intent(hide),depend(qr):: n = shape(qr,1)
+     integer intent(hide),depend(m,n):: k = MIN(m,n)
+     double complex dimension(m,n),intent(in,out,copy,out=q) :: qr
+     double complex dimension(k),intent(in,overwrite) :: tau
+     ! n
+     integer optional,intent(in),depend(n),check(lwork>=n) :: lwork=n
+     double complex dimension(lwork),intent(hide,cache),depend(lwork) :: work
+
+     integer intent(out) :: info
+   end subroutine zungqr
+
+
+! -*- f90 -*-
+!
+! Contains wrappers for the following LAPACK routines:
+!
+!  Computational routines for the symmetric eigenproblem:
+!
+!   sytrd, hetrd (dense symmetric/Hermitian, tridiagonal reduction) - Not Implemented
+!   sptrd, hptrd (packed symmetric/Hermitian, tridiagonal reduction) - Not Implemented
+!   sbtrd, hbtrd (band symmetric/Hermitian, tridiagonal reduction) - Not Implemented
+!   orgtr, ungtr (orthogonal/unitary, generate matrix after sytrd) - Not Implemented
+!   ormtr, unmtr (orthogonal/unitary, multiply matrix after sytrd) - Not Implemented
+!   opgtr, upgtr (packed orthogonal/unitary, generate matrix after sptrd) - Not Implemented
+!   opmtr, upmtr (packed orthogonal/unitary, multiply matrix after sptrd) - Not Implemented
+!   steqr (symmetric tridiagonal eigenvalues/vectors via QR) - Not Implemented
+!   sterf (symmetric tridiagonal eigenvalues only via root-free QR, real) - Not Implemented
+!   stedc (symmetric tridiagonal eigenvalues/vectors via D&C) - Not Implemented
+!   stegr (symmetric tridiagonal eigenvalues/vectors via RRR) - Not Implemented
+!   stebz (symmetric tridiagonal eigenvalues only via bisection, real) - Not Implemented
+!   stein (symmetric tridiagonal eigenvectors by inverse iteration) - Not Implemented
+!   pteqr (symmetric tridiagonal positive eigenvalues/vectors) - Not Implemented
+!
+
+! -*- f90 -*-
+!
+! Contains wrappers for the following LAPACK routines:
+!
+!  Computational routines for the non-symmetric eigenproblem:
+!
+!   gehrd (general Hessenberg reduction)
+!   gebal (general balancing)
+!   gebak (general backtransforming)
+!   orghr, unghr (orthogonal/unitary generate matrix after Hessenberg reduction) - Not Implemented
+!   ormhr, unmhr ((orthogonal/unitary multiply matrix after Hessenberg reduction) - Not Implemented
+!   hseqr (Hessenberg Schur factorization) - Not Implemented
+!   hsein (Hessenberg eigenvectors by inverse iteration) - Not Implemented
+!   trevc ((quasi)triangular eigenvectors) - Not Implemented
+!   trexc ((quasi)triangular reordering Schur factorization) - Not Implemented
+!   trsyl ((quasi)triangular Sylvester equation) - Not Implemented
+!   trsna ((quasi)triangular condition numbers of eigenvalues/vectors) - Not Implemented
+!   trsen ((quasi)triangular condition numbers of eigenvalue cluster/invariant subspace) - Not Implemented
+!
+
+   subroutine sgehrd(n,lo,hi,a,tau,work,lwork,info)
+   !
+   ! hq,tau,info = gehrd(a,lo=0,hi=n-1,lwork=n,overwrite_a=0)
+   ! Reduce general matrix A to upper Hessenberg form H by unitary similarity
+   ! transform Q^H * A * Q = H
+   !
+   ! Q = H(lo) * H(lo+1) * ... * H(hi-1)
+   ! H(i) = I - tau * v * v^H
+   ! v[0:i+1] = 0, v[i+1]=1, v[hi+1:n] = 0
+   ! v[i+2:hi+1] is stored in hq[i+2:hi+i,i]
+   ! tau is tau[i]
+   !
+   ! hq for n=7,lo=1,hi=5:
+   ! [a a h h h h a
+   !    a h h h h a
+   !    h h h h h h
+   !    v2h h h h h
+   !    v2v3h h h h
+   !    v2v3v4h h h
+   !              a]
+   !
+     callstatement { hi++; lo++; (*f2py_func)(&n,&lo,&hi,a,&n,tau,work,&lwork,&info); }
+     callprotoargument int*,int*,int*,float*,int*,float*,float*,int*,int*
+     integer intent(hide),depend(a) :: n = shape(a,0)
+     real dimension(n,n),intent(in,out,copy,out=ht),check(shape(a,0)==shape(a,1)) :: a
+     integer intent(in),optional :: lo = 0
+     integer intent(in),optional,depend(n) :: hi = n-1
+     real dimension(n-1),intent(out),depend(n) :: tau
+     real dimension(lwork),intent(cahce,hide),depend(lwork) :: work
+     integer intent(in),optional,depend(n),check(lwork>=MAX(n,1)) :: lwork = MAX(n,1)
+     integer intent(out) :: info
+
+   end subroutine sgehrd
+
+
+   subroutine dgehrd(n,lo,hi,a,tau,work,lwork,info)
+   !
+   ! hq,tau,info = gehrd(a,lo=0,hi=n-1,lwork=n,overwrite_a=0)
+   ! Reduce general matrix A to upper Hessenberg form H by unitary similarity
+   ! transform Q^H * A * Q = H
+   !
+   ! Q = H(lo) * H(lo+1) * ... * H(hi-1)
+   ! H(i) = I - tau * v * v^H
+   ! v[0:i+1] = 0, v[i+1]=1, v[hi+1:n] = 0
+   ! v[i+2:hi+1] is stored in hq[i+2:hi+i,i]
+   ! tau is tau[i]
+   !
+   ! hq for n=7,lo=1,hi=5:
+   ! [a a h h h h a
+   !    a h h h h a
+   !    h h h h h h
+   !    v2h h h h h
+   !    v2v3h h h h
+   !    v2v3v4h h h
+   !              a]
+   !
+     callstatement { hi++; lo++; (*f2py_func)(&n,&lo,&hi,a,&n,tau,work,&lwork,&info); }
+     callprotoargument int*,int*,int*,double*,int*,double*,double*,int*,int*
+     integer intent(hide),depend(a) :: n = shape(a,0)
+     double precision dimension(n,n),intent(in,out,copy,out=ht),check(shape(a,0)==shape(a,1)) :: a
+     integer intent(in),optional :: lo = 0
+     integer intent(in),optional,depend(n) :: hi = n-1
+     double precision dimension(n-1),intent(out),depend(n) :: tau
+     double precision dimension(lwork),intent(cahce,hide),depend(lwork) :: work
+     integer intent(in),optional,depend(n),check(lwork>=MAX(n,1)) :: lwork = MAX(n,1)
+     integer intent(out) :: info
+
+   end subroutine dgehrd
+
+
+   subroutine cgehrd(n,lo,hi,a,tau,work,lwork,info)
+   !
+   ! hq,tau,info = gehrd(a,lo=0,hi=n-1,lwork=n,overwrite_a=0)
+   ! Reduce general matrix A to upper Hessenberg form H by unitary similarity
+   ! transform Q^H * A * Q = H
+   !
+   ! Q = H(lo) * H(lo+1) * ... * H(hi-1)
+   ! H(i) = I - tau * v * v^H
+   ! v[0:i+1] = 0, v[i+1]=1, v[hi+1:n] = 0
+   ! v[i+2:hi+1] is stored in hq[i+2:hi+i,i]
+   ! tau is tau[i]
+   !
+   ! hq for n=7,lo=1,hi=5:
+   ! [a a h h h h a
+   !    a h h h h a
+   !    h h h h h h
+   !    v2h h h h h
+   !    v2v3h h h h
+   !    v2v3v4h h h
+   !              a]
+   !
+     callstatement { hi++; lo++; (*f2py_func)(&n,&lo,&hi,a,&n,tau,work,&lwork,&info); }
+     callprotoargument int*,int*,int*,complex_float*,int*,complex_float*,complex_float*,int*,int*
+     integer intent(hide),depend(a) :: n = shape(a,0)
+     complex dimension(n,n),intent(in,out,copy,out=ht),check(shape(a,0)==shape(a,1)) :: a
+     integer intent(in),optional :: lo = 0
+     integer intent(in),optional,depend(n) :: hi = n-1
+     complex dimension(n-1),intent(out),depend(n) :: tau
+     complex dimension(lwork),intent(cahce,hide),depend(lwork) :: work
+     integer intent(in),optional,depend(n),check(lwork>=MAX(n,1)) :: lwork = MAX(n,1)
+     integer intent(out) :: info
+
+   end subroutine cgehrd
+
+
+   subroutine zgehrd(n,lo,hi,a,tau,work,lwork,info)
+   !
+   ! hq,tau,info = gehrd(a,lo=0,hi=n-1,lwork=n,overwrite_a=0)
+   ! Reduce general matrix A to upper Hessenberg form H by unitary similarity
+   ! transform Q^H * A * Q = H
+   !
+   ! Q = H(lo) * H(lo+1) * ... * H(hi-1)
+   ! H(i) = I - tau * v * v^H
+   ! v[0:i+1] = 0, v[i+1]=1, v[hi+1:n] = 0
+   ! v[i+2:hi+1] is stored in hq[i+2:hi+i,i]
+   ! tau is tau[i]
+   !
+   ! hq for n=7,lo=1,hi=5:
+   ! [a a h h h h a
+   !    a h h h h a
+   !    h h h h h h
+   !    v2h h h h h
+   !    v2v3h h h h
+   !    v2v3v4h h h
+   !              a]
+   !
+     callstatement { hi++; lo++; (*f2py_func)(&n,&lo,&hi,a,&n,tau,work,&lwork,&info); }
+     callprotoargument int*,int*,int*,complex_double*,int*,complex_double*,complex_double*,int*,int*
+     integer intent(hide),depend(a) :: n = shape(a,0)
+     double complex dimension(n,n),intent(in,out,copy,out=ht),check(shape(a,0)==shape(a,1)) :: a
+     integer intent(in),optional :: lo = 0
+     integer intent(in),optional,depend(n) :: hi = n-1
+     double complex dimension(n-1),intent(out),depend(n) :: tau
+     double complex dimension(lwork),intent(cahce,hide),depend(lwork) :: work
+     integer intent(in),optional,depend(n),check(lwork>=MAX(n,1)) :: lwork = MAX(n,1)
+     integer intent(out) :: info
+
+   end subroutine zgehrd
+
+
+
+   subroutine sgebal(scale,permute,n,a,m,lo,hi,pivscale,info)
+   !
+   ! ba,lo,hi,pivscale,info = gebal(a,scale=0,permute=0,overwrite_a=0)
+   ! Balance general matrix a.
+   ! hi,lo are such that ba[i][j]==0 if i>j and j=0...lo-1 or i=hi+1..n-1
+   ! pivscale([0:lo], [lo:hi+1], [hi:n+1]) = (p1,d,p2) where (p1,p2)[j] is
+   ! the index of the row and column interchanged with row and column j. 
+   ! d[j] is the scaling factor applied to row and column j.
+   ! The order in which the interchanges are made is n-1 to hi+1, then 0 to lo-1.
+   !
+   ! P * A * P = [[T1,X,Y],[0,B,Z],[0,0,T2]]
+   ! BA = [[T1,X*D,Y],[0,inv(D)*B*D,ind(D)*Z],[0,0,T2]]
+   ! where D = diag(d), T1,T2 are upper triangular matrices.
+   ! lo,hi mark the starting and ending columns of submatrix B.
+
+     callstatement { (*f2py_func)((permute?(scale?"B":"P"):(scale?"S":"N")),&n,a,&m,&lo,&hi,pivscale,&info); hi--; lo--; }
+     callprotoargument char*,int*,float*,int*,int*,int*,float*,int*
+     integer intent(in),optional :: permute = 0
+     integer intent(in),optional :: scale = 0
+     integer intent(hide),depend(a,n) :: m = shape(a,0)
+     integer intent(hide),depend(a) :: n = shape(a,1)
+     check(m>=n) m
+     integer intent(out) :: hi,lo
+     real dimension(n),intent(out),depend(n) :: pivscale
+     real dimension(m,n),intent(in,out,copy,out=ba) :: a
+     integer intent(out) :: info
+
+   end subroutine sgebal
+
+
+   subroutine dgebal(scale,permute,n,a,m,lo,hi,pivscale,info)
+   !
+   ! ba,lo,hi,pivscale,info = gebal(a,scale=0,permute=0,overwrite_a=0)
+   ! Balance general matrix a.
+   ! hi,lo are such that ba[i][j]==0 if i>j and j=0...lo-1 or i=hi+1..n-1
+   ! pivscale([0:lo], [lo:hi+1], [hi:n+1]) = (p1,d,p2) where (p1,p2)[j] is
+   ! the index of the row and column interchanged with row and column j. 
+   ! d[j] is the scaling factor applied to row and column j.
+   ! The order in which the interchanges are made is n-1 to hi+1, then 0 to lo-1.
+   !
+   ! P * A * P = [[T1,X,Y],[0,B,Z],[0,0,T2]]
+   ! BA = [[T1,X*D,Y],[0,inv(D)*B*D,ind(D)*Z],[0,0,T2]]
+   ! where D = diag(d), T1,T2 are upper triangular matrices.
+   ! lo,hi mark the starting and ending columns of submatrix B.
+
+     callstatement { (*f2py_func)((permute?(scale?"B":"P"):(scale?"S":"N")),&n,a,&m,&lo,&hi,pivscale,&info); hi--; lo--; }
+     callprotoargument char*,int*,double*,int*,int*,int*,double*,int*
+     integer intent(in),optional :: permute = 0
+     integer intent(in),optional :: scale = 0
+     integer intent(hide),depend(a,n) :: m = shape(a,0)
+     integer intent(hide),depend(a) :: n = shape(a,1)
+     check(m>=n) m
+     integer intent(out) :: hi,lo
+     double precision dimension(n),intent(out),depend(n) :: pivscale
+     double precision dimension(m,n),intent(in,out,copy,out=ba) :: a
+     integer intent(out) :: info
+
+   end subroutine dgebal
+
+
+   subroutine cgebal(scale,permute,n,a,m,lo,hi,pivscale,info)
+   !
+   ! ba,lo,hi,pivscale,info = gebal(a,scale=0,permute=0,overwrite_a=0)
+   ! Balance general matrix a.
+   ! hi,lo are such that ba[i][j]==0 if i>j and j=0...lo-1 or i=hi+1..n-1
+   ! pivscale([0:lo], [lo:hi+1], [hi:n+1]) = (p1,d,p2) where (p1,p2)[j] is
+   ! the index of the row and column interchanged with row and column j. 
+   ! d[j] is the scaling factor applied to row and column j.
+   ! The order in which the interchanges are made is n-1 to hi+1, then 0 to lo-1.
+   !
+   ! P * A * P = [[T1,X,Y],[0,B,Z],[0,0,T2]]
+   ! BA = [[T1,X*D,Y],[0,inv(D)*B*D,ind(D)*Z],[0,0,T2]]
+   ! where D = diag(d), T1,T2 are upper triangular matrices.
+   ! lo,hi mark the starting and ending columns of submatrix B.
+
+     callstatement { (*f2py_func)((permute?(scale?"B":"P"):(scale?"S":"N")),&n,a,&m,&lo,&hi,pivscale,&info); hi--; lo--; }
+     callprotoargument char*,int*,complex_float*,int*,int*,int*,float*,int*
+     integer intent(in),optional :: permute = 0
+     integer intent(in),optional :: scale = 0
+     integer intent(hide),depend(a,n) :: m = shape(a,0)
+     integer intent(hide),depend(a) :: n = shape(a,1)
+     check(m>=n) m
+     integer intent(out) :: hi,lo
+     real dimension(n),intent(out),depend(n) :: pivscale
+     complex dimension(m,n),intent(in,out,copy,out=ba) :: a
+     integer intent(out) :: info
+
+   end subroutine cgebal
+
+
+   subroutine zgebal(scale,permute,n,a,m,lo,hi,pivscale,info)
+   !
+   ! ba,lo,hi,pivscale,info = gebal(a,scale=0,permute=0,overwrite_a=0)
+   ! Balance general matrix a.
+   ! hi,lo are such that ba[i][j]==0 if i>j and j=0...lo-1 or i=hi+1..n-1
+   ! pivscale([0:lo], [lo:hi+1], [hi:n+1]) = (p1,d,p2) where (p1,p2)[j] is
+   ! the index of the row and column interchanged with row and column j. 
+   ! d[j] is the scaling factor applied to row and column j.
+   ! The order in which the interchanges are made is n-1 to hi+1, then 0 to lo-1.
+   !
+   ! P * A * P = [[T1,X,Y],[0,B,Z],[0,0,T2]]
+   ! BA = [[T1,X*D,Y],[0,inv(D)*B*D,ind(D)*Z],[0,0,T2]]
+   ! where D = diag(d), T1,T2 are upper triangular matrices.
+   ! lo,hi mark the starting and ending columns of submatrix B.
+
+     callstatement { (*f2py_func)((permute?(scale?"B":"P"):(scale?"S":"N")),&n,a,&m,&lo,&hi,pivscale,&info); hi--; lo--; }
+     callprotoargument char*,int*,complex_double*,int*,int*,int*,double*,int*
+     integer intent(in),optional :: permute = 0
+     integer intent(in),optional :: scale = 0
+     integer intent(hide),depend(a,n) :: m = shape(a,0)
+     integer intent(hide),depend(a) :: n = shape(a,1)
+     check(m>=n) m
+     integer intent(out) :: hi,lo
+     double precision dimension(n),intent(out),depend(n) :: pivscale
+     double complex dimension(m,n),intent(in,out,copy,out=ba) :: a
+     integer intent(out) :: info
+
+   end subroutine zgebal
+
+
+! -*- f90 -*-
+!
+! Contains wrappers for the following LAPACK routines:
+!
+!  Computational routines for the singular value decomposition:
+!
+!   gebrd - (general, bidiagonal reduction) - Not Implemented
+!   gbbrd - (general band, bidiagonal reduction) - Not Implemented
+!   orgbr, ungber (orthogonal/unitary, generate matrix after bidiagonal reduction) - Not Implemented
+!   ormbr, unmber (orthogonal/unitary, multiply matrix after bidiagonal reduction) - Not Implemented
+!   bdsqr (bidiagonal, SVD using QR or dqds) - Not Implemented
+!   bdsdc (bidiagonal, SVD using D&C, real) - Not Implemented
+!
+!  Computational routines for the generalized singular value decomposition:
+!
+!   ggsvp (triangular reduction) - Not Implemented
+!   tgsja (GSVD of a pair of triangular matrices) - Not Implemented
+!
+! -*- f90 -*-
+!
+! Contains wrappers for the following LAPACK routines:
+!
+!  Computational routines for the generalized symmetric definite eigenproblem:
+!
+!   sygst, hegst (symmetric/Hermitian, reduction) - Not Implemented
+!   spgst, hpgst (symmetric/Hermitian, reduction, packed storage) - Not Implemented
+!   pbstf (symmetric/Hermitian, split Cholesky factorization, banded) - Not Implemented
+!   sbgst,hbgst (symmetric/Hermitian, reduction, banded) - Not Implemented
+!
+! -*- f90 -*-
+!
+! Contains wrappers for the following LAPACK routines:
+!
+!  Computational routines for the generalized nonsymmetric eigenproblem:
+!
+!   gghrd (general, Hessenberg reduction) - Not Implemented
+!   ggbal (general, balancing) - Not Implemented
+!   ggbak (general, back transforming) - Not Implemented
+!   hgeqz (Hessenberg, Schur factorization) - Not Implemented
+!   tgevc ((quasi)triangular, eigenvectors) - Not Implemented
+!   tgexc ((quasi)triangular, reordering Schur decomposition) - Not Implemented
+!   tgsyl ((quasi)triangular, Sylvester equation) - Not Implemented
+!   tgsna ((quasi)triangular condition numbers of eigenvalues/vectors) - Not Implemented
+!   tgsen ((quasi)triangular condition numbers of eigenvalue cluster/deflating subspaces) - Not Implemented
+!
+! -*- f90 -*-
+
+   subroutine slauum(n,c,info,lower)
+   
+     ! a,info = lauum(c,lower=0,overwrite_c=0)
+     ! Compute product
+     ! U^T * U, C = U if lower = 0
+     ! L * L^T, C = L if lower = 1
+     ! C is triangular matrix of the corresponding Cholesky decomposition.
+
+     callstatement (*f2py_func)((lower?"L":"U"),&n,c,&n,&info)
+     callprotoargument char*,int*,float*,int*,int*
+
+     integer optional,intent(in),check(lower==0||lower==1) :: lower = 0
+     
+     integer depend(c),intent(hide):: n = shape(c,0)
+     real dimension(n,n),intent(in,out,copy,out=a) :: c
+     check(shape(c,0)==shape(c,1)) :: c
+     integer intent(out) :: info
+     
+   end subroutine slauum
+
+
+   subroutine dlauum(n,c,info,lower)
+   
+     ! a,info = lauum(c,lower=0,overwrite_c=0)
+     ! Compute product
+     ! U^T * U, C = U if lower = 0
+     ! L * L^T, C = L if lower = 1
+     ! C is triangular matrix of the corresponding Cholesky decomposition.
+
+     callstatement (*f2py_func)((lower?"L":"U"),&n,c,&n,&info)
+     callprotoargument char*,int*,double*,int*,int*
+
+     integer optional,intent(in),check(lower==0||lower==1) :: lower = 0
+     
+     integer depend(c),intent(hide):: n = shape(c,0)
+     double precision dimension(n,n),intent(in,out,copy,out=a) :: c
+     check(shape(c,0)==shape(c,1)) :: c
+     integer intent(out) :: info
+     
+   end subroutine dlauum
+
+
+   subroutine clauum(n,c,info,lower)
+   
+     ! a,info = lauum(c,lower=0,overwrite_c=0)
+     ! Compute product
+     ! U^T * U, C = U if lower = 0
+     ! L * L^T, C = L if lower = 1
+     ! C is triangular matrix of the corresponding Cholesky decomposition.
+
+     callstatement (*f2py_func)((lower?"L":"U"),&n,c,&n,&info)
+     callprotoargument char*,int*,complex_float*,int*,int*
+
+     integer optional,intent(in),check(lower==0||lower==1) :: lower = 0
+     
+     integer depend(c),intent(hide):: n = shape(c,0)
+     complex dimension(n,n),intent(in,out,copy,out=a) :: c
+     check(shape(c,0)==shape(c,1)) :: c
+     integer intent(out) :: info
+     
+   end subroutine clauum
+
+
+   subroutine zlauum(n,c,info,lower)
+   
+     ! a,info = lauum(c,lower=0,overwrite_c=0)
+     ! Compute product
+     ! U^T * U, C = U if lower = 0
+     ! L * L^T, C = L if lower = 1
+     ! C is triangular matrix of the corresponding Cholesky decomposition.
+
+     callstatement (*f2py_func)((lower?"L":"U"),&n,c,&n,&info)
+     callprotoargument char*,int*,complex_double*,int*,int*
+
+     integer optional,intent(in),check(lower==0||lower==1) :: lower = 0
+     
+     integer depend(c),intent(hide):: n = shape(c,0)
+     double complex dimension(n,n),intent(in,out,copy,out=a) :: c
+     check(shape(c,0)==shape(c,1)) :: c
+     integer intent(out) :: info
+     
+   end subroutine zlauum
+
+
+
+   subroutine slaswp(n,a,nrows,k1,k2,piv,off,inc,m)
+
+   ! a = laswp(a,piv,k1=0,k2=len(piv)-1,off=0,inc=1,overwrite_a=0)
+   ! Perform row interchanges on the matrix A for each of row k1 through k2
+   ! 
+   ! piv pivots rows.
+
+     callstatement {int i;m=len(piv);for(i=0;i<m;++piv[i++]);++k1;++k2; (*f2py_func)(&n,a,&nrows,&k1,&k2,piv+off,&inc); for(i=0;i<m;--piv[i++]);}
+     callprotoargument int*,float*,int*,int*,int*,int*,int*
+
+     integer depend(a),intent(hide):: nrows = shape(a,0)
+     integer depend(a),intent(hide):: n = shape(a,1)
+     real dimension(nrows,n),intent(in,out,copy) :: a
+     integer dimension(*),intent(in),depend(nrows) :: piv
+     check(len(piv)<=nrows) :: piv
+!XXX: how to check that all elements in piv are < n?
+
+     integer optional,intent(in) :: k1 = 0
+     check(0<=k1) :: k1
+     integer optional,intent(in),depend(k1,piv,off) :: k2 = len(piv)-1
+     check(k1<=k2 && k2<len(piv)-off) :: k2
+
+     integer optional, intent(in),check(inc>0||inc<0) :: inc = 1
+     integer optional,intent(in),depend(piv) :: off=0
+     check(off>=0 && off<len(piv)) :: off
+
+     integer intent(hide),depend(piv,inc,off) :: m = (len(piv)-off)/abs(inc)
+     check(len(piv)-off>(m-1)*abs(inc)) :: m
+
+   end subroutine slaswp
+
+
+   subroutine dlaswp(n,a,nrows,k1,k2,piv,off,inc,m)
+
+   ! a = laswp(a,piv,k1=0,k2=len(piv)-1,off=0,inc=1,overwrite_a=0)
+   ! Perform row interchanges on the matrix A for each of row k1 through k2
+   ! 
+   ! piv pivots rows.
+
+     callstatement {int i;m=len(piv);for(i=0;i<m;++piv[i++]);++k1;++k2; (*f2py_func)(&n,a,&nrows,&k1,&k2,piv+off,&inc); for(i=0;i<m;--piv[i++]);}
+     callprotoargument int*,double*,int*,int*,int*,int*,int*
+
+     integer depend(a),intent(hide):: nrows = shape(a,0)
+     integer depend(a),intent(hide):: n = shape(a,1)
+     double precision dimension(nrows,n),intent(in,out,copy) :: a
+     integer dimension(*),intent(in),depend(nrows) :: piv
+     check(len(piv)<=nrows) :: piv
+!XXX: how to check that all elements in piv are < n?
+
+     integer optional,intent(in) :: k1 = 0
+     check(0<=k1) :: k1
+     integer optional,intent(in),depend(k1,piv,off) :: k2 = len(piv)-1
+     check(k1<=k2 && k2<len(piv)-off) :: k2
+
+     integer optional, intent(in),check(inc>0||inc<0) :: inc = 1
+     integer optional,intent(in),depend(piv) :: off=0
+     check(off>=0 && off<len(piv)) :: off
+
+     integer intent(hide),depend(piv,inc,off) :: m = (len(piv)-off)/abs(inc)
+     check(len(piv)-off>(m-1)*abs(inc)) :: m
+
+   end subroutine dlaswp
+
+
+   subroutine claswp(n,a,nrows,k1,k2,piv,off,inc,m)
+
+   ! a = laswp(a,piv,k1=0,k2=len(piv)-1,off=0,inc=1,overwrite_a=0)
+   ! Perform row interchanges on the matrix A for each of row k1 through k2
+   ! 
+   ! piv pivots rows.
+
+     callstatement {int i;m=len(piv);for(i=0;i<m;++piv[i++]);++k1;++k2; (*f2py_func)(&n,a,&nrows,&k1,&k2,piv+off,&inc); for(i=0;i<m;--piv[i++]);}
+     callprotoargument int*,complex_float*,int*,int*,int*,int*,int*
+
+     integer depend(a),intent(hide):: nrows = shape(a,0)
+     integer depend(a),intent(hide):: n = shape(a,1)
+     complex dimension(nrows,n),intent(in,out,copy) :: a
+     integer dimension(*),intent(in),depend(nrows) :: piv
+     check(len(piv)<=nrows) :: piv
+!XXX: how to check that all elements in piv are < n?
+
+     integer optional,intent(in) :: k1 = 0
+     check(0<=k1) :: k1
+     integer optional,intent(in),depend(k1,piv,off) :: k2 = len(piv)-1
+     check(k1<=k2 && k2<len(piv)-off) :: k2
+
+     integer optional, intent(in),check(inc>0||inc<0) :: inc = 1
+     integer optional,intent(in),depend(piv) :: off=0
+     check(off>=0 && off<len(piv)) :: off
+
+     integer intent(hide),depend(piv,inc,off) :: m = (len(piv)-off)/abs(inc)
+     check(len(piv)-off>(m-1)*abs(inc)) :: m
+
+   end subroutine claswp
+
+
+   subroutine zlaswp(n,a,nrows,k1,k2,piv,off,inc,m)
+
+   ! a = laswp(a,piv,k1=0,k2=len(piv)-1,off=0,inc=1,overwrite_a=0)
+   ! Perform row interchanges on the matrix A for each of row k1 through k2
+   ! 
+   ! piv pivots rows.
+
+     callstatement {int i;m=len(piv);for(i=0;i<m;++piv[i++]);++k1;++k2; (*f2py_func)(&n,a,&nrows,&k1,&k2,piv+off,&inc); for(i=0;i<m;--piv[i++]);}
+     callprotoargument int*,complex_double*,int*,int*,int*,int*,int*
+
+     integer depend(a),intent(hide):: nrows = shape(a,0)
+     integer depend(a),intent(hide):: n = shape(a,1)
+     double complex dimension(nrows,n),intent(in,out,copy) :: a
+     integer dimension(*),intent(in),depend(nrows) :: piv
+     check(len(piv)<=nrows) :: piv
+!XXX: how to check that all elements in piv are < n?
+
+     integer optional,intent(in) :: k1 = 0
+     check(0<=k1) :: k1
+     integer optional,intent(in),depend(k1,piv,off) :: k2 = len(piv)-1
+     check(k1<=k2 && k2<len(piv)-off) :: k2
+
+     integer optional, intent(in),check(inc>0||inc<0) :: inc = 1
+     integer optional,intent(in),depend(piv) :: off=0
+     check(off>=0 && off<len(piv)) :: off
+
+     integer intent(hide),depend(piv,inc,off) :: m = (len(piv)-off)/abs(inc)
+     check(len(piv)-off>(m-1)*abs(inc)) :: m
+
+   end subroutine zlaswp
+
+
+
+   
+end interface
+end python module flapack

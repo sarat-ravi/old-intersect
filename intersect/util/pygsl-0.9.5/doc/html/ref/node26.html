@@ -1,0 +1,404 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<link rel="STYLESHEET" href="ref.css" type='text/css' />
+<link rel="SHORTCUT ICON" href="-dvips-safe" />
+<link rel="first" href="ref.html" title='PyGSL Reference Manual' />
+<link rel='contents' href='contents.html' title="Contents" />
+<link rel='index' href='genindex.html' title='Index' />
+<link rel='last' href='about.html' title='About this document...' />
+<link rel='help' href='about.html' title='About this document...' />
+<link rel="next" href="node27.html" />
+<link rel="prev" href="node25.html" />
+<link rel="parent" href="module-pygsl.const.html" />
+<link rel="next" href="node27.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name='aesop' content='information' />
+<title>4.3 pygsl.const.cgsm -- Scientific constants in cgsm units</title>
+</head>
+<body>
+<DIV CLASS="navigation">
+<div id='top-navigation-panel' xml:id='top-navigation-panel'>
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="4.2 pygsl.const.mksa  "
+  href="node25.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></A></td>
+<td class='online-navigation'><a rel="parent" title="4. pygsl.const  "
+  href="module-pygsl.const.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up One Level' width='32' /></A></td>
+<td class='online-navigation'><a rel="next" title="4.4 pygsl.const.num  "
+  href="node27.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></A></td>
+<td align="center" width="100%">PyGSL Reference Manual</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></A></td>
+<td class='online-navigation'><img src='../icons/blank.png'
+  border='0' height='32'  alt='' width='32' /></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></A></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node25.html">4.2 pygsl.const.mksa  </A>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="module-pygsl.const.html">4. pygsl.const  </A>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node27.html">4.4 pygsl.const.num  </A>
+</div>
+<hr /></div>
+</DIV>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION006300000000000000000"></A> 
+<A NAME="cha:const-cgs-module"></A>
+<BR>
+4.3 <tt class="module">pygsl.const.cgsm</tt> 
+<BR>
+Scientific constants in cgsm units
+</H1>
+
+<P>
+<div class="verbatim"><pre>
+from pygsl.const import cgsm
+print "a teaspoon contains %g ml"%cgs.teaspoon
+</pre></div>
+
+<P>
+You can access the following constants:<div class="center"><table class="realtable">
+  <thead>
+    <tr>
+      <th class="left"  >Name</th>
+      <th class="left"  >gsl Name</th>
+      <th class="left"  >unit or value</th>
+      </tr>
+    </thead>
+  <tbody>
+    <tr><td class="left"   valign="baseline"><tt class="constant">speed_of_light</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_SPEED_OF_LIGHT</tt></td>
+        <td class="left"  >cm / s</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">gravitational_constant</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_GRAVITATIONAL_CONSTANT</tt></td>
+        <td class="left"  >cm^3 / g s^ 2</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">plancks_constant_h</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_PLANCKS_CONSTANT_H</tt></td>
+        <td class="left"  >g cm^2 / s</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">plancks_constant_hbar</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_PLANCKS_CONSTANT_HBAR</tt></td>
+        <td class="left"  >g cm^2 / s</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">vacuum_permeability</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_VACUUM_PERMEABILITY</tt></td>
+        <td class="left"  >cm g / A^2 s^2</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">astronomical_unit</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_ASTRONOMICAL_UNIT</tt></td>
+        <td class="left"  >cm</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">light_year</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_LIGHT_YEAR</tt></td>
+        <td class="left"  >cm</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">parsec</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_PARSEC</tt></td>
+        <td class="left"  >cm</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">grav_accel</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_GRAV_ACCEL</tt></td>
+        <td class="left"  >cm / s^2</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">electron_volt</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_ELECTRON_VOLT</tt></td>
+        <td class="left"  >g cm^2 / s^2</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">mass_electron</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_MASS_ELECTRON</tt></td>
+        <td class="left"  >g</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">mass_muon</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_MASS_MUON</tt></td>
+        <td class="left"  >g</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">mass_proton</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_MASS_PROTON</tt></td>
+        <td class="left"  >g</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">mass_neutron</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_MASS_NEUTRON</tt></td>
+        <td class="left"  >g</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">rydberg</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_RYDBERG</tt></td>
+        <td class="left"  >g cm^2 / s^2</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">boltzmann</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_BOLTZMANN</tt></td>
+        <td class="left"  >g cm^2 / K s^2</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">bohr_magneton</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_BOHR_MAGNETON</tt></td>
+        <td class="left"  >A cm^2</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">nuclear_magneton</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_NUCLEAR_MAGNETON</tt></td>
+        <td class="left"  >A cm^2</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">electron_magnetic_moment</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_ELECTRON_MAGNETIC_MOMENT</tt></td>
+        <td class="left"  >A cm^2</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">proton_magnetic_moment</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_PROTON_MAGNETIC_MOMENT</tt></td>
+        <td class="left"  >A cm^2</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">molar_gas</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_MOLAR_GAS</tt></td>
+        <td class="left"  >g cm^2 / K mol s^2</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">standard_gas_volume</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_STANDARD_GAS_VOLUME</tt></td>
+        <td class="left"  >cm^3 / mol</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">minute</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_MINUTE</tt></td>
+        <td class="left"  >s</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">hour</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_HOUR</tt></td>
+        <td class="left"  >s</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">day</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_DAY</tt></td>
+        <td class="left"  >s</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">week</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_WEEK</tt></td>
+        <td class="left"  >s</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">inch</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_INCH</tt></td>
+        <td class="left"  >cm</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">foot</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_FOOT</tt></td>
+        <td class="left"  >cm</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">yard</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_YARD</tt></td>
+        <td class="left"  >cm</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">mile</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_MILE</tt></td>
+        <td class="left"  >cm</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">nautical_mile</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_NAUTICAL_MILE</tt></td>
+        <td class="left"  >cm</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">fathom</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_FATHOM</tt></td>
+        <td class="left"  >cm</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">mil</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_MIL</tt></td>
+        <td class="left"  >cm</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">point</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_POINT</tt></td>
+        <td class="left"  >cm</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">texpoint</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_TEXPOINT</tt></td>
+        <td class="left"  >cm</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">micron</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_MICRON</tt></td>
+        <td class="left"  >cm</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">angstrom</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_ANGSTROM</tt></td>
+        <td class="left"  >cm</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">hectare</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_HECTARE</tt></td>
+        <td class="left"  >cm^2</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">acre</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_ACRE</tt></td>
+        <td class="left"  >cm^2</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">barn</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_BARN</tt></td>
+        <td class="left"  >cm^2</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">liter</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_LITER</tt></td>
+        <td class="left"  >cm^3</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">us_gallon</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_US_GALLON</tt></td>
+        <td class="left"  >cm^3</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">quart</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_QUART</tt></td>
+        <td class="left"  >cm^3</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">pint</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_PINT</tt></td>
+        <td class="left"  >cm^3</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">cup</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_CUP</tt></td>
+        <td class="left"  >cm^3</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">fluid_ounce</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_FLUID_OUNCE</tt></td>
+        <td class="left"  >cm^3</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">tablespoon</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_TABLESPOON</tt></td>
+        <td class="left"  >cm^3</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">teaspoon</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_TEASPOON</tt></td>
+        <td class="left"  >cm^3</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">canadian_gallon</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_CANADIAN_GALLON</tt></td>
+        <td class="left"  >cm^3</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">uk_gallon</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_UK_GALLON</tt></td>
+        <td class="left"  >cm^3</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">miles_per_hour</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_MILES_PER_HOUR</tt></td>
+        <td class="left"  >cm / s</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">kilometers_per_hour</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_KILOMETERS_PER_HOUR</tt></td>
+        <td class="left"  >cm / s</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">knot</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_KNOT</tt></td>
+        <td class="left"  >cm / s</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">pound_mass</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_POUND_MASS</tt></td>
+        <td class="left"  >g</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">ounce_mass</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_OUNCE_MASS</tt></td>
+        <td class="left"  >g</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">ton</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_TON</tt></td>
+        <td class="left"  >g</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">metric_ton</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_METRIC_TON</tt></td>
+        <td class="left"  >g</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">uk_ton</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_UK_TON</tt></td>
+        <td class="left"  >g</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">troy_ounce</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_TROY_OUNCE</tt></td>
+        <td class="left"  >g</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">carat</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_CARAT</tt></td>
+        <td class="left"  >g</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">unified_atomic_mass</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_UNIFIED_ATOMIC_MASS</tt></td>
+        <td class="left"  >g</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">gram_force</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_GRAM_FORCE</tt></td>
+        <td class="left"  >cm g / s^2</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">pound_force</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_POUND_FORCE</tt></td>
+        <td class="left"  >cm g / s^2</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">kilopound_force</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_KILOPOUND_FORCE</tt></td>
+        <td class="left"  >cm g / s^2</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">poundal</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_POUNDAL</tt></td>
+        <td class="left"  >cm g / s^2</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">calorie</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_CALORIE</tt></td>
+        <td class="left"  >g cm^2 / s^2</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">btu</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_BTU</tt></td>
+        <td class="left"  >g cm^2 / s^2</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">therm</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_THERM</tt></td>
+        <td class="left"  >g cm^2 / s^2</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">horsepower</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_HORSEPOWER</tt></td>
+        <td class="left"  >g cm^2 / s^3</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">bar</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_BAR</tt></td>
+        <td class="left"  >g / cm s^2</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">std_atmosphere</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_STD_ATMOSPHERE</tt></td>
+        <td class="left"  >g / cm s^2</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">torr</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_TORR</tt></td>
+        <td class="left"  >g / cm s^2</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">meter_of_mercury</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_METER_OF_MERCURY</tt></td>
+        <td class="left"  >g / cm s^2</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">inch_of_mercury</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_INCH_OF_MERCURY</tt></td>
+        <td class="left"  >g / cm s^2</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">inch_of_water</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_INCH_OF_WATER</tt></td>
+        <td class="left"  >g / cm s^2</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">psi</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_PSI</tt></td>
+        <td class="left"  >g / cm s^2</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">poise</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_POISE</tt></td>
+        <td class="left"  >g / cm s</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">stokes</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_STOKES</tt></td>
+        <td class="left"  >cm^2 / s</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">faraday</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_FARADAY</tt></td>
+        <td class="left"  >A s / mol</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">electron_charge</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_ELECTRON_CHARGE</tt></td>
+        <td class="left"  >A s</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">gauss</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_GAUSS</tt></td>
+        <td class="left"  >g / A s^2</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">stilb</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_STILB</tt></td>
+        <td class="left"  >cd / cm^2</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">lumen</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_LUMEN</tt></td>
+        <td class="left"  >cd sr</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">lux</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_LUX</tt></td>
+        <td class="left"  >cd sr / cm^2</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">phot</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_PHOT</tt></td>
+        <td class="left"  >cd sr / cm^2</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">footcandle</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_FOOTCANDLE</tt></td>
+        <td class="left"  >cd sr / cm^2</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">lambert</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_LAMBERT</tt></td>
+        <td class="left"  >cd sr / cm^2</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">footlambert</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_FOOTLAMBERT</tt></td>
+        <td class="left"  >cd sr / cm^2</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">curie</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_CURIE</tt></td>
+        <td class="left"  >1 / s</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">roentgen</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_ROENTGEN</tt></td>
+        <td class="left"  >A s / g</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">rad</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_RAD</tt></td>
+        <td class="left"  >cm^2 / s^2</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">solar_mass</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_SOLAR_MASS</tt></td>
+        <td class="left"  >g</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">bohr_radius</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_BOHR_RADIUS</tt></td>
+        <td class="left"  >cm</td></tr>
+    <tr><td class="left"   valign="baseline"><tt class="constant">vacuum_permittivity</tt></td>
+        <td class="left"  ><tt class="constant">GSL_CONST_CGSM_VACUUM_PERMITTIVITY</tt></td>
+        <td class="left"  >A^2 s^4 / g cm^3</td></tr></tbody>
+</table></div>
+
+<P>
+
+<DIV CLASS="navigation">
+<div class='online-navigation'>
+<p></p><hr />
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="4.2 pygsl.const.mksa  "
+  href="node25.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></A></td>
+<td class='online-navigation'><a rel="parent" title="4. pygsl.const  "
+  href="module-pygsl.const.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up One Level' width='32' /></A></td>
+<td class='online-navigation'><a rel="next" title="4.4 pygsl.const.num  "
+  href="node27.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></A></td>
+<td align="center" width="100%">PyGSL Reference Manual</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></A></td>
+<td class='online-navigation'><img src='../icons/blank.png'
+  border='0' height='32'  alt='' width='32' /></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></A></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node25.html">4.2 pygsl.const.mksa  </A>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="module-pygsl.const.html">4. pygsl.const  </A>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node27.html">4.4 pygsl.const.num  </A>
+</div>
+</div>
+<hr />
+<span class="release-info">Release 0.9, documentation updated on October, 2008.</span>
+</DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

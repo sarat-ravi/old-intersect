@@ -1,0 +1,1881 @@
+!%f90 -*- f90 -*-
+! Signatures for f2py-wrappers of FORTRAN BLAS functions.
+!
+! Author: Pearu Peterson
+! Created: Jan-Feb 2002
+! $Revision$ $Date$
+!
+
+
+python module fblas
+    interface
+
+!%f90 -*- f90 -*-
+! Signatures for f2py-wrappers of FORTRAN LEVEL 1 BLAS functions.
+!
+! Author: Pearu Peterson
+! Created: Jan-Feb 2002
+! Modified: Fabian Pedregosa, 2011
+!
+! Implemented:
+!
+!   rotg, rotmg, rot, rotm
+!   swap, scal, copy, axpy
+!   dot, dotu, dotc
+!   nrm2, asum, amax, iamax
+!
+! Not Implemented: NONE
+!
+! NOTE: Avoiding wrappers hack does not work under 64-bit Gentoo system
+! with single precision routines, so they are removed.
+!
+! Level 1 BLAS
+
+subroutine srotg(a,b,c,s)
+  ! Computes the parameters for a Givens rotation.
+  !
+  ! Given the Cartesian coordinates (a, b) of a point p, these routines return
+  ! the parameters a, b, c, and s associated with the Givens rotation that zeros
+  ! the y-coordinate of the point.
+  !
+  ! FIXME: parameters a, b are not returned.
+  !
+  callprotoargument float*,float*,float*,float*
+
+  real intent(in) :: a, b
+  real intent(out,out=c) :: c
+  real intent(out,out=s) :: s
+
+end subroutine srotg
+
+
+subroutine drotg(a,b,c,s)
+  ! Computes the parameters for a Givens rotation.
+  !
+  ! Given the Cartesian coordinates (a, b) of a point p, these routines return
+  ! the parameters a, b, c, and s associated with the Givens rotation that zeros
+  ! the y-coordinate of the point.
+  !
+  ! FIXME: parameters a, b are not returned.
+  !
+  callprotoargument double*,double*,double*,double*
+
+  double precision intent(in) :: a, b
+  double precision intent(out,out=c) :: c
+  double precision intent(out,out=s) :: s
+
+end subroutine drotg
+
+
+subroutine crotg(a,b,c,s)
+  ! Computes the parameters for a Givens rotation.
+  !
+  ! Given the Cartesian coordinates (a, b) of a point p, these routines return
+  ! the parameters a, b, c, and s associated with the Givens rotation that zeros
+  ! the y-coordinate of the point.
+  !
+  ! FIXME: parameters a, b are not returned.
+  !
+  callprotoargument complex_float*,complex_float*,complex_float*,complex_float*
+
+  complex intent(in) :: a, b
+  complex intent(out,out=c) :: c
+  complex intent(out,out=s) :: s
+
+end subroutine crotg
+
+
+subroutine zrotg(a,b,c,s)
+  ! Computes the parameters for a Givens rotation.
+  !
+  ! Given the Cartesian coordinates (a, b) of a point p, these routines return
+  ! the parameters a, b, c, and s associated with the Givens rotation that zeros
+  ! the y-coordinate of the point.
+  !
+  ! FIXME: parameters a, b are not returned.
+  !
+  callprotoargument complex_double*,complex_double*,complex_double*,complex_double*
+
+  double complex intent(in) :: a, b
+  double complex intent(out,out=c) :: c
+  double complex intent(out,out=s) :: s
+
+end subroutine zrotg
+
+
+
+! <prefix2=s,d> <ctype2=float,double> <ftype2=real,double precision>
+subroutine srotmg(d1,d2,x1,y1,param)
+  ! Computes the parameters for a modified Givens rotation.
+  !
+  ! Given Cartesian coordinates (x1, y1) of an input vector, this
+  ! routine compute the components of a modified Givens
+  ! transformation matrix H that zeros the y-component of the
+  ! resulting vector:
+  !
+  !    [x]     [sqrt(d1) x1]
+  !    [ ] = H [           ]
+  !    [0]     [sqrt(d2) y1]
+  !
+
+  callstatement (*f2py_func)(&d1,&d2,&x1,&y1,param)
+  callprotoargument float*,float*,float*,float*,float*
+
+  real intent(in) :: d1, d2, x1, y1
+  real intent(out), dimension(5) :: param
+
+end subroutine srotmg
+
+subroutine drotmg(d1,d2,x1,y1,param)
+  ! Computes the parameters for a modified Givens rotation.
+  !
+  ! Given Cartesian coordinates (x1, y1) of an input vector, this
+  ! routine compute the components of a modified Givens
+  ! transformation matrix H that zeros the y-component of the
+  ! resulting vector:
+  !
+  !    [x]     [sqrt(d1) x1]
+  !    [ ] = H [           ]
+  !    [0]     [sqrt(d2) y1]
+  !
+
+  callstatement (*f2py_func)(&d1,&d2,&x1,&y1,param)
+  callprotoargument double*,double*,double*,double*,double*
+
+  double precision intent(in) :: d1, d2, x1, y1
+  double precision intent(out), dimension(5) :: param
+
+end subroutine drotmg
+
+
+
+
+subroutine srot(n,x,offx,incx,y,offy,incy,c,s)
+  ! Applies a plane rotation with real cosine and complex sine to a
+  ! pair of complex vectors and returns the modified vectors.
+  !
+  ! x, y are input vectors and c, s are values that define a rotation:
+  !
+  !                [ c        s]
+  !                [           ]
+  !                [-conj(s)  c]
+  !
+  ! where c*c + s*conjg(s) = 1.0.
+  !
+
+  callstatement (*f2py_func)(&n,x+offx,&incx,y+offy,&incy,&c,&s)
+  callprotoargument int*,float*,int*,float*,int*,float*,float*
+
+  real dimension(*),intent(in,out,copy) :: x,y
+  real intent(in) :: c, s
+  integer optional, intent(in), check(incx>0||incx<0) :: incx = 1
+  integer optional, intent(in), check(incy>0||incy<0) :: incy = 1
+  integer optional, intent(in), depend(x) :: offx=0
+  integer optional, intent(in), depend(y) :: offy=0
+  check(offx>=0 && offx<len(x)) :: offx
+  check(offy>=0 && offy<len(y)) :: offy
+  integer optional, intent(in), depend(x,incx,offx,y,incy,offy) :: &
+       n = (len(x)-offx)/abs(incx)
+  check(len(x)-offx>(n-1)*abs(incx)) :: n
+  check(len(y)-offy>(n-1)*abs(incy)) :: n
+
+end subroutine srot
+
+
+
+subroutine drot(n,x,offx,incx,y,offy,incy,c,s)
+  ! Applies a plane rotation with real cosine and complex sine to a
+  ! pair of complex vectors and returns the modified vectors.
+  !
+  ! x, y are input vectors and c, s are values that define a rotation:
+  !
+  !                [ c        s]
+  !                [           ]
+  !                [-conj(s)  c]
+  !
+  ! where c*c + s*conjg(s) = 1.0.
+  !
+
+  callstatement (*f2py_func)(&n,x+offx,&incx,y+offy,&incy,&c,&s)
+  callprotoargument int*,double*,int*,double*,int*,double*,double*
+
+  double precision dimension(*),intent(in,out,copy) :: x,y
+  double precision intent(in) :: c, s
+  integer optional, intent(in), check(incx>0||incx<0) :: incx = 1
+  integer optional, intent(in), check(incy>0||incy<0) :: incy = 1
+  integer optional, intent(in), depend(x) :: offx=0
+  integer optional, intent(in), depend(y) :: offy=0
+  check(offx>=0 && offx<len(x)) :: offx
+  check(offy>=0 && offy<len(y)) :: offy
+  integer optional, intent(in), depend(x,incx,offx,y,incy,offy) :: &
+       n = (len(x)-offx)/abs(incx)
+  check(len(x)-offx>(n-1)*abs(incx)) :: n
+  check(len(y)-offy>(n-1)*abs(incy)) :: n
+
+end subroutine drot
+
+
+
+subroutine csrot(n,x,offx,incx,y,offy,incy,c,s)
+  ! Applies a plane rotation with real cosine and complex sine to a
+  ! pair of complex vectors and returns the modified vectors.
+  !
+  ! x, y are input vectors and c, s are values that define a rotation:
+  !
+  !                [ c        s]
+  !                [           ]
+  !                [-conj(s)  c]
+  !
+  ! where c*c + s*conjg(s) = 1.0.
+  !
+
+  callstatement (*f2py_func)(&n,x+offx,&incx,y+offy,&incy,&c,&s)
+  callprotoargument int*,complex_float*,int*,complex_float*,int*,float*,float*
+
+  complex dimension(*),intent(in,out,copy) :: x,y
+  real intent(in) :: c, s
+  integer optional, intent(in), check(incx>0||incx<0) :: incx = 1
+  integer optional, intent(in), check(incy>0||incy<0) :: incy = 1
+  integer optional, intent(in), depend(x) :: offx=0
+  integer optional, intent(in), depend(y) :: offy=0
+  check(offx>=0 && offx<len(x)) :: offx
+  check(offy>=0 && offy<len(y)) :: offy
+  integer optional, intent(in), depend(x,incx,offx,y,incy,offy) :: &
+       n = (len(x)-offx)/abs(incx)
+  check(len(x)-offx>(n-1)*abs(incx)) :: n
+  check(len(y)-offy>(n-1)*abs(incy)) :: n
+
+end subroutine csrot
+
+
+
+subroutine zdrot(n,x,offx,incx,y,offy,incy,c,s)
+  ! Applies a plane rotation with real cosine and complex sine to a
+  ! pair of complex vectors and returns the modified vectors.
+  !
+  ! x, y are input vectors and c, s are values that define a rotation:
+  !
+  !                [ c        s]
+  !                [           ]
+  !                [-conj(s)  c]
+  !
+  ! where c*c + s*conjg(s) = 1.0.
+  !
+
+  callstatement (*f2py_func)(&n,x+offx,&incx,y+offy,&incy,&c,&s)
+  callprotoargument int*,complex_double*,int*,complex_double*,int*,double*,double*
+
+  double complex dimension(*),intent(in,out,copy) :: x,y
+  double precision intent(in) :: c, s
+  integer optional, intent(in), check(incx>0||incx<0) :: incx = 1
+  integer optional, intent(in), check(incy>0||incy<0) :: incy = 1
+  integer optional, intent(in), depend(x) :: offx=0
+  integer optional, intent(in), depend(y) :: offy=0
+  check(offx>=0 && offx<len(x)) :: offx
+  check(offy>=0 && offy<len(y)) :: offy
+  integer optional, intent(in), depend(x,incx,offx,y,incy,offy) :: &
+       n = (len(x)-offx)/abs(incx)
+  check(len(x)-offx>(n-1)*abs(incx)) :: n
+  check(len(y)-offy>(n-1)*abs(incy)) :: n
+
+end subroutine zdrot
+
+
+
+
+subroutine srotm(n,x,offx,incx,y,offy,incy,param)
+  ! Performs rotation of points in the modified plane
+  !
+  ! Given two complex vectors x and y, each vector element of these vectors is
+  ! replaced as follows:
+  !
+  !      x(i) = H*x(i) + H*y(i)
+  !      y(i) = H*y(i) - H*x(i)
+  !
+  ! where H is a modified Givens transformation matrix whose values are stored
+  ! in the param(2) through param(5) array.
+
+  callstatement (*f2py_func)(&n,x+offx,&incx,y+offy,&incy,param)
+  callprotoargument int*,float*,int*,float*,int*,float*
+
+  real dimension(*), intent(in,out,copy) :: x, y
+  real dimension(5), intent(in) :: param
+  integer optional, intent(in),check(incx>0||incx<0) :: incx = 1
+  integer optional, intent(in),check(incy>0||incy<0) :: incy = 1
+  integer optional, intent(in),depend(x) :: offx=0
+  integer optional, intent(in),depend(y) :: offy=0
+  check(offx>=0 && offx<len(x)) :: offx
+  check(offy>=0 && offy<len(y)) :: offy
+  integer optional, intent(in),depend(x,incx,offx,y,incy,offy) :: &
+       n = (len(x)-offx)/abs(incx)
+  check(len(x)-offx>(n-1)*abs(incx)) :: n
+  check(len(y)-offy>(n-1)*abs(incy)) :: n
+
+end subroutine srotm
+
+
+
+subroutine drotm(n,x,offx,incx,y,offy,incy,param)
+  ! Performs rotation of points in the modified plane
+  !
+  ! Given two complex vectors x and y, each vector element of these vectors is
+  ! replaced as follows:
+  !
+  !      x(i) = H*x(i) + H*y(i)
+  !      y(i) = H*y(i) - H*x(i)
+  !
+  ! where H is a modified Givens transformation matrix whose values are stored
+  ! in the param(2) through param(5) array.
+
+  callstatement (*f2py_func)(&n,x+offx,&incx,y+offy,&incy,param)
+  callprotoargument int*,double*,int*,double*,int*,double*
+
+  double precision dimension(*), intent(in,out,copy) :: x, y
+  double precision dimension(5), intent(in) :: param
+  integer optional, intent(in),check(incx>0||incx<0) :: incx = 1
+  integer optional, intent(in),check(incy>0||incy<0) :: incy = 1
+  integer optional, intent(in),depend(x) :: offx=0
+  integer optional, intent(in),depend(y) :: offy=0
+  check(offx>=0 && offx<len(x)) :: offx
+  check(offy>=0 && offy<len(y)) :: offy
+  integer optional, intent(in),depend(x,incx,offx,y,incy,offy) :: &
+       n = (len(x)-offx)/abs(incx)
+  check(len(x)-offx>(n-1)*abs(incx)) :: n
+  check(len(y)-offy>(n-1)*abs(incy)) :: n
+
+end subroutine drotm
+
+
+
+
+subroutine sswap(n,x,offx,incx,y,offy,incy)
+  ! Swap two arrays: x __l1 y
+
+  callstatement (*f2py_func)(&n,x+offx,&incx,y+offy,&incy)
+  callprotoargument int*,float*,int*,float*,int*
+
+  real dimension(*), intent(in,out) :: x, y
+  integer optional, intent(in),check(incx>0||incx<0) :: incx = 1
+  integer optional, intent(in),check(incy>0||incy<0) :: incy = 1
+  integer optional, intent(in),depend(x) :: offx=0
+  integer optional, intent(in),depend(y) :: offy=0
+  check(offx>=0 && offx<len(x)) :: offx
+  check(offy>=0 && offy<len(y)) :: offy
+  integer optional, intent(in),depend(x,incx,offx,y,incy,offy) :: &
+       n = (len(x)-offx)/abs(incx)
+  check(len(x)-offx>(n-1)*abs(incx)) :: n
+  check(len(y)-offy>(n-1)*abs(incy)) :: n
+
+end subroutine sswap
+
+
+
+subroutine dswap(n,x,offx,incx,y,offy,incy)
+  ! Swap two arrays: x __l1 y
+
+  callstatement (*f2py_func)(&n,x+offx,&incx,y+offy,&incy)
+  callprotoargument int*,double*,int*,double*,int*
+
+  double precision dimension(*), intent(in,out) :: x, y
+  integer optional, intent(in),check(incx>0||incx<0) :: incx = 1
+  integer optional, intent(in),check(incy>0||incy<0) :: incy = 1
+  integer optional, intent(in),depend(x) :: offx=0
+  integer optional, intent(in),depend(y) :: offy=0
+  check(offx>=0 && offx<len(x)) :: offx
+  check(offy>=0 && offy<len(y)) :: offy
+  integer optional, intent(in),depend(x,incx,offx,y,incy,offy) :: &
+       n = (len(x)-offx)/abs(incx)
+  check(len(x)-offx>(n-1)*abs(incx)) :: n
+  check(len(y)-offy>(n-1)*abs(incy)) :: n
+
+end subroutine dswap
+
+
+
+subroutine cswap(n,x,offx,incx,y,offy,incy)
+  ! Swap two arrays: x __l1 y
+
+  callstatement (*f2py_func)(&n,x+offx,&incx,y+offy,&incy)
+  callprotoargument int*,complex_float*,int*,complex_float*,int*
+
+  complex dimension(*), intent(in,out) :: x, y
+  integer optional, intent(in),check(incx>0||incx<0) :: incx = 1
+  integer optional, intent(in),check(incy>0||incy<0) :: incy = 1
+  integer optional, intent(in),depend(x) :: offx=0
+  integer optional, intent(in),depend(y) :: offy=0
+  check(offx>=0 && offx<len(x)) :: offx
+  check(offy>=0 && offy<len(y)) :: offy
+  integer optional, intent(in),depend(x,incx,offx,y,incy,offy) :: &
+       n = (len(x)-offx)/abs(incx)
+  check(len(x)-offx>(n-1)*abs(incx)) :: n
+  check(len(y)-offy>(n-1)*abs(incy)) :: n
+
+end subroutine cswap
+
+
+
+subroutine zswap(n,x,offx,incx,y,offy,incy)
+  ! Swap two arrays: x __l1 y
+
+  callstatement (*f2py_func)(&n,x+offx,&incx,y+offy,&incy)
+  callprotoargument int*,complex_double*,int*,complex_double*,int*
+
+  double complex dimension(*), intent(in,out) :: x, y
+  integer optional, intent(in),check(incx>0||incx<0) :: incx = 1
+  integer optional, intent(in),check(incy>0||incy<0) :: incy = 1
+  integer optional, intent(in),depend(x) :: offx=0
+  integer optional, intent(in),depend(y) :: offy=0
+  check(offx>=0 && offx<len(x)) :: offx
+  check(offy>=0 && offy<len(y)) :: offy
+  integer optional, intent(in),depend(x,incx,offx,y,incy,offy) :: &
+       n = (len(x)-offx)/abs(incx)
+  check(len(x)-offx>(n-1)*abs(incx)) :: n
+  check(len(y)-offy>(n-1)*abs(incy)) :: n
+
+end subroutine zswap
+
+
+
+
+subroutine sscal(n,a,x,offx,incx)
+  ! Computes the product of a vector by a scalar: y = a*x
+
+  callstatement (*f2py_func)(&n,&a,x+offx,&incx)
+  callprotoargument int*,float*,float*,int*
+
+  real intent(in):: a
+  real dimension(*), intent(in,out) :: x
+  integer optional, intent(in), check(incx>0||incx<0) :: incx = 1
+  integer optional, intent(in), depend(x) :: offx=0
+  check(offx>=0 && offx<len(x)) :: offx
+  integer optional, intent(in),depend(x,incx,offx) :: n = (len(x)-offx)/abs(incx)
+  check(len(x)-offx>(n-1)*abs(incx)) :: n
+
+end subroutine sscal
+
+
+
+subroutine dscal(n,a,x,offx,incx)
+  ! Computes the product of a vector by a scalar: y = a*x
+
+  callstatement (*f2py_func)(&n,&a,x+offx,&incx)
+  callprotoargument int*,double*,double*,int*
+
+  double precision intent(in):: a
+  double precision dimension(*), intent(in,out) :: x
+  integer optional, intent(in), check(incx>0||incx<0) :: incx = 1
+  integer optional, intent(in), depend(x) :: offx=0
+  check(offx>=0 && offx<len(x)) :: offx
+  integer optional, intent(in),depend(x,incx,offx) :: n = (len(x)-offx)/abs(incx)
+  check(len(x)-offx>(n-1)*abs(incx)) :: n
+
+end subroutine dscal
+
+
+
+subroutine cscal(n,a,x,offx,incx)
+  ! Computes the product of a vector by a scalar: y = a*x
+
+  callstatement (*f2py_func)(&n,&a,x+offx,&incx)
+  callprotoargument int*,complex_float*,complex_float*,int*
+
+  complex intent(in):: a
+  complex dimension(*), intent(in,out) :: x
+  integer optional, intent(in), check(incx>0||incx<0) :: incx = 1
+  integer optional, intent(in), depend(x) :: offx=0
+  check(offx>=0 && offx<len(x)) :: offx
+  integer optional, intent(in),depend(x,incx,offx) :: n = (len(x)-offx)/abs(incx)
+  check(len(x)-offx>(n-1)*abs(incx)) :: n
+
+end subroutine cscal
+
+
+
+subroutine zscal(n,a,x,offx,incx)
+  ! Computes the product of a vector by a scalar: y = a*x
+
+  callstatement (*f2py_func)(&n,&a,x+offx,&incx)
+  callprotoargument int*,complex_double*,complex_double*,int*
+
+  double complex intent(in):: a
+  double complex dimension(*), intent(in,out) :: x
+  integer optional, intent(in), check(incx>0||incx<0) :: incx = 1
+  integer optional, intent(in), depend(x) :: offx=0
+  check(offx>=0 && offx<len(x)) :: offx
+  integer optional, intent(in),depend(x,incx,offx) :: n = (len(x)-offx)/abs(incx)
+  check(len(x)-offx>(n-1)*abs(incx)) :: n
+
+end subroutine zscal
+
+
+
+
+subroutine csscal(n,a,x,offx,incx)
+  ! Computes the product of a vector by a scalar, scales a complex
+  ! vector by a real constant
+  ! y = a*x
+
+  callstatement (*f2py_func)(&n,&a,x+offx,&incx)
+  callprotoargument int*,float*,complex_float*,int*
+
+  real intent(in) :: a
+  complex dimension(*), intent(in,out,copy) :: x
+  integer optional, intent(in),check(incx>0||incx<0) :: incx = 1
+  integer optional, intent(in),depend(x) :: offx=0
+  check(offx>=0 && offx<len(x)) :: offx
+  integer optional, intent(in),depend(x,incx,offx) :: n = (len(x)-offx)/abs(incx)
+  check(len(x)-offx>(n-1)*abs(incx)) :: n
+
+end subroutine csscal
+
+
+
+subroutine zdscal(n,a,x,offx,incx)
+  ! Computes the product of a vector by a scalar, scales a complex
+  ! vector by a real constant
+  ! y = a*x
+
+  callstatement (*f2py_func)(&n,&a,x+offx,&incx)
+  callprotoargument int*,double*,complex_double*,int*
+
+  double precision intent(in) :: a
+  double complex dimension(*), intent(in,out,copy) :: x
+  integer optional, intent(in),check(incx>0||incx<0) :: incx = 1
+  integer optional, intent(in),depend(x) :: offx=0
+  check(offx>=0 && offx<len(x)) :: offx
+  integer optional, intent(in),depend(x,incx,offx) :: n = (len(x)-offx)/abs(incx)
+  check(len(x)-offx>(n-1)*abs(incx)) :: n
+
+end subroutine zdscal
+
+
+
+
+subroutine scopy(n,x,offx,incx,y,offy,incy)
+  ! Copy y <- x
+
+  callstatement (*f2py_func)(&n,x+offx,&incx,y+offy,&incy)
+  callprotoargument int*,float*,int*,float*,int*
+
+  real dimension(*), intent(in) :: x
+  real dimension(*), intent(in,out) :: y
+  integer optional, intent(in),check(incx>0||incx<0) :: incx = 1
+  integer optional, intent(in),check(incy>0||incy<0) :: incy = 1
+  integer optional, intent(in),depend(x) :: offx=0
+  integer optional, intent(in),depend(y) :: offy=0
+  check(offx>=0 && offx<len(x)) :: offx
+  check(offy>=0 && offy<len(y)) :: offy
+  integer optional, intent(in),depend(x,incx,offx,y,incy,offy) :: &
+       n = (len(x)-offx)/abs(incx)
+  check(len(x)-offx>(n-1)*abs(incx)) :: n
+  check(len(y)-offy>(n-1)*abs(incy)) :: n
+
+end subroutine scopy
+
+
+
+subroutine dcopy(n,x,offx,incx,y,offy,incy)
+  ! Copy y <- x
+
+  callstatement (*f2py_func)(&n,x+offx,&incx,y+offy,&incy)
+  callprotoargument int*,double*,int*,double*,int*
+
+  double precision dimension(*), intent(in) :: x
+  double precision dimension(*), intent(in,out) :: y
+  integer optional, intent(in),check(incx>0||incx<0) :: incx = 1
+  integer optional, intent(in),check(incy>0||incy<0) :: incy = 1
+  integer optional, intent(in),depend(x) :: offx=0
+  integer optional, intent(in),depend(y) :: offy=0
+  check(offx>=0 && offx<len(x)) :: offx
+  check(offy>=0 && offy<len(y)) :: offy
+  integer optional, intent(in),depend(x,incx,offx,y,incy,offy) :: &
+       n = (len(x)-offx)/abs(incx)
+  check(len(x)-offx>(n-1)*abs(incx)) :: n
+  check(len(y)-offy>(n-1)*abs(incy)) :: n
+
+end subroutine dcopy
+
+
+
+subroutine ccopy(n,x,offx,incx,y,offy,incy)
+  ! Copy y <- x
+
+  callstatement (*f2py_func)(&n,x+offx,&incx,y+offy,&incy)
+  callprotoargument int*,complex_float*,int*,complex_float*,int*
+
+  complex dimension(*), intent(in) :: x
+  complex dimension(*), intent(in,out) :: y
+  integer optional, intent(in),check(incx>0||incx<0) :: incx = 1
+  integer optional, intent(in),check(incy>0||incy<0) :: incy = 1
+  integer optional, intent(in),depend(x) :: offx=0
+  integer optional, intent(in),depend(y) :: offy=0
+  check(offx>=0 && offx<len(x)) :: offx
+  check(offy>=0 && offy<len(y)) :: offy
+  integer optional, intent(in),depend(x,incx,offx,y,incy,offy) :: &
+       n = (len(x)-offx)/abs(incx)
+  check(len(x)-offx>(n-1)*abs(incx)) :: n
+  check(len(y)-offy>(n-1)*abs(incy)) :: n
+
+end subroutine ccopy
+
+
+
+subroutine zcopy(n,x,offx,incx,y,offy,incy)
+  ! Copy y <- x
+
+  callstatement (*f2py_func)(&n,x+offx,&incx,y+offy,&incy)
+  callprotoargument int*,complex_double*,int*,complex_double*,int*
+
+  double complex dimension(*), intent(in) :: x
+  double complex dimension(*), intent(in,out) :: y
+  integer optional, intent(in),check(incx>0||incx<0) :: incx = 1
+  integer optional, intent(in),check(incy>0||incy<0) :: incy = 1
+  integer optional, intent(in),depend(x) :: offx=0
+  integer optional, intent(in),depend(y) :: offy=0
+  check(offx>=0 && offx<len(x)) :: offx
+  check(offy>=0 && offy<len(y)) :: offy
+  integer optional, intent(in),depend(x,incx,offx,y,incy,offy) :: &
+       n = (len(x)-offx)/abs(incx)
+  check(len(x)-offx>(n-1)*abs(incx)) :: n
+  check(len(y)-offy>(n-1)*abs(incy)) :: n
+
+end subroutine zcopy
+
+
+
+
+subroutine saxpy(n,a,x,offx,incx,y,offy,incy)
+  ! Calculate z = a*x+y, where a is scalar.
+
+  callstatement (*f2py_func)(&n,&a,x+offx,&incx,y+offy,&incy)
+  callprotoargument int*,float*,float*,int*,float*,int*
+
+  real dimension(*), intent(in) :: x
+  real dimension(*), intent(in,out,out=z) :: y
+  real optional, intent(in):: a=1.0
+  integer optional, intent(in),check(incx>0||incx<0) :: incx = 1
+  integer optional, intent(in),check(incy>0||incy<0) :: incy = 1
+  integer optional, intent(in),depend(x) :: offx=0
+  integer optional, intent(in),depend(y) :: offy=0
+  check(offx>=0 && offx<len(x)) :: offx
+  check(offy>=0 && offy<len(y)) :: offy
+  integer optional, intent(in),depend(x,incx,offx,y,incy,offy) :: &
+       n = (len(x)-offx)/abs(incx)
+  check(len(x)-offx>(n-1)*abs(incx)) :: n
+  check(len(y)-offy>(n-1)*abs(incy)) :: n
+
+end subroutine saxpy
+
+
+
+subroutine daxpy(n,a,x,offx,incx,y,offy,incy)
+  ! Calculate z = a*x+y, where a is scalar.
+
+  callstatement (*f2py_func)(&n,&a,x+offx,&incx,y+offy,&incy)
+  callprotoargument int*,double*,double*,int*,double*,int*
+
+  double precision dimension(*), intent(in) :: x
+  double precision dimension(*), intent(in,out,out=z) :: y
+  double precision optional, intent(in):: a=1.0
+  integer optional, intent(in),check(incx>0||incx<0) :: incx = 1
+  integer optional, intent(in),check(incy>0||incy<0) :: incy = 1
+  integer optional, intent(in),depend(x) :: offx=0
+  integer optional, intent(in),depend(y) :: offy=0
+  check(offx>=0 && offx<len(x)) :: offx
+  check(offy>=0 && offy<len(y)) :: offy
+  integer optional, intent(in),depend(x,incx,offx,y,incy,offy) :: &
+       n = (len(x)-offx)/abs(incx)
+  check(len(x)-offx>(n-1)*abs(incx)) :: n
+  check(len(y)-offy>(n-1)*abs(incy)) :: n
+
+end subroutine daxpy
+
+
+
+subroutine caxpy(n,a,x,offx,incx,y,offy,incy)
+  ! Calculate z = a*x+y, where a is scalar.
+
+  callstatement (*f2py_func)(&n,&a,x+offx,&incx,y+offy,&incy)
+  callprotoargument int*,complex_float*,complex_float*,int*,complex_float*,int*
+
+  complex dimension(*), intent(in) :: x
+  complex dimension(*), intent(in,out,out=z) :: y
+  complex optional, intent(in):: a=(1.0,0.0)
+  integer optional, intent(in),check(incx>0||incx<0) :: incx = 1
+  integer optional, intent(in),check(incy>0||incy<0) :: incy = 1
+  integer optional, intent(in),depend(x) :: offx=0
+  integer optional, intent(in),depend(y) :: offy=0
+  check(offx>=0 && offx<len(x)) :: offx
+  check(offy>=0 && offy<len(y)) :: offy
+  integer optional, intent(in),depend(x,incx,offx,y,incy,offy) :: &
+       n = (len(x)-offx)/abs(incx)
+  check(len(x)-offx>(n-1)*abs(incx)) :: n
+  check(len(y)-offy>(n-1)*abs(incy)) :: n
+
+end subroutine caxpy
+
+
+
+subroutine zaxpy(n,a,x,offx,incx,y,offy,incy)
+  ! Calculate z = a*x+y, where a is scalar.
+
+  callstatement (*f2py_func)(&n,&a,x+offx,&incx,y+offy,&incy)
+  callprotoargument int*,complex_double*,complex_double*,int*,complex_double*,int*
+
+  double complex dimension(*), intent(in) :: x
+  double complex dimension(*), intent(in,out,out=z) :: y
+  double complex optional, intent(in):: a=(1.0,0.0)
+  integer optional, intent(in),check(incx>0||incx<0) :: incx = 1
+  integer optional, intent(in),check(incy>0||incy<0) :: incy = 1
+  integer optional, intent(in),depend(x) :: offx=0
+  integer optional, intent(in),depend(y) :: offy=0
+  check(offx>=0 && offx<len(x)) :: offx
+  check(offy>=0 && offy<len(y)) :: offy
+  integer optional, intent(in),depend(x,incx,offx,y,incy,offy) :: &
+       n = (len(x)-offx)/abs(incx)
+  check(len(x)-offx>(n-1)*abs(incx)) :: n
+  check(len(y)-offy>(n-1)*abs(incy)) :: n
+
+end subroutine zaxpy
+
+
+
+
+function sdot(n,x,offx,incx,y,offy,incy) result (xy)
+  ! Computes a vector-vector dot product.
+
+  callstatement (*f2py_func)(&sdot,&n,x+offx,&incx,y+offy,&incy)
+  callprotoargument float*,int*,float*,int*,float*,int*
+
+  real dimension(*), intent(in) :: x
+  real dimension(*), intent(in) :: y
+  real sdot,xy
+  integer optional, intent(in),check(incx>0||incx<0) :: incx = 1
+  integer optional, intent(in),check(incy>0||incy<0) :: incy = 1
+  integer optional, intent(in),depend(x) :: offx=0
+  integer optional, intent(in),depend(y) :: offy=0
+  check(offx>=0 && offx<len(x)) :: offx
+  check(offy>=0 && offy<len(y)) :: offy
+  integer optional, intent(in),depend(x,incx,offx,y,incy,offy) :: &
+       n = (len(x)-offx)/abs(incx)
+  check(len(x)-offx>(n-1)*abs(incx)) :: n
+  check(len(y)-offy>(n-1)*abs(incy)) :: n
+
+end function sdot
+
+
+
+function ddot(n,x,offx,incx,y,offy,incy) result (xy)
+  ! Computes a vector-vector dot product.
+
+  callstatement (*f2py_func)(&ddot,&n,x+offx,&incx,y+offy,&incy)
+  callprotoargument double*,int*,double*,int*,double*,int*
+
+  double precision dimension(*), intent(in) :: x
+  double precision dimension(*), intent(in) :: y
+  double precision ddot,xy
+  integer optional, intent(in),check(incx>0||incx<0) :: incx = 1
+  integer optional, intent(in),check(incy>0||incy<0) :: incy = 1
+  integer optional, intent(in),depend(x) :: offx=0
+  integer optional, intent(in),depend(y) :: offy=0
+  check(offx>=0 && offx<len(x)) :: offx
+  check(offy>=0 && offy<len(y)) :: offy
+  integer optional, intent(in),depend(x,incx,offx,y,incy,offy) :: &
+       n = (len(x)-offx)/abs(incx)
+  check(len(x)-offx>(n-1)*abs(incx)) :: n
+  check(len(y)-offy>(n-1)*abs(incy)) :: n
+
+end function ddot
+
+
+
+
+
+! <prefix2c=c,z> <ftype2c=complex,double complex> <ctype2c=complex_float,complex_double>
+subroutine cdotu(xy,n,x,offx,incx,y,offy,incy)
+
+  complex intent(out) :: xy
+  fortranname wcdotu
+
+  callstatement (*f2py_func)(&xy,&n,x+offx,&incx,y+offy,&incy)
+  callprotoargument complex_float*,int*,complex_float*,int*,complex_float*,int*
+
+  complex dimension(*),intent(in) :: x
+  complex dimension(*),intent(in) :: y
+
+  integer optional, intent(in),check(incx>0||incx<0) :: incx = 1
+  integer optional, intent(in),check(incy>0||incy<0) :: incy = 1
+
+  integer optional,intent(in),depend(x) :: offx=0
+  integer optional,intent(in),depend(y) :: offy=0
+  check(offx>=0 && offx<len(x)) :: offx
+  check(offy>=0 && offy<len(y)) :: offy
+
+  integer optional,intent(in),depend(x,incx,offx,y,incy,offy) &
+       :: n = (len(x)-offx)/abs(incx)
+  check(len(x)-offx>(n-1)*abs(incx)) :: n
+  check(len(y)-offy>(n-1)*abs(incy)) :: n
+
+end subroutine cdotu
+
+subroutine zdotu(xy,n,x,offx,incx,y,offy,incy)
+
+  double complex intent(out) :: xy
+  fortranname wzdotu
+
+  callstatement (*f2py_func)(&xy,&n,x+offx,&incx,y+offy,&incy)
+  callprotoargument complex_double*,int*,complex_double*,int*,complex_double*,int*
+
+  double complex dimension(*),intent(in) :: x
+  double complex dimension(*),intent(in) :: y
+
+  integer optional, intent(in),check(incx>0||incx<0) :: incx = 1
+  integer optional, intent(in),check(incy>0||incy<0) :: incy = 1
+
+  integer optional,intent(in),depend(x) :: offx=0
+  integer optional,intent(in),depend(y) :: offy=0
+  check(offx>=0 && offx<len(x)) :: offx
+  check(offy>=0 && offy<len(y)) :: offy
+
+  integer optional,intent(in),depend(x,incx,offx,y,incy,offy) &
+       :: n = (len(x)-offx)/abs(incx)
+  check(len(x)-offx>(n-1)*abs(incx)) :: n
+  check(len(y)-offy>(n-1)*abs(incy)) :: n
+
+end subroutine zdotu
+
+
+
+
+subroutine cdotc(xy,n,x,offx,incx,y,offy,incy)
+
+  complex intent (out) :: xy
+  fortranname wcdotc
+
+  callstatement (*f2py_func)(&xy,&n,x+offx,&incx,y+offy,&incy)
+  callprotoargument complex_float*,int*,complex_float*,int*,complex_float*,int*
+
+  complex dimension(*),intent(in) :: x
+  complex dimension(*),intent(in) :: y
+
+  integer optional, intent(in),check(incx>0||incx<0) :: incx = 1
+  integer optional, intent(in),check(incy>0||incy<0) :: incy = 1
+
+  integer optional,intent(in),depend(x) :: offx=0
+  integer optional,intent(in),depend(y) :: offy=0
+  check(offx>=0 && offx<len(x)) :: offx
+  check(offy>=0 && offy<len(y)) :: offy
+
+  integer optional,intent(in),depend(x,incx,offx,y,incy,offy) :: n = (len(x)-offx)/abs(incx)
+  check(len(x)-offx>(n-1)*abs(incx)) :: n
+  check(len(y)-offy>(n-1)*abs(incy)) :: n
+
+end subroutine cdotc
+
+
+
+subroutine zdotc(xy,n,x,offx,incx,y,offy,incy)
+
+  double complex intent (out) :: xy
+  fortranname wzdotc
+
+  callstatement (*f2py_func)(&xy,&n,x+offx,&incx,y+offy,&incy)
+  callprotoargument complex_double*,int*,complex_double*,int*,complex_double*,int*
+
+  double complex dimension(*),intent(in) :: x
+  double complex dimension(*),intent(in) :: y
+
+  integer optional, intent(in),check(incx>0||incx<0) :: incx = 1
+  integer optional, intent(in),check(incy>0||incy<0) :: incy = 1
+
+  integer optional,intent(in),depend(x) :: offx=0
+  integer optional,intent(in),depend(y) :: offy=0
+  check(offx>=0 && offx<len(x)) :: offx
+  check(offy>=0 && offy<len(y)) :: offy
+
+  integer optional,intent(in),depend(x,incx,offx,y,incy,offy) :: n = (len(x)-offx)/abs(incx)
+  check(len(x)-offx>(n-1)*abs(incx)) :: n
+  check(len(y)-offy>(n-1)*abs(incy)) :: n
+
+end subroutine zdotc
+
+
+
+! <prefix3=s,d,sc,dz>
+function snrm2(n,x,offx,incx) result(n2)
+
+  real snrm2, n2
+
+  callstatement (*f2py_func)(&snrm2, &n,x+offx,&incx)
+  callprotoargument float*,int*,float*,int*
+
+  real dimension(*),intent(in) :: x
+
+  integer optional, intent(in),check(incx>0||incx<0) :: incx = 1
+
+  integer optional,intent(in),depend(x) :: offx=0
+  check(offx>=0 && offx<len(x)) :: offx
+
+  integer optional,intent(in),depend(x,incx,offx) :: n = (len(x)-offx)/abs(incx)
+  check(len(x)-offx>(n-1)*abs(incx)) :: n
+
+end function snrm2
+
+function dnrm2(n,x,offx,incx) result(n2)
+
+  double precision dnrm2, n2
+
+  callstatement (*f2py_func)(&dnrm2, &n,x+offx,&incx)
+  callprotoargument double*,int*,double*,int*
+
+  double precision dimension(*),intent(in) :: x
+
+  integer optional, intent(in),check(incx>0||incx<0) :: incx = 1
+
+  integer optional,intent(in),depend(x) :: offx=0
+  check(offx>=0 && offx<len(x)) :: offx
+
+  integer optional,intent(in),depend(x,incx,offx) :: n = (len(x)-offx)/abs(incx)
+  check(len(x)-offx>(n-1)*abs(incx)) :: n
+
+end function dnrm2
+
+function scnrm2(n,x,offx,incx) result(n2)
+
+  real scnrm2, n2
+
+  callstatement (*f2py_func)(&scnrm2, &n,x+offx,&incx)
+  callprotoargument float*,int*,complex_float*,int*
+
+  complex dimension(*),intent(in) :: x
+
+  integer optional, intent(in),check(incx>0||incx<0) :: incx = 1
+
+  integer optional,intent(in),depend(x) :: offx=0
+  check(offx>=0 && offx<len(x)) :: offx
+
+  integer optional,intent(in),depend(x,incx,offx) :: n = (len(x)-offx)/abs(incx)
+  check(len(x)-offx>(n-1)*abs(incx)) :: n
+
+end function scnrm2
+
+function dznrm2(n,x,offx,incx) result(n2)
+
+  double precision dznrm2, n2
+
+  callstatement (*f2py_func)(&dznrm2, &n,x+offx,&incx)
+  callprotoargument double*,int*,complex_double*,int*
+
+  double complex dimension(*),intent(in) :: x
+
+  integer optional, intent(in),check(incx>0||incx<0) :: incx = 1
+
+  integer optional,intent(in),depend(x) :: offx=0
+  check(offx>=0 && offx<len(x)) :: offx
+
+  integer optional,intent(in),depend(x,incx,offx) :: n = (len(x)-offx)/abs(incx)
+  check(len(x)-offx>(n-1)*abs(incx)) :: n
+
+end function dznrm2
+
+
+
+
+function sasum(n,x,offx,incx) result (s)
+  ! Computes the sum of magnitudes of the vector elements
+
+  callstatement (*f2py_func)(&sasum,&n,x+offx,&incx)
+  callprotoargument float*,int*,float*,int*
+
+  real dimension(*), intent(in) :: x
+  real sasum,s
+  integer optional, intent(in), check(incx>0||incx<0) :: incx = 1
+  integer optional, intent(in), depend(x) :: offx=0
+  check(offx>=0 && offx<len(x)) :: offx
+  integer optional, intent(in),depend(x,incx,offx) :: n = (len(x)-offx)/abs(incx)
+  check(len(x)-offx>(n-1)*abs(incx)) :: n
+
+end function sasum
+
+
+
+function dasum(n,x,offx,incx) result (s)
+  ! Computes the sum of magnitudes of the vector elements
+
+  callstatement (*f2py_func)(&dasum,&n,x+offx,&incx)
+  callprotoargument double*,int*,double*,int*
+
+  double precision dimension(*), intent(in) :: x
+  double precision dasum,s
+  integer optional, intent(in), check(incx>0||incx<0) :: incx = 1
+  integer optional, intent(in), depend(x) :: offx=0
+  check(offx>=0 && offx<len(x)) :: offx
+  integer optional, intent(in),depend(x,incx,offx) :: n = (len(x)-offx)/abs(incx)
+  check(len(x)-offx>(n-1)*abs(incx)) :: n
+
+end function dasum
+
+
+
+function scasum(n,x,offx,incx) result (s)
+  ! Computes the sum of magnitudes of the vector elements
+
+  callstatement (*f2py_func)(&scasum,&n,x+offx,&incx)
+  callprotoargument float*,int*,complex_float*,int*
+
+  complex dimension(*), intent(in) :: x
+  real scasum,s
+  integer optional, intent(in), check(incx>0||incx<0) :: incx = 1
+  integer optional, intent(in), depend(x) :: offx=0
+  check(offx>=0 && offx<len(x)) :: offx
+  integer optional, intent(in),depend(x,incx,offx) :: n = (len(x)-offx)/abs(incx)
+  check(len(x)-offx>(n-1)*abs(incx)) :: n
+
+end function scasum
+
+
+
+function dzasum(n,x,offx,incx) result (s)
+  ! Computes the sum of magnitudes of the vector elements
+
+  callstatement (*f2py_func)(&dzasum,&n,x+offx,&incx)
+  callprotoargument double*,int*,complex_double*,int*
+
+  double complex dimension(*), intent(in) :: x
+  double precision dzasum,s
+  integer optional, intent(in), check(incx>0||incx<0) :: incx = 1
+  integer optional, intent(in), depend(x) :: offx=0
+  check(offx>=0 && offx<len(x)) :: offx
+  integer optional, intent(in),depend(x,incx,offx) :: n = (len(x)-offx)/abs(incx)
+  check(len(x)-offx>(n-1)*abs(incx)) :: n
+
+end function dzasum
+
+
+
+
+function isamax(n,x,offx,incx) result(k)
+  ! Finds the index of the element with maximum absolute value.
+
+  callstatement isamax_return_value = (*f2py_func)(&n,x+offx,&incx) - 1
+  callprotoargument int*,float*,int*
+
+  ! This is to avoid Fortran wrappers.
+  integer isamax,k
+  fortranname F_FUNC(isamax,ISAMAX)
+  intent(c) isamax
+  real dimension(*), intent(in) :: x
+  integer optional, intent(in), check(incx>0||incx<0) :: incx = 1
+  integer optional, intent(in), depend(x) :: offx=0
+  check(offx>=0 && offx<len(x)) :: offx
+  integer optional, intent(in),depend(x,incx,offx) :: n = (len(x)-offx)/abs(incx)
+  check(len(x)-offx>(n-1)*abs(incx)) :: n
+
+end function isamax
+
+
+
+function idamax(n,x,offx,incx) result(k)
+  ! Finds the index of the element with maximum absolute value.
+
+  callstatement idamax_return_value = (*f2py_func)(&n,x+offx,&incx) - 1
+  callprotoargument int*,double*,int*
+
+  ! This is to avoid Fortran wrappers.
+  integer idamax,k
+  fortranname F_FUNC(idamax,IDAMAX)
+  intent(c) idamax
+  double precision dimension(*), intent(in) :: x
+  integer optional, intent(in), check(incx>0||incx<0) :: incx = 1
+  integer optional, intent(in), depend(x) :: offx=0
+  check(offx>=0 && offx<len(x)) :: offx
+  integer optional, intent(in),depend(x,incx,offx) :: n = (len(x)-offx)/abs(incx)
+  check(len(x)-offx>(n-1)*abs(incx)) :: n
+
+end function idamax
+
+
+
+function icamax(n,x,offx,incx) result(k)
+  ! Finds the index of the element with maximum absolute value.
+
+  callstatement icamax_return_value = (*f2py_func)(&n,x+offx,&incx) - 1
+  callprotoargument int*,complex_float*,int*
+
+  ! This is to avoid Fortran wrappers.
+  integer icamax,k
+  fortranname F_FUNC(icamax,ICAMAX)
+  intent(c) icamax
+  complex dimension(*), intent(in) :: x
+  integer optional, intent(in), check(incx>0||incx<0) :: incx = 1
+  integer optional, intent(in), depend(x) :: offx=0
+  check(offx>=0 && offx<len(x)) :: offx
+  integer optional, intent(in),depend(x,incx,offx) :: n = (len(x)-offx)/abs(incx)
+  check(len(x)-offx>(n-1)*abs(incx)) :: n
+
+end function icamax
+
+
+
+function izamax(n,x,offx,incx) result(k)
+  ! Finds the index of the element with maximum absolute value.
+
+  callstatement izamax_return_value = (*f2py_func)(&n,x+offx,&incx) - 1
+  callprotoargument int*,complex_double*,int*
+
+  ! This is to avoid Fortran wrappers.
+  integer izamax,k
+  fortranname F_FUNC(izamax,IZAMAX)
+  intent(c) izamax
+  double complex dimension(*), intent(in) :: x
+  integer optional, intent(in), check(incx>0||incx<0) :: incx = 1
+  integer optional, intent(in), depend(x) :: offx=0
+  check(offx>=0 && offx<len(x)) :: offx
+  integer optional, intent(in),depend(x,incx,offx) :: n = (len(x)-offx)/abs(incx)
+  check(len(x)-offx>(n-1)*abs(incx)) :: n
+
+end function izamax
+
+
+
+! -*- f90 -*-
+! Signatures for f2py-wrappers of FORTRAN LEVEL 2 BLAS functions.
+!
+! Author: Pearu Peterson
+! Created: Jan-Feb 2002
+! Modified: Fabian Pedregosa, 2011
+!
+! Implemented:
+!   gemv, hemv, symv, trmv, ger, geru, gerc
+!
+! Not implemented:
+!   gbmv, hbmv, hpmv, sbmv, spmv, tbmv, tpmv, trsv, tbsv, tpsv,
+!   her, hpr, her2, hpr2, syr, spr, syr2, spr2
+!
+
+subroutine sgemv(m,n,alpha,a,x,beta,y,offx,incx,offy,incy,trans,rows,cols,ly)
+  ! Computes a matrix-vector product using a general matrix
+  !
+  ! y = gemv(alpha,a,x,beta=0,y=0,offx=0,incx=1,offy=0,incy=0,trans=0)
+  ! Calculate y <- alpha * op(A) * x + beta * y
+
+  callstatement (*f2py_func)((trans?(trans==2?"C":"T"):"N"),&m,&n,&alpha,a,&m, &
+       x+offx,&incx,&beta,y+offy,&incy)
+  callprotoargument char*,int*,int*,float*,float*,int*,float*,int*,float*, &
+       float*,int*
+
+  integer optional, intent(in), check(trans>=0 && trans <=2) :: trans = 0
+  integer optional, intent(in), check(incx>0||incx<0) :: incx = 1
+  integer optional, intent(in), check(incy>0||incy<0) :: incy = 1
+  real intent(in) :: alpha
+  real intent(in), optional :: beta = 0.0
+
+  real dimension(*), intent(in) :: x
+  real dimension(ly), intent(in,copy,out), depend(ly),optional :: y
+  integer intent(hide), depend(incy,rows,offy) :: ly = &
+       (y_capi==Py_None?1+offy+(rows-1)*abs(incy):-1)
+  real dimension(m,n), intent(in) :: a
+  integer depend(a), intent(hide):: m = shape(a,0)
+  integer depend(a), intent(hide):: n = shape(a,1)
+
+  integer optional, intent(in) :: offx=0
+  integer optional, intent(in) :: offy=0
+  check(offx>=0 && offx<len(x)) :: x
+  check(len(x)>offx+(cols-1)*abs(incx)) :: x
+  depend(offx,cols,incx) :: x
+
+  check(offy>=0 && offy<len(y)) :: y
+  check(len(y)>offy+(rows-1)*abs(incy)) :: y
+  depend(offy,rows,incy) :: y
+
+  integer depend(m,n,trans), intent(hide) :: rows = (trans?n:m)
+  integer depend(m,n,trans), intent(hide) :: cols = (trans?m:n)
+
+end subroutine sgemv
+
+
+subroutine dgemv(m,n,alpha,a,x,beta,y,offx,incx,offy,incy,trans,rows,cols,ly)
+  ! Computes a matrix-vector product using a general matrix
+  !
+  ! y = gemv(alpha,a,x,beta=0,y=0,offx=0,incx=1,offy=0,incy=0,trans=0)
+  ! Calculate y <- alpha * op(A) * x + beta * y
+
+  callstatement (*f2py_func)((trans?(trans==2?"C":"T"):"N"),&m,&n,&alpha,a,&m, &
+       x+offx,&incx,&beta,y+offy,&incy)
+  callprotoargument char*,int*,int*,double*,double*,int*,double*,int*,double*, &
+       double*,int*
+
+  integer optional, intent(in), check(trans>=0 && trans <=2) :: trans = 0
+  integer optional, intent(in), check(incx>0||incx<0) :: incx = 1
+  integer optional, intent(in), check(incy>0||incy<0) :: incy = 1
+  double precision intent(in) :: alpha
+  double precision intent(in), optional :: beta = 0.0
+
+  double precision dimension(*), intent(in) :: x
+  double precision dimension(ly), intent(in,copy,out), depend(ly),optional :: y
+  integer intent(hide), depend(incy,rows,offy) :: ly = &
+       (y_capi==Py_None?1+offy+(rows-1)*abs(incy):-1)
+  double precision dimension(m,n), intent(in) :: a
+  integer depend(a), intent(hide):: m = shape(a,0)
+  integer depend(a), intent(hide):: n = shape(a,1)
+
+  integer optional, intent(in) :: offx=0
+  integer optional, intent(in) :: offy=0
+  check(offx>=0 && offx<len(x)) :: x
+  check(len(x)>offx+(cols-1)*abs(incx)) :: x
+  depend(offx,cols,incx) :: x
+
+  check(offy>=0 && offy<len(y)) :: y
+  check(len(y)>offy+(rows-1)*abs(incy)) :: y
+  depend(offy,rows,incy) :: y
+
+  integer depend(m,n,trans), intent(hide) :: rows = (trans?n:m)
+  integer depend(m,n,trans), intent(hide) :: cols = (trans?m:n)
+
+end subroutine dgemv
+
+
+subroutine cgemv(m,n,alpha,a,x,beta,y,offx,incx,offy,incy,trans,rows,cols,ly)
+  ! Computes a matrix-vector product using a general matrix
+  !
+  ! y = gemv(alpha,a,x,beta=0,y=0,offx=0,incx=1,offy=0,incy=0,trans=0)
+  ! Calculate y <- alpha * op(A) * x + beta * y
+
+  callstatement (*f2py_func)((trans?(trans==2?"C":"T"):"N"),&m,&n,&alpha,a,&m, &
+       x+offx,&incx,&beta,y+offy,&incy)
+  callprotoargument char*,int*,int*,complex_float*,complex_float*,int*,complex_float*,int*,complex_float*, &
+       complex_float*,int*
+
+  integer optional, intent(in), check(trans>=0 && trans <=2) :: trans = 0
+  integer optional, intent(in), check(incx>0||incx<0) :: incx = 1
+  integer optional, intent(in), check(incy>0||incy<0) :: incy = 1
+  complex intent(in) :: alpha
+  complex intent(in), optional :: beta = (0.0,0.0)
+
+  complex dimension(*), intent(in) :: x
+  complex dimension(ly), intent(in,copy,out), depend(ly),optional :: y
+  integer intent(hide), depend(incy,rows,offy) :: ly = &
+       (y_capi==Py_None?1+offy+(rows-1)*abs(incy):-1)
+  complex dimension(m,n), intent(in) :: a
+  integer depend(a), intent(hide):: m = shape(a,0)
+  integer depend(a), intent(hide):: n = shape(a,1)
+
+  integer optional, intent(in) :: offx=0
+  integer optional, intent(in) :: offy=0
+  check(offx>=0 && offx<len(x)) :: x
+  check(len(x)>offx+(cols-1)*abs(incx)) :: x
+  depend(offx,cols,incx) :: x
+
+  check(offy>=0 && offy<len(y)) :: y
+  check(len(y)>offy+(rows-1)*abs(incy)) :: y
+  depend(offy,rows,incy) :: y
+
+  integer depend(m,n,trans), intent(hide) :: rows = (trans?n:m)
+  integer depend(m,n,trans), intent(hide) :: cols = (trans?m:n)
+
+end subroutine cgemv
+
+
+subroutine zgemv(m,n,alpha,a,x,beta,y,offx,incx,offy,incy,trans,rows,cols,ly)
+  ! Computes a matrix-vector product using a general matrix
+  !
+  ! y = gemv(alpha,a,x,beta=0,y=0,offx=0,incx=1,offy=0,incy=0,trans=0)
+  ! Calculate y <- alpha * op(A) * x + beta * y
+
+  callstatement (*f2py_func)((trans?(trans==2?"C":"T"):"N"),&m,&n,&alpha,a,&m, &
+       x+offx,&incx,&beta,y+offy,&incy)
+  callprotoargument char*,int*,int*,complex_double*,complex_double*,int*,complex_double*,int*,complex_double*, &
+       complex_double*,int*
+
+  integer optional, intent(in), check(trans>=0 && trans <=2) :: trans = 0
+  integer optional, intent(in), check(incx>0||incx<0) :: incx = 1
+  integer optional, intent(in), check(incy>0||incy<0) :: incy = 1
+  double complex intent(in) :: alpha
+  double complex intent(in), optional :: beta = (0.0,0.0)
+
+  double complex dimension(*), intent(in) :: x
+  double complex dimension(ly), intent(in,copy,out), depend(ly),optional :: y
+  integer intent(hide), depend(incy,rows,offy) :: ly = &
+       (y_capi==Py_None?1+offy+(rows-1)*abs(incy):-1)
+  double complex dimension(m,n), intent(in) :: a
+  integer depend(a), intent(hide):: m = shape(a,0)
+  integer depend(a), intent(hide):: n = shape(a,1)
+
+  integer optional, intent(in) :: offx=0
+  integer optional, intent(in) :: offy=0
+  check(offx>=0 && offx<len(x)) :: x
+  check(len(x)>offx+(cols-1)*abs(incx)) :: x
+  depend(offx,cols,incx) :: x
+
+  check(offy>=0 && offy<len(y)) :: y
+  check(len(y)>offy+(rows-1)*abs(incy)) :: y
+  depend(offy,rows,incy) :: y
+
+  integer depend(m,n,trans), intent(hide) :: rows = (trans?n:m)
+  integer depend(m,n,trans), intent(hide) :: cols = (trans?m:n)
+
+end subroutine zgemv
+
+
+
+
+subroutine ssymv(n,alpha,a,x,beta,y,offx,incx,offy,incy,lower,ly)
+  ! Computes a matrix-vector product for a symmetric/hermitian matrix
+  !
+  ! Calculate y <- alpha * A * x + beta * y, A is symmmetric/hermitian
+
+  callstatement (*f2py_func)((lower?"L":"U"),&n,&alpha,a,&n,x+offx,&incx,&beta, &
+       y+offy,&incy)
+  callprotoargument char*,int*,float*,float*,int*,float*,int*,float*, &
+       float*,int*
+
+  integer optional, intent(in),check(lower==0||lower==1) :: lower = 0
+  integer optional, intent(in),check(incx>0||incx<0) :: incx = 1
+  integer optional, intent(in),check(incy>0||incy<0) :: incy = 1
+  real intent(in) :: alpha
+  real intent(in),optional :: beta = 0.0
+
+  real dimension(*), intent(in) :: x
+  real dimension(ly), intent(in,copy,out),depend(ly),optional :: y
+  integer intent(hide),depend(incy,n,offy) :: ly = &
+       (y_capi==Py_None?1+offy+(n-1)*abs(incy):-1)
+  real dimension(n,n), intent(in),check(shape(a,0)==shape(a,1)) :: a
+  integer depend(a), intent(hide):: n = shape(a,0)
+
+  integer optional, intent(in) :: offx=0
+  integer optional, intent(in) :: offy=0
+  check(offx>=0 && offx<len(x)) :: x
+  check(len(x)>offx+(n-1)*abs(incx)) :: x
+  depend(offx,n,incx) :: x
+
+  check(offy>=0 && offy<len(y)) :: y
+  check(len(y)>offy+(n-1)*abs(incy)) :: y
+  depend(offy,n,incy) :: y
+
+end subroutine  ssymv
+
+
+
+subroutine dsymv(n,alpha,a,x,beta,y,offx,incx,offy,incy,lower,ly)
+  ! Computes a matrix-vector product for a symmetric/hermitian matrix
+  !
+  ! Calculate y <- alpha * A * x + beta * y, A is symmmetric/hermitian
+
+  callstatement (*f2py_func)((lower?"L":"U"),&n,&alpha,a,&n,x+offx,&incx,&beta, &
+       y+offy,&incy)
+  callprotoargument char*,int*,double*,double*,int*,double*,int*,double*, &
+       double*,int*
+
+  integer optional, intent(in),check(lower==0||lower==1) :: lower = 0
+  integer optional, intent(in),check(incx>0||incx<0) :: incx = 1
+  integer optional, intent(in),check(incy>0||incy<0) :: incy = 1
+  double precision intent(in) :: alpha
+  double precision intent(in),optional :: beta = 0.0
+
+  double precision dimension(*), intent(in) :: x
+  double precision dimension(ly), intent(in,copy,out),depend(ly),optional :: y
+  integer intent(hide),depend(incy,n,offy) :: ly = &
+       (y_capi==Py_None?1+offy+(n-1)*abs(incy):-1)
+  double precision dimension(n,n), intent(in),check(shape(a,0)==shape(a,1)) :: a
+  integer depend(a), intent(hide):: n = shape(a,0)
+
+  integer optional, intent(in) :: offx=0
+  integer optional, intent(in) :: offy=0
+  check(offx>=0 && offx<len(x)) :: x
+  check(len(x)>offx+(n-1)*abs(incx)) :: x
+  depend(offx,n,incx) :: x
+
+  check(offy>=0 && offy<len(y)) :: y
+  check(len(y)>offy+(n-1)*abs(incy)) :: y
+  depend(offy,n,incy) :: y
+
+end subroutine  dsymv
+
+
+
+subroutine chemv(n,alpha,a,x,beta,y,offx,incx,offy,incy,lower,ly)
+  ! Computes a matrix-vector product for a symmetric/hermitian matrix
+  !
+  ! Calculate y <- alpha * A * x + beta * y, A is symmmetric/hermitian
+
+  callstatement (*f2py_func)((lower?"L":"U"),&n,&alpha,a,&n,x+offx,&incx,&beta, &
+       y+offy,&incy)
+  callprotoargument char*,int*,complex_float*,complex_float*,int*,complex_float*,int*,complex_float*, &
+       complex_float*,int*
+
+  integer optional, intent(in),check(lower==0||lower==1) :: lower = 0
+  integer optional, intent(in),check(incx>0||incx<0) :: incx = 1
+  integer optional, intent(in),check(incy>0||incy<0) :: incy = 1
+  complex intent(in) :: alpha
+  complex intent(in),optional :: beta = (0.0,0.0)
+
+  complex dimension(*), intent(in) :: x
+  complex dimension(ly), intent(in,copy,out),depend(ly),optional :: y
+  integer intent(hide),depend(incy,n,offy) :: ly = &
+       (y_capi==Py_None?1+offy+(n-1)*abs(incy):-1)
+  complex dimension(n,n), intent(in),check(shape(a,0)==shape(a,1)) :: a
+  integer depend(a), intent(hide):: n = shape(a,0)
+
+  integer optional, intent(in) :: offx=0
+  integer optional, intent(in) :: offy=0
+  check(offx>=0 && offx<len(x)) :: x
+  check(len(x)>offx+(n-1)*abs(incx)) :: x
+  depend(offx,n,incx) :: x
+
+  check(offy>=0 && offy<len(y)) :: y
+  check(len(y)>offy+(n-1)*abs(incy)) :: y
+  depend(offy,n,incy) :: y
+
+end subroutine  chemv
+
+
+
+subroutine zhemv(n,alpha,a,x,beta,y,offx,incx,offy,incy,lower,ly)
+  ! Computes a matrix-vector product for a symmetric/hermitian matrix
+  !
+  ! Calculate y <- alpha * A * x + beta * y, A is symmmetric/hermitian
+
+  callstatement (*f2py_func)((lower?"L":"U"),&n,&alpha,a,&n,x+offx,&incx,&beta, &
+       y+offy,&incy)
+  callprotoargument char*,int*,complex_double*,complex_double*,int*,complex_double*,int*,complex_double*, &
+       complex_double*,int*
+
+  integer optional, intent(in),check(lower==0||lower==1) :: lower = 0
+  integer optional, intent(in),check(incx>0||incx<0) :: incx = 1
+  integer optional, intent(in),check(incy>0||incy<0) :: incy = 1
+  double complex intent(in) :: alpha
+  double complex intent(in),optional :: beta = (0.0,0.0)
+
+  double complex dimension(*), intent(in) :: x
+  double complex dimension(ly), intent(in,copy,out),depend(ly),optional :: y
+  integer intent(hide),depend(incy,n,offy) :: ly = &
+       (y_capi==Py_None?1+offy+(n-1)*abs(incy):-1)
+  double complex dimension(n,n), intent(in),check(shape(a,0)==shape(a,1)) :: a
+  integer depend(a), intent(hide):: n = shape(a,0)
+
+  integer optional, intent(in) :: offx=0
+  integer optional, intent(in) :: offy=0
+  check(offx>=0 && offx<len(x)) :: x
+  check(len(x)>offx+(n-1)*abs(incx)) :: x
+  depend(offx,n,incx) :: x
+
+  check(offy>=0 && offy<len(y)) :: y
+  check(len(y)>offy+(n-1)*abs(incy)) :: y
+  depend(offy,n,incy) :: y
+
+end subroutine  zhemv
+
+
+
+
+subroutine strmv(n,a,x,offx,incx,lower,trans,unitdiag)
+  ! Computes a matrix-vector product using a triangular matrix
+  !
+  ! x <- op(A) * x, A is triangular
+  !
+
+  callstatement (*f2py_func)((lower?"L":"U"), (trans?(trans==2?"C":"T"):"N"), &
+       (unitdiag?"U":"N"),&n,a,&n,x+offx,&incx)
+  callprotoargument char*,char*,char*,int*,float*,int*,float*,int*
+
+  integer optional, intent(in), check(trans>=0 && trans <=2) :: trans = 0
+  integer optional, intent(in), check(lower==0||lower==1) :: lower = 0
+  integer optional, intent(in), check(unitdiag==0||unitdiag==1) :: unitdiag = 0
+  integer optional, intent(in), check(incx>0||incx<0) :: incx = 1
+
+  real dimension(*), intent(in,out,copy) :: x
+  real dimension(n,n), intent(in),check(shape(a,0)==shape(a,1)) :: a
+  integer depend(a), intent(hide):: n = shape(a,0)
+
+  integer optional, intent(in), depend(x) :: offx=0
+  check(offx>=0 && offx<len(x)) :: offx
+
+  check(len(x)>offx+(n-1)*abs(incx)) :: n
+  depend(x,offx,incx) :: n
+
+end subroutine strmv
+
+
+
+subroutine dtrmv(n,a,x,offx,incx,lower,trans,unitdiag)
+  ! Computes a matrix-vector product using a triangular matrix
+  !
+  ! x <- op(A) * x, A is triangular
+  !
+
+  callstatement (*f2py_func)((lower?"L":"U"), (trans?(trans==2?"C":"T"):"N"), &
+       (unitdiag?"U":"N"),&n,a,&n,x+offx,&incx)
+  callprotoargument char*,char*,char*,int*,double*,int*,double*,int*
+
+  integer optional, intent(in), check(trans>=0 && trans <=2) :: trans = 0
+  integer optional, intent(in), check(lower==0||lower==1) :: lower = 0
+  integer optional, intent(in), check(unitdiag==0||unitdiag==1) :: unitdiag = 0
+  integer optional, intent(in), check(incx>0||incx<0) :: incx = 1
+
+  double precision dimension(*), intent(in,out,copy) :: x
+  double precision dimension(n,n), intent(in),check(shape(a,0)==shape(a,1)) :: a
+  integer depend(a), intent(hide):: n = shape(a,0)
+
+  integer optional, intent(in), depend(x) :: offx=0
+  check(offx>=0 && offx<len(x)) :: offx
+
+  check(len(x)>offx+(n-1)*abs(incx)) :: n
+  depend(x,offx,incx) :: n
+
+end subroutine dtrmv
+
+
+
+subroutine ctrmv(n,a,x,offx,incx,lower,trans,unitdiag)
+  ! Computes a matrix-vector product using a triangular matrix
+  !
+  ! x <- op(A) * x, A is triangular
+  !
+
+  callstatement (*f2py_func)((lower?"L":"U"), (trans?(trans==2?"C":"T"):"N"), &
+       (unitdiag?"U":"N"),&n,a,&n,x+offx,&incx)
+  callprotoargument char*,char*,char*,int*,complex_float*,int*,complex_float*,int*
+
+  integer optional, intent(in), check(trans>=0 && trans <=2) :: trans = 0
+  integer optional, intent(in), check(lower==0||lower==1) :: lower = 0
+  integer optional, intent(in), check(unitdiag==0||unitdiag==1) :: unitdiag = 0
+  integer optional, intent(in), check(incx>0||incx<0) :: incx = 1
+
+  complex dimension(*), intent(in,out,copy) :: x
+  complex dimension(n,n), intent(in),check(shape(a,0)==shape(a,1)) :: a
+  integer depend(a), intent(hide):: n = shape(a,0)
+
+  integer optional, intent(in), depend(x) :: offx=0
+  check(offx>=0 && offx<len(x)) :: offx
+
+  check(len(x)>offx+(n-1)*abs(incx)) :: n
+  depend(x,offx,incx) :: n
+
+end subroutine ctrmv
+
+
+
+subroutine ztrmv(n,a,x,offx,incx,lower,trans,unitdiag)
+  ! Computes a matrix-vector product using a triangular matrix
+  !
+  ! x <- op(A) * x, A is triangular
+  !
+
+  callstatement (*f2py_func)((lower?"L":"U"), (trans?(trans==2?"C":"T"):"N"), &
+       (unitdiag?"U":"N"),&n,a,&n,x+offx,&incx)
+  callprotoargument char*,char*,char*,int*,complex_double*,int*,complex_double*,int*
+
+  integer optional, intent(in), check(trans>=0 && trans <=2) :: trans = 0
+  integer optional, intent(in), check(lower==0||lower==1) :: lower = 0
+  integer optional, intent(in), check(unitdiag==0||unitdiag==1) :: unitdiag = 0
+  integer optional, intent(in), check(incx>0||incx<0) :: incx = 1
+
+  double complex dimension(*), intent(in,out,copy) :: x
+  double complex dimension(n,n), intent(in),check(shape(a,0)==shape(a,1)) :: a
+  integer depend(a), intent(hide):: n = shape(a,0)
+
+  integer optional, intent(in), depend(x) :: offx=0
+  check(offx>=0 && offx<len(x)) :: offx
+
+  check(len(x)>offx+(n-1)*abs(incx)) :: n
+  depend(x,offx,incx) :: n
+
+end subroutine ztrmv
+
+
+
+
+! <ftype6=real,double precision,complex,double complex,\2,\3>
+! <prefix6=s,d,c,z,c,z>
+subroutine sger(m,n,alpha,x,incx,y,incy,a,lda)
+  ! Performs a rank-1 update of a general matrix.
+  !
+  ! Calculate a <- alpha*x*y^T + a
+  ! Calculate a <- alpha*x*y^H + a
+  !
+
+  integer intent(hide),depend(x) :: m = len(x)
+  integer intent(hide),depend(y) :: n = len(y)
+
+  real intent(in) :: alpha
+  real dimension(m), intent(in,overwrite) :: x
+  integer optional, intent(in),check(incx==1||incx==-1) :: incx = 1
+  real dimension(n), intent(in,overwrite) :: y
+  integer optional, intent(in),check(incy==1||incy==-1) :: incy = 1
+  real dimension(m,n), intent(in,out,copy),optional :: &
+       a = 0.0
+  integer intent(hide), depend(m) :: lda=m
+
+end subroutine sger
+
+subroutine dger(m,n,alpha,x,incx,y,incy,a,lda)
+  ! Performs a rank-1 update of a general matrix.
+  !
+  ! Calculate a <- alpha*x*y^T + a
+  ! Calculate a <- alpha*x*y^H + a
+  !
+
+  integer intent(hide),depend(x) :: m = len(x)
+  integer intent(hide),depend(y) :: n = len(y)
+
+  double precision intent(in) :: alpha
+  double precision dimension(m), intent(in,overwrite) :: x
+  integer optional, intent(in),check(incx==1||incx==-1) :: incx = 1
+  double precision dimension(n), intent(in,overwrite) :: y
+  integer optional, intent(in),check(incy==1||incy==-1) :: incy = 1
+  double precision dimension(m,n), intent(in,out,copy),optional :: &
+       a = 0.0
+  integer intent(hide), depend(m) :: lda=m
+
+end subroutine dger
+
+subroutine cgeru(m,n,alpha,x,incx,y,incy,a,lda)
+  ! Performs a rank-1 update of a general matrix.
+  !
+  ! Calculate a <- alpha*x*y^T + a
+  ! Calculate a <- alpha*x*y^H + a
+  !
+
+  integer intent(hide),depend(x) :: m = len(x)
+  integer intent(hide),depend(y) :: n = len(y)
+
+  complex intent(in) :: alpha
+  complex dimension(m), intent(in,overwrite) :: x
+  integer optional, intent(in),check(incx==1||incx==-1) :: incx = 1
+  complex dimension(n), intent(in,overwrite) :: y
+  integer optional, intent(in),check(incy==1||incy==-1) :: incy = 1
+  complex dimension(m,n), intent(in,out,copy),optional :: &
+       a = (0.0,0.0)
+  integer intent(hide), depend(m) :: lda=m
+
+end subroutine cgeru
+
+subroutine zgeru(m,n,alpha,x,incx,y,incy,a,lda)
+  ! Performs a rank-1 update of a general matrix.
+  !
+  ! Calculate a <- alpha*x*y^T + a
+  ! Calculate a <- alpha*x*y^H + a
+  !
+
+  integer intent(hide),depend(x) :: m = len(x)
+  integer intent(hide),depend(y) :: n = len(y)
+
+  double complex intent(in) :: alpha
+  double complex dimension(m), intent(in,overwrite) :: x
+  integer optional, intent(in),check(incx==1||incx==-1) :: incx = 1
+  double complex dimension(n), intent(in,overwrite) :: y
+  integer optional, intent(in),check(incy==1||incy==-1) :: incy = 1
+  double complex dimension(m,n), intent(in,out,copy),optional :: &
+       a = (0.0,0.0)
+  integer intent(hide), depend(m) :: lda=m
+
+end subroutine zgeru
+
+subroutine cgerc(m,n,alpha,x,incx,y,incy,a,lda)
+  ! Performs a rank-1 update of a general matrix.
+  !
+  ! Calculate a <- alpha*x*y^T + a
+  ! Calculate a <- alpha*x*y^H + a
+  !
+
+  integer intent(hide),depend(x) :: m = len(x)
+  integer intent(hide),depend(y) :: n = len(y)
+
+  complex intent(in) :: alpha
+  complex dimension(m), intent(in,overwrite) :: x
+  integer optional, intent(in),check(incx==1||incx==-1) :: incx = 1
+  complex dimension(n), intent(in,overwrite) :: y
+  integer optional, intent(in),check(incy==1||incy==-1) :: incy = 1
+  complex dimension(m,n), intent(in,out,copy),optional :: &
+       a = (0.0,0.0)
+  integer intent(hide), depend(m) :: lda=m
+
+end subroutine cgerc
+
+subroutine zgerc(m,n,alpha,x,incx,y,incy,a,lda)
+  ! Performs a rank-1 update of a general matrix.
+  !
+  ! Calculate a <- alpha*x*y^T + a
+  ! Calculate a <- alpha*x*y^H + a
+  !
+
+  integer intent(hide),depend(x) :: m = len(x)
+  integer intent(hide),depend(y) :: n = len(y)
+
+  double complex intent(in) :: alpha
+  double complex dimension(m), intent(in,overwrite) :: x
+  integer optional, intent(in),check(incx==1||incx==-1) :: incx = 1
+  double complex dimension(n), intent(in,overwrite) :: y
+  integer optional, intent(in),check(incy==1||incy==-1) :: incy = 1
+  double complex dimension(m,n), intent(in,out,copy),optional :: &
+       a = (0.0,0.0)
+  integer intent(hide), depend(m) :: lda=m
+
+end subroutine zgerc
+
+
+! -*- f90 -*-
+! Signatures for f2py-wrappers of FORTRAN LEVEL 3 BLAS functions.
+!
+! Author: Pearu Peterson
+! Created: April 2002
+! Modified: Fabian Pedregosa, 2011
+!
+! Implemented:
+!   gemm
+!
+! Not Implemented:
+!   symm, hemm, syrk, herk, syr2k, her2k, trmm, trsm
+!
+
+
+subroutine sgemm(m,n,k,alpha,a,b,beta,c,trans_a,trans_b,lda,ka,ldb,kb)
+  ! Computes a scalar-matrix-matrix product and adds the result to a
+  ! scalar-matrix product.
+  !
+  ! c = gemm(alpha,a,b,beta=0,c=0,trans_a=0,trans_b=0,overwrite_c=0)
+  ! Calculate C <- alpha * op(A) * op(B) + beta * C
+
+  callstatement (*f2py_func)((trans_a?(trans_a==2?"C":"T"):"N"), &
+       (trans_b?(trans_b==2?"C":"T"):"N"),&m,&n,&k,&alpha,a,&lda,b,&ldb,&beta,c,&m)
+  callprotoargument char*,char*,int*,int*,int*,float*,float*,int*,float*, &
+       int*,float*,float*,int*
+
+  integer optional,intent(in),check(trans_a>=0 && trans_a <=2) :: trans_a = 0
+  integer optional,intent(in),check(trans_b>=0 && trans_b <=2) :: trans_b = 0
+  real intent(in) :: alpha
+  real intent(in),optional :: beta = 0.0
+
+  real dimension(lda,ka),intent(in) :: a
+  real dimension(ldb,kb),intent(in) :: b
+  real dimension(m,n),intent(in,out,copy),depend(m,n),optional :: c
+  check(shape(c,0)==m && shape(c,1)==n) :: c
+
+  integer depend(a),intent(hide) :: lda = shape(a,0)
+  integer depend(a),intent(hide) :: ka = shape(a,1)
+  integer depend(b),intent(hide) :: ldb = shape(b,0)
+  integer depend(b),intent(hide) :: kb = shape(b,1)
+
+  integer depend(a,trans_a,ka,lda),intent(hide):: m = (trans_a?ka:lda)
+  integer depend(a,trans_a,ka,lda),intent(hide):: k = (trans_a?lda:ka)
+  integer depend(b,trans_b,kb,ldb,k),intent(hide),check(trans_b?kb==k:ldb==k) :: &
+       n = (trans_b?ldb:kb)
+
+
+end subroutine sgemm
+
+
+
+subroutine dgemm(m,n,k,alpha,a,b,beta,c,trans_a,trans_b,lda,ka,ldb,kb)
+  ! Computes a scalar-matrix-matrix product and adds the result to a
+  ! scalar-matrix product.
+  !
+  ! c = gemm(alpha,a,b,beta=0,c=0,trans_a=0,trans_b=0,overwrite_c=0)
+  ! Calculate C <- alpha * op(A) * op(B) + beta * C
+
+  callstatement (*f2py_func)((trans_a?(trans_a==2?"C":"T"):"N"), &
+       (trans_b?(trans_b==2?"C":"T"):"N"),&m,&n,&k,&alpha,a,&lda,b,&ldb,&beta,c,&m)
+  callprotoargument char*,char*,int*,int*,int*,double*,double*,int*,double*, &
+       int*,double*,double*,int*
+
+  integer optional,intent(in),check(trans_a>=0 && trans_a <=2) :: trans_a = 0
+  integer optional,intent(in),check(trans_b>=0 && trans_b <=2) :: trans_b = 0
+  double precision intent(in) :: alpha
+  double precision intent(in),optional :: beta = 0.0
+
+  double precision dimension(lda,ka),intent(in) :: a
+  double precision dimension(ldb,kb),intent(in) :: b
+  double precision dimension(m,n),intent(in,out,copy),depend(m,n),optional :: c
+  check(shape(c,0)==m && shape(c,1)==n) :: c
+
+  integer depend(a),intent(hide) :: lda = shape(a,0)
+  integer depend(a),intent(hide) :: ka = shape(a,1)
+  integer depend(b),intent(hide) :: ldb = shape(b,0)
+  integer depend(b),intent(hide) :: kb = shape(b,1)
+
+  integer depend(a,trans_a,ka,lda),intent(hide):: m = (trans_a?ka:lda)
+  integer depend(a,trans_a,ka,lda),intent(hide):: k = (trans_a?lda:ka)
+  integer depend(b,trans_b,kb,ldb,k),intent(hide),check(trans_b?kb==k:ldb==k) :: &
+       n = (trans_b?ldb:kb)
+
+
+end subroutine dgemm
+
+
+
+subroutine cgemm(m,n,k,alpha,a,b,beta,c,trans_a,trans_b,lda,ka,ldb,kb)
+  ! Computes a scalar-matrix-matrix product and adds the result to a
+  ! scalar-matrix product.
+  !
+  ! c = gemm(alpha,a,b,beta=0,c=0,trans_a=0,trans_b=0,overwrite_c=0)
+  ! Calculate C <- alpha * op(A) * op(B) + beta * C
+
+  callstatement (*f2py_func)((trans_a?(trans_a==2?"C":"T"):"N"), &
+       (trans_b?(trans_b==2?"C":"T"):"N"),&m,&n,&k,&alpha,a,&lda,b,&ldb,&beta,c,&m)
+  callprotoargument char*,char*,int*,int*,int*,complex_float*,complex_float*,int*,complex_float*, &
+       int*,complex_float*,complex_float*,int*
+
+  integer optional,intent(in),check(trans_a>=0 && trans_a <=2) :: trans_a = 0
+  integer optional,intent(in),check(trans_b>=0 && trans_b <=2) :: trans_b = 0
+  complex intent(in) :: alpha
+  complex intent(in),optional :: beta = (0.0,0.0)
+
+  complex dimension(lda,ka),intent(in) :: a
+  complex dimension(ldb,kb),intent(in) :: b
+  complex dimension(m,n),intent(in,out,copy),depend(m,n),optional :: c
+  check(shape(c,0)==m && shape(c,1)==n) :: c
+
+  integer depend(a),intent(hide) :: lda = shape(a,0)
+  integer depend(a),intent(hide) :: ka = shape(a,1)
+  integer depend(b),intent(hide) :: ldb = shape(b,0)
+  integer depend(b),intent(hide) :: kb = shape(b,1)
+
+  integer depend(a,trans_a,ka,lda),intent(hide):: m = (trans_a?ka:lda)
+  integer depend(a,trans_a,ka,lda),intent(hide):: k = (trans_a?lda:ka)
+  integer depend(b,trans_b,kb,ldb,k),intent(hide),check(trans_b?kb==k:ldb==k) :: &
+       n = (trans_b?ldb:kb)
+
+
+end subroutine cgemm
+
+
+
+subroutine zgemm(m,n,k,alpha,a,b,beta,c,trans_a,trans_b,lda,ka,ldb,kb)
+  ! Computes a scalar-matrix-matrix product and adds the result to a
+  ! scalar-matrix product.
+  !
+  ! c = gemm(alpha,a,b,beta=0,c=0,trans_a=0,trans_b=0,overwrite_c=0)
+  ! Calculate C <- alpha * op(A) * op(B) + beta * C
+
+  callstatement (*f2py_func)((trans_a?(trans_a==2?"C":"T"):"N"), &
+       (trans_b?(trans_b==2?"C":"T"):"N"),&m,&n,&k,&alpha,a,&lda,b,&ldb,&beta,c,&m)
+  callprotoargument char*,char*,int*,int*,int*,complex_double*,complex_double*,int*,complex_double*, &
+       int*,complex_double*,complex_double*,int*
+
+  integer optional,intent(in),check(trans_a>=0 && trans_a <=2) :: trans_a = 0
+  integer optional,intent(in),check(trans_b>=0 && trans_b <=2) :: trans_b = 0
+  double complex intent(in) :: alpha
+  double complex intent(in),optional :: beta = (0.0,0.0)
+
+  double complex dimension(lda,ka),intent(in) :: a
+  double complex dimension(ldb,kb),intent(in) :: b
+  double complex dimension(m,n),intent(in,out,copy),depend(m,n),optional :: c
+  check(shape(c,0)==m && shape(c,1)==n) :: c
+
+  integer depend(a),intent(hide) :: lda = shape(a,0)
+  integer depend(a),intent(hide) :: ka = shape(a,1)
+  integer depend(b),intent(hide) :: ldb = shape(b,0)
+  integer depend(b),intent(hide) :: kb = shape(b,1)
+
+  integer depend(a,trans_a,ka,lda),intent(hide):: m = (trans_a?ka:lda)
+  integer depend(a,trans_a,ka,lda),intent(hide):: k = (trans_a?lda:ka)
+  integer depend(b,trans_b,kb,ldb,k),intent(hide),check(trans_b?kb==k:ldb==k) :: &
+       n = (trans_b?ldb:kb)
+
+
+end subroutine zgemm
+
+
+
+    end interface
+end python module fblas

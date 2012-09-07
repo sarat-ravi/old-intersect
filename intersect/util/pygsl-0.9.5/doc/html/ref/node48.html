@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<link rel="STYLESHEET" href="ref.css" type='text/css' />
+<link rel="SHORTCUT ICON" href="-dvips-safe" />
+<link rel="first" href="ref.html" title='PyGSL Reference Manual' />
+<link rel='contents' href='contents.html' title="Contents" />
+<link rel='index' href='genindex.html' title='Index' />
+<link rel='last' href='about.html' title='About this document...' />
+<link rel='help' href='about.html' title='About this document...' />
+<link rel="next" href="node49.html" />
+<link rel="prev" href="node47.html" />
+<link rel="parent" href="node44.html" />
+<link rel="next" href="node49.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name='aesop' content='information' />
+<title>11.2.4 Autocorrelation</title>
+</head>
+<body>
+<DIV CLASS="navigation">
+<div id='top-navigation-panel' xml:id='top-navigation-panel'>
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="11.2.3 Higher moments (skewness"
+  href="node47.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></A></td>
+<td class='online-navigation'><a rel="parent" title="11.2 Available functions"
+  href="node44.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up One Level' width='32' /></A></td>
+<td class='online-navigation'><a rel="next" title="11.2.5 Covariance"
+  href="node49.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></A></td>
+<td align="center" width="100%">PyGSL Reference Manual</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></A></td>
+<td class='online-navigation'><img src='../icons/blank.png'
+  border='0' height='32'  alt='' width='32' /></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></A></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node47.html">11.2.3 Higher moments (skewness</A>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="node44.html">11.2 Available functions</A>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node49.html">11.2.5 Covariance</A>
+</div>
+<hr /></div>
+</DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0013240000000000000000"></A>
+<A NAME="sec:stat:autocorrelation"></A>
+<BR>
+11.2.4 Autocorrelation
+</H2>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-264' xml:id='l2h-264' class="function">lag1_autocorrelation</tt></b>(</nobr></td>
+  <td><var>x</var>)</td></tr></table></dt>
+<dd>
+   Computes the lag-1 autocorrelation of the dataset <var>x</var>
+   <P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+a_1 = \frac{\sum^{n}_{i = 1} (x_{i} - \hat\mu) (x_{i-1} - \hat\mu)}{
+         \sum^{n}_{i = 1} (x_{i} - \hat\mu) (x_{i} - \hat\mu)}
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="250" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img51.png"
+ ALT="$\displaystyle a_1 = \frac{\sum^{n}_{i = 1} (x_{i} - \hat\mu) (x_{i-1} - \hat\mu)}{ \sum^{n}_{i = 1} (x_{i} - \hat\mu) (x_{i} - \hat\mu)}$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(11.11)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+ </dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-265' xml:id='l2h-265' class="function">lag1_autocorrelation_m</tt></b>(</nobr></td>
+  <td><var>x, mean</var>)</td></tr></table></dt>
+<dd>
+   Computes the lag-1 autocorrelation of the dataset <var>x</var> using the given
+   value of the mean <var>mean</var>.
+   <P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+a_1 = \frac{\sum_{i = 1}^{n} (x_{i} - \var{mean}) (x_{i-1} - \var{mean})}{
+         \sum^{n}_{i = 1} (x_{i} - \var{mean}) (x_{i} - \var{mean})}
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="301" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img52.png"
+ ALT="$\displaystyle a_1 = \frac{\sum_{i = 1}^{n} (x_{i} - \var{mean}) (x_{i-1} - \var{mean})}{ \sum^{n}_{i = 1} (x_{i} - \var{mean}) (x_{i} - \var{mean})}$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(11.12)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+</dl>
+
+<P>
+
+<DIV CLASS="navigation">
+<div class='online-navigation'>
+<p></p><hr />
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="11.2.3 Higher moments (skewness"
+  href="node47.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></A></td>
+<td class='online-navigation'><a rel="parent" title="11.2 Available functions"
+  href="node44.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up One Level' width='32' /></A></td>
+<td class='online-navigation'><a rel="next" title="11.2.5 Covariance"
+  href="node49.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></A></td>
+<td align="center" width="100%">PyGSL Reference Manual</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></A></td>
+<td class='online-navigation'><img src='../icons/blank.png'
+  border='0' height='32'  alt='' width='32' /></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></A></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node47.html">11.2.3 Higher moments (skewness</A>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="node44.html">11.2 Available functions</A>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node49.html">11.2.5 Covariance</A>
+</div>
+</div>
+<hr />
+<span class="release-info">Release 0.9, documentation updated on October, 2008.</span>
+</DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

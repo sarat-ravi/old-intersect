@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<link rel="STYLESHEET" href="ref.css" type='text/css' />
+<link rel="SHORTCUT ICON" href="-dvips-safe" />
+<link rel="first" href="ref.html" title='PyGSL Reference Manual' />
+<link rel='contents' href='contents.html' title="Contents" />
+<link rel='index' href='genindex.html' title='Index' />
+<link rel='last' href='about.html' title='About this document...' />
+<link rel='help' href='about.html' title='About this document...' />
+<link rel="next" href="node48.html" />
+<link rel="prev" href="node46.html" />
+<link rel="parent" href="node44.html" />
+<link rel="next" href="node48.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name='aesop' content='information' />
+<title>11.2.3 Higher moments (skewness and kurtosis)</title>
+</head>
+<body>
+<DIV CLASS="navigation">
+<div id='top-navigation-panel' xml:id='top-navigation-panel'>
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="11.2.2 Absolute deviation"
+  href="node46.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></A></td>
+<td class='online-navigation'><a rel="parent" title="11.2 Available functions"
+  href="node44.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up One Level' width='32' /></A></td>
+<td class='online-navigation'><a rel="next" title="11.2.4 Autocorrelation"
+  href="node48.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></A></td>
+<td align="center" width="100%">PyGSL Reference Manual</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></A></td>
+<td class='online-navigation'><img src='../icons/blank.png'
+  border='0' height='32'  alt='' width='32' /></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></A></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node46.html">11.2.2 Absolute deviation</A>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="node44.html">11.2 Available functions</A>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node48.html">11.2.4 Autocorrelation</A>
+</div>
+<hr /></div>
+</DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0013230000000000000000"></A>
+<A NAME="sec:stat:higher-moments"></A>
+<BR>
+11.2.3 Higher moments (skewness and kurtosis)
+</H2>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-260' xml:id='l2h-260' class="function">skew</tt></b>(</nobr></td>
+  <td><var>data</var>)</td></tr></table></dt>
+<dd>
+   Compute the skewness of <var>data</var>.  The skewness is defined as
+   <P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+skew = (1/N) \sum ((x_i - \hat\mu)/\hat\sigma)^3
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="222" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.png"
+ ALT="$\displaystyle skew = (1/N) \sum ((x_i - \hat\mu)/\hat\sigma)^3$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(11.7)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+where <SPAN CLASS="MATH"><IMG
+ WIDTH="19" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img45.png"
+ ALT="$ x_i$"></SPAN>
+ are the elements of the dataset <var>data</var>.  The skewness
+   measures the asymmetry of the tails of a distribution.
+
+<P>
+The function computes the mean and estimated standard deviation of
+   <var>data</var> via calls to <tt class="function">mean</tt> and <tt class="function">sd</tt>.
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-261' xml:id='l2h-261' class="function">skew_m_sd</tt></b>(</nobr></td>
+  <td><var>data, mean, sd</var>)</td></tr></table></dt>
+<dd>
+   Compute the skewness of the dataset <var>data</var> using the given values of the
+   mean <var>mean</var> and standard deviation varsd
+   <P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+skew = (1/N) \sum ((x_i - mean)/sd)^3
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="258" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img48.png"
+ ALT="$\displaystyle skew = (1/N) \sum ((x_i - mean)/sd)^3$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(11.8)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+These functions are useful if you have already computed the mean and
+   standard deviation of <var>data</var> and want to avoid recomputing them.
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-262' xml:id='l2h-262' class="function">kurtosis</tt></b>(</nobr></td>
+  <td><var>data</var>)</td></tr></table></dt>
+<dd>
+   Compute the kurtosis of <var>data</var>.  The kurtosis is defined as
+   <P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+kurtosis = ((1/N) \sum ((x_i - \hat\mu)/\hat\sigma)^4) - 3
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="286" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img49.png"
+ ALT="$\displaystyle kurtosis = ((1/N) \sum ((x_i - \hat\mu)/\hat\sigma)^4) - 3$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(11.9)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+The kurtosis measures how sharply peaked a distribution is, relative to its
+   width.  The kurtosis is normalized to zero for a gaussian distribution.
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-263' xml:id='l2h-263' class="function">kurtosis_m_sd</tt></b>(</nobr></td>
+  <td><var>data, mean, sd</var>)</td></tr></table></dt>
+<dd>
+   This function computes the kurtosis of the dataset <var>data</var> using the
+   given values of the mean <var>mean</var> and standard deviation <var>sd</var>
+   <P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+kurtosis = ((1/N) \sum ((x_i - mean)/sd)^4) - 3
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="322" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img50.png"
+ ALT="$\displaystyle kurtosis = ((1/N) \sum ((x_i - mean)/sd)^4) - 3$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(11.10)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+This function is useful if you have already computed the mean and standard
+   deviation of <var>data</var> and want to avoid recomputing them.
+</dl>
+
+<P>
+
+<DIV CLASS="navigation">
+<div class='online-navigation'>
+<p></p><hr />
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="11.2.2 Absolute deviation"
+  href="node46.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></A></td>
+<td class='online-navigation'><a rel="parent" title="11.2 Available functions"
+  href="node44.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up One Level' width='32' /></A></td>
+<td class='online-navigation'><a rel="next" title="11.2.4 Autocorrelation"
+  href="node48.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></A></td>
+<td align="center" width="100%">PyGSL Reference Manual</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></A></td>
+<td class='online-navigation'><img src='../icons/blank.png'
+  border='0' height='32'  alt='' width='32' /></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></A></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node46.html">11.2.2 Absolute deviation</A>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="node44.html">11.2 Available functions</A>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node48.html">11.2.4 Autocorrelation</A>
+</div>
+</div>
+<hr />
+<span class="release-info">Release 0.9, documentation updated on October, 2008.</span>
+</DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

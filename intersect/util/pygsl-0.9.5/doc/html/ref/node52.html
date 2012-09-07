@@ -1,0 +1,379 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<link rel="STYLESHEET" href="ref.css" type='text/css' />
+<link rel="SHORTCUT ICON" href="-dvips-safe" />
+<link rel="first" href="ref.html" title='PyGSL Reference Manual' />
+<link rel='contents' href='contents.html' title="Contents" />
+<link rel='index' href='genindex.html' title='Index' />
+<link rel='last' href='about.html' title='About this document...' />
+<link rel='help' href='about.html' title='About this document...' />
+<link rel="prev" href="node51.html" />
+<link rel="parent" href="node44.html" />
+<link rel="next" href="node53.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name='aesop' content='information' />
+<title>11.2.8 Weighted Samples</title>
+</head>
+<body>
+<DIV CLASS="navigation">
+<div id='top-navigation-panel' xml:id='top-navigation-panel'>
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="11.2.7 Median and Percentiles"
+  href="node51.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></A></td>
+<td class='online-navigation'><a rel="parent" title="11.2 Available functions"
+  href="node44.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up One Level' width='32' /></A></td>
+<td class='online-navigation'><a rel="next" title="11.3 Further Reading"
+  href="node53.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></A></td>
+<td align="center" width="100%">PyGSL Reference Manual</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></A></td>
+<td class='online-navigation'><img src='../icons/blank.png'
+  border='0' height='32'  alt='' width='32' /></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></A></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node51.html">11.2.7 Median and Percentiles</A>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="node44.html">11.2 Available functions</A>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node53.html">11.3 Further Reading</A>
+</div>
+<hr /></div>
+</DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0013280000000000000000"></A>
+<A NAME="sec:weighted-samples"></A>
+<BR>
+11.2.8 Weighted Samples
+</H2>
+
+<P>
+The functions described in this section allow the computation of statistics for
+weighted samples.  The functions accept an array of samples, <SPAN CLASS="MATH"><IMG
+ WIDTH="19" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img45.png"
+ ALT="$ x_i$"></SPAN>
+, with
+associated weights, <SPAN CLASS="MATH"><IMG
+ WIDTH="22" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img63.png"
+ ALT="$ w_i$"></SPAN>
+.  Each sample <SPAN CLASS="MATH"><IMG
+ WIDTH="19" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img45.png"
+ ALT="$ x_i$"></SPAN>
+ is considered as having been
+drawn from a Gaussian distribution with variance <!-- MATH
+ $\sigma_i^2$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="27" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img64.png"
+ ALT="$ \sigma_i^2$"></SPAN>
+.  The sample
+weight <SPAN CLASS="MATH"><IMG
+ WIDTH="22" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img63.png"
+ ALT="$ w_i$"></SPAN>
+ is defined as the reciprocal of this variance, <!-- MATH
+ $w_i =
+1/\sigma_i^2$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="81" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img65.png"
+ ALT="$ w_i =
+1/\sigma_i^2$"></SPAN>
+.  Setting a weight to zero corresponds to removing a sample from
+a dataset.
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-276' xml:id='l2h-276' class="function">wmean</tt></b>(</nobr></td>
+  <td><var>w, data</var>)</td></tr></table></dt>
+<dd>
+   This function returns the weighted mean of the dataset <var>data</var> using the
+   set of weights <var>w</var>.  The weighted mean is defined as
+   <P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\hat\mu = (\sum w_i x_i) / (\sum w_i)
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="170" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img66.png"
+ ALT="$\displaystyle \hat\mu = (\sum w_i x_i) / (\sum w_i)$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(11.16)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-277' xml:id='l2h-277' class="function">wvariance</b>(</nobr></td>
+  <td><var>w, data</var>)</td></tr></table></dt>
+<dd>
+   This function returns the estimated variance of the dataset <var>data</var>,
+   using the set of weights <var>w</var>.  The estimated variance of a weighted
+   dataset is defined as
+   <P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\hat\sigma^2 = ((\sum w_i)/((\sum w_i)^2 - \sum (w_i^2))) \sum w_i (x_i - \hat\mu)^2
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="383" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img67.png"
+ ALT="$\displaystyle \hat\sigma^2 = ((\sum w_i)/((\sum w_i)^2 - \sum (w_i^2))) \sum w_i (x_i - \hat\mu)^2$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(11.17)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+Note that this expression reduces to an unweighted variance with the
+   familiar <SPAN CLASS="MATH"><IMG
+ WIDTH="74" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img68.png"
+ ALT="$ 1/(N-1)$"></SPAN>
+ factor when there are <SPAN CLASS="MATH"><IMG
+ WIDTH="19" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img69.png"
+ ALT="$ N$"></SPAN>
+ equal non-zero weights.
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-278' xml:id='l2h-278' class="function">wvariance_m</tt></b>(</nobr></td>
+  <td><var>w, data, wmean</var>)</td></tr></table></dt>
+<dd>
+   This function returns the estimated variance of the weighted dataset
+   <var>data</var> using the given weighted mean <var>wmean</var>.
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-279' xml:id='l2h-279' class="function">wsd</tt></b>(</nobr></td>
+  <td><var>w, data</var>)</td></tr></table></dt>
+<dd>
+   The standard deviation is defined as the square root of the variance.  This
+   function returns the square root of the corresponding variance function
+   <tt class="function">wvariance</tt> above.
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-280' xml:id='l2h-280' class="function">wsd_m</tt></b>(</nobr></td>
+  <td><var>w, data, wmean</var>)</td></tr></table></dt>
+<dd>
+   This function returns the square root of the corresponding variance function
+   <tt class="function">wvariance_m</tt> above.
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-281' xml:id='l2h-281' class="function">wvariance_with_fixed_mean</tt></b>(</nobr></td>
+  <td><var>w, data, mean</var>)</td></tr></table></dt>
+<dd>
+   This function computes an unbiased estimate of the variance of weighted
+   dataset <var>data</var> when the population mean <var>mean</var> of the underlying
+   distribution is known _a priori_.  In this case the estimator for the
+   variance replaces the sample mean <SPAN CLASS="MATH"><IMG
+ WIDTH="14" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img41.png"
+ ALT="$ \hat\mu$"></SPAN>
+ by the known population mean
+   <SPAN CLASS="MATH"><IMG
+ WIDTH="14" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img42.png"
+ ALT="$ \mu$"></SPAN>
+,
+   <P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\hat\sigma^2 = (\sum w_i (x_i - \mu)^2) / (\sum w_i)
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="225" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img70.png"
+ ALT="$\displaystyle \hat\sigma^2 = (\sum w_i (x_i - \mu)^2) / (\sum w_i)$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(11.18)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-282' xml:id='l2h-282' class="function">wsd_with_fixed_mean</tt></b>(</nobr></td>
+  <td><var>w, data, mean</var>)</td></tr></table></dt>
+<dd>
+   The standard deviation is defined as the square root of the variance.  This
+   function returns the square root of the corresponding variance function
+   above.
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-283' xml:id='l2h-283' class="function">wabsdev</tt></b>(</nobr></td>
+  <td><var>w, data</var>)</td></tr></table></dt>
+<dd>
+   This function computes the weighted absolute deviation from the weighted
+   mean of <var>data</var>.  The absolute deviation from the mean is defined as
+   <P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+absdev = (\sum w_i |x_i - \hat\mu|) / (\sum w_i)
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="244" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img71.png"
+ ALT="$\displaystyle absdev = (\sum w_i \vert x_i - \hat\mu\vert) / (\sum w_i)$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(11.19)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-284' xml:id='l2h-284' class="function">wabsdev_m</tt></b>(</nobr></td>
+  <td><var>w, data, wmean</var>)</td></tr></table></dt>
+<dd>
+   This function computes the absolute deviation of the weighted dataset DATA
+   about the given weighted mean WMEAN.
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-285' xml:id='l2h-285' class="function">wskew</tt></b>(</nobr></td>
+  <td><var>w, data</var>)</td></tr></table></dt>
+<dd>
+   This function computes the weighted skewness of the dataset DATA.
+   <P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+skew = (\sum w_i ((x_i - xbar)/\sigma)^3) / (\sum w_i)
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="296" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img72.png"
+ ALT="$\displaystyle skew = (\sum w_i ((x_i - xbar)/\sigma)^3) / (\sum w_i)$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(11.20)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-286' xml:id='l2h-286' class="function">wskew_m_sd</tt></b>(</nobr></td>
+  <td><var>w, data, mean, wsd</var>)</td></tr></table></dt>
+<dd>
+   This function computes the weighted skewness of the dataset <var>data</var> using
+   the given values of the weighted mean and weighted standard deviation,
+   <var>wmean</var> and <var>wsd</var>.
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-287' xml:id='l2h-287' class="function">wkurtosis</tt></b>(</nobr></td>
+  <td><var>w, data</var>)</td></tr></table></dt>
+<dd>
+   This function computes the weighted kurtosis of the dataset <var>data</var>. The
+   kurtosis is defined as 
+   <P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+kurtosis = ((\sum w_i ((x_i - xbar)/sigma)^4) / (\sum w_i)) - 3
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="394" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img73.png"
+ ALT="$\displaystyle kurtosis = ((\sum w_i ((x_i - xbar)/sigma)^4) / (\sum w_i)) - 3$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(11.21)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+</dl>
+
+<P>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-288' xml:id='l2h-288' class="function">wkurtosis_m_sd</tt></b>(</nobr></td>
+  <td><var>w, data, mean, wsd</var>)</td></tr></table></dt>
+<dd>
+   This function computes the weighted kurtosis of the dataset <var>data</var> using
+   the given values of the weighted mean and weighted standard deviation,
+   <var>wmean</var> and <var>wsd</var>.
+</dl>
+
+<P>
+
+<DIV CLASS="navigation">
+<div class='online-navigation'>
+<p></p><hr />
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="11.2.7 Median and Percentiles"
+  href="node51.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></A></td>
+<td class='online-navigation'><a rel="parent" title="11.2 Available functions"
+  href="node44.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up One Level' width='32' /></A></td>
+<td class='online-navigation'><a rel="next" title="11.3 Further Reading"
+  href="node53.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></A></td>
+<td align="center" width="100%">PyGSL Reference Manual</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></A></td>
+<td class='online-navigation'><img src='../icons/blank.png'
+  border='0' height='32'  alt='' width='32' /></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></A></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node51.html">11.2.7 Median and Percentiles</A>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="node44.html">11.2 Available functions</A>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node53.html">11.3 Further Reading</A>
+</div>
+</div>
+<hr />
+<span class="release-info">Release 0.9, documentation updated on October, 2008.</span>
+</DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>
