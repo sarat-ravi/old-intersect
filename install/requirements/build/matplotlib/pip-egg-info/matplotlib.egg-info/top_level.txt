@@ -1,4 +1,0 @@
-pylab
-pytz
-mpl_toolkits
-matplotlib
