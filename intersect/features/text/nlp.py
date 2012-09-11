@@ -44,7 +44,7 @@ en-sent
 en-token
 """
 
-class driver:
+class Driver:
   
   def __init__(self):
     self.models = models

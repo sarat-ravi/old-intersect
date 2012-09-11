@@ -1,0 +1,7 @@
+README.txt
+reindent
+reindent.py
+pip-egg-info/Reindent.egg-info/PKG-INFO
+pip-egg-info/Reindent.egg-info/SOURCES.txt
+pip-egg-info/Reindent.egg-info/dependency_links.txt
+pip-egg-info/Reindent.egg-info/top_level.txt

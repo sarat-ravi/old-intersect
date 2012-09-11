@@ -15,7 +15,7 @@ class FeatureExtractor:
 
 class VideoFeatureExtractor(FeatureExtractor):
   def test(self):
-    a = haarvideo.driver()
+    a = haarvideo.Driver()
     a.display_available_actions()
     a.select_actions(['haarcascade_eye', 'haarcascade_mcs_nose'])
     #a.seeCascadesLive()
@@ -29,7 +29,7 @@ class TextFeatureExtractor(FeatureExtractor):
 
   def test(self):
 
-    driver = nlp.driver()
+    driver = nlp.Driver()
 
     driver.display_available_actions()
     driver.select_actions(["en_sent", "en_ner_person"])

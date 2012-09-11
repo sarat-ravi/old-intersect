@@ -4,7 +4,7 @@ import cv
 
 numFaces = 1
 
-class driver:
+class Driver:
   
   def __init__(self):
 

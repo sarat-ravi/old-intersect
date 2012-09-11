@@ -12,7 +12,7 @@ detected_face_objects = []
 
 numFaces = 1
 
-class driver:
+class Driver:
   
   def __init__(self):
 

@@ -7,7 +7,7 @@ absPath = os.path.dirname(os.path.abspath(__file__)) + '/'
 
 numFaces = 1
 
-class driver:
+class Driver:
   
   def __init__(self):
 
