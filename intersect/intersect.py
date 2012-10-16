@@ -20,9 +20,9 @@ class VideoFeatureExtractor(FeatureExtractor):
     a.select_actions(['haarcascade_eye', 'haarcascade_mcs_nose'])
     #a.seeCascadesLive()
 
-    a.run_actions(input_file="testfiles/input.avi", output_file="testfiles/output.avi", display_output=True)
+    #a.run_actions(input_file="testfiles/input.avi", output_file="testfiles/output.avi", display_output=True)
     #a.run_actions(output_file="testfiles/output.avi", display_output=True)
-    #a.run_actions(display_output=True)
+    a.run_actions(display_output=True)
 
 
 class TextFeatureExtractor(FeatureExtractor):
